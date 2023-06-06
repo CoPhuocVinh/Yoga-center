@@ -2063,6 +2063,9 @@ a:focus {
     color: #F7CAC9;
 }
 
+.content .col-md-6{
+   margin:0 25%;
+}
 @media (max-width: 767.98px) {
 
     .footer .copyright p,
