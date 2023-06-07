@@ -74,6 +74,8 @@
                         </div>
                     </div>
                     <a href="#contact" class="nav-item nav-link">Liên hệ</a>
+                    <a href="" class="nav-item nav-link js-register" id="openModalButtonLogin">Đăng Nhập</a>
+
                 </div>
             </div>
         </div>
@@ -723,6 +725,41 @@
     <!-- Blog End -->
 
 
+    <!-- Modal Login -->
+    <div class="modal-login open" id="loginModal">
+        <div class="modal-container">
+          <span class="close" id="myButton">&times;</span>
+          <header class="modal-header">
+            Đăng Nhập
+          </header>
+    
+          <div class="modal-body">
+            <div class="modal-login-user">
+              <label for="" class="modal-label">
+                <i class="ti-user"></i>
+              </label>
+              <input class="modal-input" placeholder="Tên đăng nhập" required>
+            </div>
+    
+    
+            <label for="" class="modal-label">
+              <i class="ti-lock"></i>
+            </label>
+            <input class="modal-input" placeholder="Mật khẩu" required>
+    
+            <button id="modal-login-button" type="submit">
+              Đăng Nhập
+            </button>
+          </div>
+    
+          <footer class="modal-footer">
+            <p class="modal-register-but"><a href="#" id="register-link">Bạn chưa có tài khoản?</a></p>
+          </footer>
+    
+        </div>
+      </div>
+
+
     <!-- Footer Start -->
     <div id="contact" class="contact">
         <div class="footer wow fadeIn" data-wow-delay="0.3s">
@@ -801,6 +838,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/functions.js"></script>
 </body>
 
 </html>
