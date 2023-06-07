@@ -611,9 +611,12 @@ a:focus {
     text-align: center !important;
 }
 
-@media (max-width: 767.98px) {
-    .ftco-animate {
-        padding: 6em 0;
+
+
+@media ((min-width: 992px)) {
+    .ftco-section {
+        flex: 100%;
+        max-width: 100%;
     }
 }
 
