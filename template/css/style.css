@@ -2197,3 +2197,232 @@ a:focus {
         text-align: center;
     }
 }
+
+/*form dang nhap */
+.modal-login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-container {
+    background: #fff;
+    width: 508px;
+    top: 50px;
+    height: fit-content;
+    border-radius: 8px;
+  }
+  
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 70px;
+  
+  }
+  
+  .modal-body {
+    padding: 25px;
+  }
+  
+  .modal-login-user {
+    padding-bottom: 20px;
+  }
+  
+  .modal-label {
+    font-size: 20px;
+    padding-right: 10px;
+  }
+  
+  .modal-input {
+    border: 1px solid #ccc;
+    width: 400px;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  #modal-login-button {
+    background: #62BEC8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+    margin-top: 25px;
+    color: #fff;
+    font-size: 20px;
+    margin-left: calc(50% - 150px/2);
+    border: none;
+  }
+  
+  #modal-login-button:hover {
+    background-color: #3cb5c3;
+    cursor: pointer;
+  }
+  
+  .modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-register-but {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .modal-register-but:hover {
+    text-decoration: underline;
+  }
+  
+  .highlight {
+    background-color: rgb(193, 193, 193);
+  }
+  
+  
+  .close {
+    position: hide;
+    color: #fff;
+    right: 510px;
+    padding: 0 5px;
+    margin-top: 3px;
+    opacity: 0.4;
+    display: none;
+  }
+  
+  /* .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  } */
+/* form đăng ký */
+.modal-register {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-container-register {
+    margin-top: 60px;
+    background-color: #fff;
+    width: 800px;
+    height: 577px;
+    border-radius: 8px;
+  }
+  
+  .modal-header-register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 70px;
+  }
+  
+  .modal-body-re {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 40px;
+  }
+  
+  .modal-box {
+    width: calc(50% - 8px);
+    margin-bottom: 15px;
+  }
+  
+  .details {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  
+  .modal-input-name,
+  .modal-input-register {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+  
+  }
+  
+  .modal-input-name {
+    margin-top: 8px;
+  }
+  
+  .modal-input-name::placeholder,
+  .modal-input-register::placeholder {
+    color: #999;
+  }
+  
+  .modal-day {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .modal-input-register {
+    width: calc(33.33% - 8px);
+    margin-right: 10px;
+  }
+  
+  .modal-gender {
+    margin-bottom: 15px;
+  }
+  
+  .gender-title {
+    font-weight: 400;
+    font-size: 15px;
+    margin-right: 15px;
+  }
+  
+  .modal-gender input {
+    padding-right: 10px;
+  }
+  
+  .modal-footer {
+    text-align: center;
+  }
+  
+  .modal-register-but a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  
+  .modal-register-but a:hover {
+    text-decoration: underline;
+  }
+  
+  #modal-login-button-re {
+    background: #62BEC8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    margin-left: calc(50% - 150px/2);
+    margin-bottom: 20px;
+    border: none;
+  }
+  
+  #modal-login-button-re:hover {
+    background-color: #3cb5c3;
+    cursor: pointer;
+  }
