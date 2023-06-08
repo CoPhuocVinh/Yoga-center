@@ -212,8 +212,7 @@ a:focus {
 .navbar-dark .nav-link-dk,
 .navbar-dark .nav-link-dk:focus,
 .navbar-dark .nav-link-dk:hover,
-.navbar-dark .navbar-nav .nav-link-dk.active
-{
+.navbar-dark .navbar-nav .nav-link-dk.active {
     padding: 10px 10px 8px 150px;
     color: #de0707;
 }
@@ -522,10 +521,109 @@ a:focus {
     }
 }
 
+/*******************************/
+/********** hover course CSS **********/
+/*******************************/
+.justify-content-center {
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+
+.align-items-center {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.d-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+
+}
+
+.package-program {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 0;
+
+    overflow: hidden;
+}
+
+.package-program:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #d291bc;
+    z-index: 0;
+    content: '';
+    opacity: 0;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.package-program .img {
+    display: inline;
+    line-height: 24px;
+    height: 171px;
+}
+
+.package-program .text {
+    height: 171px;
+    z-index: 1;
+    opacity: 0;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.package-program .text h5 {
+    margin-bottom: 3px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.package-program:hover:after,
+.package-program:focus:after {
+    opacity: .5;
+}
+
+.package-program:hover .text,
+.package-program:focus .text {
+    opacity: 1;
+}
+
+.p-5 {
+    padding: 1rem !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+
+
+@media ((min-width: 992px)) {
+    .ftco-section {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
 
 /*******************************/
 /********** About CSS **********/
 /*******************************/
+
 .about {
     position: relative;
     width: 100%;
@@ -1452,7 +1550,7 @@ a:focus {
     margin: 0 40px 0 40px;
 }
 
-.footer .contact-form ::placeholder{
+.footer .contact-form ::placeholder {
     color: #fff;
 }
 
@@ -2087,9 +2185,10 @@ a:focus {
     color: #F7CAC9;
 }
 
-.content .col-md-6{
-   margin:0 25%;
+.content .col-md-6 {
+    margin: 0 25%;
 }
+
 @media (max-width: 767.98px) {
 
     .footer .copyright p,
