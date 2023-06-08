@@ -37,6 +37,17 @@ window.onclick = function (event) {
 
 }
 
+//Chuyển trang index-user
+// document.getElementById("loginModal").addEventListener("submit", function(event) {
+//   event.preventDefault(); // Ngăn chặn form gửi đi
+
+//   // Kiểm tra thông tin đăng nhập ở đây (có thể sử dụng Ajax để gửi yêu cầu đến máy chủ)
+
+//   // Sau khi xác thực thành công, chuyển hướng đến trang khác
+//   window.location.href = "index-user.html";
+// });
+
+
 // Lấy tham chiếu đến button
 const button = document.getElementById("myButton");
 
