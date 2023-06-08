@@ -1084,6 +1084,10 @@ a:focus {
     border: none;
 }
 
+.price-discount{
+    font-weight: 600;
+}
+
 .price .price-action {
     border: 1px solid rgba(0, 0, 0, .07);
     border-top: none;
@@ -2317,7 +2321,7 @@ a:focus {
     margin-top: 60px;
     background-color: #fff;
     width: 800px;
-    height: 577px;
+    height: 540px;
     border-radius: 8px;
   }
   
@@ -2343,13 +2347,7 @@ a:focus {
     margin-bottom: 15px;
   }
   
-  .details {
-    font-weight: 400;
-    font-size: 15px;
-  }
-  
-  .modal-input-name,
-  .modal-input-register {
+  .modal-input-name{
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -2362,20 +2360,8 @@ a:focus {
     margin-top: 8px;
   }
   
-  .modal-input-name::placeholder,
-  .modal-input-register::placeholder {
+  .modal-input-name::placeholder {
     color: #999;
-  }
-  
-  .modal-day {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  .modal-input-register {
-    width: calc(33.33% - 8px);
-    margin-right: 10px;
   }
   
   .modal-gender {
