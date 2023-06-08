@@ -2442,8 +2442,26 @@ a:focus {
     margin-left: 100px;
     width: 600px;
   }
+  .info i{
+    margin-left: 50px;
+  }
   .user-display{
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+  /* -------------------------Schedule-detail --------------------  */
+  .schedule-detail{
+    margin-top: 80px;
+  }
+  .box-info {
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #FDF4F5;
+    color: #2A2F4F;
+    text-align: center;
+    font-size: 22px;
+    width: 470px;
+}
