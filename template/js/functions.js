@@ -26,16 +26,16 @@ closeButton.onclick = function () {
 
 
 // Xử lý sự kiện khi nhấp vào bất kỳ vị trí nào bên ngoài cửa sổ đăng nhập
-// window.onclick = function (event) {
+window.onclick = function (event) {
  
-//     if (event.target == loginModal || event.target == registerModal || event.target == formTrial ) {
-//       loginModal.style.display = "none";
-//       registerModal.style.display = "none";
-//       formTrial.style.display= "none";
-//     }
+    if (event.target == loginModal || event.target == registerModal || event.target == formTrial ) {
+      loginModal.style.display = "none";
+      registerModal.style.display = "none";
+      formTrial.style.display= "none";
+    }
   
 
-// }
+}
 
 // Lấy tham chiếu đến button
 const button = document.getElementById("myButton");
