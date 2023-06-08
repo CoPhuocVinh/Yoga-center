@@ -217,19 +217,9 @@ a:focus {
     color: #de0707;
 }
 
-.navbar-dark .nav-link-dk .a,
-.navbar-dark .nav-link-dk .a:hover,
-.navbar-dark .nav-link-dk .a.active {
-    color: #ffffff;
-    padding: 10px 10px 8px 10px;
-
-}
-
-.navbar-dark .nav-link-dk .a:hover,
-.navbar-dark .nav-link-dk .a.active {
-    background: rgba(256, 256, 256, .1);
-    transition: none;
-
+.navbar-dark .nav-link-dk button{
+    border: none;
+    border-radius: 20px;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
