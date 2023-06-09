@@ -24,7 +24,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #F7CAC9;
+    color: #cda1a1;
     outline: none;
     text-decoration: none;
 }
@@ -317,6 +317,7 @@ a:focus {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 
 .hero .hero-text h1 {
@@ -330,6 +331,17 @@ a:focus {
     color: #343148;
     font-size: 18px;
     margin-bottom: 25px;
+}
+
+.hero-button {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    background-color: #f6f6f6;
+    color: #495057;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .hero .hero-btn .btn {
