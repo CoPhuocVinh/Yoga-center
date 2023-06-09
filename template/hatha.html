@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>YOOGA - Free Yoga Website Template</title>
+    <title>FYOGA</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
@@ -79,7 +79,7 @@
 
                 </div>
                 <div class="nav-item nav-link-dk">
-                    <i class="fa fa-user"></i>
+                    <!-- <i class="fa fa-user"></i> -->
                     <button href="" class="a" id="openModalButtonLogin">Đăng nhập</button>
                     <button href="" class="a" id="openModalButtonRegister">Đăng Ký</button>
                 </div>
@@ -162,6 +162,180 @@
             </ul>
         </div>
     </div>
+
+    <!-- Price Start -->
+    <div class="price">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <h2>Đăng ký học ngay với giá chỉ từ</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="price-item">
+                        <div class="price-header">
+                            <div class="price-prices">
+                                <h2>350K <small>đ</small><span>/ tháng</span></h2>
+                            </div>
+                        </div>
+                        <div class="price-body">
+                            <div class="price-description">
+                                <ul>
+                                    <li>12 buổi / 1 tháng</li>
+                                    <li>Huấn luyện viên chuyên nghiệp</li>
+                                    <li>Đăng ký lớp bất cứ lúc nào</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="price-footer">
+                            <div class="price-action">
+                                <a class="btn" href="priceHatha.html">Đăng Ký</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="price-item featured-item">
+                        <div class="price-header">
+                            <div class="price-status">
+                                <span>Phổ biến</span>
+                            </div>
+                            <div class="price-prices">
+                                <h2>799K <small>đ</small><span>/ 3 tháng</span></h2>
+                            </div>
+                        </div>
+                        <div class="price-body">
+                            <div class="price-description">
+                                <ul>
+                                    <li>36 buổi / 3 tháng</li>
+                                    <li>Huấn luyện viên chuyên nghiệp</li>
+                                    <li>Đăng ký lớp bất cứ lúc nào</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="price-footer">
+                            <div class="price-action">
+                                <a class="btn" href="priceHatha.html">Đăng Ký</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="price-item featured-item">
+                        <div class="price-header">
+                            <!-- <div class="price-status">
+                                <span>Phổ biến</span>
+                            </div> -->
+                            <div class="price-prices">
+                                <h2>1599K <small>đ</small><span>/ 6 tháng</span></h2>
+                            </div>
+                        </div>
+                        <div class="price-body">
+                            <div class="price-description">
+                                <ul>
+                                    <li>72 buổi / 6 tháng</li>
+                                    <li>Huấn luyện viên chuyên nghiệp</li>
+                                    <li>Đăng ký lớp bất cứ lúc nào</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="price-footer">
+                            <div class="price-action">
+                                <a class="btn" href="priceHatha.html">Đăng Ký</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+              
+        </div>
+    </div>
+    <!-- Price End -->
+
+    <!-- Modal Login -->
+    <div class="modal-login open" id="loginModal">
+        <div class="modal-container">
+            <span class="close" id="myButton">&times;</span>
+            <header class="modal-header">
+                Đăng Nhập
+            </header>
+
+            <div class="modal-body">
+                <div class="modal-login-user">
+                    <input class="modal-input" placeholder="Tên đăng nhập" required>
+                    <input class="modal-input" placeholder="Mật khẩu" required>
+                </div>
+                <button id="modal-login-button" type="submit">
+                    Đăng Nhập
+                </button>
+            </div>
+
+            <footer class="modal-footer">
+                <p class="modal-register-but"><a href="#" id="register-link">Bạn chưa có tài khoản?</a></p>
+                <p class="modal-register-but"><a href="#">Quên mật khẩu?</a></p>
+            </footer>
+
+        </div>
+    </div>
+    
+    <!-- Modal register  -->
+    <div class="modal-register" id="registerModal">
+        <div class="modal-container-register">
+            <span class="close" id="myButton"><a>&times;</a></span>
+            <header class="modal-header-register">
+                Đăng Ký
+            </header>
+
+            <form action="#">
+                <div class="modal-body-re">
+                    <div class="modal-box">
+                        <span class="details">Họ</span>
+                        <input class="modal-input-name" placeholder="Nhập họ của bạn" required>
+                    </div>
+
+                    <div class="modal-box">
+                        <span class="details">Tên</span>
+                        <input class="modal-input-name" placeholder="Nhập tên của bạn" required>
+                    </div>
+
+                    <div class="modal-box">
+                        <span class="details">Email</span>
+                        <input type="email" class="modal-input-name" placeholder="Nhập email của bạn">
+                    </div>
+
+                    <div class="modal-box">
+                        <span class="details">Số điện thoại</span>
+                        <input class="modal-input-name" placeholder="Nhập số điện thoại của bạn" required>
+                    </div>
+
+                    <div class="modal-box">
+                        <span class="details">Mật khẩu</span>
+                        <input type="password" class="modal-input-name" placeholder="Nhập mật khẩu của bạn" required>
+                    </div>
+
+                    <div class="modal-box">
+                        <span class="details">Xác thực mật khẩu</span>
+                        <input type="password" class="modal-input-name" placeholder="Nhập lại mật khẩu của bạn"
+                            required>
+                    </div>
+
+                    <div class="modal-gender">
+                        <span class="gender-title">Giới tính</span>
+                        <input type="radio" name="gender">Nam
+                        <input type="radio" name="gender">Nữ
+                    </div>
+                </div>
+            </form>
+
+            <button id="modal-login-button-re" type="submit">
+                Đăng Ký
+            </button>
+
+            <footer class="modal-footer">
+                <p class="modal-register-but" id="login-link"><a href="#">Bạn đã có tài khoản?</a></p>
+            </footer>
+        </div>
+    </div>
     
     <!-- Footer Start -->
     <div id="footer" class="footer wow fadeIn" data-wow-delay="0.3s">
@@ -238,6 +412,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/functions.js"></script>
 </body>
 
 </html>

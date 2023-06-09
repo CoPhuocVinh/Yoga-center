@@ -2265,12 +2265,7 @@ a:focus {
   }
   
   .modal-login-user {
-    padding-bottom: 20px;
-  }
-  
-  .modal-label {
-    font-size: 20px;
-    padding-right: 10px;
+    text-align: center;
   }
   
   .modal-input {
@@ -2278,9 +2273,8 @@ a:focus {
     width: 400px;
     font-size: 18px;
     padding: 10px;
+    margin-bottom: 30px;
   }
-  
-
 
   #modal-login-button {
     background: #62BEC8;
@@ -2309,6 +2303,8 @@ a:focus {
   .modal-register-but {
     display: flex;
     justify-content: center;
+    margin-left: 30px;
+    margin-right: 44px;
   }
   
   .modal-register-but:hover {
