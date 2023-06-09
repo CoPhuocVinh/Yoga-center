@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+
+    <title>uAdmin - Professional, Responsive and Flat Admin Template</title>
+
+    <meta name="description"
+        content="uAdmin is a Professional, Responsive and Flat Admin Template created by pixelcave and published on Themeforest">
+    <meta name="author" content="pixelcave">
+    <meta name="robots" content="noindex, nofollow">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- Icons -->
+    <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/icon57.png" sizes="57x57">
+    <link rel="apple-touch-icon" href="img/icon72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="img/icon76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="img/icon114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="img/icon120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="img/icon144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="img/icon152.png" sizes="152x152">
+    <!-- END Icons -->
+
+    <!-- Stylesheets -->
+    <!-- Bootstrap is included in its original form, unaltered -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Related styles of various javascript plugins -->
+    <link rel="stylesheet" href="css/plugins.css">
+
+    <!-- The main stylesheet of this template. All Bootstrap overwrites are defined in here -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Load a specific file here from css/themes/ folder to alter the default theme of the template -->
+
+    <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
+    <link rel="stylesheet" href="css/themes.css">
+    <!-- END Stylesheets -->
+
+    <!-- Modernizr (browser feature detection library) & Respond.js (Enable responsive CSS code on browsers that don't support it, eg IE8) -->
+    <script src="js/vendor/modernizr-respond.min.js"></script>
+</head>
+
+<!-- Add the class .fixed to <body> for a fixed layout on large resolutions (min: 1200px) -->
+<!-- <body class="fixed"> -->
+
+<body>
+    <!-- Page Container -->
+    <div id="page-container">
+        <!-- Header -->
+        <!-- Add the class .navbar-fixed-top or .navbar-fixed-bottom for a fixed header on top or bottom respectively -->
+        <!-- <header class="navbar navbar-inverse navbar-fixed-top"> -->
+        <!-- <header class="navbar navbar-inverse navbar-fixed-bottom"> -->
+        <header class="navbar navbar-inverse">
+            <!-- Mobile Navigation, Shows up  on smaller screens -->
+            <ul class="navbar-nav-custom pull-right hidden-md hidden-lg">
+                <li class="divider-vertical"></li>
+                <li>
+                    <!-- It is set to open and close the main navigation on smaller screens. The class .navbar-main-collapse was added to aside#page-sidebar -->
+                    <a href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+            <!-- END Mobile Navigation -->
+
+            <!-- Logo -->
+            <a href="index.html" class="navbar-brand"><img src="img/template/logo.png" alt="logo"></a>
+
+            <!-- Loading Indicator, Used for demostrating how loading of widgets could happen, check main.js - uiDemo() -->
+            <div id="loading" class="pull-left"><i class="fa fa-certificate fa-spin"></i></div>
+
+            <!-- Header Widgets -->
+            <!-- You can create the widgets you want by replicating the following. Each one exists in a <li> element -->
+            <ul id="widgets" class="navbar-nav-custom pull-right">
+                <!-- Just a divider -->
+                <li class="divider-vertical"></li>
+
+                <!-- RSS Widget -->
+                <!-- Add .dropdown-left-responsive class to align the dropdown menu left (so its visible on mobile) -->
+                <li id="rss-widget" class="dropdown dropdown-left-responsive">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-rss"></i>
+                        <span class="badge badge-warning display-none"></span>
+                    </a>
+                    <!-- By adding the class .widget-fluid, dropdown width will be set to auto with min value 180px and max value 250px -->
+                    <ul class="dropdown-menu dropdown-menu-right widget widget-fluid">
+                        <li class="widget-heading text-center">Web Design</li>
+                        <li class="li-hover"><a href="javascript:void(0)" class="widget-link"><i
+                                    class="fa fa-umbrella"></i>This is a headline</a></li>
+                        <li class="divider"></li>
+                        <li class="li-hover"><a href="javascript:void(0)" class="widget-link"><i
+                                    class="fa fa-trophy"></i>Another headline</a></li>
+                        <li class="divider"></li>
+                        <li class="li-hover"><a href="javascript:void(0)" class="widget-link"><i
+                                    class="fa fa-suitcase"></i>Headlines keep coming!</a></li>
+                        <li class="widget-heading text-center">Web Developent</li>
+                        <li class="li-hover"><a href="javascript:void(0)" class="widget-link"><i
+                                    class="fa fa-phone"></i>New headline</a></li>
+                        <li class="divider"></li>
+                        <li class="li-hover"><a href="javascript:void(0)" class="widget-link"><i
+                                    class="fa fa-pencil"></i>Another one</a></li>
+                        <li class="divider"></li>
+                        <li><a href="javascript:void(0)" class="text-center">All News</a></li>
+                    </ul>
+                </li>
+                <!-- END RSS Widget -->
+
+                <li class="divider-vertical"></li>
+
+                <!-- Twitter Widget -->
+                <!-- Add .dropdown-left-responsive class to align the dropdown menu left (so its visible on mobile) -->
+                <li id="twitter-widget" class="dropdown dropdown-left-responsive">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-twitter"></i>
+                        <span class="badge badge-info display-none"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right widget">
+                        <li class="widget-heading"><i class="fa fa-comments-o pull-right"></i>Latest Tweets</li>
+                        <li class="li-hover">
+                            <div class="media">
+                                <a class="pull-left" href="javascript:void(0)">
+                                    <img src="img/placeholders/image_dark_64x64.png" alt="fakeimg">
+                                </a>
+                                <div class="media-body">
+                                    <h6 class="media-heading"><a href="javascript:void(0)">Michael</a><span
+                                            class="label label-info">just now</span></h6>
+                                    <div class="media">Web design all the way!</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="li-hover">
+                            <div class="media">
+                                <a class="pull-left" href="javascript:void(0)">
+                                    <img src="img/placeholders/image_dark_64x64.png" alt="fakeimg">
+                                </a>
+                                <div class="media-body">
+                                    <h6 class="media-heading"><a href="javascript:void(0)">Monica</a><span
+                                            class="label label-info">3 min ago</span></h6>
+                                    <div class="media">Download free PSDs at <a href="http://bit.ly/YUs4SQ"
+                                            target="_blank">http://bit.ly/YUs4SQ</a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="li-hover">
+                            <div class="media">
+                                <a class="pull-left" href="javascript:void(0)">
+                                    <img src="img/placeholders/image_dark_64x64.png" alt="fakeimg">
+                                </a>
+                                <div class="media-body">
+                                    <h6 class="media-heading"><a href="javascript:void(0)">Steven</a><span
+                                            class="label label-info">45 min ago</span></h6>
+                                    <div class="media">Be sure to check out my portfolio!</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="li-hover">
+                            <div class="media">
+                                <a class="pull-left" href="javascript:void(0)">
+                                    <img src="img/placeholders/image_dark_64x64.png" alt="fakeimg">
+                                </a>
+                                <div class="media-body">
+                                    <h6 class="media-heading"><a href="javascript:void(0)">Tim</a><span
+                                            class="label label-info">1 hour ago</span></h6>
+                                    <div class="media">Get all our themes for free for the next 2 hours! <a
+                                            href="javascript:void(0)">#freebies</a></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <!-- END Twitter Widget -->
+
+                <li class="divider-vertical"></li>
+
+                <!-- Messages Widget -->
+                <!-- Add .dropdown-left-responsive class to align the dropdown menu left (so its visible on mobile) -->
+                <li id="messages-widget" class="dropdown dropdown-left-responsive">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-envelope"></i>
+                        <!-- If the <span> element with .badge class has no content it will disappear (not in IE8 and below because of using :empty in CSS) -->
+                        <span class="badge badge-success">1</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right widget">
+                        <li class="widget-heading"><i class="fa fa-comment pull-right"></i>Latest Messages</li>
+                        <li class="new-on">
+                            <div class="media">
+                                <a class="pull-left" href="javascript:void(0)">
+                                    <img src="img/placeholders/image_light_64x64.png" alt="fakeimg">
+                                </a>
+                                <div class="media-body">
+                                    <h6 class="media-heading"><a href="javascript:void(0)">George</a><span
+                                            class="label label-success">2 min ago</span></h6>
+                                    <div class="media">Thanks for your help! The tutorial really helped me a lot!</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="media">
+                                <a class="pull-left" href="javascript:void(0)">
+                                    <img src="img/placeholders/image_light_64x64.png" alt="fakeimg">
+                                </a>
+                                <div class="media-body">
+                                    <h6 class="media-heading"><a href="javascript:void(0)">Mike</a><span
+                                            class="label label-default">6 hours ago</span></h6>
+                                    <div class="media">The logo is ready, have a look and let me know what you think!
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="media">
+                                <a class="pull-left" href="javascript:void(0)">
+                                    <img src="img/placeholders/image_light_64x64.png" alt="fakeimg">
+                                </a>
+                                <div class="media-body">
+                                    <h6 class="media-heading"><a href="javascript:void(0)">Julia</a><span
+                                            class="label label-default">1 day ago</span></h6>
+                                    <div class="media">We should better consider our social media marketing strategy!
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="text-center"><a href="page_inbox.html">View All Messages</a></li>
+                    </ul>
+                </li>
+                <!-- END Messages Widget -->
+
+                <li class="divider-vertical"></li>
+
+                <li class="divider-vertical"></li>
+
+                <!-- User Menu -->
+                <li class="dropdown pull-right dropdown-user">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"><img
+                            src="img/template/avatar.png" alt="avatar"> <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <!-- Just a button demostrating how loading of widgets could happen, check main.js- - uiDemo() -->
+                        <li>
+                            <a href="javascript:void(0)" class="loading-on"><i class="fa fa-refresh"></i> Refresh</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <!-- Modal div is at the bottom of the page before including javascript code -->
+                            <a href="#modal-user-settings" role="button" data-toggle="modal"><i class="fa fa-user"></i>
+                                User Profile</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><i class="fa fa-wrench"></i> App Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="page_login.html"><i class="fa fa-lock"></i> Log out</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- END User Menu -->
+            </ul>
+            <!-- END Header Widgets -->
+        </header>
+        <!-- END Header -->
+
+        <!-- Inner Container -->
+        <div id="inner-container">
+            <!-- Sidebar -->
+            <aside id="page-sidebar" class="collapse navbar-collapse navbar-main-collapse">
+
+
+                <!-- Primary Navigation -->
+                <nav id="primary-nav">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="active"><i class="fa fa-fire"></i>Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-th-list"></i>Forms</a>
+                            <ul>
+                                <li>
+                                    <a href="page_form_validation.html"><i
+                                            class="fa fa-exclamation-triangle"></i>Validation</a>
+                                </li>
+                                <li>
+                                    <a href="page_form_wizard.html"><i class="fa fa-magic"></i>Wizard</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="page_tables.html"><i class="fa fa-table"></i>List</a>
+                        </li>
+                        <li>
+                            <a href="page_inbox.html"><i class="fa fa-envelope"></i>Inbox</a>
+                        </li>
+                        <li>
+                            <a href="page_price_tables.html"><i class="fa fa-file-o"></i>Price</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- END Primary Navigation -->
+
+
+            </aside>
+            <!-- END Sidebar -->
+
+            <!-- Page Content -->
+            <div id="page-content">
+                <!-- Navigation info -->
+                <ul id="nav-info" class="clearfix">
+                    <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                    <li><a href="javascript:void(0)">Icons</a></li>
+                    <li class="active"><a href="">Glyphicons Pro</a></li>
+                </ul>
+                <!-- END Navigation info -->
+
+                <!-- Glyphicons Pro  -->
+                <h3 class="page-header page-header-top"><a href="http://glyphicons.com/" target="_blank">Glyphicons Pro
+                        1.8.1</a> <small>Font Based</small></h3>
+                <ul class="fa-ul list">
+                    <li><i class="fa fa-li fa-check text-success"></i><span class="label label-success">Pro
+                            License</span> (for use with this template)</li>
+                    <li><i class="fa fa-li fa-check text-success"></i><span class="label label-danger">$59 Value</span>
+                        <span class="label label-success">FREE with this template!</span>
+                    </li>
+                    <li><i class="fa fa-li fa-check text-success"></i><strong>470 Glyphicons</strong></li>
+                    <li><i class="fa fa-li fa-check text-success"></i><strong>200 Halflings</strong></li>
+                    <li><i class="fa fa-li fa-check text-success"></i><strong>50 Social</strong></li>
+                    <li><i class="fa fa-li fa-check text-success"></i><strong>130 Filetypes</strong></li>
+                    <li><i class="fa fa-li fa-check text-success"></i><strong>Any color or size you like!</strong></li>
+                </ul>
+
+                <h3 class="sub-header">All Icons</h3>
+
+                <!-- Tabs -->
+                <ul class="nav nav-tabs" data-toggle="tabs">
+                    <li class="active"><a href="#gi-glyphicons">Glyphicons</a></li>
+                    <li><a href="#gi-halflings">Halflings</a></li>
+                    <li><a href="#gi-social">Social</a></li>
+                    <li><a href="#gi-filetypes">Filetypes</a></li>
+                </ul>
+                <!-- END Tabs -->
+
+                <!-- Tab Content -->
+                <div class="tab-content">
+                    <!-- Glyphicons -->
+                    <div class="tab-pane active" id="gi-glyphicons">
+                        <ul class="iconset-list clearfix">
+                            <li><i class="gi gi-glass"></i> <code>gi gi-glass</code></li>
+                            <li><i class="gi gi-leaf"></i> <code>gi gi-leaf</code></li>
+                            <li><i class="gi gi-dog"></i> <code>gi gi-dog</code></li>
+                            <li><i class="gi gi-user"></i> <code>gi gi-user</code></li>
+                            <li><i class="gi gi-girl"></i> <code>gi gi-girl</code></li>
+                            <li><i class="gi gi-car"></i> <code>gi gi-car</code></li>
+                            <li><i class="gi gi-user_add"></i> <code>gi gi-user_add</code></li>
+                            <li><i class="gi gi-user_remove"></i> <code>gi gi-user_remove</code></li>
+                            <li><i class="gi gi-film"></i> <code>gi gi-film</code></li>
+                            <li><i class="gi gi-magic"></i> <code>gi gi-magic</code></li>
+                            <li><i class="gi gi-envelope"></i> <code>gi gi-envelope</code></li>
+                            <li><i class="gi gi-camera"></i> <code>gi gi-camera</code></li>
+                            <li><i class="gi gi-heart"></i> <code>gi gi-heart</code></li>
+                            <li><i class="gi gi-beach_umbrella"></i> <code>gi gi-beach_umbrella</code></li>
+                            <li><i class="gi gi-train"></i> <code>gi gi-train</code></li>
+                            <li><i class="gi gi-print"></i> <code>gi gi-print</code></li>
+                            <li><i class="gi gi-bin"></i> <code>gi gi-bin</code></li>
+                            <li><i class="gi gi-music"></i> <code>gi gi-music</code></li>
+                            <li><i class="gi gi-note"></i> <code>gi gi-note</code></li>
+                            <li><i class="gi gi-heart_empty"></i> <code>gi gi-heart_empty</code></li>
+                            <li><i class="gi gi-home"></i> <code>gi gi-home</code></li>
+                            <li><i class="gi gi-snowflake"></i> <code>gi gi-snowflake</code></li>
+                            <li><i class="gi gi-fire"></i> <code>gi gi-fire</code></li>
+                            <li><i class="gi gi-magnet"></i> <code>gi gi-magnet</code></li>
+                            <li><i class="gi gi-parents"></i> <code>gi gi-parents</code></li>
+                            <li><i class="gi gi-binoculars"></i> <code>gi gi-binoculars</code></li>
+                            <li><i class="gi gi-road"></i> <code>gi gi-road</code></li>
+                            <li><i class="gi gi-search"></i> <code>gi gi-search</code></li>
+                            <li><i class="gi gi-cars"></i> <code>gi gi-cars</code></li>
+                            <li><i class="gi gi-notes_2"></i> <code>gi gi-notes_2</code></li>
+                            <li><i class="gi gi-pencil"></i> <code>gi gi-pencil</code></li>
+                            <li><i class="gi gi-bus"></i> <code>gi gi-bus</code></li>
+                            <li><i class="gi gi-wifi_alt"></i> <code>gi gi-wifi_alt</code></li>
+                            <li><i class="gi gi-luggage"></i> <code>gi gi-luggage</code></li>
+                            <li><i class="gi gi-old_man"></i> <code>gi gi-old_man</code></li>
+                            <li><i class="gi gi-woman"></i> <code>gi gi-woman</code></li>
+                            <li><i class="gi gi-file"></i> <code>gi gi-file</code></li>
+                            <li><i class="gi gi-coins"></i> <code>gi gi-coins</code></li>
+                            <li><i class="gi gi-airplane"></i> <code>gi gi-airplane</code></li>
+                            <li><i class="gi gi-notes"></i> <code>gi gi-notes</code></li>
+                            <li><i class="gi gi-stats"></i> <code>gi gi-stats</code></li>
+                            <li><i class="gi gi-charts"></i> <code>gi gi-charts</code></li>
+                            <li><i class="gi gi-pie_chart"></i> <code>gi gi-pie_chart</code></li>
+                            <li><i class="gi gi-group"></i> <code>gi gi-group</code></li>
+                            <li><i class="gi gi-keys"></i> <code>gi gi-keys</code></li>
+                            <li><i class="gi gi-calendar"></i> <code>gi gi-calendar</code></li>
+                            <li><i class="gi gi-router"></i> <code>gi gi-router</code></li>
+                            <li><i class="gi gi-camera_small"></i> <code>gi gi-camera_small</code></li>
+                            <li><i class="gi gi-dislikes"></i> <code>gi gi-dislikes</code></li>
+                            <li><i class="gi gi-star"></i> <code>gi gi-star</code></li>
+                            <li><i class="gi gi-link"></i> <code>gi gi-link</code></li>
+                            <li><i class="gi gi-eye_open"></i> <code>gi gi-eye_open</code></li>
+                            <li><i class="gi gi-eye_close"></i> <code>gi gi-eye_close</code></li>
+                            <li><i class="gi gi-alarm"></i> <code>gi gi-alarm</code></li>
+                            <li><i class="gi gi-clock"></i> <code>gi gi-clock</code></li>
+                            <li><i class="gi gi-stopwatch"></i> <code>gi gi-stopwatch</code></li>
+                            <li><i class="gi gi-projector"></i> <code>gi gi-projector</code></li>
+                            <li><i class="gi gi-history"></i> <code>gi gi-history</code></li>
+                            <li><i class="gi gi-truck"></i> <code>gi gi-truck</code></li>
+                            <li><i class="gi gi-cargo"></i> <code>gi gi-cargo</code></li>
+                            <li><i class="gi gi-compass"></i> <code>gi gi-compass</code></li>
+                            <li><i class="gi gi-keynote"></i> <code>gi gi-keynote</code></li>
+                            <li><i class="gi gi-paperclip"></i> <code>gi gi-paperclip</code></li>
+                            <li><i class="gi gi-power"></i> <code>gi gi-power</code></li>
+                            <li><i class="gi gi-lightbulb"></i> <code>gi gi-lightbulb</code></li>
+                            <li><i class="gi gi-tag"></i> <code>gi gi-tag</code></li>
+                            <li><i class="gi gi-tags"></i> <code>gi gi-tags</code></li>
+                            <li><i class="gi gi-cleaning"></i> <code>gi gi-cleaning</code></li>
+                            <li><i class="gi gi-ruller"></i> <code>gi gi-ruller</code></li>
+                            <li><i class="gi gi-gift"></i> <code>gi gi-gift</code></li>
+                            <li><i class="gi gi-umbrella"></i> <code>gi gi-umbrella</code></li>
+                            <li><i class="gi gi-book"></i> <code>gi gi-book</code></li>
+                            <li><i class="gi gi-bookmark"></i> <code>gi gi-bookmark</code></li>
+                            <li><i class="gi gi-wifi"></i> <code>gi gi-wifi</code></li>
+                            <li><i class="gi gi-cup"></i> <code>gi gi-cup</code></li>
+                            <li><i class="gi gi-stroller"></i> <code>gi gi-stroller</code></li>
+                            <li><i class="gi gi-headphones"></i> <code>gi gi-headphones</code></li>
+                            <li><i class="gi gi-headset"></i> <code>gi gi-headset</code></li>
+                            <li><i class="gi gi-warning_sign"></i> <code>gi gi-warning_sign</code></li>
+                            <li><i class="gi gi-signal"></i> <code>gi gi-signal</code></li>
+                            <li><i class="gi gi-retweet"></i> <code>gi gi-retweet</code></li>
+                            <li><i class="gi gi-refresh"></i> <code>gi gi-refresh</code></li>
+                            <li><i class="gi gi-roundabout"></i> <code>gi gi-roundabout</code></li>
+                            <li><i class="gi gi-random"></i> <code>gi gi-random</code></li>
+                            <li><i class="gi gi-heat"></i> <code>gi gi-heat</code></li>
+                            <li><i class="gi gi-repeat"></i> <code>gi gi-repeat</code></li>
+                            <li><i class="gi gi-display"></i> <code>gi gi-display</code></li>
+                            <li><i class="gi gi-log_book"></i> <code>gi gi-log_book</code></li>
+                            <li><i class="gi gi-address_book"></i> <code>gi gi-address_book</code></li>
+                            <li><i class="gi gi-building"></i> <code>gi gi-building</code></li>
+                            <li><i class="gi gi-eyedropper"></i> <code>gi gi-eyedropper</code></li>
+                            <li><i class="gi gi-adjust"></i> <code>gi gi-adjust</code></li>
+                            <li><i class="gi gi-tint"></i> <code>gi gi-tint</code></li>
+                            <li><i class="gi gi-crop"></i> <code>gi gi-crop</code></li>
+                            <li><i class="gi gi-vector_path_square"></i> <code>gi gi-vector_path_square</code></li>
+                            <li><i class="gi gi-vector_path_circle"></i> <code>gi gi-vector_path_circle</code></li>
+                            <li><i class="gi gi-vector_path_polygon"></i> <code>gi gi-vector_path_polygon</code></li>
+                            <li><i class="gi gi-vector_path_line"></i> <code>gi gi-vector_path_line</code></li>
+                            <li><i class="gi gi-vector_path_curve"></i> <code>gi gi-vector_path_curve</code></li>
+                            <li><i class="gi gi-vector_path_all"></i> <code>gi gi-vector_path_all</code></li>
+                            <li><i class="gi gi-font"></i> <code>gi gi-font</code></li>
+                            <li><i class="gi gi-italic"></i> <code>gi gi-italic</code></li>
+                            <li><i class="gi gi-bold"></i> <code>gi gi-bold</code></li>
+                            <li><i class="gi gi-text_underline"></i> <code>gi gi-text_underline</code></li>
+                            <li><i class="gi gi-text_strike"></i> <code>gi gi-text_strike</code></li>
+                            <li><i class="gi gi-text_height"></i> <code>gi gi-text_height</code></li>
+                            <li><i class="gi gi-text_width"></i> <code>gi gi-text_width</code></li>
+                            <li><i class="gi gi-text_resize"></i> <code>gi gi-text_resize</code></li>
+                            <li><i class="gi gi-left_indent"></i> <code>gi gi-left_indent</code></li>
+                            <li><i class="gi gi-right_indent"></i> <code>gi gi-right_indent</code></li>
+                            <li><i class="gi gi-align_left"></i> <code>gi gi-align_left</code></li>
+                            <li><i class="gi gi-align_center"></i> <code>gi gi-align_center</code></li>
+                            <li><i class="gi gi-align_right"></i> <code>gi gi-align_right</code></li>
+                            <li><i class="gi gi-justify"></i> <code>gi gi-justify</code></li>
+                            <li><i class="gi gi-list"></i> <code>gi gi-list</code></li>
+                            <li><i class="gi gi-text_smaller"></i> <code>gi gi-text_smaller</code></li>
+                            <li><i class="gi gi-text_bigger"></i> <code>gi gi-text_bigger</code></li>
+                            <li><i class="gi gi-embed"></i> <code>gi gi-embed</code></li>
+                            <li><i class="gi gi-embed_close"></i> <code>gi gi-embed_close</code></li>
+                            <li><i class="gi gi-table"></i> <code>gi gi-table</code></li>
+                            <li><i class="gi gi-message_full"></i> <code>gi gi-message_full</code></li>
+                            <li><i class="gi gi-message_empty"></i> <code>gi gi-message_empty</code></li>
+                            <li><i class="gi gi-message_in"></i> <code>gi gi-message_in</code></li>
+                            <li><i class="gi gi-message_out"></i> <code>gi gi-message_out</code></li>
+                            <li><i class="gi gi-message_plus"></i> <code>gi gi-message_plus</code></li>
+                            <li><i class="gi gi-message_minus"></i> <code>gi gi-message_minus</code></li>
+                            <li><i class="gi gi-message_ban"></i> <code>gi gi-message_ban</code></li>
+                            <li><i class="gi gi-message_flag"></i> <code>gi gi-message_flag</code></li>
+                            <li><i class="gi gi-message_lock"></i> <code>gi gi-message_lock</code></li>
+                            <li><i class="gi gi-message_new"></i> <code>gi gi-message_new</code></li>
+                            <li><i class="gi gi-inbox"></i> <code>gi gi-inbox</code></li>
+                            <li><i class="gi gi-inbox_plus"></i> <code>gi gi-inbox_plus</code></li>
+                            <li><i class="gi gi-inbox_minus"></i> <code>gi gi-inbox_minus</code></li>
+                            <li><i class="gi gi-inbox_lock"></i> <code>gi gi-inbox_lock</code></li>
+                            <li><i class="gi gi-inbox_in"></i> <code>gi gi-inbox_in</code></li>
+                            <li><i class="gi gi-inbox_out"></i> <code>gi gi-inbox_out</code></li>
+                            <li><i class="gi gi-cogwheel"></i> <code>gi gi-cogwheel</code></li>
+                            <li><i class="gi gi-cogwheels"></i> <code>gi gi-cogwheels</code></li>
+                            <li><i class="gi gi-picture"></i> <code>gi gi-picture</code></li>
+                            <li><i class="gi gi-adjust_alt"></i> <code>gi gi-adjust_alt</code></li>
+                            <li><i class="gi gi-database_lock"></i> <code>gi gi-database_lock</code></li>
+                            <li><i class="gi gi-database_plus"></i> <code>gi gi-database_plus</code></li>
+                            <li><i class="gi gi-database_minus"></i> <code>gi gi-database_minus</code></li>
+                            <li><i class="gi gi-database_ban"></i> <code>gi gi-database_ban</code></li>
+                            <li><i class="gi gi-folder_open"></i> <code>gi gi-folder_open</code></li>
+                            <li><i class="gi gi-folder_plus"></i> <code>gi gi-folder_plus</code></li>
+                            <li><i class="gi gi-folder_minus"></i> <code>gi gi-folder_minus</code></li>
+                            <li><i class="gi gi-folder_lock"></i> <code>gi gi-folder_lock</code></li>
+                            <li><i class="gi gi-folder_flag"></i> <code>gi gi-folder_flag</code></li>
+                            <li><i class="gi gi-folder_new"></i> <code>gi gi-folder_new</code></li>
+                            <li><i class="gi gi-edit"></i> <code>gi gi-edit</code></li>
+                            <li><i class="gi gi-new_window"></i> <code>gi gi-new_window</code></li>
+                            <li><i class="gi gi-check"></i> <code>gi gi-check</code></li>
+                            <li><i class="gi gi-unchecked"></i> <code>gi gi-unchecked</code></li>
+                            <li><i class="gi gi-more_windows"></i> <code>gi gi-more_windows</code></li>
+                            <li><i class="gi gi-show_big_thumbnails"></i> <code>gi gi-show_big_thumbnails</code></li>
+                            <li><i class="gi gi-show_thumbnails"></i> <code>gi gi-show_thumbnails</code></li>
+                            <li><i class="gi gi-show_thumbnails_with_lines"></i>
+                                <code>gi gi-show_thumbnails_with_lines</code>
+                            </li>
+                            <li><i class="gi gi-show_lines"></i> <code>gi gi-show_lines</code></li>
+                            <li><i class="gi gi-playlist"></i> <code>gi gi-playlist</code></li>
+                            <li><i class="gi gi-imac"></i> <code>gi gi-imac</code></li>
+                            <li><i class="gi gi-macbook"></i> <code>gi gi-macbook</code></li>
+                            <li><i class="gi gi-ipad"></i> <code>gi gi-ipad</code></li>
+                            <li><i class="gi gi-iphone"></i> <code>gi gi-iphone</code></li>
+                            <li><i class="gi gi-iphone_transfer"></i> <code>gi gi-iphone_transfer</code></li>
+                            <li><i class="gi gi-iphone_exchange"></i> <code>gi gi-iphone_exchange</code></li>
+                            <li><i class="gi gi-ipod"></i> <code>gi gi-ipod</code></li>
+                            <li><i class="gi gi-ipod_shuffle"></i> <code>gi gi-ipod_shuffle</code></li>
+                            <li><i class="gi gi-ear_plugs"></i> <code>gi gi-ear_plugs</code></li>
+                            <li><i class="gi gi-record"></i> <code>gi gi-record</code></li>
+                            <li><i class="gi gi-step_backward"></i> <code>gi gi-step_backward</code></li>
+                            <li><i class="gi gi-fast_backward"></i> <code>gi gi-fast_backward</code></li>
+                            <li><i class="gi gi-rewind"></i> <code>gi gi-rewind</code></li>
+                            <li><i class="gi gi-play"></i> <code>gi gi-play</code></li>
+                            <li><i class="gi gi-pause"></i> <code>gi gi-pause</code></li>
+                            <li><i class="gi gi-stop"></i> <code>gi gi-stop</code></li>
+                            <li><i class="gi gi-forward"></i> <code>gi gi-forward</code></li>
+                            <li><i class="gi gi-fast_forward"></i> <code>gi gi-fast_forward</code></li>
+                            <li><i class="gi gi-step_forward"></i> <code>gi gi-step_forward</code></li>
+                            <li><i class="gi gi-eject"></i> <code>gi gi-eject</code></li>
+                            <li><i class="gi gi-facetime_video"></i> <code>gi gi-facetime_video</code></li>
+                            <li><i class="gi gi-download_alt"></i> <code>gi gi-download_alt</code></li>
+                            <li><i class="gi gi-mute"></i> <code>gi gi-mute</code></li>
+                            <li><i class="gi gi-volume_down"></i> <code>gi gi-volume_down</code></li>
+                            <li><i class="gi gi-volume_up"></i> <code>gi gi-volume_up</code></li>
+                            <li><i class="gi gi-screenshot"></i> <code>gi gi-screenshot</code></li>
+                            <li><i class="gi gi-move"></i> <code>gi gi-move</code></li>
+                            <li><i class="gi gi-more"></i> <code>gi gi-more</code></li>
+                            <li><i class="gi gi-brightness_reduce"></i> <code>gi gi-brightness_reduce</code></li>
+                            <li><i class="gi gi-brightness_increase"></i> <code>gi gi-brightness_increase</code></li>
+                            <li><i class="gi gi-circle_plus"></i> <code>gi gi-circle_plus</code></li>
+                            <li><i class="gi gi-circle_minus"></i> <code>gi gi-circle_minus</code></li>
+                            <li><i class="gi gi-circle_remove"></i> <code>gi gi-circle_remove</code></li>
+                            <li><i class="gi gi-circle_ok"></i> <code>gi gi-circle_ok</code></li>
+                            <li><i class="gi gi-circle_question_mark"></i> <code>gi gi-circle_question_mark</code></li>
+                            <li><i class="gi gi-circle_info"></i> <code>gi gi-circle_info</code></li>
+                            <li><i class="gi gi-circle_exclamation_mark"></i> <code>gi gi-circle_exclamation_mark</code>
+                            </li>
+                            <li><i class="gi gi-remove"></i> <code>gi gi-remove</code></li>
+                            <li><i class="gi gi-ok"></i> <code>gi gi-ok</code></li>
+                            <li><i class="gi gi-ban"></i> <code>gi gi-ban</code></li>
+                            <li><i class="gi gi-download"></i> <code>gi gi-download</code></li>
+                            <li><i class="gi gi-upload"></i> <code>gi gi-upload</code></li>
+                            <li><i class="gi gi-shopping_cart"></i> <code>gi gi-shopping_cart</code></li>
+                            <li><i class="gi gi-lock"></i> <code>gi gi-lock</code></li>
+                            <li><i class="gi gi-unlock"></i> <code>gi gi-unlock</code></li>
+                            <li><i class="gi gi-electricity"></i> <code>gi gi-electricity</code></li>
+                            <li><i class="gi gi-ok_2"></i> <code>gi gi-ok_2</code></li>
+                            <li><i class="gi gi-remove_2"></i> <code>gi gi-remove_2</code></li>
+                            <li><i class="gi gi-cart_out"></i> <code>gi gi-cart_out</code></li>
+                            <li><i class="gi gi-cart_in"></i> <code>gi gi-cart_in</code></li>
+                            <li><i class="gi gi-left_arrow"></i> <code>gi gi-left_arrow</code></li>
+                            <li><i class="gi gi-right_arrow"></i> <code>gi gi-right_arrow</code></li>
+                            <li><i class="gi gi-down_arrow"></i> <code>gi gi-down_arrow</code></li>
+                            <li><i class="gi gi-up_arrow"></i> <code>gi gi-up_arrow</code></li>
+                            <li><i class="gi gi-resize_small"></i> <code>gi gi-resize_small</code></li>
+                            <li><i class="gi gi-resize_full"></i> <code>gi gi-resize_full</code></li>
+                            <li><i class="gi gi-circle_arrow_left"></i> <code>gi gi-circle_arrow_left</code></li>
+                            <li><i class="gi gi-circle_arrow_right"></i> <code>gi gi-circle_arrow_right</code></li>
+                            <li><i class="gi gi-circle_arrow_top"></i> <code>gi gi-circle_arrow_top</code></li>
+                            <li><i class="gi gi-circle_arrow_down"></i> <code>gi gi-circle_arrow_down</code></li>
+                            <li><i class="gi gi-play_button"></i> <code>gi gi-play_button</code></li>
+                            <li><i class="gi gi-unshare"></i> <code>gi gi-unshare</code></li>
+                            <li><i class="gi gi-share"></i> <code>gi gi-share</code></li>
+                            <li><i class="gi gi-chevron-right"></i> <code>gi gi-chevron-right</code></li>
+                            <li><i class="gi gi-chevron-left"></i> <code>gi gi-chevron-left</code></li>
+                            <li><i class="gi gi-bluetooth"></i> <code>gi gi-bluetooth</code></li>
+                            <li><i class="gi gi-euro"></i> <code>gi gi-euro</code></li>
+                            <li><i class="gi gi-usd"></i> <code>gi gi-usd</code></li>
+                            <li><i class="gi gi-gbp"></i> <code>gi gi-gbp</code></li>
+                            <li><i class="gi gi-retweet_2"></i> <code>gi gi-retweet_2</code></li>
+                            <li><i class="gi gi-moon"></i> <code>gi gi-moon</code></li>
+                            <li><i class="gi gi-sun"></i> <code>gi gi-sun</code></li>
+                            <li><i class="gi gi-cloud"></i> <code>gi gi-cloud</code></li>
+                            <li><i class="gi gi-direction"></i> <code>gi gi-direction</code></li>
+                            <li><i class="gi gi-brush"></i> <code>gi gi-brush</code></li>
+                            <li><i class="gi gi-pen"></i> <code>gi gi-pen</code></li>
+                            <li><i class="gi gi-zoom_in"></i> <code>gi gi-zoom_in</code></li>
+                            <li><i class="gi gi-zoom_out"></i> <code>gi gi-zoom_out</code></li>
+                            <li><i class="gi gi-pin"></i> <code>gi gi-pin</code></li>
+                            <li><i class="gi gi-albums"></i> <code>gi gi-albums</code></li>
+                            <li><i class="gi gi-rotation_lock"></i> <code>gi gi-rotation_lock</code></li>
+                            <li><i class="gi gi-flash"></i> <code>gi gi-flash</code></li>
+                            <li><i class="gi gi-google_maps"></i> <code>gi gi-google_maps</code></li>
+                            <li><i class="gi gi-anchor"></i> <code>gi gi-anchor</code></li>
+                            <li><i class="gi gi-conversation"></i> <code>gi gi-conversation</code></li>
+                            <li><i class="gi gi-chat"></i> <code>gi gi-chat</code></li>
+                            <li><i class="gi gi-male"></i> <code>gi gi-male</code></li>
+                            <li><i class="gi gi-female"></i> <code>gi gi-female</code></li>
+                            <li><i class="gi gi-asterisk"></i> <code>gi gi-asterisk</code></li>
+                            <li><i class="gi gi-divide"></i> <code>gi gi-divide</code></li>
+                            <li><i class="gi gi-snorkel_diving"></i> <code>gi gi-snorkel_diving</code></li>
+                            <li><i class="gi gi-scuba_diving"></i> <code>gi gi-scuba_diving</code></li>
+                            <li><i class="gi gi-oxygen_bottle"></i> <code>gi gi-oxygen_bottle</code></li>
+                            <li><i class="gi gi-fins"></i> <code>gi gi-fins</code></li>
+                            <li><i class="gi gi-fishes"></i> <code>gi gi-fishes</code></li>
+                            <li><i class="gi gi-boat"></i> <code>gi gi-boat</code></li>
+                            <li><i class="gi gi-delete"></i> <code>gi gi-delete</code></li>
+                            <li><i class="gi gi-sheriffs_star"></i> <code>gi gi-sheriffs_star</code></li>
+                            <li><i class="gi gi-qrcode"></i> <code>gi gi-qrcode</code></li>
+                            <li><i class="gi gi-barcode"></i> <code>gi gi-barcode</code></li>
+                            <li><i class="gi gi-pool"></i> <code>gi gi-pool</code></li>
+                            <li><i class="gi gi-buoy"></i> <code>gi gi-buoy</code></li>
+                            <li><i class="gi gi-spade"></i> <code>gi gi-spade</code></li>
+                            <li><i class="gi gi-bank"></i> <code>gi gi-bank</code></li>
+                            <li><i class="gi gi-vcard"></i> <code>gi gi-vcard</code></li>
+                            <li><i class="gi gi-electrical_plug"></i> <code>gi gi-electrical_plug</code></li>
+                            <li><i class="gi gi-flag"></i> <code>gi gi-flag</code></li>
+                            <li><i class="gi gi-credit_card"></i> <code>gi gi-credit_card</code></li>
+                            <li><i class="gi gi-keyboard-wireless"></i> <code>gi gi-keyboard-wireless</code></li>
+                            <li><i class="gi gi-keyboard-wired"></i> <code>gi gi-keyboard-wired</code></li>
+                            <li><i class="gi gi-shield"></i> <code>gi gi-shield</code></li>
+                            <li><i class="gi gi-ring"></i> <code>gi gi-ring</code></li>
+                            <li><i class="gi gi-cake"></i> <code>gi gi-cake</code></li>
+                            <li><i class="gi gi-drink"></i> <code>gi gi-drink</code></li>
+                            <li><i class="gi gi-beer"></i> <code>gi gi-beer</code></li>
+                            <li><i class="gi gi-fast_food"></i> <code>gi gi-fast_food</code></li>
+                            <li><i class="gi gi-cutlery"></i> <code>gi gi-cutlery</code></li>
+                            <li><i class="gi gi-pizza"></i> <code>gi gi-pizza</code></li>
+                            <li><i class="gi gi-birthday_cake"></i> <code>gi gi-birthday_cake</code></li>
+                            <li><i class="gi gi-tablet"></i> <code>gi gi-tablet</code></li>
+                            <li><i class="gi gi-settings"></i> <code>gi gi-settings</code></li>
+                            <li><i class="gi gi-bullets"></i> <code>gi gi-bullets</code></li>
+                            <li><i class="gi gi-cardio"></i> <code>gi gi-cardio</code></li>
+                            <li><i class="gi gi-t-shirt"></i> <code>gi gi-t-shirt</code></li>
+                            <li><i class="gi gi-pants"></i> <code>gi gi-pants</code></li>
+                            <li><i class="gi gi-sweater"></i> <code>gi gi-sweater</code></li>
+                            <li><i class="gi gi-fabric"></i> <code>gi gi-fabric</code></li>
+                            <li><i class="gi gi-leather"></i> <code>gi gi-leather</code></li>
+                            <li><i class="gi gi-scissors"></i> <code>gi gi-scissors</code></li>
+                            <li><i class="gi gi-bomb"></i> <code>gi gi-bomb</code></li>
+                            <li><i class="gi gi-skull"></i> <code>gi gi-skull</code></li>
+                            <li><i class="gi gi-celebration"></i> <code>gi gi-celebration</code></li>
+                            <li><i class="gi gi-tea_kettle"></i> <code>gi gi-tea_kettle</code></li>
+                            <li><i class="gi gi-french_press"></i> <code>gi gi-french_press</code></li>
+                            <li><i class="gi gi-coffee_cup"></i> <code>gi gi-coffee_cup</code></li>
+                            <li><i class="gi gi-pot"></i> <code>gi gi-pot</code></li>
+                            <li><i class="gi gi-grater"></i> <code>gi gi-grater</code></li>
+                            <li><i class="gi gi-kettle"></i> <code>gi gi-kettle</code></li>
+                            <li><i class="gi gi-hospital"></i> <code>gi gi-hospital</code></li>
+                            <li><i class="gi gi-hospital_h"></i> <code>gi gi-hospital_h</code></li>
+                            <li><i class="gi gi-microphone"></i> <code>gi gi-microphone</code></li>
+                            <li><i class="gi gi-webcam"></i> <code>gi gi-webcam</code></li>
+                            <li><i class="gi gi-temple_christianity_church"></i>
+                                <code>gi gi-temple_christianity_church</code>
+                            </li>
+                            <li><i class="gi gi-temple_islam"></i> <code>gi gi-temple_islam</code></li>
+                            <li><i class="gi gi-temple_hindu"></i> <code>gi gi-temple_hindu</code></li>
+                            <li><i class="gi gi-temple_buddhist"></i> <code>gi gi-temple_buddhist</code></li>
+                            <li><i class="gi gi-bicycle"></i> <code>gi gi-bicycle</code></li>
+                            <li><i class="gi gi-life_preserver"></i> <code>gi gi-life_preserver</code></li>
+                            <li><i class="gi gi-share_alt"></i> <code>gi gi-share_alt</code></li>
+                            <li><i class="gi gi-comments"></i> <code>gi gi-comments</code></li>
+                            <li><i class="gi gi-flower"></i> <code>gi gi-flower</code></li>
+                            <li><i class="gi gi-baseball"></i> <code>gi gi-baseball</code></li>
+                            <li><i class="gi gi-rugby"></i> <code>gi gi-rugby</code></li>
+                            <li><i class="gi gi-ax"></i> <code>gi gi-ax</code></li>
+                            <li><i class="gi gi-table_tennis"></i> <code>gi gi-table_tennis</code></li>
+                            <li><i class="gi gi-bowling"></i> <code>gi gi-bowling</code></li>
+                            <li><i class="gi gi-tree_conifer"></i> <code>gi gi-tree_conifer</code></li>
+                            <li><i class="gi gi-tree_deciduous"></i> <code>gi gi-tree_deciduous</code></li>
+                            <li><i class="gi gi-more_items"></i> <code>gi gi-more_items</code></li>
+                            <li><i class="gi gi-sort"></i> <code>gi gi-sort</code></li>
+                            <li><i class="gi gi-filter"></i> <code>gi gi-filter</code></li>
+                            <li><i class="gi gi-gamepad"></i> <code>gi gi-gamepad</code></li>
+                            <li><i class="gi gi-playing_dices"></i> <code>gi gi-playing_dices</code></li>
+                            <li><i class="gi gi-calculator"></i> <code>gi gi-calculator</code></li>
+                            <li><i class="gi gi-tie"></i> <code>gi gi-tie</code></li>
+                            <li><i class="gi gi-wallet"></i> <code>gi gi-wallet</code></li>
+                            <li><i class="gi gi-piano"></i> <code>gi gi-piano</code></li>
+                            <li><i class="gi gi-sampler"></i> <code>gi gi-sampler</code></li>
+                            <li><i class="gi gi-podium"></i> <code>gi gi-podium</code></li>
+                            <li><i class="gi gi-soccer_ball"></i> <code>gi gi-soccer_ball</code></li>
+                            <li><i class="gi gi-blog"></i> <code>gi gi-blog</code></li>
+                            <li><i class="gi gi-dashboard"></i> <code>gi gi-dashboard</code></li>
+                            <li><i class="gi gi-certificate"></i> <code>gi gi-certificate</code></li>
+                            <li><i class="gi gi-bell"></i> <code>gi gi-bell</code></li>
+                            <li><i class="gi gi-candle"></i> <code>gi gi-candle</code></li>
+                            <li><i class="gi gi-pushpin"></i> <code>gi gi-pushpin</code></li>
+                            <li><i class="gi gi-iphone_shake"></i> <code>gi gi-iphone_shake</code></li>
+                            <li><i class="gi gi-pin_flag"></i> <code>gi gi-pin_flag</code></li>
+                            <li><i class="gi gi-turtle"></i> <code>gi gi-turtle</code></li>
+                            <li><i class="gi gi-rabbit"></i> <code>gi gi-rabbit</code></li>
+                            <li><i class="gi gi-globe"></i> <code>gi gi-globe</code></li>
+                            <li><i class="gi gi-briefcase"></i> <code>gi gi-briefcase</code></li>
+                            <li><i class="gi gi-hdd"></i> <code>gi gi-hdd</code></li>
+                            <li><i class="gi gi-thumbs_up"></i> <code>gi gi-thumbs_up</code></li>
+                            <li><i class="gi gi-thumbs_down"></i> <code>gi gi-thumbs_down</code></li>
+                            <li><i class="gi gi-hand_right"></i> <code>gi gi-hand_right</code></li>
+                            <li><i class="gi gi-hand_left"></i> <code>gi gi-hand_left</code></li>
+                            <li><i class="gi gi-hand_up"></i> <code>gi gi-hand_up</code></li>
+                            <li><i class="gi gi-hand_down"></i> <code>gi gi-hand_down</code></li>
+                            <li><i class="gi gi-fullscreen"></i> <code>gi gi-fullscreen</code></li>
+                            <li><i class="gi gi-shopping_bag"></i> <code>gi gi-shopping_bag</code></li>
+                            <li><i class="gi gi-book_open"></i> <code>gi gi-book_open</code></li>
+                            <li><i class="gi gi-nameplate"></i> <code>gi gi-nameplate</code></li>
+                            <li><i class="gi gi-nameplate_alt"></i> <code>gi gi-nameplate_alt</code></li>
+                            <li><i class="gi gi-vases"></i> <code>gi gi-vases</code></li>
+                            <li><i class="gi gi-bullhorn"></i> <code>gi gi-bullhorn</code></li>
+                            <li><i class="gi gi-dumbbell"></i> <code>gi gi-dumbbell</code></li>
+                            <li><i class="gi gi-suitcase"></i> <code>gi gi-suitcase</code></li>
+                            <li><i class="gi gi-file_import"></i> <code>gi gi-file_import</code></li>
+                            <li><i class="gi gi-file_export"></i> <code>gi gi-file_export</code></li>
+                            <li><i class="gi gi-bug"></i> <code>gi gi-bug</code></li>
+                            <li><i class="gi gi-crown"></i> <code>gi gi-crown</code></li>
+                            <li><i class="gi gi-smoking"></i> <code>gi gi-smoking</code></li>
+                            <li><i class="gi gi-cloud-upload"></i> <code>gi gi-cloud-upload</code></li>
+                            <li><i class="gi gi-cloud-download"></i> <code>gi gi-cloud-download</code></li>
+                            <li><i class="gi gi-restart"></i> <code>gi gi-restart</code></li>
+                            <li><i class="gi gi-security_camera"></i> <code>gi gi-security_camera</code></li>
+                            <li><i class="gi gi-expand"></i> <code>gi gi-expand</code></li>
+                            <li><i class="gi gi-collapse"></i> <code>gi gi-collapse</code></li>
+                            <li><i class="gi gi-collapse_top"></i> <code>gi gi-collapse_top</code></li>
+                            <li><i class="gi gi-globe_af"></i> <code>gi gi-globe_af</code></li>
+                            <li><i class="gi gi-global"></i> <code>gi gi-global</code></li>
+                            <li><i class="gi gi-spray"></i> <code>gi gi-spray</code></li>
+                            <li><i class="gi gi-nails"></i> <code>gi gi-nails</code></li>
+                            <li><i class="gi gi-claw_hammer"></i> <code>gi gi-claw_hammer</code></li>
+                            <li><i class="gi gi-classic_hammer"></i> <code>gi gi-classic_hammer</code></li>
+                            <li><i class="gi gi-hand_saw"></i> <code>gi gi-hand_saw</code></li>
+                            <li><i class="gi gi-riflescope"></i> <code>gi gi-riflescope</code></li>
+                            <li><i class="gi gi-electrical_socket_eu"></i> <code>gi gi-electrical_socket_eu</code></li>
+                            <li><i class="gi gi-electrical_socket_us"></i> <code>gi gi-electrical_socket_us</code></li>
+                            <li><i class="gi gi-message_forward"></i> <code>gi gi-message_forward</code></li>
+                            <li><i class="gi gi-coat_hanger"></i> <code>gi gi-coat_hanger</code></li>
+                            <li><i class="gi gi-dress"></i> <code>gi gi-dress</code></li>
+                            <li><i class="gi gi-bathrobe"></i> <code>gi gi-bathrobe</code></li>
+                            <li><i class="gi gi-shirt"></i> <code>gi gi-shirt</code></li>
+                            <li><i class="gi gi-underwear"></i> <code>gi gi-underwear</code></li>
+                            <li><i class="gi gi-log_in"></i> <code>gi gi-log_in</code></li>
+                            <li><i class="gi gi-log_out"></i> <code>gi gi-log_out</code></li>
+                            <li><i class="gi gi-exit"></i> <code>gi gi-exit</code></li>
+                            <li><i class="gi gi-new_window_alt"></i> <code>gi gi-new_window_alt</code></li>
+                            <li><i class="gi gi-video_sd"></i> <code>gi gi-video_sd</code></li>
+                            <li><i class="gi gi-video_hd"></i> <code>gi gi-video_hd</code></li>
+                            <li><i class="gi gi-subtitles"></i> <code>gi gi-subtitles</code></li>
+                            <li><i class="gi gi-sound_stereo"></i> <code>gi gi-sound_stereo</code></li>
+                            <li><i class="gi gi-sound_dolby"></i> <code>gi gi-sound_dolby</code></li>
+                            <li><i class="gi gi-sound_5_1"></i> <code>gi gi-sound_5_1</code></li>
+                            <li><i class="gi gi-sound_6_1"></i> <code>gi gi-sound_6_1</code></li>
+                            <li><i class="gi gi-sound_7_1"></i> <code>gi gi-sound_7_1</code></li>
+                            <li><i class="gi gi-copyright_mark"></i> <code>gi gi-copyright_mark</code></li>
+                            <li><i class="gi gi-registration_mark"></i> <code>gi gi-registration_mark</code></li>
+                            <li><i class="gi gi-radar"></i> <code>gi gi-radar</code></li>
+                            <li><i class="gi gi-skateboard"></i> <code>gi gi-skateboard</code></li>
+                            <li><i class="gi gi-golf_course"></i> <code>gi gi-golf_course</code></li>
+                            <li><i class="gi gi-sorting"></i> <code>gi gi-sorting</code></li>
+                            <li><i class="gi gi-sort-by-alphabet"></i> <code>gi gi-sort-by-alphabet</code></li>
+                            <li><i class="gi gi-sort-by-alphabet-alt"></i> <code>gi gi-sort-by-alphabet-alt</code></li>
+                            <li><i class="gi gi-sort-by-order"></i> <code>gi gi-sort-by-order</code></li>
+                            <li><i class="gi gi-sort-by-order-alt"></i> <code>gi gi-sort-by-order-alt</code></li>
+                            <li><i class="gi gi-sort-by-attributes"></i> <code>gi gi-sort-by-attributes</code></li>
+                            <li><i class="gi gi-sort-by-attributes-alt"></i> <code>gi gi-sort-by-attributes-alt</code>
+                            </li>
+                            <li><i class="gi gi-compressed"></i> <code>gi gi-compressed</code></li>
+                            <li><i class="gi gi-package"></i> <code>gi gi-package</code></li>
+                            <li><i class="gi gi-cloud_plus"></i> <code>gi gi-cloud_plus</code></li>
+                            <li><i class="gi gi-cloud_minus"></i> <code>gi gi-cloud_minus</code></li>
+                            <li><i class="gi gi-disk_save"></i> <code>gi gi-disk_save</code></li>
+                            <li><i class="gi gi-disk_open"></i> <code>gi gi-disk_open</code></li>
+                            <li><i class="gi gi-disk_saved"></i> <code>gi gi-disk_saved</code></li>
+                            <li><i class="gi gi-disk_remove"></i> <code>gi gi-disk_remove</code></li>
+                            <li><i class="gi gi-disk_import"></i> <code>gi gi-disk_import</code></li>
+                            <li><i class="gi gi-disk_export"></i> <code>gi gi-disk_export</code></li>
+                            <li><i class="gi gi-tower"></i> <code>gi gi-tower</code></li>
+                            <li><i class="gi gi-send"></i> <code>gi gi-send</code></li>
+                            <li><i class="gi gi-git_branch"></i> <code>gi gi-git_branch</code></li>
+                            <li><i class="gi gi-git_create"></i> <code>gi gi-git_create</code></li>
+                            <li><i class="gi gi-git_private"></i> <code>gi gi-git_private</code></li>
+                            <li><i class="gi gi-git_delete"></i> <code>gi gi-git_delete</code></li>
+                            <li><i class="gi gi-git_merge"></i> <code>gi gi-git_merge</code></li>
+                            <li><i class="gi gi-git_pull_request"></i> <code>gi gi-git_pull_request</code></li>
+                            <li><i class="gi gi-git_compare"></i> <code>gi gi-git_compare</code></li>
+                            <li><i class="gi gi-git_commit"></i> <code>gi gi-git_commit</code></li>
+                            <li><i class="gi gi-construction_cone"></i> <code>gi gi-construction_cone</code></li>
+                            <li><i class="gi gi-shoe_steps"></i> <code>gi gi-shoe_steps</code></li>
+                            <li><i class="gi gi-plus"></i> <code>gi gi-plus</code></li>
+                            <li><i class="gi gi-minus"></i> <code>gi gi-minus</code></li>
+                            <li><i class="gi gi-redo"></i> <code>gi gi-redo</code></li>
+                            <li><i class="gi gi-undo"></i> <code>gi gi-undo</code></li>
+                            <li><i class="gi gi-golf"></i> <code>gi gi-golf</code></li>
+                            <li><i class="gi gi-hockey"></i> <code>gi gi-hockey</code></li>
+                            <li><i class="gi gi-pipe"></i> <code>gi gi-pipe</code></li>
+                            <li><i class="gi gi-wrench"></i> <code>gi gi-wrench</code></li>
+                            <li><i class="gi gi-folder_closed"></i> <code>gi gi-folder_closed</code></li>
+                            <li><i class="gi gi-phone_alt"></i> <code>gi gi-phone_alt</code></li>
+                            <li><i class="gi gi-earphone"></i> <code>gi gi-earphone</code></li>
+                            <li><i class="gi gi-floppy_disk"></i> <code>gi gi-floppy_disk</code></li>
+                            <li><i class="gi gi-floppy_saved"></i> <code>gi gi-floppy_saved</code></li>
+                            <li><i class="gi gi-floppy_remove"></i> <code>gi gi-floppy_remove</code></li>
+                            <li><i class="gi gi-floppy_save"></i> <code>gi gi-floppy_save</code></li>
+                            <li><i class="gi gi-floppy_open"></i> <code>gi gi-floppy_open</code></li>
+                            <li><i class="gi gi-translate"></i> <code>gi gi-translate</code></li>
+                            <li><i class="gi gi-fax"></i> <code>gi gi-fax</code></li>
+                            <li><i class="gi gi-factory"></i> <code>gi gi-factory</code></li>
+                            <li><i class="gi gi-shop_window"></i> <code>gi gi-shop_window</code></li>
+                            <li><i class="gi gi-shop"></i> <code>gi gi-shop</code></li>
+                            <li><i class="gi gi-kiosk"></i> <code>gi gi-kiosk</code></li>
+                            <li><i class="gi gi-kiosk_wheels"></i> <code>gi gi-kiosk_wheels</code></li>
+                            <li><i class="gi gi-kiosk_light"></i> <code>gi gi-kiosk_light</code></li>
+                            <li><i class="gi gi-kiosk_food"></i> <code>gi gi-kiosk_food</code></li>
+                            <li><i class="gi gi-transfer"></i> <code>gi gi-transfer</code></li>
+                            <li><i class="gi gi-money"></i> <code>gi gi-money</code></li>
+                            <li><i class="gi gi-header"></i> <code>gi gi-header</code></li>
+                            <li><i class="gi gi-blacksmith"></i> <code>gi gi-blacksmith</code></li>
+                            <li><i class="gi gi-saw_blade"></i> <code>gi gi-saw_blade</code></li>
+                            <li><i class="gi gi-basketball"></i> <code>gi gi-basketball</code></li>
+                            <li><i class="gi gi-server"></i> <code>gi gi-server</code></li>
+                            <li><i class="gi gi-server_plus"></i> <code>gi gi-server_plus</code></li>
+                            <li><i class="gi gi-server_minus"></i> <code>gi gi-server_minus</code></li>
+                            <li><i class="gi gi-server_ban"></i> <code>gi gi-server_ban</code></li>
+                            <li><i class="gi gi-server_flag"></i> <code>gi gi-server_flag</code></li>
+                            <li><i class="gi gi-server_lock"></i> <code>gi gi-server_lock</code></li>
+                            <li><i class="gi gi-server_new"></i> <code>gi gi-server_new</code></li>
+                        </ul>
+                    </div>
+                    <!-- END Glyphicons -->
+
+                    <!-- Halflings -->
+                    <div class="tab-pane" id="gi-halflings">
+                        <ul class="iconset-list clearfix">
+                            <li><i class="hi hi-glass"></i> <code>hi hi-glass</code></li>
+                            <li><i class="hi hi-music"></i> <code>hi hi-music</code></li>
+                            <li><i class="hi hi-search"></i> <code>hi hi-search</code></li>
+                            <li><i class="hi hi-envelope"></i> <code>hi hi-envelope</code></li>
+                            <li><i class="hi hi-heart"></i> <code>hi hi-heart</code></li>
+                            <li><i class="hi hi-star"></i> <code>hi hi-star</code></li>
+                            <li><i class="hi hi-star-empty"></i> <code>hi hi-star-empty</code></li>
+                            <li><i class="hi hi-user"></i> <code>hi hi-user</code></li>
+                            <li><i class="hi hi-film"></i> <code>hi hi-film</code></li>
+                            <li><i class="hi hi-th-large"></i> <code>hi hi-th-large</code></li>
+                            <li><i class="hi hi-th"></i> <code>hi hi-th</code></li>
+                            <li><i class="hi hi-th-list"></i> <code>hi hi-th-list</code></li>
+                            <li><i class="hi hi-ok"></i> <code>hi hi-ok</code></li>
+                            <li><i class="hi hi-remove"></i> <code>hi hi-remove</code></li>
+                            <li><i class="hi hi-zoom-in"></i> <code>hi hi-zoom-in</code></li>
+                            <li><i class="hi hi-zoom-out"></i> <code>hi hi-zoom-out</code></li>
+                            <li><i class="hi hi-off"></i> <code>hi hi-off</code></li>
+                            <li><i class="hi hi-signal"></i> <code>hi hi-signal</code></li>
+                            <li><i class="hi hi-cog"></i> <code>hi hi-cog</code></li>
+                            <li><i class="hi hi-trash"></i> <code>hi hi-trash</code></li>
+                            <li><i class="hi hi-home"></i> <code>hi hi-home</code></li>
+                            <li><i class="hi hi-file"></i> <code>hi hi-file</code></li>
+                            <li><i class="hi hi-time"></i> <code>hi hi-time</code></li>
+                            <li><i class="hi hi-road"></i> <code>hi hi-road</code></li>
+                            <li><i class="hi hi-download-alt"></i> <code>hi hi-download-alt</code></li>
+                            <li><i class="hi hi-download"></i> <code>hi hi-download</code></li>
+                            <li><i class="hi hi-upload"></i> <code>hi hi-upload</code></li>
+                            <li><i class="hi hi-inbox"></i> <code>hi hi-inbox</code></li>
+                            <li><i class="hi hi-play-circle"></i> <code>hi hi-play-circle</code></li>
+                            <li><i class="hi hi-repeat"></i> <code>hi hi-repeat</code></li>
+                            <li><i class="hi hi-refresh"></i> <code>hi hi-refresh</code></li>
+                            <li><i class="hi hi-list-alt"></i> <code>hi hi-list-alt</code></li>
+                            <li><i class="hi hi-lock"></i> <code>hi hi-lock</code></li>
+                            <li><i class="hi hi-flag"></i> <code>hi hi-flag</code></li>
+                            <li><i class="hi hi-headphones"></i> <code>hi hi-headphones</code></li>
+                            <li><i class="hi hi-volume-off"></i> <code>hi hi-volume-off</code></li>
+                            <li><i class="hi hi-volume-down"></i> <code>hi hi-volume-down</code></li>
+                            <li><i class="hi hi-volume-up"></i> <code>hi hi-volume-up</code></li>
+                            <li><i class="hi hi-qrcode"></i> <code>hi hi-qrcode</code></li>
+                            <li><i class="hi hi-barcode"></i> <code>hi hi-barcode</code></li>
+                            <li><i class="hi hi-tag"></i> <code>hi hi-tag</code></li>
+                            <li><i class="hi hi-tags"></i> <code>hi hi-tags</code></li>
+                            <li><i class="hi hi-book"></i> <code>hi hi-book</code></li>
+                            <li><i class="hi hi-bookmark"></i> <code>hi hi-bookmark</code></li>
+                            <li><i class="hi hi-print"></i> <code>hi hi-print</code></li>
+                            <li><i class="hi hi-camera"></i> <code>hi hi-camera</code></li>
+                            <li><i class="hi hi-font"></i> <code>hi hi-font</code></li>
+                            <li><i class="hi hi-bold"></i> <code>hi hi-bold</code></li>
+                            <li><i class="hi hi-italic"></i> <code>hi hi-italic</code></li>
+                            <li><i class="hi hi-text-height"></i> <code>hi hi-text-height</code></li>
+                            <li><i class="hi hi-text-width"></i> <code>hi hi-text-width</code></li>
+                            <li><i class="hi hi-align-left"></i> <code>hi hi-align-left</code></li>
+                            <li><i class="hi hi-align-center"></i> <code>hi hi-align-center</code></li>
+                            <li><i class="hi hi-align-right"></i> <code>hi hi-align-right</code></li>
+                            <li><i class="hi hi-align-justify"></i> <code>hi hi-align-justify</code></li>
+                            <li><i class="hi hi-list"></i> <code>hi hi-list</code></li>
+                            <li><i class="hi hi-indent-left"></i> <code>hi hi-indent-left</code></li>
+                            <li><i class="hi hi-indent-right"></i> <code>hi hi-indent-right</code></li>
+                            <li><i class="hi hi-facetime-video"></i> <code>hi hi-facetime-video</code></li>
+                            <li><i class="hi hi-picture"></i> <code>hi hi-picture</code></li>
+                            <li><i class="hi hi-pencil"></i> <code>hi hi-pencil</code></li>
+                            <li><i class="hi hi-map-marker"></i> <code>hi hi-map-marker</code></li>
+                            <li><i class="hi hi-adjust"></i> <code>hi hi-adjust</code></li>
+                            <li><i class="hi hi-tint"></i> <code>hi hi-tint</code></li>
+                            <li><i class="hi hi-edit"></i> <code>hi hi-edit</code></li>
+                            <li><i class="hi hi-share"></i> <code>hi hi-share</code></li>
+                            <li><i class="hi hi-check"></i> <code>hi hi-check</code></li>
+                            <li><i class="hi hi-move"></i> <code>hi hi-move</code></li>
+                            <li><i class="hi hi-step-backward"></i> <code>hi hi-step-backward</code></li>
+                            <li><i class="hi hi-fast-backward"></i> <code>hi hi-fast-backward</code></li>
+                            <li><i class="hi hi-backward"></i> <code>hi hi-backward</code></li>
+                            <li><i class="hi hi-play"></i> <code>hi hi-play</code></li>
+                            <li><i class="hi hi-pause"></i> <code>hi hi-pause</code></li>
+                            <li><i class="hi hi-stop"></i> <code>hi hi-stop</code></li>
+                            <li><i class="hi hi-forward"></i> <code>hi hi-forward</code></li>
+                            <li><i class="hi hi-fast-forward"></i> <code>hi hi-fast-forward</code></li>
+                            <li><i class="hi hi-step-forward"></i> <code>hi hi-step-forward</code></li>
+                            <li><i class="hi hi-eject"></i> <code>hi hi-eject</code></li>
+                            <li><i class="hi hi-chevron-left"></i> <code>hi hi-chevron-left</code></li>
+                            <li><i class="hi hi-chevron-right"></i> <code>hi hi-chevron-right</code></li>
+                            <li><i class="hi hi-plus-sign"></i> <code>hi hi-plus-sign</code></li>
+                            <li><i class="hi hi-minus-sign"></i> <code>hi hi-minus-sign</code></li>
+                            <li><i class="hi hi-remove-sign"></i> <code>hi hi-remove-sign</code></li>
+                            <li><i class="hi hi-ok-sign"></i> <code>hi hi-ok-sign</code></li>
+                            <li><i class="hi hi-question-sign"></i> <code>hi hi-question-sign</code></li>
+                            <li><i class="hi hi-info-sign"></i> <code>hi hi-info-sign</code></li>
+                            <li><i class="hi hi-screenshot"></i> <code>hi hi-screenshot</code></li>
+                            <li><i class="hi hi-remove-circle"></i> <code>hi hi-remove-circle</code></li>
+                            <li><i class="hi hi-ok-circle"></i> <code>hi hi-ok-circle</code></li>
+                            <li><i class="hi hi-ban-circle"></i> <code>hi hi-ban-circle</code></li>
+                            <li><i class="hi hi-arrow-left"></i> <code>hi hi-arrow-left</code></li>
+                            <li><i class="hi hi-arrow-right"></i> <code>hi hi-arrow-right</code></li>
+                            <li><i class="hi hi-arrow-up"></i> <code>hi hi-arrow-up</code></li>
+                            <li><i class="hi hi-arrow-down"></i> <code>hi hi-arrow-down</code></li>
+                            <li><i class="hi hi-share-alt"></i> <code>hi hi-share-alt</code></li>
+                            <li><i class="hi hi-resize-full"></i> <code>hi hi-resize-full</code></li>
+                            <li><i class="hi hi-resize-small"></i> <code>hi hi-resize-small</code></li>
+                            <li><i class="hi hi-plus"></i> <code>hi hi-plus</code></li>
+                            <li><i class="hi hi-minus"></i> <code>hi hi-minus</code></li>
+                            <li><i class="hi hi-asterisk"></i> <code>hi hi-asterisk</code></li>
+                            <li><i class="hi hi-exclamation-sign"></i> <code>hi hi-exclamation-sign</code></li>
+                            <li><i class="hi hi-gift"></i> <code>hi hi-gift</code></li>
+                            <li><i class="hi hi-leaf"></i> <code>hi hi-leaf</code></li>
+                            <li><i class="hi hi-fire"></i> <code>hi hi-fire</code></li>
+                            <li><i class="hi hi-eye-open"></i> <code>hi hi-eye-open</code></li>
+                            <li><i class="hi hi-eye-close"></i> <code>hi hi-eye-close</code></li>
+                            <li><i class="hi hi-warning-sign"></i> <code>hi hi-warning-sign</code></li>
+                            <li><i class="hi hi-plane"></i> <code>hi hi-plane</code></li>
+                            <li><i class="hi hi-calendar"></i> <code>hi hi-calendar</code></li>
+                            <li><i class="hi hi-random"></i> <code>hi hi-random</code></li>
+                            <li><i class="hi hi-comments"></i> <code>hi hi-comments</code></li>
+                            <li><i class="hi hi-magnet"></i> <code>hi hi-magnet</code></li>
+                            <li><i class="hi hi-chevron-up"></i> <code>hi hi-chevron-up</code></li>
+                            <li><i class="hi hi-chevron-down"></i> <code>hi hi-chevron-down</code></li>
+                            <li><i class="hi hi-retweet"></i> <code>hi hi-retweet</code></li>
+                            <li><i class="hi hi-shopping-cart"></i> <code>hi hi-shopping-cart</code></li>
+                            <li><i class="hi hi-folder-close"></i> <code>hi hi-folder-close</code></li>
+                            <li><i class="hi hi-folder-open"></i> <code>hi hi-folder-open</code></li>
+                            <li><i class="hi hi-resize-vertical"></i> <code>hi hi-resize-vertical</code></li>
+                            <li><i class="hi hi-resize-horizontal"></i> <code>hi hi-resize-horizontal</code></li>
+                            <li><i class="hi hi-hdd"></i> <code>hi hi-hdd</code></li>
+                            <li><i class="hi hi-bullhorn"></i> <code>hi hi-bullhorn</code></li>
+                            <li><i class="hi hi-bell"></i> <code>hi hi-bell</code></li>
+                            <li><i class="hi hi-certificate"></i> <code>hi hi-certificate</code></li>
+                            <li><i class="hi hi-thumbs-up"></i> <code>hi hi-thumbs-up</code></li>
+                            <li><i class="hi hi-thumbs-down"></i> <code>hi hi-thumbs-down</code></li>
+                            <li><i class="hi hi-hand-right"></i> <code>hi hi-hand-right</code></li>
+                            <li><i class="hi hi-hand-left"></i> <code>hi hi-hand-left</code></li>
+                            <li><i class="hi hi-hand-top"></i> <code>hi hi-hand-top</code></li>
+                            <li><i class="hi hi-hand-down"></i> <code>hi hi-hand-down</code></li>
+                            <li><i class="hi hi-circle-arrow-right"></i> <code>hi hi-circle-arrow-right</code></li>
+                            <li><i class="hi hi-circle-arrow-left"></i> <code>hi hi-circle-arrow-left</code></li>
+                            <li><i class="hi hi-circle-arrow-top"></i> <code>hi hi-circle-arrow-top</code></li>
+                            <li><i class="hi hi-circle-arrow-down"></i> <code>hi hi-circle-arrow-down</code></li>
+                            <li><i class="hi hi-globe"></i> <code>hi hi-globe</code></li>
+                            <li><i class="hi hi-wrench"></i> <code>hi hi-wrench</code></li>
+                            <li><i class="hi hi-tasks"></i> <code>hi hi-tasks</code></li>
+                            <li><i class="hi hi-filter"></i> <code>hi hi-filter</code></li>
+                            <li><i class="hi hi-briefcase"></i> <code>hi hi-briefcase</code></li>
+                            <li><i class="hi hi-fullscreen"></i> <code>hi hi-fullscreen</code></li>
+                            <li><i class="hi hi-dashboard"></i> <code>hi hi-dashboard</code></li>
+                            <li><i class="hi hi-paperclip"></i> <code>hi hi-paperclip</code></li>
+                            <li><i class="hi hi-heart-empty"></i> <code>hi hi-heart-empty</code></li>
+                            <li><i class="hi hi-link"></i> <code>hi hi-link</code></li>
+                            <li><i class="hi hi-phone"></i> <code>hi hi-phone</code></li>
+                            <li><i class="hi hi-pushpin"></i> <code>hi hi-pushpin</code></li>
+                            <li><i class="hi hi-euro"></i> <code>hi hi-euro</code></li>
+                            <li><i class="hi hi-usd"></i> <code>hi hi-usd</code></li>
+                            <li><i class="hi hi-gbp"></i> <code>hi hi-gbp</code></li>
+                            <li><i class="hi hi-sort"></i> <code>hi hi-sort</code></li>
+                            <li><i class="hi hi-sort-by-alphabet"></i> <code>hi hi-sort-by-alphabet</code></li>
+                            <li><i class="hi hi-sort-by-alphabet-alt"></i> <code>hi hi-sort-by-alphabet-alt</code></li>
+                            <li><i class="hi hi-sort-by-order"></i> <code>hi hi-sort-by-order</code></li>
+                            <li><i class="hi hi-sort-by-order-alt"></i> <code>hi hi-sort-by-order-alt</code></li>
+                            <li><i class="hi hi-sort-by-attributes"></i> <code>hi hi-sort-by-attributes</code></li>
+                            <li><i class="hi hi-sort-by-attributes-alt"></i> <code>hi hi-sort-by-attributes-alt</code>
+                            </li>
+                            <li><i class="hi hi-unchecked"></i> <code>hi hi-unchecked</code></li>
+                            <li><i class="hi hi-expand"></i> <code>hi hi-expand</code></li>
+                            <li><i class="hi hi-collapse"></i> <code>hi hi-collapse</code></li>
+                            <li><i class="hi hi-collapse-top"></i> <code>hi hi-collapse-top</code></li>
+                            <li><i class="hi hi-log_in"></i> <code>hi hi-log_in</code></li>
+                            <li><i class="hi hi-flash"></i> <code>hi hi-flash</code></li>
+                            <li><i class="hi hi-log_out"></i> <code>hi hi-log_out</code></li>
+                            <li><i class="hi hi-new_window"></i> <code>hi hi-new_window</code></li>
+                            <li><i class="hi hi-record"></i> <code>hi hi-record</code></li>
+                            <li><i class="hi hi-save"></i> <code>hi hi-save</code></li>
+                            <li><i class="hi hi-open"></i> <code>hi hi-open</code></li>
+                            <li><i class="hi hi-saved"></i> <code>hi hi-saved</code></li>
+                            <li><i class="hi hi-import"></i> <code>hi hi-import</code></li>
+                            <li><i class="hi hi-export"></i> <code>hi hi-export</code></li>
+                            <li><i class="hi hi-send"></i> <code>hi hi-send</code></li>
+                            <li><i class="hi hi-floppy_disk"></i> <code>hi hi-floppy_disk</code></li>
+                            <li><i class="hi hi-floppy_saved"></i> <code>hi hi-floppy_saved</code></li>
+                            <li><i class="hi hi-floppy_remove"></i> <code>hi hi-floppy_remove</code></li>
+                            <li><i class="hi hi-floppy_save"></i> <code>hi hi-floppy_save</code></li>
+                            <li><i class="hi hi-floppy_open"></i> <code>hi hi-floppy_open</code></li>
+                            <li><i class="hi hi-credit_card"></i> <code>hi hi-credit_card</code></li>
+                            <li><i class="hi hi-transfer"></i> <code>hi hi-transfer</code></li>
+                            <li><i class="hi hi-cutlery"></i> <code>hi hi-cutlery</code></li>
+                            <li><i class="hi hi-header"></i> <code>hi hi-header</code></li>
+                            <li><i class="hi hi-compressed"></i> <code>hi hi-compressed</code></li>
+                            <li><i class="hi hi-earphone"></i> <code>hi hi-earphone</code></li>
+                            <li><i class="hi hi-phone_alt"></i> <code>hi hi-phone_alt</code></li>
+                            <li><i class="hi hi-tower"></i> <code>hi hi-tower</code></li>
+                            <li><i class="hi hi-stats"></i> <code>hi hi-stats</code></li>
+                            <li><i class="hi hi-sd_video"></i> <code>hi hi-sd_video</code></li>
+                            <li><i class="hi hi-hd_video"></i> <code>hi hi-hd_video</code></li>
+                            <li><i class="hi hi-subtitles"></i> <code>hi hi-subtitles</code></li>
+                            <li><i class="hi hi-sound_stereo"></i> <code>hi hi-sound_stereo</code></li>
+                            <li><i class="hi hi-sound_dolby"></i> <code>hi hi-sound_dolby</code></li>
+                            <li><i class="hi hi-sound_5_1"></i> <code>hi hi-sound_5_1</code></li>
+                            <li><i class="hi hi-sound_6_1"></i> <code>hi hi-sound_6_1</code></li>
+                            <li><i class="hi hi-sound_7_1"></i> <code>hi hi-sound_7_1</code></li>
+                            <li><i class="hi hi-copyright_mark"></i> <code>hi hi-copyright_mark</code></li>
+                            <li><i class="hi hi-registration_mark"></i> <code>hi hi-registration_mark</code></li>
+                            <li><i class="hi hi-cloud"></i> <code>hi hi-cloud</code></li>
+                            <li><i class="hi hi-cloud_download"></i> <code>hi hi-cloud_download</code></li>
+                            <li><i class="hi hi-cloud_upload"></i> <code>hi hi-cloud_upload</code></li>
+                            <li><i class="hi hi-tree_conifer"></i> <code>hi hi-tree_conifer</code></li>
+                            <li><i class="hi hi-tree_deciduous"></i> <code>hi hi-tree_deciduous</code></li>
+                        </ul>
+                    </div>
+                    <!-- END Halflings -->
+
+                    <!-- Social -->
+                    <div class="tab-pane" id="gi-social">
+                        <ul class="iconset-list clearfix">
+                            <li><i class="si si-pinterest"></i> <code>si si-pinterest</code></li>
+                            <li><i class="si si-dropbox"></i> <code>si si-dropbox</code></li>
+                            <li><i class="si si-google_plus"></i> <code>si si-google_plus</code></li>
+                            <li><i class="si si-jolicloud"></i> <code>si si-jolicloud</code></li>
+                            <li><i class="si si-yahoo"></i> <code>si si-yahoo</code></li>
+                            <li><i class="si si-blogger"></i> <code>si si-blogger</code></li>
+                            <li><i class="si si-picasa"></i> <code>si si-picasa</code></li>
+                            <li><i class="si si-amazon"></i> <code>si si-amazon</code></li>
+                            <li><i class="si si-tumblr"></i> <code>si si-tumblr</code></li>
+                            <li><i class="si si-wordpress"></i> <code>si si-wordpress</code></li>
+                            <li><i class="si si-instapaper"></i> <code>si si-instapaper</code></li>
+                            <li><i class="si si-evernote"></i> <code>si si-evernote</code></li>
+                            <li><i class="si si-xing"></i> <code>si si-xing</code></li>
+                            <li><i class="si si-zootool"></i> <code>si si-zootool</code></li>
+                            <li><i class="si si-dribbble"></i> <code>si si-dribbble</code></li>
+                            <li><i class="si si-deviantart"></i> <code>si si-deviantart</code></li>
+                            <li><i class="si si-read_it_later"></i> <code>si si-read_it_later</code></li>
+                            <li><i class="si si-linked_in"></i> <code>si si-linked_in</code></li>
+                            <li><i class="si si-forrst"></i> <code>si si-forrst</code></li>
+                            <li><i class="si si-pinboard"></i> <code>si si-pinboard</code></li>
+                            <li><i class="si si-behance"></i> <code>si si-behance</code></li>
+                            <li><i class="si si-github"></i> <code>si si-github</code></li>
+                            <li><i class="si si-youtube"></i> <code>si si-youtube</code></li>
+                            <li><i class="si si-skitch"></i> <code>si si-skitch</code></li>
+                            <li><i class="si si-foursquare"></i> <code>si si-foursquare</code></li>
+                            <li><i class="si si-quora"></i> <code>si si-quora</code></li>
+                            <li><i class="si si-badoo"></i> <code>si si-badoo</code></li>
+                            <li><i class="si si-spotify"></i> <code>si si-spotify</code></li>
+                            <li><i class="si si-stumbleupon"></i> <code>si si-stumbleupon</code></li>
+                            <li><i class="si si-readability"></i> <code>si si-readability</code></li>
+                            <li><i class="si si-facebook"></i> <code>si si-facebook</code></li>
+                            <li><i class="si si-twitter"></i> <code>si si-twitter</code></li>
+                            <li><i class="si si-instagram"></i> <code>si si-instagram</code></li>
+                            <li><i class="si si-posterous_spaces"></i> <code>si si-posterous_spaces</code></li>
+                            <li><i class="si si-vimeo"></i> <code>si si-vimeo</code></li>
+                            <li><i class="si si-flickr"></i> <code>si si-flickr</code></li>
+                            <li><i class="si si-last_fm"></i> <code>si si-last_fm</code></li>
+                            <li><i class="si si-rss"></i> <code>si si-rss</code></li>
+                            <li><i class="si si-skype"></i> <code>si si-skype</code></li>
+                            <li><i class="si si-e-mail"></i> <code>si si-e-mail</code></li>
+                            <li><i class="si si-vine"></i> <code>si si-vine</code></li>
+                            <li><i class="si si-myspace"></i> <code>si si-myspace</code></li>
+                            <li><i class="si si-goodreads"></i> <code>si si-goodreads</code></li>
+                            <li><i class="si si-apple"></i> <code>si si-apple</code></li>
+                            <li><i class="si si-windows"></i> <code>si si-windows</code></li>
+                            <li><i class="si si-yelp"></i> <code>si si-yelp</code></li>
+                            <li><i class="si si-playstation"></i> <code>si si-playstation</code></li>
+                            <li><i class="si si-xbox"></i> <code>si si-xbox</code></li>
+                            <li><i class="si si-android"></i> <code>si si-android</code></li>
+                            <li><i class="si si-ios"></i> <code>si si-ios</code></li>
+                        </ul>
+                    </div>
+                    <!-- END Social -->
+
+                    <!-- Filetypes -->
+                    <div class="tab-pane" id="gi-filetypes">
+                        <ul class="iconset-list clearfix">
+                            <li><i class="fi fi-txt"></i> <code>fi fi-txt</code></li>
+                            <li><i class="fi fi-doc"></i> <code>fi fi-doc</code></li>
+                            <li><i class="fi fi-rtf"></i> <code>fi fi-rtf</code></li>
+                            <li><i class="fi fi-log"></i> <code>fi fi-log</code></li>
+                            <li><i class="fi fi-tex"></i> <code>fi fi-tex</code></li>
+                            <li><i class="fi fi-msg"></i> <code>fi fi-msg</code></li>
+                            <li><i class="fi fi-text"></i> <code>fi fi-text</code></li>
+                            <li><i class="fi fi-wpd"></i> <code>fi fi-wpd</code></li>
+                            <li><i class="fi fi-wps"></i> <code>fi fi-wps</code></li>
+                            <li><i class="fi fi-docx"></i> <code>fi fi-docx</code></li>
+                            <li><i class="fi fi-page"></i> <code>fi fi-page</code></li>
+                            <li><i class="fi fi-csv"></i> <code>fi fi-csv</code></li>
+                            <li><i class="fi fi-dat"></i> <code>fi fi-dat</code></li>
+                            <li><i class="fi fi-tar"></i> <code>fi fi-tar</code></li>
+                            <li><i class="fi fi-xml"></i> <code>fi fi-xml</code></li>
+                            <li><i class="fi fi-vcf"></i> <code>fi fi-vcf</code></li>
+                            <li><i class="fi fi-pps"></i> <code>fi fi-pps</code></li>
+                            <li><i class="fi fi-key"></i> <code>fi fi-key</code></li>
+                            <li><i class="fi fi-ppt"></i> <code>fi fi-ppt</code></li>
+                            <li><i class="fi fi-pptx"></i> <code>fi fi-pptx</code></li>
+                            <li><i class="fi fi-sdf"></i> <code>fi fi-sdf</code></li>
+                            <li><i class="fi fi-gbr"></i> <code>fi fi-gbr</code></li>
+                            <li><i class="fi fi-ged"></i> <code>fi fi-ged</code></li>
+                            <li><i class="fi fi-mp3"></i> <code>fi fi-mp3</code></li>
+                            <li><i class="fi fi-m4a"></i> <code>fi fi-m4a</code></li>
+                            <li><i class="fi fi-waw"></i> <code>fi fi-waw</code></li>
+                            <li><i class="fi fi-wma"></i> <code>fi fi-wma</code></li>
+                            <li><i class="fi fi-mpa"></i> <code>fi fi-mpa</code></li>
+                            <li><i class="fi fi-iff"></i> <code>fi fi-iff</code></li>
+                            <li><i class="fi fi-aif"></i> <code>fi fi-aif</code></li>
+                            <li><i class="fi fi-ra"></i> <code>fi fi-ra</code></li>
+                            <li><i class="fi fi-mid"></i> <code>fi fi-mid</code></li>
+                            <li><i class="fi fi-m3v"></i> <code>fi fi-m3v</code></li>
+                            <li><i class="fi fi-e_3gp"></i> <code>fi fi-e_3gp</code></li>
+                            <li><i class="fi fi-shf"></i> <code>fi fi-shf</code></li>
+                            <li><i class="fi fi-avi"></i> <code>fi fi-avi</code></li>
+                            <li><i class="fi fi-asx"></i> <code>fi fi-asx</code></li>
+                            <li><i class="fi fi-mp4"></i> <code>fi fi-mp4</code></li>
+                            <li><i class="fi fi-e_3g2"></i> <code>fi fi-e_3g2</code></li>
+                            <li><i class="fi fi-mpg"></i> <code>fi fi-mpg</code></li>
+                            <li><i class="fi fi-asf"></i> <code>fi fi-asf</code></li>
+                            <li><i class="fi fi-vob"></i> <code>fi fi-vob</code></li>
+                            <li><i class="fi fi-wmv"></i> <code>fi fi-wmv</code></li>
+                            <li><i class="fi fi-mov"></i> <code>fi fi-mov</code></li>
+                            <li><i class="fi fi-srt"></i> <code>fi fi-srt</code></li>
+                            <li><i class="fi fi-m4v"></i> <code>fi fi-m4v</code></li>
+                            <li><i class="fi fi-flv"></i> <code>fi fi-flv</code></li>
+                            <li><i class="fi fi-rm"></i> <code>fi fi-rm</code></li>
+                            <li><i class="fi fi-png"></i> <code>fi fi-png</code></li>
+                            <li><i class="fi fi-psd"></i> <code>fi fi-psd</code></li>
+                            <li><i class="fi fi-psp"></i> <code>fi fi-psp</code></li>
+                            <li><i class="fi fi-jpg"></i> <code>fi fi-jpg</code></li>
+                            <li><i class="fi fi-tif"></i> <code>fi fi-tif</code></li>
+                            <li><i class="fi fi-tiff"></i> <code>fi fi-tiff</code></li>
+                            <li><i class="fi fi-gif"></i> <code>fi fi-gif</code></li>
+                            <li><i class="fi fi-bmp"></i> <code>fi fi-bmp</code></li>
+                            <li><i class="fi fi-tga"></i> <code>fi fi-tga</code></li>
+                            <li><i class="fi fi-thm"></i> <code>fi fi-thm</code></li>
+                            <li><i class="fi fi-yuv"></i> <code>fi fi-yuv</code></li>
+                            <li><i class="fi fi-dds"></i> <code>fi fi-dds</code></li>
+                            <li><i class="fi fi-ai"></i> <code>fi fi-ai</code></li>
+                            <li><i class="fi fi-eps"></i> <code>fi fi-eps</code></li>
+                            <li><i class="fi fi-ps"></i> <code>fi fi-ps</code></li>
+                            <li><i class="fi fi-svg"></i> <code>fi fi-svg</code></li>
+                            <li><i class="fi fi-pdf"></i> <code>fi fi-pdf</code></li>
+                            <li><i class="fi fi-pct"></i> <code>fi fi-pct</code></li>
+                            <li><i class="fi fi-indd"></i> <code>fi fi-indd</code></li>
+                            <li><i class="fi fi-xlr"></i> <code>fi fi-xlr</code></li>
+                            <li><i class="fi fi-xls"></i> <code>fi fi-xls</code></li>
+                            <li><i class="fi fi-xlsx"></i> <code>fi fi-xlsx</code></li>
+                            <li><i class="fi fi-db"></i> <code>fi fi-db</code></li>
+                            <li><i class="fi fi-dbf"></i> <code>fi fi-dbf</code></li>
+                            <li><i class="fi fi-mdb"></i> <code>fi fi-mdb</code></li>
+                            <li><i class="fi fi-pdb"></i> <code>fi fi-pdb</code></li>
+                            <li><i class="fi fi-sql"></i> <code>fi fi-sql</code></li>
+                            <li><i class="fi fi-aacd"></i> <code>fi fi-aacd</code></li>
+                            <li><i class="fi fi-app"></i> <code>fi fi-app</code></li>
+                            <li><i class="fi fi-exe"></i> <code>fi fi-exe</code></li>
+                            <li><i class="fi fi-com"></i> <code>fi fi-com</code></li>
+                            <li><i class="fi fi-bat"></i> <code>fi fi-bat</code></li>
+                            <li><i class="fi fi-apk"></i> <code>fi fi-apk</code></li>
+                            <li><i class="fi fi-jar"></i> <code>fi fi-jar</code></li>
+                            <li><i class="fi fi-hsf"></i> <code>fi fi-hsf</code></li>
+                            <li><i class="fi fi-pif"></i> <code>fi fi-pif</code></li>
+                            <li><i class="fi fi-vb"></i> <code>fi fi-vb</code></li>
+                            <li><i class="fi fi-cgi"></i> <code>fi fi-cgi</code></li>
+                            <li><i class="fi fi-css"></i> <code>fi fi-css</code></li>
+                            <li><i class="fi fi-js"></i> <code>fi fi-js</code></li>
+                            <li><i class="fi fi-php"></i> <code>fi fi-php</code></li>
+                            <li><i class="fi fi-xhtml"></i> <code>fi fi-xhtml</code></li>
+                            <li><i class="fi fi-htm"></i> <code>fi fi-htm</code></li>
+                            <li><i class="fi fi-html"></i> <code>fi fi-html</code></li>
+                            <li><i class="fi fi-asp"></i> <code>fi fi-asp</code></li>
+                            <li><i class="fi fi-cer"></i> <code>fi fi-cer</code></li>
+                            <li><i class="fi fi-jsp"></i> <code>fi fi-jsp</code></li>
+                            <li><i class="fi fi-cfm"></i> <code>fi fi-cfm</code></li>
+                            <li><i class="fi fi-aspx"></i> <code>fi fi-aspx</code></li>
+                            <li><i class="fi fi-rss"></i> <code>fi fi-rss</code></li>
+                            <li><i class="fi fi-csr"></i> <code>fi fi-csr</code></li>
+                            <li><i class="fi fi-less"></i> <code>fi fi-less</code></li>
+                            <li><i class="fi fi-otf"></i> <code>fi fi-otf</code></li>
+                            <li><i class="fi fi-ttf"></i> <code>fi fi-ttf</code></li>
+                            <li><i class="fi fi-font"></i> <code>fi fi-font</code></li>
+                            <li><i class="fi fi-fnt"></i> <code>fi fi-fnt</code></li>
+                            <li><i class="fi fi-eot"></i> <code>fi fi-eot</code></li>
+                            <li><i class="fi fi-woff"></i> <code>fi fi-woff</code></li>
+                            <li><i class="fi fi-zip"></i> <code>fi fi-zip</code></li>
+                            <li><i class="fi fi-zipx"></i> <code>fi fi-zipx</code></li>
+                            <li><i class="fi fi-rar"></i> <code>fi fi-rar</code></li>
+                            <li><i class="fi fi-targ"></i> <code>fi fi-targ</code></li>
+                            <li><i class="fi fi-sitx"></i> <code>fi fi-sitx</code></li>
+                            <li><i class="fi fi-deb"></i> <code>fi fi-deb</code></li>
+                            <li><i class="fi fi-e_7z"></i> <code>fi fi-e_7z</code></li>
+                            <li><i class="fi fi-pkg"></i> <code>fi fi-pkg</code></li>
+                            <li><i class="fi fi-rpm"></i> <code>fi fi-rpm</code></li>
+                            <li><i class="fi fi-cbr"></i> <code>fi fi-cbr</code></li>
+                            <li><i class="fi fi-gz"></i> <code>fi fi-gz</code></li>
+                            <li><i class="fi fi-dmg"></i> <code>fi fi-dmg</code></li>
+                            <li><i class="fi fi-cue"></i> <code>fi fi-cue</code></li>
+                            <li><i class="fi fi-bin"></i> <code>fi fi-bin</code></li>
+                            <li><i class="fi fi-iso"></i> <code>fi fi-iso</code></li>
+                            <li><i class="fi fi-hdf"></i> <code>fi fi-hdf</code></li>
+                            <li><i class="fi fi-vcd"></i> <code>fi fi-vcd</code></li>
+                            <li><i class="fi fi-bak"></i> <code>fi fi-bak</code></li>
+                            <li><i class="fi fi-tmp"></i> <code>fi fi-tmp</code></li>
+                            <li><i class="fi fi-ics"></i> <code>fi fi-ics</code></li>
+                            <li><i class="fi fi-msi"></i> <code>fi fi-msi</code></li>
+                            <li><i class="fi fi-cfg"></i> <code>fi fi-cfg</code></li>
+                            <li><i class="fi fi-ini"></i> <code>fi fi-ini</code></li>
+                            <li><i class="fi fi-prf"></i> <code>fi fi-prf</code></li>
+                        </ul>
+                    </div>
+                    <!-- END Filetypes -->
+                </div>
+                <!-- END Tab Content -->
+            </div>
+            <!-- END Page Content -->
+
+            <!-- Footer -->
+            <footer>
+                <span id="year-copy"></span> &copy; <strong><a href="https://1.envato.market/7jd">uAdmin
+                        2.1</a></strong> - Crafted with <i class="fa fa-heart text-danger"></i> by <strong><a
+                        href="https://1.envato.market/ydb" target="_blank">pixelcave</a></strong>
+            </footer>
+            <!-- END Footer -->
+        </div>
+        <!-- END Inner Container -->
+    </div>
+    <!-- END Page Container -->
+
+    <!-- Scroll to top link, check main.js - scrollToTop() -->
+    <a href="javascript:void(0)" id="to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- User Modal Settings, appears when clicking on 'User Settings' link found on user dropdown menu (header, top right) -->
+    <div id="modal-user-settings" class="modal">
+        <!-- Modal Dialog -->
+        <div class="modal-dialog">
+            <!-- Modal Content -->
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4>Profile Settings</h4>
+                </div>
+                <!-- END Modal Header -->
+
+                <!-- Modal Content -->
+                <div class="modal-body">
+                    <!-- Tab links -->
+                    <ul id="example-user-tabs" class="nav nav-tabs" data-toggle="tabs">
+                        <li class="active"><a href="#example-user-tabs-account"><i class="fa fa-cogs"></i> Account</a>
+                        </li>
+                        <li><a href="#example-user-tabs-profile"><i class="fa fa-user"></i> Profile</a></li>
+                    </ul>
+                    <!-- END Tab links -->
+
+                    <!-- END Tab Content -->
+                    <div class="tab-content">
+                        <!-- First Tab -->
+                        <div class="tab-pane active" id="example-user-tabs-account">
+                            <div class="alert alert-success">
+                                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                <strong>Success!</strong> Password changed!
+                            </div>
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">Username</label>
+                                    <div class="col-md-9">
+                                        <p class="form-control-static">administrator</p>
+                                        <span class="help-block">You can't change your username!</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" for="example-user-pass">Password</label>
+                                    <div class="col-md-9">
+                                        <input type="password" id="example-user-pass" name="example-user-pass"
+                                            class="form-control">
+                                        <span class="help-block">if you want to change your password enter your current
+                                            for confirmation!</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" for="example-user-newpass">New
+                                        Password</label>
+                                    <div class="col-md-9">
+                                        <input type="password" id="example-user-newpass" name="example-user-newpass"
+                                            class="form-control">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- END First Tab -->
+
+                        <!-- Second Tab -->
+                        <div class="tab-pane" id="example-user-tabs-profile">
+                            <h4 class="page-header-sub">Image</h4>
+                            <div class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-md-3">
+                                        <img src="img/placeholders/image_dark_120x120.png" alt="image"
+                                            class="img-responsive push">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <form action="index.html" class="dropzone">
+                                            <div class="fallback">
+                                                <input name="file" type="file">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <form class="form-horizontal">
+                                <h4 class="page-header-sub">Details</h4>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" for="example-user-firstname">Firstname</label>
+                                    <div class="col-md-9">
+                                        <input type="text" id="example-user-firstname" name="example-user-firstname"
+                                            class="form-control" value="John">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" for="example-user-lastname">Lastname</label>
+                                    <div class="col-md-9">
+                                        <input type="text" id="example-user-lastname" name="example-user-lastname"
+                                            class="form-control" value="Doe">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" for="example-user-gender">Gender</label>
+                                    <div class="col-md-9">
+                                        <select id="example-user-gender" name="example-user-gender"
+                                            class="form-control">
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" for="example-user-bio">Bio</label>
+                                    <div class="col-md-9">
+                                        <textarea id="example-user-bio" name="example-user-bio"
+                                            class="form-control textarea-elastic" rows="3">Bio Information..</textarea>
+                                    </div>
+                                </div>
+                                <h5 class="page-header-sub">Social</h5>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" for="example-user-fb">Facebook</label>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <input type="text" id="example-user-fb" name="example-user-fb"
+                                                class="form-control">
+                                            <span class="input-group-addon"><i class="fa fa-facebook fa-fw"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" for="example-user-twitter">Twitter</label>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <input type="text" id="example-user-twitter" name="example-user-twitter"
+                                                class="form-control">
+                                            <span class="input-group-addon"><i class="fa fa-twitter fa-fw"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" for="example-user-pinterest">Pinterest</label>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <input type="text" id="example-user-pinterest" name="example-user-pinterest"
+                                                class="form-control">
+                                            <span class="input-group-addon"><i class="fa fa-pinterest fa-fw"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3" for="example-user-github">Github</label>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <input type="text" id="example-user-github" name="example-user-github"
+                                                class="form-control">
+                                            <span class="input-group-addon"><i class="fa fa-github fa-fw"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- END Second Tab -->
+                    </div>
+                    <!-- END Tab Content -->
+                </div>
+                <!-- END Modal Content -->
+
+                <!-- Modal footer -->
+                <div class="modal-footer remove-margin">
+                    <button class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                    <button class="btn btn-success"><i class="fa fa-spinner fa-spin"></i> Save changes</button>
+                </div>
+                <!-- END Modal footer -->
+            </div>
+            <!-- END Modal Content -->
+        </div>
+        <!-- END Modal Dialog -->
+    </div>
+    <!-- END User Modal Settings -->
+
+    <!-- Excanvas for canvas support on IE8 -->
+    <!--[if lte IE 8]><script src="js/helpers/excanvas.min.js"></script><![endif]-->
+
+    <!-- Include Jquery library from Google's CDN but if something goes wrong get Jquery from local file (Remove 'http:' if you have SSL) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>!window.jQuery && document.write(decodeURI('%3Cscript src="js/vendor/jquery-1.11.1.min.js"%3E%3C/script%3E'));</script>
+
+    <!-- Bootstrap.js -->
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <!-- Jquery plugins and custom javascript code -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
