@@ -2306,15 +2306,20 @@ a:focus {
     justify-content: center;
   }
   
+  .modal-footer-schedule {
+    display: flex;
+    justify-content: center;
+  }
   .modal-register-but {
     display: flex;
     justify-content: center;
   }
-  
   .modal-register-but:hover {
     text-decoration: underline;
   }
-  
+  .modal-register-but:hover {
+    text-decoration: underline;
+  }
   .highlight {
     background-color: rgb(193, 193, 193);
   }
@@ -2348,12 +2353,29 @@ a:focus {
     align-items: center;
     justify-content: center;
   }
-  
+  .modal-schedule {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
   .modal-container-register {
     margin-top: 60px;
     background-color: #fff;
     width: 800px;
     height: 540px;
+    border-radius: 8px;
+  }
+  .modal-container-schedule {
+    margin-top: 60px;
+    background-color: #fff;
+    width: 600px;
+    height: 360px;
     border-radius: 8px;
   }
   
@@ -2367,6 +2389,18 @@ a:focus {
     line-height: 70px;
   }
   
+  .modal-body-schedule {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 40px;
+  }
+  
+  .modal-boxsh {
+    margin-right: 60px;
+    margin-bottom: 50px;
+
+  }
   .modal-body-re {
     display: flex;
     flex-wrap: wrap;
