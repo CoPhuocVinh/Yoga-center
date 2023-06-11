@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <style>
+        body {
+            background-color: #f7cac9;
+            overflow-x: hidden;
+            margin: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            transform: translateY(-11%);
+            background-color: rgb(121, 121, 121) !important;
+
+        }
+
+        .container-fluid {
+            display: flex;
+            align-items: center;
+        }
+
+        .next-text {
+            top: 25px;
+        }
+
+        .banner-img-cr {
+            position: relative;
+            transform: translate(50%, 15%) !important;
+        }
+
+        .banner-img-cr .banner-img img {
+            max-width: 80% !important;
+            max-height: 80% !important;
+        }
+    </style>
+
+    <!-- Top Bar Start -->
+    <div class="top-bar d-none d-md-block" style="transform: translateY(-18%);
+        width: 100%; 
+        padding-left: 25px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="top-bar-left">
+                        <div class="text">
+                            <i class="far fa-clock"></i>
+                            <h2>8:00 - 17:00 | </h2>
+                            <p>Thứ 2 - Thứ 7</p>
+                        </div>
+                        <div class="text">
+                            <i class="fa fa-phone-alt"></i>
+                            <h2>092 752 8888</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Bar End -->
+    <div class="navbar">
+        <div class="container-fluid ">
+
+            <a href="index.html" class="navbar-brand">FY<span>o</span>ga</a>
+            <div class="">
+                <h2 class="next-text">Đăng Kí</h2>
+            </div>
+        </div>
+    </div>
+    <!-- Modal register  -->
+    <div class="modal-register" id="registerModal">
+        <div class="modal-container-register">
+            <span class="close myButton" id=""><a>&times;</a></span>
+            <header class="modal-header-register">
+                Đăng Ký
+            </header>
+
+            <form action="#">
+                <div class="modal-body-re ">
+                    <div class="modal-box">
+                        <span class="details">Họ</span>
+                        <input class="modal-input-name" placeholder="Nhập họ của bạn" required>
+                    </div>
+
+                    <div class="modal-box">
+                        <span class="details">Tên</span>
+                        <input class="modal-input-name" placeholder="Nhập tên của bạn" required>
+                    </div>
+
+                    <div class="modal-box">
+                        <span class="details">Email</span>
+                        <input type="email" class="modal-input-name" placeholder="Nhập email của bạn">
+                    </div>
+
+                    <div class="modal-box">
+                        <span class="details">Số điện thoại</span>
+                        <input class="modal-input-name" placeholder="Nhập số điện thoại của bạn" required>
+                    </div>
+
+                    <div class="modal-box">
+                        <span class="details">Mật khẩu</span>
+                        <input type="password" class="modal-input-name" placeholder="Nhập mật khẩu của bạn" required>
+                    </div>
+
+                    <div class="modal-box">
+                        <span class="details">Xác thực mật khẩu</span>
+                        <input type="password" class="modal-input-name" placeholder="Nhập lại mật khẩu của bạn"
+                            required>
+                    </div>
+
+                    <div class="modal-gender">
+                        <span class="gender-title">Giới tính</span>
+                        <input type="radio" name="gender">Nam
+                        <input type="radio" name="gender">Nữ
+                    </div>
+                </div>
+            </form>
+
+            <button id="modal-login-button-re" type="submit">
+                Đăng Ký
+            </button>
+
+            <footer class="modal-footer">
+                <p class="modal-register-but" id="login-link"><a href="login.html">Bạn đã có tài khoản?</a></p>
+            </footer>
+        </div>
+    </div>
+    <div class="banner-img-cr">
+        <div class="banner-img">
+            <img src="img/hero.png" alt="Hero Image">
+        </div>
+    </div>
+    <script src="js/functions.js"></script>
+</body>
+
+</html>

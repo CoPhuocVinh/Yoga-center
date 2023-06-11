@@ -487,6 +487,68 @@
 
     <!-- Scroll to top link, check main.js - scrollToTop() -->
     <a href="javascript:void(0)" id="to-top"><i class="fa fa-chevron-up"></i></a>
+    <!--  form create members  -->
+    <!-- Modal register  -->
+    <div class="modal-register" id="registerModal">
+        <div class="modal-container-register">
+            <span class="close" id="myButton"><a>&times;</a></span>
+            <header class="modal-header-register">
+                Đăng Ký
+            </header>
+
+            <form action="#">
+                <div class="modal-body-re">
+                    <div class="modal-box">
+                        <span class="details">Họ</span>
+                        <input class="modal-input-name" placeholder="Nhập họ của bạn" required>
+                    </div>
+
+                    <div class="modal-box">
+                        <span class="details">Tên</span>
+                        <input class="modal-input-name" placeholder="Nhập tên của bạn" required>
+                    </div>
+
+                    <div class="modal-box">
+                        <span class="details">Email</span>
+                        <input type="email" class="modal-input-name" placeholder="Nhập email của bạn">
+                    </div>
+
+                    <div class="modal-box">
+                        <span class="details">Số điện thoại</span>
+                        <input class="modal-input-name" placeholder="Nhập số điện thoại của bạn" required>
+                    </div>
+
+                    <div class="modal-box">
+                        <span class="details">Mật khẩu</span>
+                        <input type="password" class="modal-input-name" placeholder="Nhập mật khẩu của bạn" required>
+                    </div>
+
+                    <div class="modal-box">
+                        <span class="details">Xác thực mật khẩu</span>
+                        <input type="password" class="modal-input-name" placeholder="Nhập lại mật khẩu của bạn"
+                            required>
+                    </div>
+
+                    <div class="modal-gender">
+                        <span class="gender-title">Giới tính</span>
+                        <input type="radio" name="gender">Nam
+                        <input type="radio" name="gender">Nữ
+                    </div>
+                </div>
+            </form>
+
+            <button id="modal-login-button-re" type="submit">
+                Đăng Ký
+            </button>
+
+            <footer class="modal-footer">
+                <p class="modal-register-but" id="login-link"><a href="#">Bạn đã có tài khoản?</a></p>
+            </footer>
+        </div>
+    </div>
+    <!-- END form create members  -->
+
+
 
     <!-- User Modal Settings, appears when clicking on 'User Settings' link found on user dropdown menu (header, top right) -->
     <div id="modal-user-settings" class="modal">

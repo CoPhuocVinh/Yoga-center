@@ -1,41 +1,39 @@
-
 var openModalButtonLogin = document.getElementById("openModalButtonLogin");
-var openModalButtonRegister = document.getElementById("openModalButtonRegister");
+var openModalButtonRegister = document.getElementById(
+  "openModalButtonRegister"
+);
 var loginModal = document.getElementById("loginModal");
 var registerModal = document.getElementById("registerModal");
 var loginLink = document.getElementById("login-link");
 var registerLink = document.getElementById("register-link");
 var closeButton = document.getElementsByClassName("close")[0];
 
-
-
 // Xử lý sự kiện khi nhấp vào nút đăng nhập
 openModalButtonLogin.onclick = function () {
   loginModal.style.display = "flex";
-}
+};
 // xử lý đăng kí
 openModalButtonRegister.onclick = function () {
   registerModal.style.display = "flex";
-}
+};
 // Xử lý sự kiện khi nhấp vào nút đóng cửa sổ đăng nhập
 closeButton.onclick = function () {
   loginModal.style.display = "none";
   registerModal.style.display = "none";
-  
-}
-
+};
 
 // Xử lý sự kiện khi nhấp vào bất kỳ vị trí nào bên ngoài cửa sổ đăng nhập
 window.onclick = function (event) {
- 
-    if (event.target == loginModal || event.target == registerModal || event.target == formTrial ) {
-      loginModal.style.display = "none";
-      registerModal.style.display = "none";
-      formTrial.style.display= "none";
-    }
-  
-
-}
+  if (
+    event.target == loginModal ||
+    event.target == registerModal ||
+    event.target == formTrial
+  ) {
+    loginModal.style.display = "none";
+    registerModal.style.display = "none";
+    formTrial.style.display = "none";
+  }
+};
 
 //Chuyển trang index-user
 // document.getElementById("loginModal").addEventListener("submit", function(event) {
@@ -47,18 +45,17 @@ window.onclick = function (event) {
 //   window.location.href = "index-user.html";
 // });
 
-
 // Lấy tham chiếu đến button
-const button = document.getElementById("myButton");
+const button = document.getElementsByClassName("myButton");
 
 // Thêm sự kiện khi di chuột vào button
-button.addEventListener('mouseover', function () {
-  button.classList.add('highlight');
+button.addEventListener("mouseover", function () {
+  button.classList.add("highlight");
 });
 
 // Thêm sự kiện khi di chuột ra khỏi button
-button.addEventListener('mouseout', function () {
-  button.classList.remove('highlight');
+button.addEventListener("mouseout", function () {
+  button.classList.remove("highlight");
 });
 
 // Xử lý sự kiện click cho dòng chữ "Đã có tài khoản"
@@ -75,4 +72,3 @@ registerLink.addEventListener("click", function (event) {
   loginModal.style.display = "none";
   registerModal.style.display = "flex";
 });
-

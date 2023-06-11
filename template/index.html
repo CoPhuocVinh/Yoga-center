@@ -78,8 +78,9 @@
                 </div>
                 <div class="nav-item nav-link-dk">
                     <!-- <i class="fa fa-user"></i> -->
-                    <button href="" class="a" id="openModalButtonLogin">Đăng nhập</button>
-                    <button href="" class="a" id="openModalButtonRegister">Đăng Ký</button>
+                    <button class="a"> <a href="login.html">Đăng nhập</a></button>
+
+                    <button class="a"><a href="register.html">Đăng Ký</a> </button>
                 </div>
             </div>
 
@@ -571,94 +572,6 @@
         </div>
     </div>
     <!-- Blog End -->
-
-
-    <!-- Modal Login -->
-    <div class="modal-login open" id="loginModal">
-        <div class="modal-container">
-            <span class="close" id="myButton">&times;</span>
-            <header class="modal-header">
-                Đăng Nhập
-            </header>
-
-            <div class="modal-body">
-                <div class="modal-login-user">
-                    <input class="modal-input" placeholder="Tên đăng nhập" required>
-                    <input class="modal-input" placeholder="Mật khẩu" required>
-                </div>
-                <button id="modal-login-button" type="submit">
-                    Đăng Nhập
-                </button>
-            </div>
-
-            <footer class="modal-footer">
-                <p class="modal-register-but"><a href="#" id="register-link">Bạn chưa có tài khoản?</a></p>
-                <p class="modal-register-but"><a href="#">Quên mật khẩu?</a></p>
-            </footer>
-
-        </div>
-    </div>
-
-
-    <!-- Modal register  -->
-    <div class="modal-register" id="registerModal">
-        <div class="modal-container-register">
-            <span class="close" id="myButton"><a>&times;</a></span>
-            <header class="modal-header-register">
-                Đăng Ký
-            </header>
-
-            <form action="#">
-                <div class="modal-body-re">
-                    <div class="modal-box">
-                        <span class="details">Họ</span>
-                        <input class="modal-input-name" placeholder="Nhập họ của bạn" required>
-                    </div>
-
-                    <div class="modal-box">
-                        <span class="details">Tên</span>
-                        <input class="modal-input-name" placeholder="Nhập tên của bạn" required>
-                    </div>
-
-                    <div class="modal-box">
-                        <span class="details">Email</span>
-                        <input type="email" class="modal-input-name" placeholder="Nhập email của bạn">
-                    </div>
-
-                    <div class="modal-box">
-                        <span class="details">Số điện thoại</span>
-                        <input class="modal-input-name" placeholder="Nhập số điện thoại của bạn" required>
-                    </div>
-
-                    <div class="modal-box">
-                        <span class="details">Mật khẩu</span>
-                        <input type="password" class="modal-input-name" placeholder="Nhập mật khẩu của bạn" required>
-                    </div>
-
-                    <div class="modal-box">
-                        <span class="details">Xác thực mật khẩu</span>
-                        <input type="password" class="modal-input-name" placeholder="Nhập lại mật khẩu của bạn"
-                            required>
-                    </div>
-
-                    <div class="modal-gender">
-                        <span class="gender-title">Giới tính</span>
-                        <input type="radio" name="gender">Nam
-                        <input type="radio" name="gender">Nữ
-                    </div>
-                </div>
-            </form>
-
-            <button id="modal-login-button-re" type="submit">
-                Đăng Ký
-            </button>
-
-            <footer class="modal-footer">
-                <p class="modal-register-but" id="login-link"><a href="#">Bạn đã có tài khoản?</a></p>
-            </footer>
-        </div>
-    </div>
-
 
     <!-- Footer Start -->
     <div id="footer" class="footer wow fadeIn" data-wow-delay="0.3s">
