@@ -16,6 +16,10 @@ h6 {
     color: #343148;
 }
 
+h4 p{
+    color: #cda1a1;
+}
+
 a {
     color: #454545;
     transition: .3s;
@@ -1081,6 +1085,14 @@ a:focus {
     font-weight: 400;
     margin-top: 9px;
     margin-left: -12px;
+}
+
+.price .price-prices h4{
+    color: #cda1a1;
+}
+
+.price .price-prices .p{
+    color: #454545;
 }
 
 .price .price-prices h2 span {
