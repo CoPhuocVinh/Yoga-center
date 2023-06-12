@@ -2351,6 +2351,10 @@ a:focus {
 
 /* ===============form đăng ký=================== */
 
+.reClass h4{
+    margin-top :50665px;
+    margin-left: 40px;
+}
 .modal-schedule {
     position: fixed;
     top: 0;
