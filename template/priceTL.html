@@ -168,7 +168,8 @@
                         <div class="price-header">
                             <div class="price-prices">
                                 <h4 class="p"><del>1.350K/ 3 tháng</del></h4>
-                                <h2>1.215K<span>/ 3 tháng</span></h2>                            </div>
+                                <h2>1.215K<span>/ 3 tháng</span></h2>
+                            </div>
                         </div>
                         <div class="price-body">
                             <div class="price-description">
@@ -191,7 +192,7 @@
                         <div class="price-header">
                             <div class="price-prices">
                                 <h4><del>2.100K/ 3 tháng</del></h4>
-                                <h2>1.890K<span>/ 3 tháng</span></h2>                            
+                                <h2>1.890K<span>/ 3 tháng</span></h2>
                             </div>
                         </div>
                         <div class="price-body">
@@ -224,7 +225,7 @@
                         <div class="price-header">
                             <div class="price-prices">
                                 <h4 class="p"><del>2.700K/ 6 tháng</del></h4>
-                                <h2>2.430K<span>/ 6 tháng</span></h2>                            
+                                <h2>2.430K<span>/ 6 tháng</span></h2>
                             </div>
                         </div>
                         <div class="price-body">
@@ -248,7 +249,7 @@
                         <div class="price-header">
                             <div class="price-prices">
                                 <h4><del>4.200K/ 6 tháng</del></h4>
-                                <h2>3.780K<span>/ 6 tháng</span></h2>                            
+                                <h2>3.780K<span>/ 6 tháng</span></h2>
                             </div>
                         </div>
                         <div class="price-body">
@@ -286,93 +287,6 @@
     </div>
     <!-- Discount End -->
 
-
-  <!-- Modal Login -->
-  <div class="modal-login open" id="loginModal">
-    <div class="modal-container">
-        <span class="close" id="myButton">&times;</span>
-        <header class="modal-header">
-            Đăng Nhập
-        </header>
-
-        <div class="modal-body">
-            <div class="modal-login-user">
-                <input class="modal-input" placeholder="Tên đăng nhập" required>
-                <input class="modal-input" placeholder="Mật khẩu" required>
-            </div>
-            <button id="modal-login-button" type="submit">
-                Đăng Nhập
-            </button>
-        </div>
-
-        <footer class="modal-footer">
-            <p class="modal-register-but"><a href="#" id="register-link">Bạn chưa có tài khoản?</a></p>
-            <p class="modal-register-but"><a href="#">Quên mật khẩu?</a></p>
-        </footer>
-
-    </div>
-</div>
-
-    <!-- Modal register  -->
-    <div class="modal-register" id="registerModal">
-        <div class="modal-container-register">
-            <span class="close" id="myButton"><a>&times;</a></span>
-            <header class="modal-header-register">
-                Đăng Ký
-            </header>
-
-            <form action="#">
-                <div class="modal-body-re">
-                    <div class="modal-box">
-                        <span class="details">Họ</span>
-                        <input class="modal-input-name" placeholder="Nhập họ của bạn" required>
-                    </div>
-
-                    <div class="modal-box">
-                        <span class="details">Tên</span>
-                        <input class="modal-input-name" placeholder="Nhập tên của bạn" required>
-                    </div>
-
-                    <div class="modal-box">
-                        <span class="details">Email</span>
-                        <input type="email" class="modal-input-name" placeholder="Nhập email của bạn">
-                    </div>
-
-                    <div class="modal-box">
-                        <span class="details">Số điện thoại</span>
-                        <input class="modal-input-name" placeholder="Nhập số điện thoại của bạn" required>
-                    </div>
-
-                    <div class="modal-box">
-                        <span class="details">Mật khẩu</span>
-                        <input type="password" class="modal-input-name" placeholder="Nhập mật khẩu của bạn" required>
-                    </div>
-
-                    <div class="modal-box">
-                        <span class="details">Xác thực mật khẩu</span>
-                        <input type="password" class="modal-input-name" placeholder="Nhập lại mật khẩu của bạn"
-                            required>
-                    </div>
-
-                    <div class="modal-gender">
-                        <span class="gender-title">Giới tính</span>
-                        <input type="radio" name="gender">Nam
-                        <input type="radio" name="gender">Nữ
-                    </div>
-                </div>
-            </form>
-
-            <button id="modal-login-button-re" type="submit">
-                Đăng Ký
-            </button>
-
-            <footer class="modal-footer">
-                <p class="modal-register-but" id="login-link"><a href="#">Bạn đã có tài khoản?</a></p>
-            </footer>
-        </div>
-    </div>
-
-
     <!-- Footer Start -->
     <div id="contact" class="footer wow fadeIn" data-wow-delay="0.3s">
         <div class="container-fluid">
@@ -383,8 +297,7 @@
                         <form name="sentMessage" id="contactForm" novalidate="novalidate">
                             <div class="control-group">
                                 <input type="text" class="form-control" id="name" placeholder="Tên của bạn"
-                                    required="required"
-                                    data-validation-required-message="Vui lòng nhập tên của bạn" />
+                                    required="required" data-validation-required-message="Vui lòng nhập tên của bạn" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
@@ -393,7 +306,8 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea class="form-control" id="message" required="required" placeholder="Nhập tin nhắn"
+                                <textarea class="form-control" id="message" required="required"
+                                    placeholder="Nhập tin nhắn"
                                     data-validation-required-message="Vui lòng nhập"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
