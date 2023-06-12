@@ -11,7 +11,7 @@ var closeButton = document.getElementsByClassName("close")[0];
 
 // Xử lý sự kiện khi nhấp vào nút đăng nhập
 openModalButtonLogin.onclick = function () {
-  loginModal.style.display = "flex";
+  loginModal.style.display = "block";
 }
 // xử lý đăng kí
 openModalButtonRegister.onclick = function () {

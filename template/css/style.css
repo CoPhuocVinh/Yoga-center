@@ -256,12 +256,12 @@ a:focus {
     transition: none;
 }
 
-.navbar .dropdown-menu {
+/* .navbar .dropdown-menu {
     margin-top: 0;
     border: 0;
     border-radius: 0;
     background: #f8f9fa;
-}
+} */
 
 @media (min-width: 992px) {
     .navbar {
@@ -2240,25 +2240,29 @@ a:focus {
     }
 }
 
-/*form dang nhap */
+/*=============FORM LOGIN===============
+========================================
+======================================== */
 .modal-login {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
-    display: none;
+    background: #F7CAC9;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
   
   .modal-container {
     background: #fff;
+    border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
     width: 508px;
     top: 50px;
     height: fit-content;
-    border-radius: 8px;
   }
 
   .modal-header {
@@ -2341,14 +2345,8 @@ a:focus {
     margin-top: 3px;
     opacity: 0.4;
     display: none;
-  }
-  
-  /* .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
   } */
+  
 /* form đăng ký */
 .modal-register {
     position: fixed;
