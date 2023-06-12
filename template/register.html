@@ -78,125 +78,75 @@
                 </div>
                 <div class="nav-item nav-link-dk">
                     <!-- <i class="fa fa-user"></i> -->
-                    <button href="" class="a" id="openModalButtonLogin">Đăng nhập</button>
-                    <a href="register.html">Đăng kí</a>
+                    <a href="login.html" class="a" id="openModalButtonLogin">Đăng nhập</a>
+                    
                 </div>
             </div>
 
         </div>
     </div>
-    <div class="titlee">
-        <h1>Tạo tài khoản</h1>
-    </div>
-    <div class="modal-body-re">
 
-        <div class="modal-box">
-            <span class="details">Họ</span>
-            <input class="modal-input-name" placeholder="Nhập họ của bạn" required>
-        </div>
+    <!-- Modal register  -->
+    <div class="modal-login" id="registerModal">
+        <div class="modal-container-register">
+            <span class="close" id="myButton"><a>&times;</a></span>
+            <header class="modal-header-register">
+                Đăng Ký
+            </header>
 
-        <div class="modal-box">
-            <span class="details">Tên</span>
-            <input class="modal-input-name" placeholder="Nhập tên của bạn" required>
-        </div>
+            <form action="#">
+                <div class="modal-body-re">
+                    <div class="modal-box">
+                        <span class="details">Họ</span>
+                        <input class="modal-input-name" placeholder="Nhập họ của bạn" required>
+                    </div>
 
-        <div class="modal-box">
-            <span class="details">Email</span>
-            <input type="email" class="modal-input-name" placeholder="Nhập email của bạn">
-        </div>
+                    <div class="modal-box">
+                        <span class="details">Tên</span>
+                        <input class="modal-input-name" placeholder="Nhập tên của bạn" required>
+                    </div>
 
-        <div class="modal-box">
-            <span class="details">Số điện thoại</span>
-            <input class="modal-input-name" placeholder="Nhập số điện thoại của bạn" required>
-        </div>
+                    <div class="modal-box">
+                        <span class="details">Email</span>
+                        <input type="email" class="modal-input-name" placeholder="Nhập email của bạn">
+                    </div>
 
-        <div class="modal-box">
-            <span class="details">Mật khẩu</span>
-            <input type="password" class="modal-input-name" placeholder="Nhập mật khẩu của bạn" required>
-        </div>
+                    <div class="modal-box">
+                        <span class="details">Số điện thoại</span>
+                        <input class="modal-input-name" placeholder="Nhập số điện thoại của bạn" required>
+                    </div>
 
-        <div class="modal-box">
-            <span class="details">Xác thực mật khẩu</span>
-            <input type="password" class="modal-input-name" placeholder="Nhập lại mật khẩu của bạn" required>
-        </div>
+                    <div class="modal-box">
+                        <span class="details">Mật khẩu</span>
+                        <input type="password" class="modal-input-name" placeholder="Nhập mật khẩu của bạn" required>
+                    </div>
 
-        <div class="modal-gender">
-            <span class="gender-title">Giới tính</span>
-            <input type="radio" name="gender">Nam
-            <input type="radio" name="gender">Nữ
-        </div>
-    </div>
+                    <div class="modal-box">
+                        <span class="details">Xác thực mật khẩu</span>
+                        <input type="password" class="modal-input-name" placeholder="Nhập lại mật khẩu của bạn"
+                            required>
+                    </div>
 
-
-    <button id="modal-login-button-re" type="submit">
-        Đăng Ký
-    </button>
-
-    <footer class="modal-footer">
-        <p class="modal-register-but" id="login-link"><a href="#">Bạn đã có tài khoản?</a></p>
-    </footer>
-
-
-
-
-
-    <!-- Footer Start -->
-    <div id="footer" class="footer wow fadeIn" data-wow-delay="0.3s">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="contact-form">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="control-group">
-                                <input type="text" class="form-control" id="name" placeholder="Tên của bạn"
-                                    required="required" data-validation-required-message="Vui lòng nhập tên của bạn" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <input type="email" class="form-control" id="email" placeholder="Email"
-                                    required="required" data-validation-required-message="Vui lòng nhập email" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control" id="message" placeholder="Nhập tin nhắn"
-                                    required="required" data-validation-required-message="Vui lòng nhập"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-
-                            <div>
-                                <button class="btn" type="submit" id="sendMessageButton">Gửi</button>
-                            </div>
-                        </form>
+                    <div class="modal-gender">
+                        <span class="gender-title">Giới tính</span>
+                        <input type="radio" name="gender">Nam
+                        <input type="radio" name="gender">Nữ
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="container">
-                        <div class="footer-info">
-                            <a href="index.html" class="footer-logo">FY<span>o</span>ga</a>
-                            <h3>Lô E2a-7, Đường D1, Khu Công nghệ cao, P.Long Thạnh Mỹ, Tp. Thủ Đức, Tp.HCM</h3>
-                            <div class="footer-menu">
-                                <p>092 752 8888</p>
-                                <p>fyoga@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container copyright">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p>&copy; <a href="#">FYoga</a></p>
-                            </div>
-                            <div class="col-md-6">
-                                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                                <p>Được thiết kế bởi <a href="https://htmlcodex.com">HTML Codex</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </form>
+
+            <button id="modal-login-button-re" type="submit">
+                Đăng Ký
+            </button>
+
+            <footer class="modal-footer">
+                <p class="modal-register-but" id="login-link"><a href="login.html">Bạn đã có tài khoản?</a></p>
+            </footer>
         </div>
     </div>
-    <!-- Footer End -->
+
+
+
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 

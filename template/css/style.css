@@ -16,7 +16,7 @@ h6 {
     color: #343148;
 }
 
-h4 p{
+h4 p {
     color: #cda1a1;
 }
 
@@ -221,18 +221,19 @@ a:focus {
     color: #de0707;
 }
 
-.navbar-dark .nav-link-dk button{
+.navbar-dark .nav-link-dk button {
     border: none;
     border-radius: 20px;
     margin-left: 5px;
     padding: 8px 8px;
 }
-.nav-link-dk button{
-    border: none;
+
+.nav-link-dk a {
+    border: 1px solid #F7CAC9;
+    padding: 10px;
+    background-color: #fff;
     border-radius: 50px;
-    margin-left: 20px;
-    padding: 15px 40px;
-    font-size: 20px;
+    margin-left: 10px;
 }
 .nav-link-dk,
 .nav-link-dk:focus,
@@ -241,12 +242,14 @@ a:focus {
     padding: 10px 10px 8px 150px;
     color: #de0707;
 }
-.nav-link-dk button:hover{
-    background-color:#ddb6b6 ;
+
+.nav-link-dk button:hover {
+    background-color: #ddb6b6;
     color: white;
 }
-.navbar-dark .nav-link-dk button:hover{
-    background-color:#ddb6b6 ;
+
+.navbar-dark .nav-link-dk button:hover {
+    background-color: #ddb6b6;
     color: white;
 }
 
@@ -255,13 +258,6 @@ a:focus {
     background: rgba(256, 256, 256, .1);
     transition: none;
 }
-
-/* .navbar .dropdown-menu {
-    margin-top: 0;
-    border: 0;
-    border-radius: 0;
-    background: #f8f9fa;
-} */
 
 @media (min-width: 992px) {
     .navbar {
@@ -1087,11 +1083,11 @@ a:focus {
     margin-left: -12px;
 }
 
-.price .price-prices h4{
+.price .price-prices h4 {
     color: #cda1a1;
 }
 
-.price .price-prices .p{
+.price .price-prices .p {
     color: #454545;
 }
 
@@ -1126,7 +1122,7 @@ a:focus {
     border: none;
 }
 
-.price-discount{
+.price-discount {
     font-weight: 600;
 }
 
@@ -2253,19 +2249,19 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .modal-container {
+}
+
+.modal-container {
     background: #fff;
     border-radius: 10px;
-  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-			0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
     width: 508px;
     top: 50px;
     height: fit-content;
-  }
+}
 
-  .modal-header {
+.modal-header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2273,26 +2269,26 @@ a:focus {
     font-weight: 700;
     font-size: 32px;
     line-height: 70px;
-  
-  }
-  
-  .modal-body {
+
+}
+
+.modal-body {
     padding: 25px;
-  }
-  
-  .modal-login-user {
+}
+
+.modal-login-user {
     text-align: center;
-  }
-  
-  .modal-input {
+}
+
+.modal-input {
     border: 1px solid #ccc;
     width: 400px;
     font-size: 18px;
     padding: 10px;
     margin-bottom: 30px;
-  }
+}
 
-  #modal-login-button {
+#modal-login-button {
     background: #62BEC8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     border-radius: 50px;
@@ -2303,41 +2299,45 @@ a:focus {
     font-size: 20px;
     margin-left: calc(50% - 150px/2);
     border: none;
-  }
-  
-  #modal-login-button:hover {
+}
+
+#modal-login-button:hover {
     background-color: #3cb5c3;
     cursor: pointer;
-  }
-  
-  .modal-footer {
+}
+
+.modal-footer {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .modal-footer-schedule {
+}
+
+.modal-footer-schedule {
     display: flex;
     justify-content: center;
-  }
-  .modal-register-but {
+}
+
+.modal-register-but {
     display: flex;
     justify-content: center;
     margin-left: 30px;
     margin-right: 44px;
-  }
-  .modal-register-but:hover {
+}
+
+.modal-register-but:hover {
     text-decoration: underline;
-  }
-  .modal-register-but:hover {
+}
+
+.modal-register-but:hover {
     text-decoration: underline;
-  }
-  .highlight {
+}
+
+.highlight {
     background-color: rgb(193, 193, 193);
-  }
-  
-  
-  .close {
+}
+
+
+.close {
     position: hide;
     color: #fff;
     right: 510px;
@@ -2345,10 +2345,13 @@ a:focus {
     margin-top: 3px;
     opacity: 0.4;
     display: none;
-  } */
-  
-/* form đăng ký */
-.modal-register {
+}
+
+*/
+
+/* ===============form đăng ký=================== */
+
+.modal-schedule {
     position: fixed;
     top: 0;
     left: 0;
@@ -2358,34 +2361,28 @@ a:focus {
     display: none;
     align-items: center;
     justify-content: center;
-  }
-  .modal-schedule {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
-    display: none;
-    align-items: center;
-    justify-content: center;
-  }
-  .modal-container-register {
-    margin-top: 60px;
+}
+
+.modal-container-register {
+    margin-top: 100px;
+    margin-left: 100px;
     background-color: #fff;
     width: 800px;
-    height: 540px;
-    border-radius: 8px;
-  }
-  .modal-container-schedule {
+    height: 577px;
+    border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+}
+
+.modal-container-schedule {
     margin-top: 60px;
     background-color: #fff;
     width: 600px;
     height: 500px;
     border-radius: 8px;
-  }
-  
-  .modal-header-register {
+}
+
+.modal-header-register {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2393,89 +2390,78 @@ a:focus {
     font-weight: 700;
     font-size: 32px;
     line-height: 70px;
-  }
-  
-  .modal-body-schedule {
+}
+
+.modal-body-schedule {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px 40px;
-  }
-  
-  .modal-boxsh {
+}
+
+.modal-boxsh {
     margin-right: 180px;
     margin-bottom: 50px;
 
-  }
-  .modal-body-re {
+}
+
+.modal-body-re {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px 40px;
-    margin-left: 300px;
-    margin-right: 300px ;
+}
 
-    margin-bottom: 50px;
-    border-radius: 10px;
-  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-			0 10px 10px rgba(0,0,0,0.22);
-	position: relative;
-	overflow: hidden;
-  }
-  .titlee{
-text-align: center;
-margin-top:210px;
-  }
-  .modal-box {
+.modal-box {
     width: calc(50% - 8px);
     margin-bottom: 15px;
-  }
-  
-  .modal-input-name{
+}
+
+.modal-input-name {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 14px;
-  
-  }
-  
-  .modal-input-name {
+
+}
+
+.modal-input-name {
     margin-top: 8px;
-  }
-  
-  .modal-input-name::placeholder {
+}
+
+.modal-input-name::placeholder {
     color: #999;
-  }
-  
-  .modal-gender {
+}
+
+.modal-gender {
     margin-bottom: 15px;
-  }
-  
-  .gender-title {
+}
+
+.gender-title {
     font-weight: 400;
     font-size: 15px;
     margin-right: 15px;
-  }
-  
-  .modal-gender input {
+}
+
+.modal-gender input {
     padding-right: 10px;
-  }
-  
-  .modal-footer {
+}
+
+.modal-footer {
     text-align: center;
-  }
-  
-  .modal-register-but a {
+}
+
+.modal-register-but a {
     color: #337ab7;
     text-decoration: none;
-  }
-  
-  .modal-register-but a:hover {
+}
+
+.modal-register-but a:hover {
     text-decoration: underline;
-  }
-  
-  #modal-login-button-re {
+}
+
+#modal-login-button-re {
     background: #62BEC8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     border-radius: 50px;
@@ -2486,46 +2472,51 @@ margin-top:210px;
     margin-left: calc(50% - 150px/2);
     margin-bottom: 20px;
     border: none;
-  }
-  
-  #modal-login-button-re:hover {
+}
+
+#modal-login-button-re:hover {
     background-color: #3cb5c3;
     cursor: pointer;
-  }
+}
 
 
-  /* ------------------------------ User --------------------  */
-  .user-detail img{
+/* ------------------------------ User --------------------  */
+.user-detail img {
     clip-path: circle(50%);
     height: 290px;
-  width: 290px;
-  margin-right: 80px;
-  }
-  .user-detail .info input{
+    width: 290px;
+    margin-right: 80px;
+}
+
+.user-detail .info input {
     display: block;
     margin-top: 30px;
     width: 60%;
     padding: 8px;
     border-radius: 15px;
-  }
-  .info{
+}
+
+.info {
     margin-left: 100px;
     width: 600px;
-  }
-  .info i{
+}
+
+.info i {
     margin-left: 50px;
-  }
-  .user-display{
+}
+
+.user-display {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  /* -------------------------Schedule-detail --------------------  */
-  .schedule-detail{
+/* -------------------------Schedule-detail --------------------  */
+.schedule-detail {
     margin-top: 80px;
-  }
-  .box-info {
+}
+
+.box-info {
     border-radius: 20px;
     padding: 10px;
     margin-bottom: 20px;
@@ -2535,4 +2526,3 @@ margin-top:210px;
     font-size: 22px;
     width: 470px;
 }
-
