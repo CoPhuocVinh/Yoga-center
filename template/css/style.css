@@ -2414,8 +2414,20 @@ a:focus {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px 40px;
+    margin-left: 300px;
+    margin-right: 300px ;
+
+    margin-bottom: 50px;
+    border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
   }
-  
+  .titlee{
+text-align: center;
+margin-top:210px;
+  }
   .modal-box {
     width: calc(50% - 8px);
     margin-bottom: 15px;
@@ -2525,3 +2537,4 @@ a:focus {
     font-size: 22px;
     width: 470px;
 }
+
