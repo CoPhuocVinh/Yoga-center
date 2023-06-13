@@ -98,9 +98,10 @@
             <div class="modal-body">
                 <form id="myForm">
                     <div class="modal-login-user">
-                        <input class="modal-input" id="txtlogin" placeholder="Email đăng nhập" required><br>
-                        <span id="error1" style="display: none; color: red;">Vui lòng nhập đúng địa chỉ email.</span>
-
+                        <input class="modal-input" id="txtlogin" placeholder="Email đăng nhập" required>
+                        <span id="error1" style="display: none; color: red; justify-content: center;">Vui lòng nhập đúng
+                            địa chỉ
+                            email.</span><br>
                         <input type="password" class="modal-input" placeholder="Mật khẩu" required>
                     </div>
                     <button id="modal-login-button" type="submit">
@@ -108,12 +109,10 @@
                     </button>
                 </form>
             </div>
-
             <footer class="modal-footer">
                 <p class="modal-register-but"><a href="register.html" id="register-link">Bạn chưa có tài khoản?</a></p>
                 <p class="modal-register-but"><a href="#">Quên mật khẩu?</a></p>
             </footer>
-
         </div>
     </div>
 
@@ -131,7 +130,7 @@
             for (let index = 0; ; index++) {
                 if (nameInput.value === "" || !emailRegex.test(nameInput.value)) {
                     // alert("Vui lòng nhập đúng địa chỉ email.");
-                    errorElement.style.display = "inline";
+                    errorElement.style.display = "flex";
                     event.preventDefault();
                     return true;
                 } else {
