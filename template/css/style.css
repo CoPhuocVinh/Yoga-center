@@ -2485,6 +2485,7 @@ a:focus {
 
 
 /* ------------------------------ User --------------------  */
+
 .user-detail img {
     clip-path: circle(50%);
     height: 290px;
@@ -2516,6 +2517,34 @@ a:focus {
 }
 
 /* -------------------------Schedule-detail --------------------  */
+.modal-class-detail{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-hlv-detail{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    width: 508px;
+    top: 50px;
+    height: fit-content;
+}
+
+.user-img{
+    clip-path: circle(50%);
+    height: 290px;
+    width: 290px;
+    margin-right: 80px;
+}
 .schedule-detail {
     margin-top: 80px;
 }
@@ -2529,4 +2558,16 @@ a:focus {
     text-align: center;
     font-size: 22px;
     width: 470px;
+}
+button#openModalButtonRegister {
+    margin-left: 750px;
+    margin-top: 20px;
+    background: #ff9898;
+    border: none;
+    padding: 16px;
+    border-radius: 50px;
+    color: #fff;
+}
+button#openModalButtonRegister:hover{
+    border: 1px solid rgb(91 84 84);
 }

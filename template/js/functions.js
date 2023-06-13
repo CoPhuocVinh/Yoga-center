@@ -1,25 +1,24 @@
 
-var openModalButtonLogin = document.getElementById("openModalButtonLogin");
+// var openModalButtonLogin = document.getElementById("openModalButtonLogin");
 var openModalButtonRegister = document.getElementById("openModalButtonRegister");
-var loginModal = document.getElementById("loginModal");
+// var loginModal = document.getElementById("loginModal");
 var registerModal = document.getElementById("registerModal");
-var loginLink = document.getElementById("login-link");
+// var loginLink = document.getElementById("login-link");
 var registerLink = document.getElementById("register-link");
 var closeButton = document.getElementsByClassName("close")[0];
 
 
 
 // Xử lý sự kiện khi nhấp vào nút đăng nhập
-openModalButtonLogin.onclick = function () {
-  loginModal.style.display = "block";
-}
+// openModalButtonLogin.onclick = function () {
+//   loginModal.style.display = "block";
+// }
 // xử lý đăng kí
 openModalButtonRegister.onclick = function () {
   registerModal.style.display = "flex";
 }
 // Xử lý sự kiện khi nhấp vào nút đóng cửa sổ đăng nhập
 closeButton.onclick = function () {
-  loginModal.style.display = "none";
   registerModal.style.display = "none";
   
 }
@@ -28,24 +27,13 @@ closeButton.onclick = function () {
 // Xử lý sự kiện khi nhấp vào bất kỳ vị trí nào bên ngoài cửa sổ đăng nhập
 window.onclick = function (event) {
  
-    if (event.target == loginModal || event.target == registerModal || event.target == formTrial ) {
-      loginModal.style.display = "none";
+    if (event.target == registerModal ) {
       registerModal.style.display = "none";
-      formTrial.style.display= "none";
     }
   
 
 }
 
-//Chuyển trang index-user
-// document.getElementById("loginModal").addEventListener("submit", function(event) {
-//   event.preventDefault(); // Ngăn chặn form gửi đi
-
-//   // Kiểm tra thông tin đăng nhập ở đây (có thể sử dụng Ajax để gửi yêu cầu đến máy chủ)
-
-//   // Sau khi xác thực thành công, chuyển hướng đến trang khác
-//   window.location.href = "index-user.html";
-// });
 
 
 // Lấy tham chiếu đến button
