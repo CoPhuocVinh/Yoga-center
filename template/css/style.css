@@ -638,7 +638,6 @@ a:focus {
 }
 
 
-
 @media ((min-width: 992px)) {
     .ftco-section {
         flex: 100%;
@@ -2524,9 +2523,13 @@ a:focus {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.4);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
+}
+
+.modal-class-detail .modal-header-register{
+    margin-top: 10px;
 }
 
 .modal-hlv-detail{
@@ -2534,31 +2537,102 @@ a:focus {
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
         0 10px 10px rgba(0, 0, 0, 0.22);
-    width: 508px;
+    width: 800px;
     top: 50px;
-    height: fit-content;
+    height: 700px;
+    margin-top: 70px;
+}
+
+.modal-hlv-detail .user-display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .user-img{
     clip-path: circle(50%);
-    height: 290px;
-    width: 290px;
+    height: 150px;
+    width: 150px;
     margin-right: 80px;
+}
+
+.modal-hlv-detail .user-display .info{
+    width: 250px;
+    margin: 0;
 }
 .schedule-detail {
     margin-top: 80px;
 }
 
+.schedule-detail .color-2:hover,
+.schedule-detail .color-1:hover,
+.schedule-detail .color-3:hover,
+.schedule-detail .color-4:hover,
+.schedule-detail .color-5:hover{
+    cursor: pointer;
+    color: #e2b9b9;
+}
+
 .box-info {
     border-radius: 20px;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 8px;
+    margin-bottom: 10px;
     background-color: #FDF4F5;
     color: #2A2F4F;
     text-align: center;
-    font-size: 22px;
-    width: 470px;
+    font-size: 14px;
+    width: 300px;
 }
+
+.feedback {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.feedback .blog-carousel {
+    position: relative;
+    width: calc(100% + 30px);
+    left: -15px;
+    right: -15px;
+}
+
+.feedback .blog-item{
+    padding: 0 10px;
+}
+
+.feedback .blog-text h5{
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.feedback .owl-nav {
+    width: 120px;
+    margin: auto;
+    display: flex;
+}
+
+.feedback .owl-nav .owl-prev,
+.feedback .owl-nav .owl-next {
+    margin-left: 15px;
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F7CAC9;
+    background: #343148;
+    font-size: 22px;
+    transition: .3s;
+}
+
+.feedback .owl-nav .owl-prev:hover,
+.feedback .owl-nav .owl-next:hover {
+    color: #343148;
+    background: #F7CAC9;
+}
+
 button#openModalButtonRegister {
     margin-left: 750px;
     margin-top: 20px;
