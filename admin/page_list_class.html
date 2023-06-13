@@ -344,6 +344,7 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <!--dòng lớp-->
                         <tr>
                             <td class="text-center"><input type="checkbox" id="check1-td1" name="check1-td1"></td>
                             <td class="text-center">1</td>
@@ -362,6 +363,7 @@
                                 </div>
                             </td>
                         </tr>
+                        <!-- dòng lớp -->
                         <tr>
                             <td class="text-center"><input type="checkbox" id="check1-td2" name="check1-td2"></td>
                             <td class="text-center">2</td>
@@ -380,6 +382,7 @@
                                 </div>
                             </td>
                         </tr>
+                        <!-- dòng lớp -->
                         <tr>
                             <td class="text-center"><input type="checkbox" id="check1-td3" name="check1-td3"></td>
                             <td class="text-center">3</td>
@@ -398,6 +401,7 @@
                                 </div>
                             </td>
                         </tr>
+                        <!-- dòng lớp -->
                         <tr>
                             <td class="text-center"><input type="checkbox" id="check1-td4" name="check1-td4"></td>
                             <td class="text-center">4</td>
@@ -416,6 +420,7 @@
                                 </div>
                             </td>
                         </tr>
+                        <!-- dòng lớp -->
                         <tr>
                             <td class="text-center"><input type="checkbox" id="check1-td4" name="check1-td4"></td>
                             <td class="text-center">4</td>
@@ -434,6 +439,7 @@
                                 </div>
                             </td>
                         </tr>
+                        <!-- dòng lớp -->
                         <tr>
                             <td class="text-center"><input type="checkbox" id="check1-td4" name="check1-td4"></td>
                             <td class="text-center">4</td>
@@ -456,9 +462,10 @@
                         <tr>
                             <td class="text-center"><input type="checkbox" id="check1-td4" name="check1-td4"></td>
                             <td class="text-center">4</td>
-                            <td><a href="javascript:void(0)"> <input type="text" value="Class D"></a></td>
-                            <td class="hidden-xs hidden-sm"> <input type="text" value="Hatha Yoga"></td>
-                            <td class="hidden-xs hidden-sm"><input type="text" value="Lilly Fry"></td>
+                            <td class="NameClass"><a href="#">Class D</a></td><!--tên lớp-->
+                            <td class="hidden-xs hidden-sm NameCourse">Hatha Yoga</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm NameTeacher">Lilly Fry</td>
+                            <!--tên giáo viên-->
 
                             <td class="text-center">
                                 <div class="btn-group">
@@ -511,6 +518,7 @@
             <input type="submit" value="Save" id="save">
         </form>
     </div>
+
     <style>
         #formContainer {
             display: none;
@@ -564,17 +572,39 @@
             transform: translateX(500%);
         }
     </style>
+
     <script>
+        //hiện form
         function showForm() {
             var formContainer = document.getElementById("formContainer");
             formContainer.style.display = "block";
         }
-
+        //tắt form
         function hideForm() {
             var formContainer = document.getElementById("formContainer");
             formContainer.style.display = "none";
         }
-        // function getdata
+        //xử lý form
+
+        // Lắng nghe sự kiện khi biểu mẫu được gửi đi
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Ngăn chặn việc gửi biểu mẫu đi để chúng ta có thể xử lý dữ liệu trước
+
+            // Lấy dữ liệu từ biểu mẫu
+            var firstName = document.getElementById("myForm").elements["firstName"].value;
+            var lastName = document.getElementById("myForm").elements["lastName"].value;
+            var age = document.getElementById("myForm").elements["age"].value;
+
+            // Cập nhật dữ liệu trong bảng
+            var table = document.getElementById("myTable");
+            var row = table.getElementsByTagName("tr")[1]; // Lấy hàng thứ hai (index 1)
+
+            // Cập nhật giá trị trong các ô của hàng
+            row.getElementsByClassName("firstNameInput")[0].value = firstName;
+            row.getElementsByClassName("lastNameInput")[0].value = lastName;
+            row.getElementsByClassName("ageInput")[0].value = age;
+        });
+
 
     </script>
     <!--END form edit class -->
