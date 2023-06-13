@@ -99,8 +99,9 @@
                 <form id="myForm">
                     <div class="modal-login-user">
                         <input class="modal-input" id="txtlogin" placeholder="Tên đăng nhập" required><br>
-                        <span id="error1" style="display: none; color: red;">Vui lòng nhập địa chỉ email.</span>
-                        <input class="modal-input" placeholder="Mật khẩu" required>
+                        <span id="error1" style="display: none; color: red;">Vui lòng nhập đúng địa chỉ email.</span>
+
+                        <input type="password" class="modal-input" placeholder="Mật khẩu" required>
                     </div>
                     <button id="modal-login-button" type="submit">
                         Đăng Nhập
@@ -127,18 +128,20 @@
             var nameInput = document.getElementById("txtlogin");
             // Kiểm tra định dạng địa chỉ email
             var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            for (let index = 0; ; index++) {
+                if (nameInput.value === "" || !emailRegex.test(nameInput.value)) {
+                    // alert("Vui lòng nhập đúng địa chỉ email.");
+                    errorElement.style.display = "inline";
+                    event.preventDefault();
+                    return true;
+                } else {
+                    // Ẩn thông báo lỗi nếu giá trị hợp lệ
+                    errorElement.style.display = "none";
+                    break;
+                };
 
-            if (nameInput.value === "" || !emailRegex.test(nameInput.value)) {
+            }
 
-                // alert("Vui lòng nhập địa chỉ email.");
-                errorElement.style.display = "inline";
-                errorElement2.style.display = "none";
-                event.preventDefault();
-                return false;
-            } else {
-                // Ẩn thông báo lỗi nếu giá trị hợp lệ
-                errorElement.style.display = "none";
-            };
 
         });
 
