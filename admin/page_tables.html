@@ -6,10 +6,9 @@
 <head>
     <meta charset="utf-8">
 
-    <title>uAdmin - Professional, Responsive and Flat Admin Template</title>
+    <title>Admin - FYoga</title>
 
-    <meta name="description"
-        content="uAdmin is a Professional, Responsive and Flat Admin Template created by pixelcave and published on Themeforest">
+    <meta name="description">
     <meta name="author" content="pixelcave">
     <meta name="robots" content="noindex, nofollow">
 
@@ -71,7 +70,7 @@
             <!-- END Mobile Navigation -->
 
             <!-- Logo -->
-            <a href="index.html" class="navbar-brand"><img src="img/template/logo.png" alt="logo"></a>
+            <a href="index.html" class="navbar-brand">FY<span>o</span>ga</a>
 
             <!-- Loading Indicator, Used for demostrating how loading of widgets could happen, check main.js - uiDemo() -->
             <div id="loading" class="pull-left"><i class="fa fa-certificate fa-spin"></i></div>
@@ -111,74 +110,6 @@
                     </ul>
                 </li>
                 <!-- END RSS Widget -->
-
-                <li class="divider-vertical"></li>
-
-                <!-- Twitter Widget -->
-                <!-- Add .dropdown-left-responsive class to align the dropdown menu left (so its visible on mobile) -->
-                <li id="twitter-widget" class="dropdown dropdown-left-responsive">
-                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
-                        <i class="fa fa-twitter"></i>
-                        <span class="badge badge-info display-none"></span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-right widget">
-                        <li class="widget-heading"><i class="fa fa-comments-o pull-right"></i>Latest Tweets</li>
-                        <li class="li-hover">
-                            <div class="media">
-                                <a class="pull-left" href="javascript:void(0)">
-                                    <img src="img/placeholders/image_dark_64x64.png" alt="fakeimg">
-                                </a>
-                                <div class="media-body">
-                                    <h6 class="media-heading"><a href="javascript:void(0)">Michael</a><span
-                                            class="label label-info">just now</span></h6>
-                                    <div class="media">Web design all the way!</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="divider"></li>
-                        <li class="li-hover">
-                            <div class="media">
-                                <a class="pull-left" href="javascript:void(0)">
-                                    <img src="img/placeholders/image_dark_64x64.png" alt="fakeimg">
-                                </a>
-                                <div class="media-body">
-                                    <h6 class="media-heading"><a href="javascript:void(0)">Monica</a><span
-                                            class="label label-info">3 min ago</span></h6>
-                                    <div class="media">Download free PSDs at <a href="http://bit.ly/YUs4SQ"
-                                            target="_blank">http://bit.ly/YUs4SQ</a></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="divider"></li>
-                        <li class="li-hover">
-                            <div class="media">
-                                <a class="pull-left" href="javascript:void(0)">
-                                    <img src="img/placeholders/image_dark_64x64.png" alt="fakeimg">
-                                </a>
-                                <div class="media-body">
-                                    <h6 class="media-heading"><a href="javascript:void(0)">Steven</a><span
-                                            class="label label-info">45 min ago</span></h6>
-                                    <div class="media">Be sure to check out my portfolio!</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="divider"></li>
-                        <li class="li-hover">
-                            <div class="media">
-                                <a class="pull-left" href="javascript:void(0)">
-                                    <img src="img/placeholders/image_dark_64x64.png" alt="fakeimg">
-                                </a>
-                                <div class="media-body">
-                                    <h6 class="media-heading"><a href="javascript:void(0)">Tim</a><span
-                                            class="label label-info">1 hour ago</span></h6>
-                                    <div class="media">Get all our themes for free for the next 2 hours! <a
-                                            href="javascript:void(0)">#freebies</a></div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <!-- END Twitter Widget -->
 
                 <li class="divider-vertical"></li>
 
@@ -240,6 +171,7 @@
 
                 <li class="divider-vertical"></li>
 
+                <!-- Notifications Widget -->
                 <li class="divider-vertical"></li>
 
                 <!-- User Menu -->
@@ -249,20 +181,20 @@
                     <ul class="dropdown-menu">
                         <!-- Just a button demostrating how loading of widgets could happen, check main.js- - uiDemo() -->
                         <li>
-                            <a href="javascript:void(0)" class="loading-on"><i class="fa fa-refresh"></i> Refresh</a>
+                            <a href="javascript:void(0)" class="loading-on"><i class="fa fa-refresh"></i> Đặt lại</a>
                         </li>
                         <li class="divider"></li>
                         <li>
                             <!-- Modal div is at the bottom of the page before including javascript code -->
                             <a href="#modal-user-settings" role="button" data-toggle="modal"><i class="fa fa-user"></i>
-                                User Profile</a>
+                                Thông tin người dùng</a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)"><i class="fa fa-wrench"></i> App Settings</a>
+                            <a href="javascript:void(0)"><i class="fa fa-wrench"></i> Cài đặt ứng dụng</a>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="page_login.html"><i class="fa fa-lock"></i> Log out</a>
+                            <a href="page_login.html"><i class="fa fa-lock"></i> Đăng xuất</a>
                         </li>
                     </ul>
                 </li>
@@ -277,34 +209,51 @@
             <!-- Sidebar -->
             <aside id="page-sidebar" class="collapse navbar-collapse navbar-main-collapse">
 
+
                 <!-- Primary Navigation -->
                 <nav id="primary-nav">
+                    <h3 class="admin-title">Admin</h3>
                     <ul>
                         <li>
-                            <a href="index.html" class="active"><i class="fa fa-fire"></i>Dashboard</a>
+                            <a href="index.html" class="active"><i class="fa fa-fire"></i>Bảng điều khiển</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-th-list"></i>Forms</a>
                             <ul>
 
                                 <li>
-                                    <a href="page_form_validation.html"><i
-                                            class="fa fa-exclamation-triangle"></i>Courses</a>
+                                    <a href="page_form_validation.html"><i class="fa fa-certificate"></i>Khóa học</a>
                                 </li>
                                 <li>
-                                    <a href="page_form_wizard.html"><i class="fa fa-magic"></i>Class</a>
+                                    <a href="page_list_class.html"><i class="fa fa-file"></i>Lớp học</a>
+                                </li>
+                                <li>
+                                    <a href="page_form_wizard.html"><i class="fa fa-pencil"></i>Blog</a>
                                 </li>
 
                             </ul>
                         </li>
                         <li>
-                            <a href="page_tables.html"><i class="fa fa-table"></i>List</a>
+                            <a href="#"><i class="fa fa-table"></i>Danh sách</a>
+                            <ul>
+
+                                <li>
+                                    <a href="page_form_validation.html"><i class="fa fa-clipboard"></i>Nhân viên</a>
+                                </li>
+                                <li>
+                                    <a href="page_list_class.html"><i class="fa fa-file-o"></i>Huấn luyện viên</a>
+                                </li>
+                                <li>
+                                    <a href="page_form_wizard.html"><i class="fa fa-users"></i>Khách hàng</a>
+                                </li>
+
+                            </ul>
                         </li>
                         <li>
-                            <a href="page_inbox.html"><i class="fa fa-envelope"></i>Inbox</a>
+                            <a href="page_inbox.html"><i class="fa fa-envelope"></i>Hộp thư đến</a>
                         </li>
                         <li>
-                            <a href="page_price_tables.html"><i class="fa fa-file-o"></i>Price</a>
+                            <a href="page_price_tables.html"><i class="fa fa-usd"></i>Giá</a>
                         </li>
                     </ul>
                 </nav>

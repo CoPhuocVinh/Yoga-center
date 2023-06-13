@@ -6,10 +6,9 @@
 <head>
     <meta charset="utf-8">
 
-    <title>uAdmin - Professional, Responsive and Flat Admin Template</title>
+    <title>Admin - FYoga</title>
 
-    <meta name="description"
-        content="uAdmin is a Professional, Responsive and Flat Admin Template created by pixelcave and published on Themeforest">
+    <meta name="description">
     <meta name="author" content="pixelcave">
     <meta name="robots" content="noindex, nofollow">
 
@@ -71,7 +70,7 @@
             <!-- END Mobile Navigation -->
 
             <!-- Logo -->
-            <a href="index.html" class="navbar-brand"><img src="img/template/logo.png" alt="logo"></a>
+            <a href="index.html" class="navbar-brand">FY<span>o</span>ga</a>
 
             <!-- Loading Indicator, Used for demostrating how loading of widgets could happen, check main.js - uiDemo() -->
             <div id="loading" class="pull-left"><i class="fa fa-certificate fa-spin"></i></div>
@@ -111,74 +110,6 @@
                     </ul>
                 </li>
                 <!-- END RSS Widget -->
-
-                <li class="divider-vertical"></li>
-
-                <!-- Twitter Widget -->
-                <!-- Add .dropdown-left-responsive class to align the dropdown menu left (so its visible on mobile) -->
-                <li id="twitter-widget" class="dropdown dropdown-left-responsive">
-                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
-                        <i class="fa fa-twitter"></i>
-                        <span class="badge badge-info display-none"></span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-right widget">
-                        <li class="widget-heading"><i class="fa fa-comments-o pull-right"></i>Latest Tweets</li>
-                        <li class="li-hover">
-                            <div class="media">
-                                <a class="pull-left" href="javascript:void(0)">
-                                    <img src="img/placeholders/image_dark_64x64.png" alt="fakeimg">
-                                </a>
-                                <div class="media-body">
-                                    <h6 class="media-heading"><a href="javascript:void(0)">Michael</a><span
-                                            class="label label-info">just now</span></h6>
-                                    <div class="media">Web design all the way!</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="divider"></li>
-                        <li class="li-hover">
-                            <div class="media">
-                                <a class="pull-left" href="javascript:void(0)">
-                                    <img src="img/placeholders/image_dark_64x64.png" alt="fakeimg">
-                                </a>
-                                <div class="media-body">
-                                    <h6 class="media-heading"><a href="javascript:void(0)">Monica</a><span
-                                            class="label label-info">3 min ago</span></h6>
-                                    <div class="media">Download free PSDs at <a href="http://bit.ly/YUs4SQ"
-                                            target="_blank">http://bit.ly/YUs4SQ</a></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="divider"></li>
-                        <li class="li-hover">
-                            <div class="media">
-                                <a class="pull-left" href="javascript:void(0)">
-                                    <img src="img/placeholders/image_dark_64x64.png" alt="fakeimg">
-                                </a>
-                                <div class="media-body">
-                                    <h6 class="media-heading"><a href="javascript:void(0)">Steven</a><span
-                                            class="label label-info">45 min ago</span></h6>
-                                    <div class="media">Be sure to check out my portfolio!</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="divider"></li>
-                        <li class="li-hover">
-                            <div class="media">
-                                <a class="pull-left" href="javascript:void(0)">
-                                    <img src="img/placeholders/image_dark_64x64.png" alt="fakeimg">
-                                </a>
-                                <div class="media-body">
-                                    <h6 class="media-heading"><a href="javascript:void(0)">Tim</a><span
-                                            class="label label-info">1 hour ago</span></h6>
-                                    <div class="media">Get all our themes for free for the next 2 hours! <a
-                                            href="javascript:void(0)">#freebies</a></div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <!-- END Twitter Widget -->
 
                 <li class="divider-vertical"></li>
 
@@ -240,6 +171,7 @@
 
                 <li class="divider-vertical"></li>
 
+                <!-- Notifications Widget -->
                 <li class="divider-vertical"></li>
 
                 <!-- User Menu -->
@@ -249,20 +181,20 @@
                     <ul class="dropdown-menu">
                         <!-- Just a button demostrating how loading of widgets could happen, check main.js- - uiDemo() -->
                         <li>
-                            <a href="javascript:void(0)" class="loading-on"><i class="fa fa-refresh"></i> Refresh</a>
+                            <a href="javascript:void(0)" class="loading-on"><i class="fa fa-refresh"></i> Đặt lại</a>
                         </li>
                         <li class="divider"></li>
                         <li>
                             <!-- Modal div is at the bottom of the page before including javascript code -->
                             <a href="#modal-user-settings" role="button" data-toggle="modal"><i class="fa fa-user"></i>
-                                User Profile</a>
+                                Thông tin người dùng</a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)"><i class="fa fa-wrench"></i> App Settings</a>
+                            <a href="javascript:void(0)"><i class="fa fa-wrench"></i> Cài đặt ứng dụng</a>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="page_login.html"><i class="fa fa-lock"></i> Log out</a>
+                            <a href="page_login.html"><i class="fa fa-lock"></i> Đăng xuất</a>
                         </li>
                     </ul>
                 </li>
@@ -280,32 +212,48 @@
 
                 <!-- Primary Navigation -->
                 <nav id="primary-nav">
+                    <h3 class="admin-title">Admin</h3>
                     <ul>
                         <li>
-                            <a href="index.html" class="active"><i class="fa fa-fire"></i>Dashboard</a>
+                            <a href="index.html" class="active"><i class="fa fa-fire"></i>Bảng điều khiển</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-th-list"></i>Forms</a>
                             <ul>
 
                                 <li>
-                                    <a href="page_form_validation.html"><i
-                                            class="fa fa-exclamation-triangle"></i>Courses</a>
+                                    <a href="page_form_validation.html"><i class="fa fa-certificate"></i>Khóa học</a>
                                 </li>
                                 <li>
-                                    <a href="page_form_wizard.html"><i class="fa fa-magic"></i>Class</a>
+                                    <a href="page_list_class.html"><i class="fa fa-file"></i>Lớp học</a>
+                                </li>
+                                <li>
+                                    <a href="page_form_wizard.html"><i class="fa fa-pencil"></i>Blog</a>
                                 </li>
 
                             </ul>
                         </li>
                         <li>
-                            <a href="page_tables.html"><i class="fa fa-table"></i>List</a>
+                            <a href="#"><i class="fa fa-table"></i>Danh sách</a>
+                            <ul>
+
+                                <li>
+                                    <a href="page_form_validation.html"><i class="fa fa-clipboard"></i>Nhân viên</a>
+                                </li>
+                                <li>
+                                    <a href="page_list_class.html"><i class="fa fa-file-o"></i>Huấn luyện viên</a>
+                                </li>
+                                <li>
+                                    <a href="page_form_wizard.html"><i class="fa fa-users"></i>Khách hàng</a>
+                                </li>
+
+                            </ul>
                         </li>
                         <li>
-                            <a href="page_inbox.html"><i class="fa fa-envelope"></i>Inbox</a>
+                            <a href="page_inbox.html"><i class="fa fa-envelope"></i>Hộp thư đến</a>
                         </li>
                         <li>
-                            <a href="page_price_tables.html"><i class="fa fa-file-o"></i>Price</a>
+                            <a href="page_price_tables.html"><i class="fa fa-usd"></i>Giá</a>
                         </li>
                     </ul>
                 </nav>
@@ -325,105 +273,101 @@
                 <!-- END Navigation info -->
 
 
-
-
-                <section class="ftco-section">
-                    <div id="class" class="class">
-                        <div class="container">
-                            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                                <h2>Khóa học</h2>
+                <!-- Tiles -->
+                <!-- Row 1 -->
+                <div class="dash-tiles row">
+                    <!-- Column 1 of Row 1 -->
+                    <div class="col-sm-3">
+                        <!-- Total Users Tile -->
+                        <div class="dash-tile dash-tile-ocean clearfix animation-pullDown">
+                            <div class="dash-tile-header">
+                                <div class="dash-tile-options">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
+                                            title="edit"><i class="fa fa-cog"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
+                                            title="Statistics"><i class="fa fa-bar-chart-o"></i></a>
+                                    </div>
+                                </div>
+                                Hatha Yoga
                             </div>
-                            <div class="row class-container">
-                                <div class="col-lg-3 col-md-6 col-sm-12 class-item filter-1 wow fadeInUp"
-                                    data-wow-delay="0.0s">
-                                    <div class="class-wrap">
-                                        <div class="class-img package-program ftco-animate">
-                                            <a href="hatha.html"
-                                                class="d-flex  justify-content-center  align-items-center"
-                                                style="background-image: url(img/class-1.jpg); background-size: cover;">
-                                                <div class="text p-5 text-center">
-                                                    <h5>Hatha Yoga</h5>
-                                                    <p>Các lớp Hatha Yoga là nền tảng của mọi loại hình Yoga, rất phù
-                                                        hợp dành cho
-                                                        người
-                                                        mới bắt đầu.</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="class-text">
-                                            <a href="hatha.html">HATHA YOGA</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12 class-item filter-2 wow fadeInUp"
-                                    data-wow-delay="0.2s">
-                                    <div class="class-wrap">
-                                        <div class="class-img package-program ftco-animate">
-                                            <a href="AsanasYoga.html"
-                                                class="d-flex  justify-content-center  align-items-center"
-                                                style="background-image: url(img/class-2.jpg); background-size: cover;">
-                                                <div class="text p-5 text-center">
-                                                    <h5>ASANAS YOGA</h5>
-                                                    <p>Trong tiếng Phạn, asanas có nghĩa là các tư thế yoga. </p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="class-text">
-                                            <a href="AsanasYoga.html">ASANAS YOGA</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12 class-item filter-3 wow fadeInUp"
-                                    data-wow-delay="0.4s">
-                                    <div class="class-wrap">
-                                        <div class="class-img package-program ftco-animate">
-                                            <a href="trilieu.html"
-                                                class="d-flex  justify-content-center  align-items-center"
-                                                style="background-image: url(img/class-3.jpg); background-size: cover;">
-                                                <div class="text p-5 text-center">
-                                                    <h5>YOGA TRỊ LIỆU</h5>
-                                                    <p>Yoga trị liệu là hình thức sử dụng các bài tập kết hợp giữa động
-                                                        tác.</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="class-text">
-                                            <a href="trilieu.html">YOGA TRỊ LIỆU</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12 class-item filter-1 wow fadeInUp"
-                                    data-wow-delay="0.6s">
-                                    <div class="class-wrap">
-                                        <div class="class-img package-program ftco-animate">
-                                            <a href="YogaNghethuat.html"
-                                                class="d-flex  justify-content-center  align-items-center"
-                                                style="background-image: url(img/class-4.jpg); background-size: cover;">
-                                                <div class="text p-5 text-center">
-                                                    <h5>YOGA NGHỆ THUẬT</h5>
-                                                    <p>Yoga nghệ thuật là hình thức yoga nâng cao tập trung vào các cơ
-                                                        hoặc nhóm cơ
-                                                        cụ
-                                                        thể.</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="class-text">
-                                            <a href="YogaNghethuat.html">YOGA NGHỆ THUẬT</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="dash-tile-icon"><i class="fa fa-users"></i></div>
+                            <div class="dash-tile-text">30</div>
                         </div>
+                        <!-- END Total Users Tile -->
                     </div>
-                </section>
+                    <!-- END Column 1 of Row 1 -->
 
+                    <!-- Column 2 of Row 1 -->
+                    <div class="col-sm-3">
+                        <!-- Total Sales Tile -->
+                        <div class="dash-tile dash-tile-flower clearfix animation-pullDown">
+                            <div class="dash-tile-header">
+                                <div class="dash-tile-options">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
+                                            title="edit"><i class="fa fa-cog"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
+                                            title="Statistics"><i class="fa fa-bar-chart-o"></i></a>
+                                    </div>
+                                </div>
+                                Asanas Yoga
+                            </div>
+                            <div class="dash-tile-icon"><i class="fa fa-users"></i></div>
+                            <div class="dash-tile-text">30</div>
+                        </div>
+                        <!-- END Total Sales Tile -->
+                    </div>
+                    <!-- END Column 2 of Row 1 -->
 
-              <!--Form Validation, Validation Initialization happens at the bottom of the page-->  
-               <form id="form-validation" action="page_form_validation.html" method="post"
+                    <!-- Column 3 of Row 1 -->
+                    <div class="col-sm-3">
+                        <!-- Popularity Tile -->
+                        <div class="dash-tile dash-tile-oil clearfix animation-pullDown">
+                            <div class="dash-tile-header">
+                                <div class="dash-tile-options">
+                                    <div class="btn-group">
+                                        <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
+                                            title="edit"><i class="fa fa-cog"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
+                                            title="Statistics"><i class="fa fa-bar-chart-o"></i></a>
+                                    </div>
+                                </div>
+                                Yoga Trị Liệu
+                            </div>
+                            <div class="dash-tile-icon"><i class="fa fa-users"></i></div>
+                            <div class="dash-tile-text">30</div>
+                        </div>
+                        <!-- END Popularity Tile -->
+                    </div>
+                    <!-- END Column 3 of Row 1 -->
+
+                    <!-- Column 4 of Row 1 -->
+                    <div class="col-sm-3">
+                        <!-- RSS Subscribers Tile -->
+                        <div class="dash-tile dash-tile-balloon clearfix animation-pullDown">
+                            <div class="dash-tile-header">
+                                <div class="dash-tile-options">
+                                    <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
+                                        title="edit"><i class="fa fa-cog"></i></a>
+                                    <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
+                                        title="Statistics"><i class="fa fa-bar-chart-o"></i></a>
+                                </div>
+                                Yoga Nghệ Thuật
+                            </div>
+                            <div class="dash-tile-icon"><i class="fa fa-users"></i></div>
+                            <div class="dash-tile-text">30</div>
+                        </div>
+                        <!-- END RSS Subscribers Tile -->
+                    </div>
+                    <!-- END Column 4 of Row 1 -->
+                </div>
+                <!-- END Row 1 -->
+                <!--Form Validation, Validation Initialization happens at the bottom of the page-->
+                <form id="form-validation" action="page_form_validation.html" method="post"
                     class="form-horizontal form-box remove-margin">
                     <!-- Form Header -->
-                   <h4 class="form-box-header">Tạo khóa mới</h4> 
+                    <h4 class="form-box-header">Tạo khóa mới</h4>
 
                     <!-- Form Content -->
                     <div class="form-box-content">
@@ -463,8 +407,8 @@
                                         class="form-control">
                                 </div>
                             </div>
-                        </div>  
-                         <div class="form-group">
+                        </div>
+                        <div class="form-group">
                             <label class="control-label col-md-3" for="val_date">Tên khóa *</label>
                             <div class="col-md-6">
                                 <div class="input-group date input-datepicker" data-date="04-30-2013"
@@ -475,100 +419,100 @@
                             </div>
                         </div>
                         <!-- <div class="form-group">
-                            <label class="control-label col-md-2" for="val_range">Range [1, 100] *</label>
-                            <div class="col-md-2">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-asterisk fa-fw"></i></span>
-                                    <input type="text" id="val_range" name="val_range" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-2" for="val_number">Number *</label>
-                            <div class="col-md-2">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-asterisk fa-fw"></i></span>
-                                    <input type="text" id="val_number" name="val_number" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-2" for="val_digits">Digits *</label>
-                            <div class="col-md-2">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-asterisk fa-fw"></i></span>
-                                    <input type="text" id="val_digits" name="val_digits" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-2" for="val_credit_card">Credit Card *</label>
-                            <div class="col-md-2">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-credit-card fa-fw"></i></span>
-                                    <input type="text" id="val_credit_card" name="val_credit_card" class="form-control"
-                                        data-toggle="tooltip" title="Try 446-667-651">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-2" for="val_skill">Best Skill *</label>
-                            <div class="col-md-2">
-                                <select id="val_skill" name="val_skill" class="form-control">
-                                    <option value="">Please select</option>
-                                    <option value="html">HTML</option>
-                                    <option value="css">CSS</option>
-                                    <option value="javascript">Javascript</option>
-                                    <option value="php">PHP</option>
-                                    <option value="mysql">MySQL</option>
-                                </select>
-                            </div>
-                        </div> -->
+                       <label class="control-label col-md-2" for="val_range">Range [1, 100] *</label>
+                       <div class="col-md-2">
+                           <div class="input-group">
+                               <span class="input-group-addon"><i class="fa fa-asterisk fa-fw"></i></span>
+                               <input type="text" id="val_range" name="val_range" class="form-control">
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-group">
+                       <label class="control-label col-md-2" for="val_number">Number *</label>
+                       <div class="col-md-2">
+                           <div class="input-group">
+                               <span class="input-group-addon"><i class="fa fa-asterisk fa-fw"></i></span>
+                               <input type="text" id="val_number" name="val_number" class="form-control">
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-group">
+                       <label class="control-label col-md-2" for="val_digits">Digits *</label>
+                       <div class="col-md-2">
+                           <div class="input-group">
+                               <span class="input-group-addon"><i class="fa fa-asterisk fa-fw"></i></span>
+                               <input type="text" id="val_digits" name="val_digits" class="form-control">
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-group">
+                       <label class="control-label col-md-2" for="val_credit_card">Credit Card *</label>
+                       <div class="col-md-2">
+                           <div class="input-group">
+                               <span class="input-group-addon"><i class="fa fa-credit-card fa-fw"></i></span>
+                               <input type="text" id="val_credit_card" name="val_credit_card" class="form-control"
+                                   data-toggle="tooltip" title="Try 446-667-651">
+                           </div>
+                       </div>
+                   </div>
+                   <div class="form-group">
+                       <label class="control-label col-md-2" for="val_skill">Best Skill *</label>
+                       <div class="col-md-2">
+                           <select id="val_skill" name="val_skill" class="form-control">
+                               <option value="">Please select</option>
+                               <option value="html">HTML</option>
+                               <option value="css">CSS</option>
+                               <option value="javascript">Javascript</option>
+                               <option value="php">PHP</option>
+                               <option value="mysql">MySQL</option>
+                           </select>
+                       </div>
+                   </div> -->
 
                         <!-- <div class="col-md-6">
-                            <div class="contact-form">
-                                <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                                    <div class="control-group">
-                                        <label class="control-label col-md-2" for="val_username">Khóa ID *</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Khóa ID"
-                                            required="required" data-validation-required-message="Vui lòng nhập khóa ID mới" />
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <label class="control-label col-md-2" for="val_username">Giới thiệu *</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Giới thiệu"
-                                            required="required" data-validation-required-message="Vui lòng nhập thông tin giới thiệu" />
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <label class="control-label col-md-2" for="val_username">Chi tiết *</label>
-                                        <textarea class="form-control" id="message" placeholder="Chi tiết"
-                                            required="required" data-validation-required-message="Vui lòng nhập chi tiết mô tả"></textarea>
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <label class="control-label col-md-2" for="val_username">Tên khóa *</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Tên khóa"
-                                            required="required" data-validation-required-message="Vui lòng nhập tên khóa" />
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-6" for="val_website">Hình ảnh *</label>
-                                        <div class="col-md-6">
-                                            <div class="input-group">
-                                        
-                                                <input type="text" id="val_website" name="val_website" value="http://"
-                                                    class="form-control">
-                                            </div>
-                                        </div>
-                                    </div>  
-                                    <div>
-                                        <button class="btn" type="submit" id="sendMessageButton">Tạo</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div> -->
+                       <div class="contact-form">
+                           <div id="success"></div>
+                           <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                               <div class="control-group">
+                                   <label class="control-label col-md-2" for="val_username">Khóa ID *</label>
+                                   <input type="text" class="form-control" id="name" placeholder="Khóa ID"
+                                       required="required" data-validation-required-message="Vui lòng nhập khóa ID mới" />
+                                   <p class="help-block text-danger"></p>
+                               </div>
+                               <div class="control-group">
+                                   <label class="control-label col-md-2" for="val_username">Giới thiệu *</label>
+                                   <input type="email" class="form-control" id="email" placeholder="Giới thiệu"
+                                       required="required" data-validation-required-message="Vui lòng nhập thông tin giới thiệu" />
+                                   <p class="help-block text-danger"></p>
+                               </div>
+                               <div class="control-group">
+                                   <label class="control-label col-md-2" for="val_username">Chi tiết *</label>
+                                   <textarea class="form-control" id="message" placeholder="Chi tiết"
+                                       required="required" data-validation-required-message="Vui lòng nhập chi tiết mô tả"></textarea>
+                                   <p class="help-block text-danger"></p>
+                               </div>
+                               <div class="control-group">
+                                   <label class="control-label col-md-2" for="val_username">Tên khóa *</label>
+                                   <input type="email" class="form-control" id="email" placeholder="Tên khóa"
+                                       required="required" data-validation-required-message="Vui lòng nhập tên khóa" />
+                                   <p class="help-block text-danger"></p>
+                               </div>
+                               <div class="form-group">
+                                   <label class="control-label col-md-6" for="val_website">Hình ảnh *</label>
+                                   <div class="col-md-6">
+                                       <div class="input-group">
+                                   
+                                           <input type="text" id="val_website" name="val_website" value="http://"
+                                               class="form-control">
+                                       </div>
+                                   </div>
+                               </div>  
+                               <div>
+                                   <button class="btn" type="submit" id="sendMessageButton">Tạo</button>
+                               </div>
+                           </form>
+                       </div>
+                   </div> -->
                         <div class="form-group">
                             <label class="control-label col-md-6" for="val_terms">Service Terms *</label>
                             <div class="col-md-6">
@@ -589,9 +533,8 @@
                     </div>
                     <!-- END Form Content -->
                 </form>
-                  
-                   
                 <!-- END Form Validation -->
+                <!-- END Tiles -->
             </div>
             <!-- END Page Content -->
 
@@ -603,9 +546,10 @@
             </footer>
             <!-- END Footer -->
         </div>
-        <!-- END Inner Container -->
+        <!-- END Inner Content -->
+
     </div>
-    <!-- END Page Container -->
+    <!-- END Inner Container -->
 
     <!-- Scroll to top link, check main.js - scrollToTop() -->
     <a href="javascript:void(0)" id="to-top"><i class="fa fa-chevron-up"></i></a>
