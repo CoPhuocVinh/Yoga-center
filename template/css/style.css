@@ -2240,7 +2240,7 @@ a:focus {
 ======================================== */
 .modal-login {
     position: fixed;
-    top: 0;
+    top: 35px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -2356,7 +2356,7 @@ a:focus {
 }
 .modal-schedule {
     position: fixed;
-    top: 0;
+    top: 35px;
     left: 0;
     right: 0;
     bottom: 0;
