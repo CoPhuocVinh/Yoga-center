@@ -71,7 +71,7 @@
             <!-- END Mobile Navigation -->
 
             <!-- Logo -->
-            <a href="index.html" class="navbar-brand">FY<span>o</span>ga</a>
+            <a href="index.html" class="navbar-brand"><img src="img/template/logo.png" alt="logo"></a>
 
             <!-- Loading Indicator, Used for demostrating how loading of widgets could happen, check main.js - uiDemo() -->
             <div id="loading" class="pull-left"><i class="fa fa-certificate fa-spin"></i></div>
@@ -240,7 +240,6 @@
 
                 <li class="divider-vertical"></li>
 
-                <!-- Notifications Widget -->
                 <li class="divider-vertical"></li>
 
                 <!-- User Menu -->
@@ -277,7 +276,6 @@
         <div id="inner-container">
             <!-- Sidebar -->
             <aside id="page-sidebar" class="collapse navbar-collapse navbar-main-collapse">
-
 
                 <!-- Primary Navigation -->
                 <nav id="primary-nav">
@@ -324,174 +322,158 @@
                 <!-- Navigation info -->
                 <ul id="nav-info" class="clearfix">
                     <li><a href="index.html"><i class="fa fa-home"></i></a></li>
-                    <li class="active"><a href="">Dashboard</a></li>
+                    <li><a href="javascript:void(0)">Lists</a></li>
                 </ul>
                 <!-- END Navigation info -->
 
-                <!-- Nav Dash -->
-                <ul class="nav-dash">
-                    <li>
-                        <h6>Staff</h6>
-                        <a href="javascript:void(0)" data-toggle="tooltip" class="animation-fadeIn">
-                            <i class="fa fa-clipboard"></i><span class="badge badge-danger">3</span>
-                        </a>
-                    </li>
-                    <li>
-                        <h6>Teacher</h6>
-                        <a href="javascript:void(0)" data-toggle="tooltip" class="animation-fadeIn">
-                            <i class="fa fa-file-o"></i> <span class="badge badge-success">4</span>
-                        </a>
-                    </li>
-                    <li>
-                        <h6>Customer</h6>
-                        <a href="javascript:void(0)" data-toggle="tooltip" class="animation-fadeIn">
-                            <i class="fa fa-users"></i> <span class="badge badge-success">55</span>
-                        </a>
-                    </li>
-                    <li>
-                        <h6>Course</h6>
-                        <a href="javascript:void(0)" data-toggle="tooltip" class="animation-fadeIn">
-                            <i class="fa fa-certificate"></i> <span class="badge badge-inverse">4</span>
-                        </a>
-                    </li>
-                    <li>
-                        <h6>Class</h6>
-                        <a href="javascript:void(0)" data-toggle="tooltip" class="animation-fadeIn">
-                            <i class="fa fa-file"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <h6>Schedule</h6>
-                        <a href="javascript:void(0)" data-toggle="tooltip" class="animation-fadeIn">
-                            <i class="fa fa-calendar"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <h6>Blog</h6>
-                        <a href="javascript:void(0)" data-toggle="tooltip" class="animation-fadeIn">
-                            <i class="fa fa-pencil"></i>
-                        </a>
-                    </li>
-                </ul>
-                <!-- END Nav Dash -->
+                <!-- List Staff -->
+                <h3 class="page-header page-header-top">List Class <a href="javascript:void(0)" data-toggle="tooltip"
+                        title="Edit" class="btn btn-xs btn-success"><i class="fa fa-plus"></i></a></h3>
 
-                <!-- Tiles -->
-                <!-- Row 1 -->
-                <div class="dash-tiles row">
-                    <!-- Column 1 of Row 1 -->
-                    <div class="col-sm-3">
-                        <!-- Total Users Tile -->
-                        <div class="dash-tile dash-tile-ocean clearfix animation-pullDown">
-                            <div class="dash-tile-header">
-                                <div class="dash-tile-options">
-                                    <div class="btn-group">
-                                        <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
-                                            title="edit"><i class="fa fa-cog"></i></a>
-                                        <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
-                                            title="Statistics"><i class="fa fa-bar-chart-o"></i></a>
-                                    </div>
-                                </div>
-                                Hatha Yoga
-                            </div>
-                            <div class="dash-tile-icon"><i class="fa fa-users"></i></div>
-                            <div class="dash-tile-text">30</div>
-                        </div>
-                        <!-- END Total Users Tile -->
-                    </div>
-                    <!-- END Column 1 of Row 1 -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="cell-small text-center" data-toggle="tooltip" title="Toggle all!"><input
+                                    type="checkbox" id="check1-all" name="check1-all"></th>
+                            <th class="text-center">#</th>
+                            <th>class name</th>
+                            <th class="hidden-xs hidden-sm"><i class="fa "></i> courses name</th>
+                            <th class="hidden-xs hidden-sm">teacher name</th>
 
-                    <!-- Column 2 of Row 1 -->
-                    <div class="col-sm-3">
-                        <!-- Total Sales Tile -->
-                        <div class="dash-tile dash-tile-flower clearfix animation-pullDown">
-                            <div class="dash-tile-header">
-                                <div class="dash-tile-options">
-                                    <div class="btn-group">
-                                        <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
-                                            title="edit"><i class="fa fa-cog"></i></a>
-                                        <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
-                                            title="Statistics"><i class="fa fa-bar-chart-o"></i></a>
-                                    </div>
-                                </div>
-                                Asanas Yoga
-                            </div>
-                            <div class="dash-tile-icon"><i class="fa fa-users"></i></div>
-                            <div class="dash-tile-text">30</div>
-                        </div>
-                        <!-- END Total Sales Tile -->
-                    </div>
-                    <!-- END Column 2 of Row 1 -->
+                            <th class="text-center"><i class="fa fa-bolt"></i> Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center"><input type="checkbox" id="check1-td1" name="check1-td1"></td>
+                            <td class="text-center">1</td>
+                            <td><a href="javascript:void(0)">Class A</a></td><!--tên lớp-->
+                            <td class="hidden-xs hidden-sm">Hatha Yoga</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm">Millie Harper</td><!--tên giáo viên-->
 
-                    <!-- Column 3 of Row 1 -->
-                    <div class="col-sm-3">
-                        <!-- Popularity Tile -->
-                        <div class="dash-tile dash-tile-oil clearfix animation-pullDown">
-                            <div class="dash-tile-header">
-                                <div class="dash-tile-options">
-                                    <div class="btn-group">
-                                        <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
-                                            title="edit"><i class="fa fa-cog"></i></a>
-                                        <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
-                                            title="Statistics"><i class="fa fa-bar-chart-o"></i></a>
-                                    </div>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="fa fa-pencil"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                 </div>
-                                Yoga Trị Liệu
-                            </div>
-                            <div class="dash-tile-icon"><i class="fa fa-users"></i></div>
-                            <div class="dash-tile-text">30</div>
-                        </div>
-                        <!-- END Popularity Tile -->
-                    </div>
-                    <!-- END Column 3 of Row 1 -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><input type="checkbox" id="check1-td2" name="check1-td2"></td>
+                            <td class="text-center">2</td>
+                            <td><a href="javascript:void(0)">Class B</a></td><!--tên lớp-->
+                            <td class="hidden-xs hidden-sm">Asanas Yoga</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm">Lilly Fry</td><!--tên giáo viên-->
 
-                    <!-- Column 4 of Row 1 -->
-                    <div class="col-sm-3">
-                        <!-- RSS Subscribers Tile -->
-                        <div class="dash-tile dash-tile-balloon clearfix animation-pullDown">
-                            <div class="dash-tile-header">
-                                <div class="dash-tile-options">
-                                    <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
-                                        title="edit"><i class="fa fa-cog"></i></a>
-                                    <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
-                                        title="Statistics"><i class="fa fa-bar-chart-o"></i></a>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="fa fa-pencil"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                 </div>
-                                Yoga Nghệ Thuật
-                            </div>
-                            <div class="dash-tile-icon"><i class="fa fa-users"></i></div>
-                            <div class="dash-tile-text">30</div>
-                        </div>
-                        <!-- END RSS Subscribers Tile -->
-                    </div>
-                    <!-- END Column 4 of Row 1 -->
-                </div>
-                <!-- END Row 1 -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><input type="checkbox" id="check1-td3" name="check1-td3"></td>
+                            <td class="text-center">3</td>
+                            <td><a href="javascript:void(0)">Class C</a></td><!--tên lớp-->
+                            <td class="hidden-xs hidden-sm">Yoga Trị Liệu</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm">Elise Moran</td><!--tên giáo viên-->
 
-                <!-- Row 2 -->
-                <div class="row">
-                    <!-- Column 1 of Row 2 -->
-                    <div class="col-sm-12">
-                        <!-- Statistics Tile -->
-                        <div class="dash-tile dash-tile-2x">
-                            <div class="dash-tile-header">
-                                <div class="dash-tile-options">
-                                    <div id="example-advanced-daterangepicker" class="btn btn-default">
-                                        <i class="fa fa-calendar"></i>
-                                        <span></span>
-                                        <b class="caret"></b>
-                                    </div>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="fa fa-pencil"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                 </div>
-                                <i class="fa fa-bar-chart-o"></i>
-                            </div>
-                            <div class="dash-tile-content">
-                                <div id="dash-example-stats" class="dash-tile-content-inner"></div>
-                            </div>
-                        </div>
-                        <!-- END Statistics Tile -->
-                    </div>
-                    <!-- END Column 1 of Row 2 -->
-                </div>
-                <!-- END Row 2 -->
-                <!-- END Tiles -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><input type="checkbox" id="check1-td4" name="check1-td4"></td>
+                            <td class="text-center">4</td>
+                            <td><a href="javascript:void(0)">Class D</a></td><!--tên lớp-->
+                            <td class="hidden-xs hidden-sm">Yoga Nghệ Thuật</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm">Kate Glover</td><!--tên giáo viên-->
+
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="fa fa-pencil"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><input type="checkbox" id="check1-td4" name="check1-td4"></td>
+                            <td class="text-center">4</td>
+                            <td><a href="javascript:void(0)">Class E</a></td> <!-- tên lớp-->
+                            <td class="hidden-xs hidden-sm">Hatha Yoga</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm">Lilly Fry</td><!--tên giáo viên-->
+
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="fa fa-pencil"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><input type="checkbox" id="check1-td4" name="check1-td4"></td>
+                            <td class="text-center">4</td>
+                            <td><a href="javascript:void(0)">Class F</a></td><!--tên lớp-->
+                            <td class="hidden-xs hidden-sm">Yoga Trị Liệu</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm">Kate Glover</td><!--tên giáo viên-->
+
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="fa fa-pencil"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><input type="checkbox" id="check1-td4" name="check1-td4"></td>
+                            <td class="text-center">4</td>
+                            <td><a href="javascript:void(0)">Class D</a></td>
+                            <td class="hidden-xs hidden-sm">user4@example.com</td>
+                            <td class="hidden-xs hidden-sm">Name</td>
+
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="fa fa-pencil"></i></a>
+
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- END List Staff -->
             </div>
             <!-- END Page Content -->
 
@@ -506,6 +488,96 @@
         <!-- END Inner Container -->
     </div>
     <!-- END Page Container -->
+
+
+    <!-- form edit class -->
+    <div id="formContainer">
+        <button id="closeButton" onclick="hideForm()">Close</button>
+        <form id="registrationForm">
+            <h2>Edit Class</h2>
+            <label for="name">Class name</label>
+            <input type="text" id="class" name="name" required><br>
+
+            <label for="name">Courses name</label>
+            <input type="text" id="course" name="name" required><br>
+
+            <label for="name">Teacher name</label>
+            <input type="text" id="teacher" name="name" required><br>
+
+            <label for="name">Quantity</label>
+            <input type="number" id="quantity" name="quantity" required><br>
+
+            <input type="submit" value="Save" id="save">
+        </form>
+    </div>
+    <style>
+        #formContainer {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f1f1f1;
+            padding: 20px;
+            box-shadow: rgb(152, 152, 152, 0.6);
+            border: rgba(0, 0, 0, 0.6) solid 1px;
+        }
+
+        #registrationForm {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        #registrationForm label,
+        #registrationForm input[type="text"],
+        #registrationForm input[type="number"],
+        #registrationForm input[type="submit"] {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #class,
+        #course,
+        #teacher,
+        #quantity {
+            border: rgba(0, 0, 0, 0.6) solid 1px;
+        }
+
+        #save {
+            display: flex;
+            justify-content: center;
+
+            align-items: center;
+        }
+
+        #registrationForm input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #closeButton {
+            transform: translateX(500%);
+        }
+    </style>
+    <script>
+        function showForm() {
+            var formContainer = document.getElementById("formContainer");
+            formContainer.style.display = "block";
+        }
+
+        function hideForm() {
+            var formContainer = document.getElementById("formContainer");
+            formContainer.style.display = "none";
+        }
+        // function getdata
+
+    </script>
+    <!--END form edit class -->
+
+
 
     <!-- Scroll to top link, check main.js - scrollToTop() -->
     <a href="javascript:void(0)" id="to-top"><i class="fa fa-chevron-up"></i></a>
@@ -696,140 +768,6 @@
     <!-- Jquery plugins and custom javascript code -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
-    <!-- Javascript code only for this page -->
-    <script>
-        $(function () {
-            // Initialize dash Datatables
-            $('#dash-example-orders').dataTable({
-                columnDefs: [{ orderable: false, targets: [0] }],
-                pageLength: 6,
-                lengthMenu: [[6, 10, 30, -1], [6, 10, 30, "All"]]
-            });
-            $('.dataTables_filter input').attr('placeholder', 'Search');
-
-            // Dash example stats
-            var dashChart = $('#dash-example-stats');
-
-            var dashChartData1 = [
-                [0, 200],
-                [1, 250],
-                [2, 360],
-                [3, 584],
-                [4, 1250],
-                [5, 1100],
-                [6, 1500],
-                [7, 1521],
-                [8, 1600],
-                [9, 1658],
-                [10, 1623],
-                [11, 1900],
-                [12, 2100],
-                [13, 1700],
-                [14, 1620],
-                [15, 1820],
-                [16, 1950],
-                [17, 2220],
-                [18, 1951],
-                [19, 2152],
-                [20, 2300],
-                [21, 2325],
-                [22, 2200],
-                [23, 2156],
-                [24, 2350],
-                [25, 2420],
-                [26, 2480],
-                [27, 2320],
-                [28, 2380],
-                [29, 2520],
-                [30, 2590]
-            ];
-            var dashChartData2 = [
-                [0, 50],
-                [1, 180],
-                [2, 200],
-                [3, 350],
-                [4, 700],
-                [5, 650],
-                [6, 700],
-                [7, 780],
-                [8, 820],
-                [9, 880],
-                [10, 1200],
-                [11, 1250],
-                [12, 1500],
-                [13, 1195],
-                [14, 1300],
-                [15, 1350],
-                [16, 1460],
-                [17, 1680],
-                [18, 1368],
-                [19, 1589],
-                [20, 1780],
-                [21, 2100],
-                [22, 1962],
-                [23, 1952],
-                [24, 2110],
-                [25, 2260],
-                [26, 2298],
-                [27, 1985],
-                [28, 2252],
-                [29, 2300],
-                [30, 2450]
-            ];
-
-            // Initialize Chart
-            $.plot(dashChart, [
-                { data: dashChartData1, lines: { show: true, fill: true, fillColor: { colors: [{ opacity: 0.05 }, { opacity: 0.05 }] } }, points: { show: true }, label: 'All Visits' },
-                { data: dashChartData2, lines: { show: true, fill: true, fillColor: { colors: [{ opacity: 0.05 }, { opacity: 0.05 }] } }, points: { show: true }, label: 'Unique Visits' }],
-                {
-                    legend: {
-                        position: 'nw',
-                        backgroundColor: '#f6f6f6',
-                        backgroundOpacity: 0.8
-                    },
-                    colors: ['#555555', '#db4a39'],
-                    grid: {
-                        borderColor: '#cccccc',
-                        color: '#999999',
-                        labelMargin: 5,
-                        hoverable: true,
-                        clickable: true
-                    },
-                    yaxis: {
-                        ticks: 5
-                    },
-                    xaxis: {
-                        tickSize: 2
-                    }
-                }
-            );
-
-            // Create and bind tooltip
-            var previousPoint = null;
-            dashChart.bind("plothover", function (event, pos, item) {
-
-                if (item) {
-                    if (previousPoint !== item.dataIndex) {
-                        previousPoint = item.dataIndex;
-
-                        $("#tooltip").remove();
-                        var x = item.datapoint[0],
-                            y = item.datapoint[1];
-
-                        $('<div id="tooltip" class="chart-tooltip"><strong>' + y + '</strong> visits</div>')
-                            .css({ top: item.pageY - 30, left: item.pageX + 5 })
-                            .appendTo("body")
-                            .show();
-                    }
-                }
-                else {
-                    $("#tooltip").remove();
-                    previousPoint = null;
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
