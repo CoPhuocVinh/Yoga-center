@@ -6,9 +6,10 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Admin - FYoga</title>
+    <title>uAdmin - Professional, Responsive and Flat Admin Template</title>
 
-    <meta name="description">
+    <meta name="description"
+        content="uAdmin is a Professional, Responsive and Flat Admin Template created by pixelcave and published on Themeforest">
     <meta name="author" content="pixelcave">
     <meta name="robots" content="noindex, nofollow">
 
@@ -70,7 +71,7 @@
             <!-- END Mobile Navigation -->
 
             <!-- Logo -->
-            <a href="index.html" class="navbar-brand">FY<span>o</span>ga</a>
+            <a href="index.html" class="navbar-brand"><img src="img/template/logo.png" alt="logo"></a>
 
             <!-- Loading Indicator, Used for demostrating how loading of widgets could happen, check main.js - uiDemo() -->
             <div id="loading" class="pull-left"><i class="fa fa-certificate fa-spin"></i></div>
@@ -110,6 +111,74 @@
                     </ul>
                 </li>
                 <!-- END RSS Widget -->
+
+                <li class="divider-vertical"></li>
+
+                <!-- Twitter Widget -->
+                <!-- Add .dropdown-left-responsive class to align the dropdown menu left (so its visible on mobile) -->
+                <li id="twitter-widget" class="dropdown dropdown-left-responsive">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-twitter"></i>
+                        <span class="badge badge-info display-none"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right widget">
+                        <li class="widget-heading"><i class="fa fa-comments-o pull-right"></i>Latest Tweets</li>
+                        <li class="li-hover">
+                            <div class="media">
+                                <a class="pull-left" href="javascript:void(0)">
+                                    <img src="img/placeholders/image_dark_64x64.png" alt="fakeimg">
+                                </a>
+                                <div class="media-body">
+                                    <h6 class="media-heading"><a href="javascript:void(0)">Michael</a><span
+                                            class="label label-info">just now</span></h6>
+                                    <div class="media">Web design all the way!</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="li-hover">
+                            <div class="media">
+                                <a class="pull-left" href="javascript:void(0)">
+                                    <img src="img/placeholders/image_dark_64x64.png" alt="fakeimg">
+                                </a>
+                                <div class="media-body">
+                                    <h6 class="media-heading"><a href="javascript:void(0)">Monica</a><span
+                                            class="label label-info">3 min ago</span></h6>
+                                    <div class="media">Download free PSDs at <a href="http://bit.ly/YUs4SQ"
+                                            target="_blank">http://bit.ly/YUs4SQ</a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="li-hover">
+                            <div class="media">
+                                <a class="pull-left" href="javascript:void(0)">
+                                    <img src="img/placeholders/image_dark_64x64.png" alt="fakeimg">
+                                </a>
+                                <div class="media-body">
+                                    <h6 class="media-heading"><a href="javascript:void(0)">Steven</a><span
+                                            class="label label-info">45 min ago</span></h6>
+                                    <div class="media">Be sure to check out my portfolio!</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="li-hover">
+                            <div class="media">
+                                <a class="pull-left" href="javascript:void(0)">
+                                    <img src="img/placeholders/image_dark_64x64.png" alt="fakeimg">
+                                </a>
+                                <div class="media-body">
+                                    <h6 class="media-heading"><a href="javascript:void(0)">Tim</a><span
+                                            class="label label-info">1 hour ago</span></h6>
+                                    <div class="media">Get all our themes for free for the next 2 hours! <a
+                                            href="javascript:void(0)">#freebies</a></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <!-- END Twitter Widget -->
 
                 <li class="divider-vertical"></li>
 
@@ -171,7 +240,6 @@
 
                 <li class="divider-vertical"></li>
 
-                <!-- Notifications Widget -->
                 <li class="divider-vertical"></li>
 
                 <!-- User Menu -->
@@ -181,20 +249,20 @@
                     <ul class="dropdown-menu">
                         <!-- Just a button demostrating how loading of widgets could happen, check main.js- - uiDemo() -->
                         <li>
-                            <a href="javascript:void(0)" class="loading-on"><i class="fa fa-refresh"></i> Đặt lại</a>
+                            <a href="javascript:void(0)" class="loading-on"><i class="fa fa-refresh"></i> Refresh</a>
                         </li>
                         <li class="divider"></li>
                         <li>
                             <!-- Modal div is at the bottom of the page before including javascript code -->
                             <a href="#modal-user-settings" role="button" data-toggle="modal"><i class="fa fa-user"></i>
-                                Thông tin người dùng</a>
+                                User Profile</a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)"><i class="fa fa-wrench"></i> Cài đặt ứng dụng</a>
+                            <a href="javascript:void(0)"><i class="fa fa-wrench"></i> App Settings</a>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="page_login.html"><i class="fa fa-lock"></i> Đăng xuất</a>
+                            <a href="page_login.html"><i class="fa fa-lock"></i> Log out</a>
                         </li>
                     </ul>
                 </li>
@@ -208,7 +276,6 @@
         <div id="inner-container">
             <!-- Sidebar -->
             <aside id="page-sidebar" class="collapse navbar-collapse navbar-main-collapse">
-
 
                 <!-- Primary Navigation -->
                 <nav id="primary-nav">
@@ -225,7 +292,7 @@
                                     <a href="page_form_validation.html"><i class="fa fa-certificate"></i>Khóa học</a>
                                 </li>
                                 <li>
-                                    <a href="page_list_class.html"><i class="fa fa-file"></i>Lớp học</a>
+                                    <a href="page_list_class.html"><i class="fa fa-file"></i>Class</a>
                                 </li>
                                 <li>
                                     <a href="page_form_wizard.html"><i class="fa fa-pencil"></i>Blog</a>
@@ -234,20 +301,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-table"></i>Danh sách</a>
-                            <ul>
-
-                                <li>
-                                    <a href="page_form_validation.html"><i class="fa fa-clipboard"></i>Nhân viên</a>
-                                </li>
-                                <li>
-                                    <a href="page_list_class.html"><i class="fa fa-file-o"></i>Huấn luyện viên</a>
-                                </li>
-                                <li>
-                                    <a href="page_form_wizard.html"><i class="fa fa-users"></i>Khách hàng</a>
-                                </li>
-
-                            </ul>
+                            <a href="page_tables.html"><i class="fa fa-table"></i>Danh sách</a>
                         </li>
                         <li>
                             <a href="page_inbox.html"><i class="fa fa-envelope"></i>Hộp thư đến</a>
@@ -259,6 +313,7 @@
                 </nav>
                 <!-- END Primary Navigation -->
 
+
             </aside>
             <!-- END Sidebar -->
 
@@ -267,247 +322,159 @@
                 <!-- Navigation info -->
                 <ul id="nav-info" class="clearfix">
                     <li><a href="index.html"><i class="fa fa-home"></i></a></li>
-                    <li><a href="javascript:void(0)">Components</a></li>
-                    <li class="active"><a href="">Inbox</a></li>
+                    <li><a href="javascript:void(0)">Huấn luyện viên</a></li>
                 </ul>
                 <!-- END Navigation info -->
 
-                <!-- Inbox -->
-                <h3 class="page-header page-header-top"><i class="fa fa-envelope"></i> Inbox <small>With a rich and
-                        clean user interface!</small></h3>
+                <!-- List Staff -->
+                <h3 class="page-header page-header-top">Danh sách huấn luyện viên<a href="javascript:void(0)" data-toggle="tooltip"
+                        title="Edit" class="btn btn-xs btn-success"><i class="fa fa-plus"></i></a></h3>
 
-                <!-- Inbox Container -->
-                <div class="inbox-container clearfix">
-                    <!-- Inbox Menu -->
-                    <div class="inbox-menu">
-                        <ul class="nav nav-pills nav-stacked push">
-                            <li>
-                                <!-- Modal is under the Inbox Container div -->
-                                <a href="#inbox-compose-modal" data-toggle="modal"><i class="fa fa-pencil"></i> New
-                                    Message</a>
-                            </li>
-                        </ul>
-                        <ul class="nav nav-pills nav-stacked push">
-                            <li class="active">
-                                <a href="javascript:void(0)"><i class="fa fa-inbox"></i> Inbox <span id="count-inbox"
-                                        class="inbox-menu-count"></span></a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)"><i class="fa fa-fighter-jet"></i> Sent</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)"><i class="fa fa-star"></i> Starred</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)"><i class="fa fa-briefcase"></i> Archive</a>
-                            </li>
-                        </ul>
-                        <ul class="nav nav-pills nav-stacked">
-                            <li>
-                                <a href="javascript:void(0)"><i class="fa fa-circle text-danger"></i> Important <span
-                                        class="inbox-menu-count">18</span></a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)"><i class="fa fa-circle text-warning"></i> Work <span
-                                        class="inbox-menu-count">15</span></a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)"><i class="fa fa-circle text-success"></i> Personal <span
-                                        class="inbox-menu-count">20</span></a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)"><i class="fa fa-circle text-info"></i> Vacation <span
-                                        class="inbox-menu-count">6</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- END Inbox Menu -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="cell-small text-center" data-toggle="tooltip" title="Toggle all!"><input
+                                    type="checkbox" id="check1-all" name="check1-all"></th>
+                            <!-- <th class="text-center">#</th> -->
+                            <th>ID Tài khoản</th>
+                            <th class="hidden-xs hidden-sm"><i class="fa "></i>Họ và tên</th>
+                            <th class="hidden-xs hidden-sm">Email</th>
 
-                    <!-- Inbox Messages Outer -->
-                    <div class="inbox-messages-outer">
-                        <!-- Inbox Messages -->
-                        <div class="inbox-messages">
-                            <!-- Inbox Messages List -->
-                            <div class="inbox-messages-list">
-                                <input type="text" id="inbox-search" name="inbox-search" class="form-control"
-                                    placeholder="Search..">
-                                <ul class="nav nav-pills nav-stacked">
-                                    <li>
-                                        <a href="javascript:void(0)" id="msg1" class="unread">
-                                            <span class="inbox-messages-list-username">Username</span> <span
-                                                class="inbox-messages-list-meta">2 min ago</span><br>
-                                            <span class="inbox-messages-list-title">Message Subject</span><br>
-                                            <span class="inbox-messages-list-preview">Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit..</span>
-                                        </a>
-                                    </li>
-                                    <li class="active">
-                                        <a href="javascript:void(0)" id="msg2">
-                                            <span class="inbox-messages-list-username">Username</span> <span
-                                                class="inbox-messages-list-meta">3 min ago</span><br>
-                                            <span class="inbox-messages-list-title">Message Subject</span><br>
-                                            <span class="inbox-messages-list-preview">Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit..</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)" id="msg3" class="unread">
-                                            <span class="inbox-messages-list-username">Username</span> <span
-                                                class="inbox-messages-list-meta">20 min ago</span><br>
-                                            <span class="inbox-messages-list-title">Message Subject</span><br>
-                                            <span class="inbox-messages-list-preview">Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit..</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)" id="msg4" class="unread">
-                                            <span class="inbox-messages-list-username">Username</span> <span
-                                                class="inbox-messages-list-meta">3 hours ago</span><br>
-                                            <span class="inbox-messages-list-title">Message Subject</span><br>
-                                            <span class="inbox-messages-list-preview">Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit..</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)" id="msg5" class="unread">
-                                            <span class="inbox-messages-list-username">Username</span> <span
-                                                class="inbox-messages-list-meta">25 hours ago</span><br>
-                                            <span class="inbox-messages-list-title">Message Subject</span><br>
-                                            <span class="inbox-messages-list-preview">Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit..</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)" id="msg6" class="unread">
-                                            <span class="inbox-messages-list-username">Username</span> <span
-                                                class="inbox-messages-list-meta">Yesterday</span><br>
-                                            <span class="inbox-messages-list-title">Message Subject</span><br>
-                                            <span class="inbox-messages-list-preview">Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit..</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)" id="msg7">
-                                            <span class="inbox-messages-list-username">Username</span> <span
-                                                class="inbox-messages-list-meta">Yesterday</span><br>
-                                            <span class="inbox-messages-list-title">Message Subject</span><br>
-                                            <span class="inbox-messages-list-preview">Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit..</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- END Inbox Messages List -->
+                            <!-- <th class="text-center"><i class="fa fa-bolt"></i> </th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center"><input type="checkbox" id="check1-td1" name="check1-td1"></td>
+                            <td><a href="javascript:void(0)">1</a></td>
+                            <!-- <td><a href="javascript:void(0)">001</a></td>tên lớp -->
+                            <td class="hidden-xs hidden-sm">Đặn Ngũy Hoài Pon</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm">pon@gmail.com</td><!--tên giáo viên-->
 
-                            <!-- Inbox Messages Content -->
-                            <div class="inbox-messages-container">
-                                <!-- Actions -->
-                                <ul class="inbox-messages-content-actions clearfix">
-                                    <li><a href="javascript:void(0)"><i class="fa fa-mail-reply"></i> Reply</a></li>
-                                    <li><a href="javascript:void(0)"><i class="fa fa-mail-reply-all"></i> Reply to
-                                            all</a></li>
-                                    <li><a href="javascript:void(0)"><i class="fa fa-mail-forward"></i> Forward</a></li>
-                                    <li><a href="javascript:void(0)"><i class="fa fa-print"></i> Print</a></li>
-                                    <li><a href="javascript:void(0)"><i class="fa fa-briefcase"></i> Archive</a></li>
-                                    <li><a href="javascript:void(0)"><i class="fa fa-times"></i> Delete</a></li>
-                                </ul>
-                                <!-- END Actions -->
-
-                                <!-- Message Header -->
-                                <div class="inbox-messages-content-header content-text">
-                                    <img src="img/placeholders/image_dark_64x64.png" class="pull-left" alt="avatar">
-                                    <a href="javascript:void(0)"><strong>Username</strong></a>
-                                    <span class="label label-info">June 4, 2013</span>
-                                    <span class="label label-info">12:15</span>
-                                    <h5>Project Details - Let's get started!</h5>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="fa fa-pencil"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                 </div>
-                                <!-- END Message Header -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><input type="checkbox" id="check1-td2" name="check1-td2"></td>
+                            <td><a href="javascript:void(0)">2</a></td>
+                            <!-- <td><a href="javascript:void(0)">Class B</a></td>tên lớp -->
+                            <td class="hidden-xs hidden-sm">Vẫn là chị Pon</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm">pon@gmail.com</td><!--tên giáo viên-->
 
-                                <div class="inbox-messages-content-body">
-                                    <p>Hi!</p>
-                                    <p>Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst.
-                                        Proin ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis.
-                                        Suspendisse potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper
-                                        dictum. Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non.
-                                        Suspendisse potenti. Pellentesque non accumsan orci. Praesent at lacinia dolor.
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices, justo
-                                        vel imperdiet gravida, urna ligula hendrerit nibh, ac cursus nibh sapien in
-                                        purus. Mauris tincidunt tincidunt turpis in porta. Integer fermentum tincidunt
-                                        auctor. Vestibulum ullamcorper, odio sed rhoncus imperdiet, enim elit
-                                        sollicitudin orci, eget dictum leo mi nec lectus. Nam commodo turpis id lectus
-                                        scelerisque vulputate. Integer sed dolor erat. Fusce erat ipsum, varius vel
-                                        euismod sed, tristique et lectus? Etiam egestas fringilla enim, id convallis
-                                        lectus laoreet at. Fusce purus nisi, gravida sed consectetur ut, interdum quis
-                                        nisi. Quisque egestas nisl id lectus facilisis scelerisque? Proin rhoncus dui at
-                                        ligula vestibulum ut facilisis ante sodales! Suspendisse potenti. Aliquam
-                                        tincidunt sollicitudin sem nec ultrices. Sed at mi velit. Ut egestas tempor est,
-                                        in cursus enim venenatis eget! Nulla quis ligula ipsum. Donec vitae ultrices
-                                        dolor?</p>
-                                    <p>Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst.
-                                        Proin ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis.
-                                        Suspendisse potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper
-                                        dictum. Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non.
-                                        Suspendisse potenti. Pellentesque non accumsan orci. Praesent at lacinia dolor.
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <p>All the best,<br>John</p>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="fa fa-pencil"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                 </div>
-                                <div class="inbox-messages-content-reply">
-                                    <form action="page_inbox.html" method="post" class="form-horizontal remove-margin"
-                                        onsubmit="return false;">
-                                        <div class="form-group">
-                                            <div class="col-md-12">
-                                                <textarea id="inbox-reply-message" name="inbox-reply-message"
-                                                    class="textarea-editor" rows="6"></textarea>
-                                                <button class="btn btn-success"><i class="fa fa-pencil-square-o"></i>
-                                                    Reply</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <!-- END Inbox Messages Content -->
-                        </div>
-                        <!-- END Inbox Messages -->
-                    </div>
-                    <!-- END Inbox Messages Outer -->
-                </div>
-                <!-- END Inbox Container -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><input type="checkbox" id="check1-td3" name="check1-td3"></td>
+                            <td><a href="javascript:void(0)">3</a></td>
+                            <!-- <td><a href="javascript:void(0)">Class C</a></td>tên lớp -->
+                            <td class="hidden-xs hidden-sm">Acc chị Pon nữa</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm">pon@gmail.com</td><!--tên giáo viên-->
 
-                <!-- New Message Modal -->
-                <div id="inbox-compose-modal" class="modal">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">×</button>
-                                <h4><i class="fa fa-pencil"></i> New Message</h4>
-                            </div>
-                            <div class="modal-body">
-                                <form action="page_inbox.html" class="form-horizontal remove-margin"
-                                    onsubmit="return false;">
-                                    <div class="form-group">
-                                        <div class="col-xs-12">
-                                            <input type="text" id="inbox-to" name="inbox-to" class="form-control"
-                                                placeholder="To:">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-xs-12">
-                                            <textarea id="inbox-new-message" name="inbox-new-message"
-                                                class="form-control" rows="10" placeholder="Message.."></textarea>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer remove-margin">
-                                <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                                <button class="btn btn-success" data-dismiss="modal">Sent</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- END New Message Modal -->
-                <!-- End Inbox -->
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="fa fa-pencil"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><input type="checkbox" id="check1-td4" name="check1-td4"></td>
+                            <td><a href="javascript:void(0)">4</a></td>
+                            <!-- <td><a href="javascript:void(0)">Class D</a></td>tên lớp -->
+                            <td class="hidden-xs hidden-sm">Chị pon húp</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm">pon@gmail.com</td><!--tên giáo viên-->
+
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="fa fa-pencil"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><input type="checkbox" id="check1-td4" name="check1-td4"></td>
+                            <td><a href="javascript:void(0)">5</a></td>
+                            <!-- <td><a href="javascript:void(0)">Class E</a></td> tên lớp -->
+                            <td class="hidden-xs hidden-sm">Bé Mỹ</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm">pon@gmail.com</td><!--tên giáo viên-->
+
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="fa fa-pencil"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center"><input type="checkbox" id="check1-td4" name="check1-td4"></td>
+                            <td><a href="javascript:void(0)">6</a></td>
+                            <!-- <td><a href="javascript:void(0)">Class F</a></td>tên lớp -->
+                            <td class="hidden-xs hidden-sm">Ái Tho</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm">pon@gmail.com</td><!--tên giáo viên-->
+
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="fa fa-pencil"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- dòng lớp -->
+                        <!-- <tr>
+                            <td class="text-center"><input type="checkbox" id="check1-td4" name="check1-td4"></td>
+                            <td class="text-center">7</td>
+                            <td><a href="javascript:void(0)"> <input type="text" value="Class D"></a></td>
+                            <td class="hidden-xs hidden-sm"> <input type="text" value="Hatha Yoga"></td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="Lilly Fry"></td>
+
+                            <td class="text-center">
+                                <div class="btn-group"> -->
+                        <!--nút sửa-->
+                        <!-- <a href="#createButton" data-toggle="tooltip" title="Edit"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="fa fa-pencil"></i></a>
+
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                </div>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <!-- END List Staff -->
             </div>
             <!-- END Page Content -->
 
@@ -522,6 +489,107 @@
         <!-- END Inner Container -->
     </div>
     <!-- END Page Container -->
+
+
+    <!-- form edit class -->
+    <div id="formContainer">
+        <button id="closeButton" onclick="hideForm()">X</button>
+        <form id="registrationForm">
+            <h2>Chỉnh sửa thông tin</h2>
+            <label for="name">Trạng thái</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="name">roleID</label>
+            <input type="text" id="roleID" name="name" required><br>
+
+            <label for="name">Họ và tên</label>
+            <input type="text" id="fullName" name="name" required><br>
+
+            <label for="name">Số điện thoai</label>
+            <input type="text" id="Sdt" name="quantity" required><br>
+
+            <label for="name">Ảnh đại diện</label>
+            <input type="file" id="avatar" name="val_website" ><br>
+
+            <label for="party">Thời gian cập nhật</label>
+            <input id="datet" type="datetime-local" name="partydate" value="" /><br>
+
+            <input type="submit" value="Save" id="save">
+        </form>
+    </div>
+    <style>
+        #formContainer {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f1f1f1;
+            padding: 20px;
+            box-shadow: rgb(152, 152, 152, 0.6);
+            border: rgba(0, 0, 0, 0.6) solid 1px;
+        }
+
+        #registrationForm {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        #registrationForm label,
+        #registrationForm input[type="text"],
+        #registrationForm input[type="file"],
+        #registrationForm input[type="number"],
+        #registrationForm input[type="submit"],
+        #registrationForm input[type="datetime-local"] {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+            
+        }
+
+        #name,
+        #roleID,
+        #fullName,
+        #datet,
+        #Sdt {
+            border: rgba(0, 0, 0, 0.6) solid 1px;
+        }
+
+        #save {
+            display: flex;
+            justify-content: center;
+
+            align-items: center;
+        }
+
+        #registrationForm input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #closeButton {
+            margin-left: 280px;
+        }
+    </style>
+    <script>
+        function showForm() {
+            var formContainer = document.getElementById("formContainer");
+            formContainer.style.display = "block";
+        }
+
+        function hideForm() {
+            var formContainer = document.getElementById("formContainer");
+            formContainer.style.display = "none";
+        }
+        // function getdata
+
+    </script>
+    <!--END form edit class -->
+
+
 
     <!-- Scroll to top link, check main.js - scrollToTop() -->
     <a href="javascript:void(0)" id="to-top"><i class="fa fa-chevron-up"></i></a>
@@ -712,62 +780,6 @@
     <!-- Jquery plugins and custom javascript code -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
-    <!-- Javascript code only for this page -->
-    <script>
-        $(function () {
-            var msgList = $('.inbox-messages-list');
-            var countInbox = $('#count-inbox');
-            var linkId, num;
-
-            // Count unread messages and add the number to the inbox
-            countInbox.text($('.unread', msgList).length);
-
-            // When a message is clicked
-            $('a', msgList).click(function () {
-                // Message with id 'linkId' was clicked (for loading the message or marking it as read in your backend)
-                linkId = $(this).attr('id');
-
-                // Just a small effect you could apply when loading a message
-                $('.inbox-messages-container > div').hide(250, function () {
-
-                    // New content should be loaded here
-                    // ...
-
-                    $(this).slideDown(250);
-                });
-
-                // Remove .active class from every message
-                $('li', msgList).removeClass('active');
-
-                // Add the class .active to its parent li
-                $(this).parent('li').addClass('active');
-
-                // Remove class .unread if there is one and update the inbox unread number
-                if ($(this).hasClass('unread')) {
-
-                    // Remove .unread class
-                    $(this).removeClass('unread');
-
-                    // Get the unread messages number
-                    num = parseInt(countInbox.text());
-
-                    // Hide the number if all the messages are read else the number goes minus 1!
-                    if (num === 1) {
-                        countInbox.slideUp(50, function () {
-                            $(this).html('<i class="fa fa-check"></i>').slideDown(50, function () {
-                                $(this).fadeOut(500);
-                            });
-                        });
-                    } else {
-                        countInbox.slideUp(50, function () {
-                            $(this).text(num - 1).slideDown(50);
-                        });
-                    }
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
