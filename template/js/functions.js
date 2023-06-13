@@ -1,17 +1,12 @@
 
-var openModalClass = document.getElementById("openModalClass");
+
 var openModalButtonRegister = document.getElementById("openModalButtonRegister");
-var classModal = document.getElementById("classModal");
+
 var registerModal = document.getElementById("registerModal");
 var registerLink = document.getElementById("register-link");
 var closeButton = document.getElementsByClassName("close")[0];
 
 
-
-// Xử lý modal class
-openModalClass.onclick = function () {
-  classModal.style.display = "flex";
-}
 // xử lý đăng kí
 openModalButtonRegister.onclick = function () {
   registerModal.style.display = "flex";
@@ -26,9 +21,8 @@ closeButton.onclick = function () {
 // Xử lý sự kiện khi nhấp vào bất kỳ vị trí nào bên ngoài cửa sổ đăng nhập
 window.onclick = function (event) {
  
-    if (event.target == registerModal || event.target == classModal ) {
+    if (event.target == registerModal ) {
       registerModal.style.display = "none";
-      classModal.style.display = "none";
     }
   
 
