@@ -282,14 +282,14 @@
                     <h3 class="admin-title">Admin</h3>
                     <ul>
                         <li>
-                            <a href="index.html" class="active"><i class="fa fa-fire"></i>Dashboard</a>
+                            <a href="index.html" class="active"><i class="fa fa-fire"></i>Bảng điều khiển</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-th-list"></i>Forms</a>
                             <ul>
 
                                 <li>
-                                    <a href="page_form_validation.html"><i class="fa fa-certificate"></i>Course</a>
+                                    <a href="page_form_validation.html"><i class="fa fa-certificate"></i>Khóa học</a>
                                 </li>
                                 <li>
                                     <a href="page_list_class.html"><i class="fa fa-file"></i>Class</a>
@@ -301,13 +301,13 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="page_tables.html"><i class="fa fa-table"></i>List</a>
+                            <a href="page_tables.html"><i class="fa fa-table"></i>Danh sách</a>
                         </li>
                         <li>
-                            <a href="page_inbox.html"><i class="fa fa-envelope"></i>Inbox</a>
+                            <a href="page_inbox.html"><i class="fa fa-envelope"></i>Hộp thư đến</a>
                         </li>
                         <li>
-                            <a href="page_price_tables.html"><i class="fa fa-usd"></i>Price</a>
+                            <a href="page_price_tables.html"><i class="fa fa-usd"></i>Giá</a>
                         </li>
                     </ul>
                 </nav>
@@ -452,12 +452,13 @@
                                 </div>
                             </td>
                         </tr>
+                        <!-- dòng lớp -->
                         <tr>
                             <td class="text-center"><input type="checkbox" id="check1-td4" name="check1-td4"></td>
                             <td class="text-center">4</td>
-                            <td><a href="javascript:void(0)">Class D</a></td>
-                            <td class="hidden-xs hidden-sm">user4@example.com</td>
-                            <td class="hidden-xs hidden-sm">Name</td>
+                            <td><a href="javascript:void(0)"> <input type="text" value="Class D"></a></td>
+                            <td class="hidden-xs hidden-sm"> <input type="text" value="Hatha Yoga"></td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="Lilly Fry"></td>
 
                             <td class="text-center">
                                 <div class="btn-group">
@@ -534,6 +535,7 @@
         #registrationForm input[type="submit"] {
             display: block;
             margin-bottom: 10px;
+            width: 100%;
         }
 
         #class,
