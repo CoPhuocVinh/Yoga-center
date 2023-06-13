@@ -96,27 +96,55 @@
             </header>
 
             <div class="modal-body">
-                <div class="modal-login-user">
-                    <input class="modal-input" placeholder="Tên đăng nhập" required>
-                    <input class="modal-input" placeholder="Mật khẩu" required>
-                </div>
-                <button id="modal-login-button" type="submit">
-                    Đăng Nhập
-                </button>
+                <form id="myForm">
+                    <div class="modal-login-user">
+                        <input class="modal-input" id="txtlogin" placeholder="Email đăng nhập" required>
+                        <span id="error1" style="display: none; color: red; justify-content: center;">Vui lòng nhập đúng
+                            địa chỉ
+                            email.</span><br>
+                        <input type="password" class="modal-input" placeholder="Mật khẩu" required>
+                    </div>
+                    <button id="modal-login-button" type="submit">
+                        Đăng Nhập
+                    </button>
+                </form>
             </div>
-
             <footer class="modal-footer">
                 <p class="modal-register-but"><a href="register.html" id="register-link">Bạn chưa có tài khoản?</a></p>
                 <p class="modal-register-but"><a href="#">Quên mật khẩu?</a></p>
             </footer>
-
         </div>
     </div>
 
-   
-
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- xử lý check login-->
+    <script>
+        var inputElement = document.getElementById("modal-login-button");
+        var errorElement = document.getElementById("error1");
 
+
+        inputElement.addEventListener("click", function (event) {
+            var nameInput = document.getElementById("txtlogin");
+            // Kiểm tra định dạng địa chỉ email
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            for (let index = 0; ; index++) {
+                if (nameInput.value === "" || !emailRegex.test(nameInput.value)) {
+                    // alert("Vui lòng nhập đúng địa chỉ email.");
+                    errorElement.style.display = "flex";
+                    event.preventDefault();
+                    return true;
+                } else {
+                    // Ẩn thông báo lỗi nếu giá trị hợp lệ
+                    errorElement.style.display = "none";
+                    break;
+                };
+
+            }
+
+
+        });
+
+    </script>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
