@@ -1,18 +1,17 @@
 
-// var openModalButtonLogin = document.getElementById("openModalButtonLogin");
+var openModalClass = document.getElementById("openModalClass");
 var openModalButtonRegister = document.getElementById("openModalButtonRegister");
-// var loginModal = document.getElementById("loginModal");
+var classModal = document.getElementById("classModal");
 var registerModal = document.getElementById("registerModal");
-// var loginLink = document.getElementById("login-link");
 var registerLink = document.getElementById("register-link");
 var closeButton = document.getElementsByClassName("close")[0];
 
 
 
-// Xử lý sự kiện khi nhấp vào nút đăng nhập
-// openModalButtonLogin.onclick = function () {
-//   loginModal.style.display = "block";
-// }
+// Xử lý modal class
+openModalClass.onclick = function () {
+  classModal.style.display = "flex";
+}
 // xử lý đăng kí
 openModalButtonRegister.onclick = function () {
   registerModal.style.display = "flex";
@@ -27,8 +26,9 @@ closeButton.onclick = function () {
 // Xử lý sự kiện khi nhấp vào bất kỳ vị trí nào bên ngoài cửa sổ đăng nhập
 window.onclick = function (event) {
  
-    if (event.target == registerModal ) {
+    if (event.target == registerModal || event.target == classModal ) {
       registerModal.style.display = "none";
+      classModal.style.display = "none";
     }
   
 
