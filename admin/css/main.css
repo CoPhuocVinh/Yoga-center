@@ -1149,6 +1149,11 @@ header
     text-align: center;
 }
 
+.package-list{
+    text-align: center;
+    display: none;
+}
+
 .plan {
     width: 260px;
     margin: 10px 0;
@@ -1202,8 +1207,12 @@ header
 
 .plan-featured {
     width: 300px;
-    border: 20px solid #333;
+    margin: 20px 60px;
     background-color: #fff;
+}
+
+.price-detail{
+    width: fit-content;
 }
 
 .plan-featured .plan-header {
@@ -1762,7 +1771,7 @@ a.btn-theme-options.open {
     width: 16px;
     height: 16px;
      margin-top: 1px;
-    *margin-right: .3em;
+    margin-right: .3em;
     line-height: 16px;
     vertical-align: text-top;
     background-position: top left;
@@ -2400,7 +2409,7 @@ table.table thead .sorting_desc,
 table.table thead .sorting_asc_disabled,
 table.table thead .sorting_desc_disabled {
     cursor: pointer;
-    *cursor: hand;
+    cursor: hand;
 }
 
 .table thead .sorting,

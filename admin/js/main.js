@@ -332,3 +332,8 @@ var webApp = function() {
 
 /* Initialize WebApp when page loads */
 $(function(){ webApp.init(); });
+
+function packageDiv(){
+    var div = document.getElementById("openPackageList");
+      div.classList.toggle("package-list");
+}
