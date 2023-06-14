@@ -235,6 +235,7 @@ a:focus {
     border-radius: 50px;
     margin-left: 10px;
 }
+
 .nav-link-dk,
 .nav-link-dk:focus,
 .nav-link-dk:hover,
@@ -2347,13 +2348,13 @@ a:focus {
 }
 
 */
-
 /* ===============form đăng ký=================== */
 
-.reClass h4{
-    margin-top :50665px;
+.reClass h4 {
+    margin-top: 50665px;
     margin-left: 40px;
 }
+
 .modal-schedule {
     position: fixed;
     top: 35px;
@@ -2371,10 +2372,10 @@ a:focus {
     margin-left: 100px;
     background-color: #fff;
     width: 800px;
-    height: 577px;
+    height: 520px;
     border-radius: 10px;
-  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-			0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .modal-container-schedule {
@@ -2439,6 +2440,7 @@ a:focus {
 
 .modal-gender {
     margin-bottom: 15px;
+    transform: translate(-122px, 19px);
 }
 
 .gender-title {
@@ -2449,6 +2451,15 @@ a:focus {
 
 .modal-gender input {
     padding-right: 10px;
+}
+
+#genderNam {
+    margin-right: 15px !important;
+}
+
+#genderNu {
+    margin-left: 30px !important;
+    margin-right: 15px !important;
 }
 
 .modal-footer {
@@ -2474,6 +2485,7 @@ a:focus {
     font-size: 20px;
     margin-left: calc(50% - 150px/2);
     margin-bottom: 20px;
+    margin-top: 45px;
     border: none;
 }
 
@@ -2516,28 +2528,29 @@ a:focus {
 }
 
 /* -------------------------Schedule-detail --------------------  */
-.modal-hlv-detail h2{
+.modal-hlv-detail h2 {
     margin-top: 20px;
 }
 
-.modal-hlv-detail .user-display{
+.modal-hlv-detail .user-display {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 60px;
 }
 
-.user-img{
+.user-img {
     clip-path: circle(50%);
     height: 290px;
     width: 290px;
     margin-right: 120px;
 }
 
-.modal-hlv-detail .user-display .info{
+.modal-hlv-detail .user-display .info {
     width: 250px;
     margin-left: 50px;
 }
+
 .schedule-detail {
     margin-top: 80px;
 }
@@ -2575,16 +2588,16 @@ a:focus {
     right: -15px;
 }
 
-.feedback .blog-item{
+.feedback .blog-item {
     padding: 0 10px;
 }
 
-.feedback .blog-text h5{
+.feedback .blog-text h5 {
     margin-top: 5px;
     font-weight: 600;
 }
 
-.feedback .owl-nav { 
+.feedback .owl-nav {
     width: 150px;
     margin: 32px auto 0 auto;
     display: flex;
@@ -2626,7 +2639,7 @@ textarea.enter-feedback {
     border: 1px solid darkgrey;
     text-align: top;
 }
-  
+
 .btn-feedback {
     padding: 10px 50px;
     background-color: #ffc45d;
@@ -2635,12 +2648,12 @@ textarea.enter-feedback {
     border-radius: 4px;
     margin-left: 710px;
     font-weight: 600;
-  }
-  
+}
+
 .btn-feedback:hover {
     background-color: #e7af4e;
-  }
-  
+}
+
 
 button#openModalButtonRegister {
     margin-left: 750px;
@@ -2651,6 +2664,7 @@ button#openModalButtonRegister {
     border-radius: 50px;
     color: #fff;
 }
-button#openModalButtonRegister:hover{
+
+button#openModalButtonRegister:hover {
     border: 1px solid rgb(91 84 84);
 }

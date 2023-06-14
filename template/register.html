@@ -97,13 +97,8 @@
             <form action="#">
                 <div class="modal-body-re">
                     <div class="modal-box">
-                        <span class="details">Họ</span>
-                        <input class="modal-input-name" placeholder="Nhập họ của bạn" required>
-                    </div>
-
-                    <div class="modal-box">
-                        <span class="details">Tên</span>
-                        <input class="modal-input-name" placeholder="Nhập tên của bạn" required>
+                        <span class="details">Họ và tên</span>
+                        <input class="modal-input-name" placeholder="Nhập họ và tên của bạn" required>
                     </div>
 
                     <div class="modal-box">
@@ -130,10 +125,10 @@
                             required>
                     </div>
 
-                    <div class="modal-gender">
+                    <div class="modal-gender"><br>
                         <span class="gender-title">Giới tính</span>
-                        <input type="radio" name="gender">Nam
-                        <input type="radio" name="gender">Nữ
+                        <input type="radio" name="gender" id="genderNam">Nam
+                        <input type="radio" name="gender" id="genderNu">Nữ
                     </div>
                 </div>
             </form>
@@ -165,6 +160,7 @@
                 if (nameInput.value === "" || !emailRegex.test(nameInput.value)) {
                     // alert("Vui lòng nhập đúng địa chỉ email.");
                     errorElement.style.display = "flex";
+
                     event.preventDefault();
                     return true;
                 } else {
