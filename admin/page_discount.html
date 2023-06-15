@@ -276,8 +276,8 @@
                 <h3 class="page-header page-header-top">Discount <a href="#" data-toggle="tooltip" title="Edit"
                         class="btn btn-xs btn-success" onclick="showCreateClass()"><i class="fa fa-plus"></i></a>
                     <section class="section-bnt">
-                        <button id="active-bnt" class="active-bnt">Active</button>
-                        <button id="inactive-btn" class="inactive-bnt">inactive</button>
+                        <button id="active-bnt" class="active-bnt" onclick="act()">Active</button>
+                        <button id="inactive-btn" class="inactive-bnt" onclick="inact()"> inactive</button>
                     </section>
                 </h3>
 
@@ -393,7 +393,7 @@
                     </tbody>
                 </table>
 
-                <table class="table inactive-list" style="display: none;">
+                <table class="table inactive-list" id="inactive-list" style="display:none;">
                     <thead>
                         <tr>
                             <th class="cell-small text-center" data-toggle="tooltip" title="Toggle all!"><input
@@ -679,17 +679,18 @@
         var inactiveBtn = document.getElementById('inactive-btn');
         var activeList = document.getElementById('active-list');
         var inactiveList = document.getElementById('inactive-list');
-
-        activeBtn.addEventListener('click', function () {
-            activeList.style.display = 'inline-table';
-            inactiveList.style.display = 'none';
-        });
-
-        inactiveBtn.addEventListener('click', function () {
-            activeList.style.display = 'none';
-            inactiveList.style.display = 'inline-block !important';
-        });
-
+        function act() {
+            activeBtn.addEventListener('click', function () {
+                activeList.style.display = 'inline-table';
+                inactiveList.style.display = 'none';
+            });
+        }
+        function inact() {
+            inactiveBtn.addEventListener('click', function () {
+                activeList.style.display = 'none';
+                inactiveList.style.display = 'inline-block !important';
+            });
+        }
     </script>
     <!--END form edit class -->
 
