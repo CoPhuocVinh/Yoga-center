@@ -40,6 +40,9 @@
 
     <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
     <link rel="stylesheet" href="css/themes.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
     <!-- END Stylesheets -->
 
     <!-- Modernizr (browser feature detection library) & Respond.js (Enable responsive CSS code on browsers that don't support it, eg IE8) -->
@@ -235,22 +238,19 @@
                                 <li>
                                     <a href="page_list_class.html"><i class="fa fa-file"></i>Lớp học</a>
                                 </li>
-
-                                
-
                             </ul>
                         </li>
                         <li>
                             <a href="page_price_tables.html"><i class="fa fa-calendar"></i>Lịch học</a>
                         </li>
                         <li>
-                            <a href="page_price_tables.html"><i class="gi gi-unchecked"></i>Slot</a>
+                            <a href="page_slots.html"><i class="gi gi-unchecked"></i>Slot</a>
                         </li>
                         <li>
                             <a href="page_price_tables.html"><i class="hi hi-usd"></i>Gói học</a>
                         </li>
                         <li>
-                            <a href="page_price_tables.html"><i class="fa fa-usd"></i>Giá giảm</a>
+                            <a href="page_discount.html"><i class="fa fa-usd"></i>Giá giảm</a>
                         </li>
                         <li>
                             <a href="page_inbox.html"><i class="fa fa-envelope"></i>Hộp thư đến</a>
@@ -274,53 +274,418 @@
                     <li><a href="javascript:void(0)">Gói học</a></li>
                     <!-- <li class="active"><a href="">Price Tables</a></li> -->
                 </ul>
+                <!-- END Navigation info -->
 
-                <!-- Mini Price Tables -->
-                <h2 class="page-header text-center">Hatha Yoga</h2>
+                <!-- Price Tables -->
+                <!-- <h2 class="page-header page-header-top text-center">Normal</h2> -->
+
+                <div class="price-tables">
+                    <!-- Basic Plan -->
+                    <!-- <div class="plan">
+                        <h2 class="plan-header">Basic</h2>
+                        <ul class="fa-ul">
+                            <li><i class="fa fa-li fa-check text-success"></i> <strong>10GB</strong> Storage</li>
+                            <li><i class="fa fa-li fa-check text-success"></i> <strong>500GB</strong> Bandwidth</li>
+                            <li><i class="fa fa-li fa-check text-success"></i> <strong>5</strong> Domains</li>
+                            <li><i class="fa fa-li fa-check text-success"></i> <strong>10</strong> Email Addresses</li>
+                            <li><i class="fa fa-li fa-check text-success"></i> <strong>Email</strong> Support</li>
+                        </ul>
+                        <h1><sup>$</sup>5<small>per month</small></h1>
+                        <a href="javascript:void(0)" class="btn btn-lg btn-success">Sign Up</a>
+                    </div> -->
+                    <!-- END Basic Plan -->
+
+                    <!-- Featured Plan -->
+                    <!-- <div class="plan plan-featured">
+                        <h2 class="plan-header"><i class="fa fa-check"></i> Pro</h2>
+                        <ul class="fa-ul">
+                            <li><i class="fa fa-li fa-check text-success"></i> <strong>30GB</strong> Storage</li>
+                            <li><i class="fa fa-li fa-check text-success"></i> <strong>3TB</strong> Bandwidth</li>
+                            <li><i class="fa fa-li fa-check text-success"></i> <strong>10</strong> Domains</li>
+                            <li><i class="fa fa-li fa-check text-success"></i> <strong>30</strong> Email Addresses</li>
+                            <li><i class="fa fa-li fa-check text-success"></i> <strong>FULL</strong> Support</li>
+                        </ul>
+                        <h1><sup>$</sup>19<small>per month</small></h1>
+                        <a href="javascript:void(0)" class="btn btn-lg btn-success">Sign Up</a>
+                    </div> -->
+                    <!-- END Featured Plan -->
+
+                    <!-- Premium -->
+                    <!-- <div class="plan">
+                        <h2 class="plan-header">Premium</h2>
+                        <ul class="fa-ul">
+                            <li><i class="fa fa-li fa-check text-success"></i> <strong>100GB</strong> Storage</li>
+                            <li><i class="fa fa-li fa-check text-success"></i> <strong>10TB</strong> Bandwidth</li>
+                            <li><i class="fa fa-li fa-check text-success"></i> <strong>Unlimited</strong> Domains</li>
+                            <li><i class="fa fa-li fa-check text-success"></i> <strong>Unlimited</strong> Email
+                                Addresses</li>
+                            <li><i class="fa fa-li fa-check text-success"></i> <strong>FULL</strong> Support</li>
+                        </ul>
+                        <h1><sup>$</sup>49<small>per month</small></h1>
+                        <a href="javascript:void(0)" class="btn btn-lg btn-success">Sign Up</a>
+                    </div> -->
+                    <!-- END Premium -->
+
+                    <!-- VIP -->
+                    <!-- <div class="plan">
+                        <h2 class="plan-header">VIP</h2>
+                        <ul class="fa-ul">
+                            <li><i class="fa fa-li fa-check text-success"></i> <strong>1TB</strong> Storage</li>
+                            <li><i class="fa fa-li fa-check text-success"></i> <strong>Unlimited</strong> Bandwidth</li>
+                            <li><i class="fa fa-li fa-check text-success"></i> <strong>Unlimited</strong> Domains</li>
+                            <li><i class="fa fa-li fa-check text-success"></i> <strong>Unlimited</strong> Email
+                                Addresses</li>
+                            <li><i class="fa fa-li fa-check text-success"></i> <strong>FULL</strong> Support</li>
+                        </ul>
+                        <h1><sup>$</sup>99<small>per month</small></h1>
+                        <a href="javascript:void(0)" class="btn btn-lg btn-success">Sign Up</a>
+                    </div> -->
+                    <!-- END VIP -->
+                </div>
+                <!-- END Price Tables -->
+
+                <!-- HATHA PACKAGE -->
+                <div class="price-title">
+                    <h2 class="page-header text-center">Hatha Yoga</h2>
+                    <button onclick="showFromPrice()"><i class="gi gi-circle_plus"></i></button>
+                </div>
+                <div class="price-tables">
+                    <!-- Featured Plan -->
+                    <div class="plan plan-featured">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 12 buổi / tháng</h3>
+                        <h1>350K</h1>
+                    </div>
+                    <!-- END Featured Plan -->
+
+                    <!-- Featured Plan -->
+                    <div class="plan plan-featured">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 20 buổi / tháng</h3>
+                        <h1>500K</h1>
+                    </div>
+                    <!-- END Featured Plan -->
+                </div>
+                <button onclick="packageDiv1()" class="btn-more"><i class="fas fa-chevron-circle-down"></i>
+                </button>
+                <!-- price-detail -->
+                <div class="package-list-Hatha price-package" id="openPackageListHatha">
+                    <div class="plan price-detail">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 36 buổi / 3 tháng</h3>
+                        <h1>945K</h1>
+                    </div>
+
+                    <div class="plan price-detail">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 72 buổi / 6 tháng</h3>
+                        <h1>1.890K</h1>
+                    </div>
+
+                    <div class="plan price-detail">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 60 buổi / 3 tháng</h3>
+                        <h1>1.350K</h1>
+                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
+                            Xem thêm</a> -->
+                    </div>
+
+                    <div class="plan price-detail">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 120 buổi / 6 tháng</h3>
+                        <h1>2.700K</h1>
+                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
+                            Xem thêm</a> -->
+                    </div>
+                    <button class="btn-packagelist" onclick="showFromPriceList()">Tạo mới danh sách gói học</button>
+
+                </div>
+
+                <!-- END HATHA PACKAGE -->
+
+                <!-- YOGA-TL PACKAGE -->
+                <h2 class="page-header text-center">Yoga Trị Liệu</h2>
+                <div class="price-tables">
+                    <!-- Featured Plan -->
+                    <div class="plan plan-featured">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 12 buổi / tháng</h3>
+                        <h1>450K</h1>
+                    </div>
+                    <!-- END Featured Plan -->
+
+                    <!-- Featured Plan -->
+                    <div class="plan plan-featured">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 20 buổi / tháng</h3>
+                        <h1>700K</h1>
+                    </div>
+                    <!-- END Featured Plan -->
+                </div>
+                <button onclick="packageDiv2()" class="btn-more"><i class="fas fa-chevron-circle-down"></i>
+                </button>
+                <!-- price-detail -->
+                <div class="package-list-TL price-package" id="openPackageListTL">
+                    <div class="plan price-detail">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 36 buổi / 3 tháng</h3>
+                        <h1>1.215K</h1>
+                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
+                            Xem thêm</a> -->
+                    </div>
+
+                    <div class="plan price-detail">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 72 buổi / 6 tháng</h3>
+                        <h1>2.430K</h1>
+                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
+                            Xem thêm</a> -->
+                    </div>
+
+                    <div class="plan price-detail">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 60 buổi / 3 tháng</h3>
+                        <h1>1.890K</h1>
+                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
+                            Xem thêm</a> -->
+                    </div>
+
+                    <div class="plan price-detail">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 120 buổi / 6 tháng</h3>
+                        <h1>3.780K</h1>
+                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
+                            Xem thêm</a> -->
+                    </div>
+                </div>
+                <!-- END YOGA-TL PACKAGE -->
+
+                <!-- ASANAS PACKAGE -->
+                <h2 class="page-header text-center">Asanas Yoga</h2>
+                <div class="price-tables">
+                    <div class="plan plan-featured">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 12 buổi / tháng</h3>
+                        <h1>450K</h1>
+                    </div>
+
+                    <div class="plan plan-featured">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 20 buổi / tháng</h3>
+                        <h1>700K</h1>
+                    </div>
+                </div>
+                <button onclick="packageDiv3()" class="btn-more"><i class="fas fa-chevron-circle-down"></i>
+                </button>
+                <!-- price-detail -->
+                <div class="package-list-Asanas price-package" id="openPackageListAsanas">
+                    <div class="plan price-detail">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 36 buổi / 3 tháng</h3>
+                        <h1>1.215K</h1>
+                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
+                            Xem thêm</a> -->
+                    </div>
+
+                    <div class="plan price-detail">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 72 buổi / 6 tháng</h3>
+                        <h1>2.430K</h1>
+                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
+                            Xem thêm</a> -->
+                    </div>
+
+                    <div class="plan price-detail">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 60 buổi / 3 tháng</h3>
+                        <h1>1.890K</h1>
+                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
+                            Xem thêm</a> -->
+                    </div>
+
+                    <div class="plan price-detail">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 120 buổi / 6 tháng</h3>
+                        <h1>3.780K</h1>
+                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
+                            Xem thêm</a> -->
+                    </div>
+                </div>
+                <!-- END ASANAS PACKAGE -->
+
+                <!-- YOGA-NT PACKAGE -->
+                <h2 class="page-header text-center">Yoga Nghệ Thuật</h2>
 
                 <div class="price-tables">
                     <!-- Featured Plan -->
                     <div class="plan plan-featured">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 12 buổi</h3>
-                        <h1>350K<small>tháng</small></h1>
-                        <button onclick="packageDiv()" href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
-                            Xem thêm</button>
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 12 buổi / tháng</h3>
+                        <h1>550K</h1>
                     </div>
+                    <!-- END Featured Plan -->
+
+                    <!-- Featured Plan -->
+                    <div class="plan plan-featured">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 20 buổi / tháng</h3>
+                        <h1>900K</h1>
+                    </div>
+                    <!-- END Featured Plan -->
                 </div>
-
-
+                <button onclick="packageDiv4()" class="btn-more"><i class="fas fa-chevron-circle-down"></i>
+                </button>
                 <!-- price-detail -->
-                <div class="package-list" id="openPackageList"> 
-                    <!-- Featured Plan -->
-                    <div class="plan plan-featured price-detail">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 36 buổi</h3>
-                        <h1>1.050K<small>3 tháng</small></h1>
-                        <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
-                            Xem thêm</a>
+                <div class="package-list-NT price-package" id="openPackageListNT">
+                    <div class="plan price-detail">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 36 buổi / 3 tháng</h3>
+                        <h1>1.485K</h1>
+                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
+                            Xem thêm</a> -->
                     </div>
-                    <!-- END Featured Plan -->
 
-                    <!-- Featured Plan -->
-                    <div class="plan plan-featured price-detail">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 72 buổi</h3>
-                        <h1>2.100K<small>3 tháng</small></h1>
-                        <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
-                            Xem thêm</a>
+                    <div class="plan price-detail">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 72 buổi / 6 tháng</h3>
+                        <h1>2.970K</h1>
+                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
+                            Xem thêm</a> -->
                     </div>
-                    <!-- END Featured Plan -->
+
+                    <div class="plan price-detail">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 60 buổi / 3 tháng</h3>
+                        <h1>2.430K</h1>
+                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
+                            Xem thêm</a> -->
+                    </div>
+
+                    <div class="plan price-detail">
+                        <h3 class="plan-header"><i class="fa fa-check"></i> 120 buổi / 6 tháng</h3>
+                        <h1>4.860K</h1>
+                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
+                            Xem thêm</a> -->
+                    </div>
                 </div>
-
-                <!-- END Mini Price Tables -->
+                <!-- END YOGA-NT PACKAGE -->
+                <!-- Footer -->
+                <footer>
+                    <span id="year-copy"></span> &copy; <strong><a href="https://1.envato.market/7jd">uAdmin
+                            2.1</a></strong> - Crafted with <i class="fa fa-heart text-danger"></i> by <strong><a
+                            href="https://1.envato.market/ydb" target="_blank">pixelcave</a></strong>
+                </footer>
+                <!-- END Footer -->
             </div>
             <!-- END Page Content -->
 
-            <!-- Footer -->
-            <footer>
-                <span id="year-copy"></span> &copy; <strong><a href="https://1.envato.market/7jd">uAdmin
-                        2.1</a></strong> - Crafted with <i class="fa fa-heart text-danger"></i> by <strong><a
-                        href="https://1.envato.market/ydb" target="_blank">pixelcave</a></strong>
-            </footer>
-            <!-- END Footer -->
+            <!-- form create package-default -->
+            <form id="formPriceContainer">
+                <button id="closeButton" onclick="hideFormPrice()">X</button>
+                <form id="createForm">
+                    <h2>Tạo mới Gói</h2>
+                    <label for="name">Tên gói</label>
+                    <input type="text" id="package" name="name" required><br>
+
+                    <label for="name">Số buổi</label>
+                    <input type="number" id="day" name="day" required><br>
+
+                    <label for="name">Số tháng</label>
+                    <input type="number" id="month" name="month" required><br>
+
+                    <label for="name">Giá gói</label>
+                    <input type="text" id="price" name="price" required><br>
+
+                    <label for="course-name">Khoá</label>
+                    <select name="course" id="course-name">
+                        <option value="hahta">Hatha Yoga</option>
+                        <option value="asanas">Asanas Yoga</option>
+                        <option value="trilieu">Yoga Trị Liệu</option>
+                        <option value="nghethuat">Yoga Nghệ Thuật</option>
+                    </select>
+                    <input type="submit" value="Save" id="save">
+                </form>
+            </form>
+
+            <form id="formPriceListContainer">
+                <button id="closeButton" onclick="hideFormPriceList()">X</button>
+                <form id="createForm">
+                    <h2>Tạo mới danh sách gói</h2>
+                    <label for="course-name">Khoá</label>
+                    <select name="course" id="course-name">
+                        <option value="hahta">Hatha Yoga</option>
+                        <option value="asanas">Asanas Yoga</option>
+                        <option value="trilieu">Yoga Trị Liệu</option>
+                        <option value="nghethuat">Yoga Nghệ Thuật</option>
+                    </select>
+
+                    <label for="name">Số buổi</label>
+                    <input type="number" id="day" name="day" required><br>
+
+                    <label for="name">Số tháng</label>
+                    <input type="number" id="month" name="month" required><br>
+
+                    <label for="name">Giá gói</label>
+                    <input type="text" id="price" name="price" required><br>
+
+                    <input type="submit" value="Save" id="save">
+                </form>
+            </form>
+
+            <style>
+                #formPriceContainer {
+                    display: none;
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: #f1f1f1;
+                    padding: 20px;
+                    box-shadow: rgb(152, 152, 152, 0.6);
+                    border: rgba(0, 0, 0, 0.6) solid 1px;
+                }
+
+                #createForm {
+                    width: 300px;
+                    margin: 0 auto;
+                }
+
+                #createForm label,
+                #createForm input[type="text"],
+                #createForm input[type="number"] {
+                    display: block;
+                    margin-bottom: 10px;
+                    width: 100%;
+                }
+
+                #package,
+                #day,
+                #month,
+                #price,
+                #course-name {
+                    border: rgba(0, 0, 0, 0.6) solid 1px;
+                }
+
+                #save {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    align-items: center;
+                }
+
+                #createForm input[type="submit"] {
+                    background-color: #4CAF50;
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+
+                #closeButton {
+                    margin-left: 280px;
+                }
+            </style>
+            <script>
+                function showFromPrice() {
+                    var formPriceContainer = document.getElementById("formPriceContainer");
+                    formPriceContainer.style.display = "block";
+                }
+
+                function hideFormPrice() {
+                    var formPriceContainer = document.getElementById("formPriceContainer");
+                    formPriceContainer.style.display = "none";
+                }
+                function showFromPriceList() {
+                    var formPriceListContainer = document.getElementById("formPriceListContainer");
+                    formPriceListContainer.style.display = "block";
+                }
+
+                function hideFormPriceList() {
+                    var formPriceListContainer = document.getElementById("formPriceListContainer");
+                    formPriceListContainer.style.display = "none";
+                }
+        // function getdata
+
+            </script>
+            <!--END form edit class -->
         </div>
         <!-- END Inner Container -->
     </div>

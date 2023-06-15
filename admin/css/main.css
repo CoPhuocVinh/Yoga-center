@@ -1166,13 +1166,53 @@ header
 }
 
 /* Price Tables */
+.btn-packagelist{
+    display: block;
+    margin-left: 530px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    background: #ffbf3be3;
+    color: darkslategrey;
+}
+.price-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.price-title h2{
+    background: #fff;
+    border: none;
+}
+.price-title button{
+    margin-left: 18px;
+    border: none;
+    font-size: 24px;
+    background: #fff;
+    color: #02a16d;
+}
 .price-tables {
     text-align: center;
 }
 
-.package-list {
+.price-package{
     text-align: center;
+}
+
+.package-list-Hatha,
+.package-list-TL,
+.package-list-Asanas,
+.package-list-NT{
     display: none;
+}
+
+.btn-more{
+    margin: 0 610px;
+    border: none;
+    width: 45px;
+    font-size: 40px;
+    color: #b85757;
+    background-color: #fff;
 }
 
 .plan {
@@ -1232,8 +1272,19 @@ header
     background-color: #fff;
 }
 
-.price-detail {
-    width: fit-content;
+.price-detail{
+    width: 330px;
+    margin: 20px 60px;
+    background-color: #fff;
+}
+
+.price-detail .plan-header{
+    background-color: #4b4a52;
+}
+
+.price-detail h1{
+    background-color: #fff;
+    color: #4b4a52;
 }
 
 .plan-featured .plan-header {

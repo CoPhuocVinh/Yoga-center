@@ -337,3 +337,21 @@ function packageDiv(){
     var div = document.getElementById("openPackageList");
       div.classList.toggle("package-list");
 }
+
+//Open package list
+function packageDiv1() {
+    var div = document.getElementById("openPackageListHatha");
+    div.classList.toggle("package-list-Hatha");
+}
+function packageDiv2() {
+    var div = document.getElementById("openPackageListTL");
+    div.classList.toggle("package-list-TL");
+}
+function packageDiv3() {
+    var div = document.getElementById("openPackageListAsanas");
+    div.classList.toggle("package-list-Asanas");
+}
+function packageDiv4() {
+    var div = document.getElementById("openPackageListNT");
+    div.classList.toggle("package-list-NT");
+}
