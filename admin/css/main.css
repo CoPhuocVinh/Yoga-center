@@ -2180,6 +2180,18 @@ textarea.textarea-editor:focus {
     margin: 2px 0;
 }
 
+.modal-body-teacher {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.modal-teacher {
+    margin-right: 90px;
+    margin-bottom: 10px;
+
+}
 .form-control {
     margin: 0 0 2px;
 }
