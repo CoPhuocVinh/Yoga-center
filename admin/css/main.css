@@ -2327,7 +2327,19 @@ span.input-group-addon {
     margin-top: -1px;
     margin-left: 340px;
 }
+.luu{
+    margin-left: 980px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.luu button{
 
+    border-radius: 8px;
+    padding: 10px 24px;
+    background-color: #69afe8;
+    color: #000;
+
+}
 
 .form-horizontal {
 
