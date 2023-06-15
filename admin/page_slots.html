@@ -295,94 +295,51 @@
                         <tr>
                             <td><a href="javascript:void(0)">1</a></td>
                             <!-- <td><a href="javascript:void(0)">001</a></td>tên lớp -->
-                            <td class="hidden-xs hidden-sm"><input type="text" value="12:00 CH"></td>
-                            <td class="hidden-xs hidden-sm"><input type="text" value="12:01 CH"></td>
+                            <td class="hidden-xs hidden-sm"><input type="time" value="12:00 CH"></td>
+                            <td class="hidden-xs hidden-sm"><input type="time" value="12:01 CH"></td>
 
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
-                                        class="btn btn-xs btn-success" onclick="showForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                </div>
-                            </td>
+                            <td class="text-center"></td>
                         </tr>
                         <tr>
                             <td><a href="javascript:void(0)">2</a></td>
                             <!-- <td><a href="javascript:void(0)">Class B</a></td>tên lớp -->
-                            <td class="hidden-xs hidden-sm"><input type="text" value="12:00 CH"></td>
-                            <td class="hidden-xs hidden-sm"><input type="text" value="12:01 CH"></td>
+                            <td class="hidden-xs hidden-sm"><input type="time" value="12:00 CH"></td>
+                            <td class="hidden-xs hidden-sm"><input type="time" value="12:01 CH"></td>
 
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
-                                        class="btn btn-xs btn-success" onclick="showForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                </div>
-                            </td>
+                            <td class="text-center"></td>
                         </tr>
                         <tr>
 
                             <td><a href="javascript:void(0)">3</a></td>
                             <!-- <td><a href="javascript:void(0)">Class B</a></td>tên lớp -->
-                            <td class="hidden-xs hidden-sm"><input type="text" value="12:00 CH"></td>
-                            <td class="hidden-xs hidden-sm"><input type="text" value="12:01 CH"></td>
+                            <td class="hidden-xs hidden-sm"><input type="time" value="12:00 CH"></td>
+                            <td class="hidden-xs hidden-sm"><input type="time" value="12:01 CH"></td>
 
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
-                                        class="btn btn-xs btn-success" onclick="showForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                </div>
-                            </td>
+                            <td class="text-center"></td>
                         </tr>
                         <tr>
 
                             <td><a href="javascript:void(0)">4</a></td>
                             <!-- <td><a href="javascript:void(0)">Class B</a></td>tên lớp -->
-                            <td class="hidden-xs hidden-sm"><input type="text" value="12:00 CH"></td>
-                            <td class="hidden-xs hidden-sm"><input type="text" value="12:01 CH"></td>
+                            <td class="hidden-xs hidden-sm"><input type="time" value="12:00 CH"></td>
+                            <td class="hidden-xs hidden-sm"><input type="time" value="12:01 CH"></td>
 
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
-                                        class="btn btn-xs btn-success" onclick="showForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                </div>
-                            </td>
+                            <td class="text-center"></td>
                         </tr>
                         <tr>
                             <td><a href="javascript:void(0)">5</a></td>
                             <!-- <td><a href="javascript:void(0)">Class B</a></td>tên lớp -->
-                            <td class="hidden-xs hidden-sm"><input type="text" value="12:00 CH"></td>
-                            <td class="hidden-xs hidden-sm"><input type="text" value="12:01 CH"></td>
+                            <td class="hidden-xs hidden-sm"><input type="time" value="12:00 CH"></td>
+                            <td class="hidden-xs hidden-sm"><input type="time" value="12:01 CH"></td>
 
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
-                                        class="btn btn-xs btn-success" onclick="showForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                </div>
-                            </td>
+                            <td class="text-center"></td>
                         </tr>
                     </tbody>
                 </table>
                 <!-- END List Staff -->
-                <div class="save-cover"> <button class="save-bnt">save</button> </div>
+                <div class="save-bnt">
+                    <button type="submit">Lưu</button>
+                </div>
             </div>
             <!-- END Page Content -->
 
@@ -458,15 +415,17 @@
             align-items: center;
         }
 
-        .save-cover {
+        .save-bnt {
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .save-bnt {
-            background-color: beige;
-
+        .save-bnt button {
+            border-radius: 8px;
+            padding: 10px 24px;
+            background-color: #69afe8;
+            color: #000;
         }
 
         #registrationForm input[type="submit"] {
