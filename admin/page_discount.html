@@ -276,20 +276,6 @@
                 <h3 class="page-header page-header-top">Discount <a href="#" data-toggle="tooltip" title="Edit"
                         class="btn btn-xs btn-success" onclick="showCreateClass()"><i class="fa fa-plus"></i></a>
 
-                    <div class="card-header section-bnt">
-                        <div class="card-tools">
-                            <ul class="nav nav-pills ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link active-bnt" href="#" id="active-bnt" data-toggle="tab">Active</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link inactive-bnt" href="#" id="inactive-btn"
-                                        data-toggle="tab">Inactive</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><!-- /.card-header -->
-
                 </h3>
 
                 <table class="table active-list" id="active-list">
@@ -404,11 +390,11 @@
                     </tbody>
                 </table>
 
-                <table class="table inactive-list" id="inactive-list" style="display: none;">
+                <table class="table inactive-list" style="display: block;">
                     <thead>
                         <tr>
                             <th class="cell-small text-center" data-toggle="tooltip" title="Toggle all!"><input
-                                    type="checkbox" id="check2-all" name="check1-all"></th>
+                                    type="checkbox" id="check1-all" name="check1-all"></th>
                             <th class="text-center">#</th>
                             <th class="hidden-xs hidden-sm"><i class="fa "></i>courses name</th>
                             <th class="hidden-xs hidden-sm">giá muốn giảm</th>
@@ -420,7 +406,7 @@
                     <tbody>
                         <!--dòng lớp-->
                         <tr>
-                            <td class="text-center"><input type="checkbox" id="check2-td1" name="check1-td1"></td>
+                            <td class="text-center"><input type="checkbox" id="check1-td1" name="check1-td1"></td>
                             <td class="text-center">1</td>
 
                             <td class="hidden-xs hidden-sm">Hatha Yoga</td><!--tên khóa-->
@@ -442,7 +428,7 @@
 
                         <!--dòng lớp-->
                         <tr>
-                            <td class="text-center"><input type="checkbox" id="check2-td1" name="check1-td1"></td>
+                            <td class="text-center"><input type="checkbox" id="check1-td1" name="check1-td1"></td>
                             <td class="text-center">1</td>
 
                             <td class="hidden-xs hidden-sm">Hatha Yoga</td><!--tên khóa-->
@@ -463,7 +449,7 @@
                         <!--hết 1 dòng -->
                         <!--dòng lớp-->
                         <tr>
-                            <td class="text-center"><input type="checkbox" id="check2-td1" name="check1-td1"></td>
+                            <td class="text-center"><input type="checkbox" id="check1-td1" name="check1-td1"></td>
                             <td class="text-center">1</td>
 
                             <td class="hidden-xs hidden-sm">Hatha Yoga</td><!--tên khóa-->
@@ -484,7 +470,7 @@
                         <!--hết 1 dòng -->
                         <!--dòng lớp-->
                         <tr>
-                            <td class="text-center"><input type="checkbox" id="check2-td1" name="check1-td1"></td>
+                            <td class="text-center"><input type="checkbox" id="check1-td1" name="check1-td1"></td>
                             <td class="text-center">1</td>
 
                             <td class="hidden-xs hidden-sm">Hatha Yoga</td><!--tên khóa-->
@@ -655,22 +641,7 @@
             var formCreateContainer = document.getElementById("formCreateContainer");
             formCreateContainer.style.display = "none";
         }
-        //xử lý nút bấm active và inactive
-        var activeBtn = document.getElementById('active-bnt');
-        var inactiveBtn = document.getElementById('inactive-btn');
-        var activeList = document.getElementById('active-list');
-        var inactiveList = document.getElementById('inactive-list');
 
-        activeBtn.addEventListener('click', function () {
-            activeList.style.display = 'inline-table';
-            inactiveList.style.display = 'none';
-        });
-
-
-        inactiveBtn.addEventListener('click', function () {
-            activeList.style.display = 'none';
-            inactiveList.style.display = 'inline-table';
-        });
 
     </script>
     <!--END form edit class -->
