@@ -275,10 +275,21 @@
                 <!-- List Staff -->
                 <h3 class="page-header page-header-top">Discount <a href="#" data-toggle="tooltip" title="Edit"
                         class="btn btn-xs btn-success" onclick="showCreateClass()"><i class="fa fa-plus"></i></a>
-                    <section class="section-bnt">
-                        <button id="active-bnt" class="active-bnt" onclick="act()">Active</button>
-                        <button id="inactive-btn" class="inactive-bnt" onclick="inact()"> inactive</button>
-                    </section>
+
+                    <div class="card-header section-bnt">
+                        <div class="card-tools">
+                            <ul class="nav nav-pills ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active-bnt" href="#" id="active-bnt" data-toggle="tab">Active</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link inactive-bnt" href="#" id="inactive-btn"
+                                        data-toggle="tab">Inactive</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- /.card-header -->
+
                 </h3>
 
                 <table class="table active-list" id="active-list">
@@ -393,7 +404,7 @@
                     </tbody>
                 </table>
 
-                <table class="table inactive-list" id="inactive-list" style="display:none;">
+                <table class="table inactive-list" id="inactive-list" style="display: none;">
                     <thead>
                         <tr>
                             <th class="cell-small text-center" data-toggle="tooltip" title="Toggle all!"><input
@@ -559,19 +570,6 @@
     <!-- End form create class-->
 
     <style>
-        .active-list {
-            display: inline-table;
-        }
-
-        #active-bnt:active {
-            background-color: aqua;
-        }
-
-        #active-bnt::after {
-            background-color: aqua;
-
-        }
-
         #formContainer,
         #formCreateContainer {
             display: none;
@@ -637,23 +635,6 @@
         #closeButton2 {
             transform: translateX(500%);
         }
-
-        .section-bnt {
-            display: flex;
-            justify-content: center;
-            border-radius: 30px;
-            font-family: 'Times New Roman', Times, serif !important;
-            font-weight: 100;
-        }
-
-        .section-bnt .active-bnt {
-            margin-right: 20px;
-
-        }
-
-        .section-bnt .inactive-bnt {
-            margin-left: 20px;
-        }
     </style>
 
     <script>
@@ -679,18 +660,18 @@
         var inactiveBtn = document.getElementById('inactive-btn');
         var activeList = document.getElementById('active-list');
         var inactiveList = document.getElementById('inactive-list');
-        function act() {
-            activeBtn.addEventListener('click', function () {
-                activeList.style.display = 'inline-table';
-                inactiveList.style.display = 'none';
-            });
-        }
-        function inact() {
-            inactiveBtn.addEventListener('click', function () {
-                activeList.style.display = 'none';
-                inactiveList.style.display = 'inline-block !important';
-            });
-        }
+
+        activeBtn.addEventListener('click', function () {
+            activeList.style.display = 'inline-table';
+            inactiveList.style.display = 'none';
+        });
+
+
+        inactiveBtn.addEventListener('click', function () {
+            activeList.style.display = 'none';
+            inactiveList.style.display = 'inline-table';
+        });
+
     </script>
     <!--END form edit class -->
 
