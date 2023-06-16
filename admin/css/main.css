@@ -1166,136 +1166,76 @@ header
 }
 
 /* Price Tables */
-.btn-packagelist{
-    display: block;
-    margin-left: 530px;
-    font-size: 20px;
-    padding: 10px;
-    border: none;
-    background: #ffbf3be3;
-    color: darkslategrey;
-}
-.price-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.price-title h2{
-    background: #fff;
-    border: none;
-}
-.price-title button{
-    margin-left: 18px;
-    border: none;
-    font-size: 24px;
-    background: #fff;
-    color: #02a16d;
-}
-.price-tables {
-    text-align: center;
-}
 
-.price-package{
-    text-align: center;
-}
-
-.package-list-Hatha,
-.package-list-TL,
-.package-list-Asanas,
-.package-list-NT{
+.pacList12Hatha,
+.pacList20Hatha,
+.pacList12Asanas,
+.pacList20Asanas,
+.pacList12TL,
+.pacList20TL,
+.pacList12NT,
+.pacList20NT{
     display: none;
 }
 
-.btn-more{
-    margin: 0 610px;
-    border: none;
-    width: 45px;
-    font-size: 40px;
-    color: #b85757;
-    background-color: #fff;
+#formCreatePac {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    padding: 20px;
+    box-shadow: rgb(152, 152, 152, 0.6);
+    border: rgba(0, 0, 0, 0.6) solid 1px;
 }
 
-.plan {
-    width: 260px;
-    margin: 10px 0;
-    padding: 0 0 20px;
-    background-color: #eee;
-    display: inline-block;
-    opacity: 0.85;
-    filter: alpha(opacity=85);
+#order,
+#list12,
+#list20{
+    display: none;
 }
 
-.plan:hover {
-    opacity: 1;
-    filter: alpha(opacity=100);
-}
-
-.plan-header {
-    color: #fff;
-    background: #555;
-    padding: 15px 10px;
-    margin: 0;
-}
-
-.plan ul {
-    list-style-type: none;
-    font-size: 16px;
-    padding: 0 10px;
-    margin: 20px 0 20px 30px;
-    text-align: left;
-}
-
-.plan ul li {
-    margin: 0 0 5px;
-}
-
-.plan h1 {
-    font-size: 90px;
-    margin: 20px 0;
-    padding: 15px 20px;
-    line-height: normal;
-    background-color: #f9f9f9;
-}
-
-.plan h1 sup {
-    font-size: 45px;
-}
-
-.plan h1 small {
-    display: block;
-    font-size: 16px;
-}
-
-.plan-featured {
+#createForm {
     width: 300px;
-    margin: 20px 60px;
-    background-color: #fff;
+    margin: 0 auto;
 }
 
-.price-detail{
-    width: 330px;
-    margin: 20px 60px;
-    background-color: #fff;
+#createForm label,
+#createForm select,
+#createForm input[type="text"],
+#createForm input[type="number"] {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
-.price-detail .plan-header{
-    background-color: #4b4a52;
+#package,
+#day,
+#month,
+#price {
+    border: rgba(0, 0, 0, 0.6) solid 1px;
 }
 
-.price-detail h1{
-    background-color: #fff;
-    color: #4b4a52;
+#save {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
 }
 
-.plan-featured .plan-header {
-    background-color: #db4a39;
+#createForm input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }
 
-.plan-featured h1 {
-    background-color: #fff;
-    color: #db4a39;
+#closeButton {
+    margin-left: 280px;
 }
-
 /* Icon Set List */
 .iconset-list {
     list-style: none;
