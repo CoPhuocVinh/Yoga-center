@@ -237,7 +237,7 @@
                                     <a href="page_list_class.html"><i class="fa fa-file"></i>Lớp học</a>
                                 </li>
 
-                                
+
 
                             </ul>
                         </li>
@@ -272,8 +272,8 @@
                 <!-- Navigation info -->
                 <ul id="nav-info" class="clearfix">
                     <li><a href="index.html"><i class="fa fa-home"></i></a></li>
-                    <li><a href="javascript:void(0)">Components</a></li>
-                    <li class="active"><a href="">Calendar</a></li>
+                    <!-- <li><a href="javascript:void(0)">Components</a></li> -->
+                    <li class="active"><a href="">Lịch học</a></li>
                 </ul>
                 <!-- END Navigation info -->
 
@@ -284,16 +284,16 @@
                 <!-- END FullCalendar -->
 
                 <!-- FullCalendar (Drop Events) -->
-                
+
                 <div class="row">
                     <div class="col-md-2">
                         <div id="fc-external-events">
-                            <h5>Draggable Events</h5>
+                            <h5>Các khóa học hiện có</h5>
                             <div class="fc-external-event">Hatha Yoga</div>
                             <div class="fc-external-event">Yoga Nghệ Thuật</div>
                             <div class="fc-external-event">Asanas Yoga</div>
                             <div class="fc-external-event">Yoga Trị Liệu</div>
-                           
+
                         </div>
                     </div>
                     <div class="col-md-10">
@@ -305,11 +305,11 @@
             <!-- END Page Content -->
 
             <!-- Footer -->
-            <footer>
+            <!-- <footer>
                 <span id="year-copy"></span> &copy; <strong><a href="https://1.envato.market/7jd">uAdmin
                         2.1</a></strong> - Crafted with <i class="fa fa-heart text-danger"></i> by <strong><a
                         href="https://1.envato.market/ydb" target="_blank">pixelcave</a></strong>
-            </footer>
+            </footer> -->
             <!-- END Footer -->
         </div>
         <!-- END Inner Container -->
@@ -546,7 +546,7 @@
                     },
                     {
                         title: 'Lunch',
-                        start: new Date(y, m, d, 13, 00),
+                        start: new Date(y, m, d, 13, 0),
                         allDay: false
                     },
                     {
@@ -596,6 +596,472 @@
                     center: 'title',
                     right: 'month,agendaWeek,agendaDay'
                 },
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                },
+                editable: true,
+                events: [
+                    {
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d -15, 7 , 0),
+                        end: new Date(y, m, d -15 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d - 15, 8 , 30 ),
+                        end: new Date(y, m, d -15 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d - 15 , 10, 0),
+                        end : new Date(y, m, d - 15, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d - 15, 18,0),
+                        end : new Date(y, m, d - 15, 19, 0),
+                    },
+                    {
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d -14, 7 , 0),
+                        end: new Date(y, m, d -14 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d - 14, 8 , 30 ),
+                        end: new Date(y, m, d -14 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d - 14 , 10, 0),
+                        end : new Date(y, m, d - 14, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d - 14, 18,0),
+                        end : new Date(y, m, d - 14, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d -13, 7 , 0),
+                        end: new Date(y, m, d -13 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d - 13, 8 , 30 ),
+                        end: new Date(y, m, d -13 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d - 13 , 10, 0),
+                        end : new Date(y, m, d - 13, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d - 13, 18,0),
+                        end : new Date(y, m, d - 13, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d -11, 7 , 0),
+                        end: new Date(y, m, d -11 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d - 11, 8 , 30 ),
+                        end: new Date(y, m, d -11 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d - 11 , 10, 0),
+                        end : new Date(y, m, d - 11, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d - 11, 18,0),
+                        end : new Date(y, m, d - 11, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d -10, 7 , 0),
+                        end: new Date(y, m, d -10 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d - 10, 8 , 30 ),
+                        end: new Date(y, m, d -10 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d - 10 , 10, 0),
+                        end : new Date(y, m, d - 10, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d - 10, 18,0),
+                        end : new Date(y, m, d - 10, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d -9, 7 , 0),
+                        end: new Date(y, m, d -9 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d - 9, 8 , 30 ),
+                        end: new Date(y, m, d -9 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d - 9 , 10, 0),
+                        end : new Date(y, m, d - 9, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d - 9, 18,0),
+                        end : new Date(y, m, d - 9, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d -8, 7 , 0),
+                        end: new Date(y, m, d -8 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d - 8, 8 , 30 ),
+                        end: new Date(y, m, d -8 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d - 8 , 10, 0),
+                        end : new Date(y, m, d - 8, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d - 8, 18,0),
+                        end : new Date(y, m, d - 8, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d -7, 7 , 0),
+                        end: new Date(y, m, d -7 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d - 7, 8 , 30 ),
+                        end: new Date(y, m, d -7 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d - 7 , 10, 0),
+                        end : new Date(y, m, d - 7, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d - 7, 18,0),
+                        end : new Date(y, m, d - 7, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d -6, 7 , 0),
+                        end: new Date(y, m, d -6 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d - 6, 8 , 30 ),
+                        end: new Date(y, m, d -6 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d - 6 , 10, 0),
+                        end : new Date(y, m, d - 6, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d - 6, 18,0),
+                        end : new Date(y, m, d - 6, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d -4, 7 , 0),
+                        end: new Date(y, m, d -4 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d - 4, 8 , 30 ),
+                        end: new Date(y, m, d -4 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d - 4 , 10, 0),
+                        end : new Date(y, m, d - 4, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d - 4, 18,0),
+                        end : new Date(y, m, d - 4, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d -3, 7 , 0),
+                        end: new Date(y, m, d -3 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d - 3, 8 , 30 ),
+                        end: new Date(y, m, d -3 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d - 3 , 10, 0),
+                        end : new Date(y, m, d - 3, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d - 3, 18,0),
+                        end : new Date(y, m, d - 3, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d -2, 7 , 0),
+                        end: new Date(y, m, d -2 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d - 2, 8 , 30 ),
+                        end: new Date(y, m, d -2 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d - 2 , 10, 0),
+                        end : new Date(y, m, d - 2, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d - 2, 18,0),
+                        end : new Date(y, m, d - 2, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d -1, 7 , 0),
+                        end: new Date(y, m, d -1 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d - 1, 8 , 30 ),
+                        end: new Date(y, m, d -1 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d - 1 , 10, 0),
+                        end : new Date(y, m, d - 1, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d - 1, 18,0),
+                        end : new Date(y, m, d - 1, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d -0, 7 , 0),
+                        end: new Date(y, m, d -0 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d - 0, 8 , 30 ),
+                        end: new Date(y, m, d -0 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d - 0 , 10, 0),
+                        end : new Date(y, m, d - 0, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d - 0, 18,0),
+                        end : new Date(y, m, d - 0, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d +1, 7 , 0),
+                        end: new Date(y, m, d +1 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d +1, 8 , 30 ),
+                        end: new Date(y, m, d +1 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d + 1 , 10, 0),
+                        end : new Date(y, m, d + 1, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d + 1, 18,0),
+                        end : new Date(y, m, d + 1, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d +3, 7 , 0),
+                        end: new Date(y, m, d +3 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d +3, 8 , 30 ),
+                        end: new Date(y, m, d +3 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d + 3 , 10, 0),
+                        end : new Date(y, m, d + 3, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d + 3, 18,0),
+                        end : new Date(y, m, d + 3, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d +4, 7 , 0),
+                        end: new Date(y, m, d +4 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d +4, 8 , 30 ),
+                        end: new Date(y, m, d +4 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d + 4 , 10, 0),
+                        end : new Date(y, m, d + 4, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d + 4, 18,0),
+                        end : new Date(y, m, d + 4, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d +5, 7 , 0),
+                        end: new Date(y, m, d +5 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d +5, 8 , 30 ),
+                        end: new Date(y, m, d +5 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d + 5 , 10, 0),
+                        end : new Date(y, m, d + 5, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d + 5, 18,0),
+                        end : new Date(y, m, d + 5, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d +6, 7 , 0),
+                        end: new Date(y, m, d +6 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d +6, 8 , 30 ),
+                        end: new Date(y, m, d +6 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d + 6 , 10, 0),
+                        end : new Date(y, m, d + 6, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d + 6, 18,0),
+                        end : new Date(y, m, d + 6, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d +7, 7 , 0),
+                        end: new Date(y, m, d +7 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d +7, 8 , 30 ),
+                        end: new Date(y, m, d +7 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d + 7 , 10, 0),
+                        end : new Date(y, m, d + 7, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d + 7, 18,0),
+                        end : new Date(y, m, d + 7, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d +8, 7 , 0),
+                        end: new Date(y, m, d +8 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d +8, 8 , 30 ),
+                        end: new Date(y, m, d +8 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d + 8 , 10, 0),
+                        end : new Date(y, m, d + 8, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d + 8, 18,0),
+                        end : new Date(y, m, d + 8, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d +10, 7 , 0),
+                        end: new Date(y, m, d +10 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d +10, 8 , 30 ),
+                        end: new Date(y, m, d +10 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d + 10 , 10, 0),
+                        end : new Date(y, m, d + 10, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d + 10, 18,0),
+                        end : new Date(y, m, d + 10, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d +11, 7 , 0),
+                        end: new Date(y, m, d +11 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d +11, 8 , 30 ),
+                        end: new Date(y, m, d +11 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d + 11 , 10, 0),
+                        end : new Date(y, m, d + 11, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d + 11, 18,0),
+                        end : new Date(y, m, d + 11, 19, 0),
+                    },{
+                        title: 'Hatha Yoga \n'  +  'Phương', 
+                        start: new Date(y, m, d +12, 7 , 0),
+                        end: new Date(y, m, d +12 ,8, 0)
+                    },
+                    {
+                        title: 'Asanas Yoga \n' + 'Phương', 
+                        start: new Date(y, m, d +12, 8 , 30 ),
+                        end: new Date(y, m, d +12 ,9, 30)
+                    },
+                    {
+                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
+                        start: new Date(y, m, d + 12 , 10, 0),
+                        end : new Date(y, m, d + 12, 11, 0),
+                    },
+                    {
+                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
+                        start: new Date(y, m, d + 12, 18,0),
+                        end : new Date(y, m, d + 12, 19, 0),
+                    },
+                ],
                 firstDay: 1,
                 editable: true,
                 droppable: true, // this allows things to be dropped onto the calendar !!!
