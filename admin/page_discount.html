@@ -273,43 +273,40 @@
                 <!-- END Navigation info -->
 
                 <!-- List Staff -->
-                <h3 class="page-header page-header-top">Discount <button class="save-bnt">save</button>
-
+                <h3 class="page-header page-header-top">Khuyến mãi 
+                    <button class="save-bnt">Lưu</button>
+                    <button class="create-btn" onclick="showCreatePackage()">Tạo mới</button>
                 </h3>
 
                 <table class="table">
+                    <!-- Hatha  -->
                     <thead>
-                        <tr style="font-weight: 300;">
-                            <td>
-                                <h4>Hatha Yoga</h4>
-                            </td>
-                        </tr>
                         <tr style="background-color: #4CAF50;">
                             <!-- <th class="text-center">#</th> -->
                             <!-- <th class="hidden-xs hidden-sm"><i class="fa "></i>Tên gói</th> -->
-                            <th class="hidden-xs hidden-sm"><i class="fa "></i>số buổi của tháng</th>
-                            <th class="hidden-xs hidden-sm"><i class="fa "></i>số tháng</th>
+                            <th class="hidden-xs hidden-sm"><i class="fa "></i>Số buổi của tháng</th>
+                            <th class="hidden-xs hidden-sm"><i class="fa "></i>Số tháng</th>
                             <th class="hidden-xs hidden-sm">Tổng buổi</th>
-                            <th class="hidden-xs hidden-sm">giá ban đầu</th>
+                            <th class="hidden-xs hidden-sm">Giá ban đầu</th>
                             <th class="hidden-xs hidden-sm">% muốn giảm</th>
                             <th class="hidden-xs hidden-sm">Tổng</th>
-                            <!-- <th class="text-center"><i class="fa fa-bolt"></i>Actions</th> -->
-
+                        </tr>
+                        <tr style="font-weight: 300; text-align: center; transform: translate(40%);">
+                            <td >
+                                <h4 style="margin: 16px; font-size: 22px;">Hatha Yoga</h4>
+                            </td>
                         </tr>
                     </thead>
                     <tbody>
-
-                        <!--dòng mới-->
-                        <tr>
+                        <!--package-default12 Hatha-->
+                        <tr class="table-content" onclick="show12Hatha()">
                             <td class="hidden-xs hidden-sm">
-                                <button>
-                                    <option value="12slot">12 slot</option>
-                                </button>
+                                <i class="gi gi-play"></i>
+                                <input type="text" value="12" >
+                                buổi
                             </td>
                             <td class="hidden-xs hidden-sm">
-                                <select class="select-field">
-                                    <option value="1">1 tháng</option>
-                                </select>
+                                <button>1 tháng</button>
                             </td>
                             <td class="hidden-xs hidden-sm"><input type="number" value="12">buổi</td>
                             <td class="hidden-xs hidden-sm"><input type="text" class="gia-goc"
@@ -320,64 +317,59 @@
                                 <input type="number" class="tong-giam" value="350.000" readonly>vnđ
                             </td>
                         </tr>
-                        <!--dòng mới-->
-                        <tr>
+                        <!--End package-default12 Hatha-->
+                        <tbody class="pacList12Hatha" id="openPackageList12Hatha">
+                            <tr class="table-content">
+                                <td class="hidden-xs hidden-sm">
+                                        <button>36 buổi</button>
+                                </td>
+                                <td class="hidden-xs hidden-sm">
+                                    <select class="select-field">
+                                        <option selected>3 tháng</option>
+                                    </select>
+                                </td>
 
-                            <td class="hidden-xs hidden-sm">
-                                <button>
-                                    <option value="12slot">12 slot</option>
-                                </button>
-                            </td>
-                            <td class="hidden-xs hidden-sm">
-                                <select class="select-field">
-                                    <option selected>3 tháng</option>
-                                </select>
-                            </td>
+                                <td class="hidden-xs hidden-sm"><button>36 buổi</button></td>
+                                <td class="hidden-xs hidden-sm"><button class="gia-goc"
+                                        oninput="calculateTotal(this)" >1.050.000vnđ</button></td>
+                                <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%"
+                                        class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                                <td class="hidden-xs hidden-sm">
+                                    <input type="number" class="tong-giam" value="945.000" readonly>vnđ
+                                </td>
+                            </tr>
 
-                            <td class="hidden-xs hidden-sm"><input type="number" value="36">buổi</td>
-                            <td class="hidden-xs hidden-sm"><input type="text" class="gia-goc"
-                                    oninput="calculateTotal(this)" value="1.050.000">vnđ</td>
-                            <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%"
-                                    class="phan-tram-giam" oninput="calculateTotal(this)"></td>
-                            <td class="hidden-xs hidden-sm">
-                                <input type="number" class="tong-giam" value="945.000" readonly>vnđ
-                            </td>
-                        </tr>
-                        <!--dòng mới-->
-                        <tr>
+                            <tr class="table-content">
 
-                            <td class="hidden-xs hidden-sm">
-                                <button>
-                                    <option value="12slot">12 slot</option>
-                                </button>
-                            </td>
-                            <td class="hidden-xs hidden-sm">
-                                <select class="select-field">
-                                    <option selected>6 tháng</option>
-                                </select>
-                            </td>
+                                <td class="hidden-xs hidden-sm">
+                                        <button>72 buổi</button>
+                                </td>
+                                <td class="hidden-xs hidden-sm">
+                                    <select class="select-field">
+                                        <option selected>6 tháng</option>
+                                    </select>
+                                </td>
 
-                            <td class="hidden-xs hidden-sm"><input type="number" value="72">buổi</td>
-                            <td class="hidden-xs hidden-sm"><input type="text" class="gia-goc"
-                                    oninput="calculateTotal(this)" value="2.100.000">vnđ</td>
-                            <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%"
-                                    class="phan-tram-giam" oninput="calculateTotal(this)"></td>
-                            <td class="hidden-xs hidden-sm">
-                                <input type="number" class="tong-giam" value="2100.000" readonly>vnđ
-                            </td>
-                        </tr>
-                        <!--dòng mới-->
-                        <tr>
+                                <td class="hidden-xs hidden-sm"><button>72 buổi</button></td>
+                                <td class="hidden-xs hidden-sm"><button class="gia-goc"
+                                        oninput="calculateTotal(this)" >2.100.000vnđ</td>
+                                <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%"
+                                        class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                                <td class="hidden-xs hidden-sm">
+                                    <input type="number" class="tong-giam" value="2100.000" readonly>vnđ
+                                </td>
+                            </tr>
+                        </tbody>
 
+                        <!--package-default20 Hatha-->
+                        <tr class="table-content" onclick="show20Hatha()">
                             <td class="hidden-xs hidden-sm">
-                                <button>
-                                    <option value="20slot">20 slot</option>
-                                </button>
+                                <i class="gi gi-play"></i>
+                                <input type="text" value="20" >
+                                buổi
                             </td>
                             <td class="hidden-xs hidden-sm">
-                                <select class="select-field">
-                                    <option selected>1 tháng</option>
-                                </select>
+                                <button>1 tháng</button>
                             </td>
 
                             <td class="hidden-xs hidden-sm"><input type="number" value="12">buổi</td>
@@ -389,51 +381,452 @@
                                 <input type="number" class="tong-giam" value="500.000" readonly>vnđ
                             </td>
                         </tr>
-                        <!--dòng mới-->
-                        <tr>
+                        <!--End package-default20 Hatha-->
+                        <tbody class="pacList20Hatha" id="openPackageList20Hatha">
+                            <tr class="table-content">
+                                <td class="hidden-xs hidden-sm">
+                                        <button>60 buổi</button>
+                                </td>
+                                <td class="hidden-xs hidden-sm">
+                                    <select class="select-field">
+                                        <option selected>3 tháng</option>
+                                    </select>
+                                </td>
+    
+                                <td class="hidden-xs hidden-sm"><button>60 buổi</button></td>
+                                <td class="hidden-xs hidden-sm"><button class="gia-goc"
+                                        oninput="calculateTotal(this)" >1.050.000vnđ</button></td>
+                                <td class=" hidden-xs hidden-sm"><input type="number" placeholder="10%"
+                                        class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                                <td class="hidden-xs hidden-sm">
+                                    <input type="number" class="tong-giam" value="1350.000" readonly>vnđ
+                                </td>
+                            </tr>
 
+                            <tr class="table-content">
+                                <td class="hidden-xs hidden-sm">
+                                        <button>120 buổi</button>
+                                </td>
+                                <td class="hidden-xs hidden-sm">
+                                    <select class="select-field">
+                                        <option selected>6 tháng</option>
+                                    </select>
+                                </td>
+                                <td class="hidden-xs hidden-sm"><button>72 buổi</button></td>
+                                <td class="hidden-xs hidden-sm"><button class="gia-goc"
+                                        oninput="calculateTotal(this)">3.000.000vnđ </button></td>
+                                <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%"
+                                        class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                                <td class="hidden-xs hidden-sm">
+                                    <input type="number" class="tong-giam" value="2700.000" readonly>vnđ
+                                </td>
+    
+                            </tr>
+                        </tbody>
+                        
+                        <!-- Asanas Yoga  -->
+                        <thead>
+                            <tr style="font-weight: 300; text-align: center; transform: translate(41%);">
+                                <td>
+                                    <h4 style="margin: 16px; font-size: 22px;">Asanas Yoga</h4>
+                                </td>
+                            </tr>
+                        </thead>
+                        <!--package-default12 Asanas-->
+                        <tr class="table-content" onclick="show12Asanas()">
                             <td class="hidden-xs hidden-sm">
-                                <button>
-                                    <option value="20slot">20 slot</option>
-                                </button>
+                                <i class="gi gi-play"></i>
+                                <input type="text" value="12" >
+                                buổi
                             </td>
                             <td class="hidden-xs hidden-sm">
-                                <select class="select-field">
-                                    <option selected>3 tháng</option>
-                                </select>
+                                <button>1 tháng</button>
                             </td>
-
-                            <td class="hidden-xs hidden-sm"><input type="number" value="36">buổi</td>
+                            <td class="hidden-xs hidden-sm"><input type="number" value="12">buổi</td>
                             <td class="hidden-xs hidden-sm"><input type="text" class="gia-goc"
-                                    oninput="calculateTotal(this)" value="1.500.000">vnđ</td>
-                            <td class=" hidden-xs hidden-sm"><input type="number" placeholder="10%"
-                                    class="phan-tram-giam" oninput="calculateTotal(this)"></td>
-                            <td class="hidden-xs hidden-sm">
-                                <input type="number" class="tong-giam" value="1350.000" readonly>vnđ
-                            </td>
-                        </tr>
-                        <!--dòng mới-->
-                        <tr>
-                            <td class="hidden-xs hidden-sm">
-                                <button>
-                                    <option value="20slot">20 slot</option>
-                                </button>
-                            </td>
-                            <td class="hidden-xs hidden-sm">
-                                <select class="select-field">
-                                    <option selected>6 tháng</option>
-                                </select>
-                            </td>
-                            <td class="hidden-xs hidden-sm"><input type="number" value="72">buổi</td>
-                            <td class="hidden-xs hidden-sm"><input type="text" class="gia-goc"
-                                    oninput="calculateTotal(this)" value="3.000.000">vnđ</td>
+                                    oninput="calculateTotal(this)" value="350.000">vnđ</td>
                             <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%"
                                     class="phan-tram-giam" oninput="calculateTotal(this)"></td>
                             <td class="hidden-xs hidden-sm">
-                                <input type="number" class="tong-giam" value="2700.000" readonly>vnđ
+                                <input type="number" class="tong-giam" value="350.000" readonly>vnđ
+                            </td>
+                        </tr>
+                        <!--End package-default12 Asanas-->
+                        <tbody class="pacList12Asanas" id="openPackageList12Asanas">
+                            <tr class="table-content">
+                                <td class="hidden-xs hidden-sm">
+                                        <button>36 buổi</button>
+                                </td>
+                                <td class="hidden-xs hidden-sm">
+                                    <select class="select-field">
+                                        <option selected>3 tháng</option>
+                                    </select>
+                                </td>
+
+                                <td class="hidden-xs hidden-sm"><button>36 buổi</button></td>
+                                <td class="hidden-xs hidden-sm"><button class="gia-goc"
+                                        oninput="calculateTotal(this)" >1.050.000vnđ</button></td>
+                                <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%"
+                                        class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                                <td class="hidden-xs hidden-sm">
+                                    <input type="number" class="tong-giam" value="945.000" readonly>vnđ
+                                </td>
+                            </tr>
+
+                            <tr class="table-content">
+
+                                <td class="hidden-xs hidden-sm">
+                                        <button>72 buổi</button>
+                                </td>
+                                <td class="hidden-xs hidden-sm">
+                                    <select class="select-field">
+                                        <option selected>6 tháng</option>
+                                    </select>
+                                </td>
+
+                                <td class="hidden-xs hidden-sm"><button>72 buổi</button></td>
+                                <td class="hidden-xs hidden-sm"><button class="gia-goc"
+                                        oninput="calculateTotal(this)" >2.100.000vnđ</td>
+                                <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%"
+                                        class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                                <td class="hidden-xs hidden-sm">
+                                    <input type="number" class="tong-giam" value="2100.000" readonly>vnđ
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <!--package-default20 Asanas-->
+                        <tr class="table-content" onclick="show20Asanas()">
+                            <td class="hidden-xs hidden-sm">
+                                <i class="gi gi-play"></i>
+                                <input type="text" value="20" >
+                                buổi
+                            </td>
+                            <td class="hidden-xs hidden-sm">
+                                <button>1 tháng</button>
                             </td>
 
+                            <td class="hidden-xs hidden-sm"><input type="number" value="12">buổi</td>
+                            <td class="hidden-xs hidden-sm"><input type="text" class="gia-goc"
+                                    oninput="calculateTotal(this)" value="500.000">vnđ</td>
+                            <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%"
+                                    class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                            <td class="hidden-xs hidden-sm">
+                                <input type="number" class="tong-giam" value="500.000" readonly>vnđ
+                            </td>
                         </tr>
+                        <!--End package-default20 Asanas-->
+                        <tbody class="pacList20Asanas" id="openPackageList20Asanas">
+                            <tr class="table-content">
+                                <td class="hidden-xs hidden-sm">
+                                        <button>60 buổi</button>
+                                </td>
+                                <td class="hidden-xs hidden-sm">
+                                    <select class="select-field">
+                                        <option selected>3 tháng</option>
+                                    </select>
+                                </td>
+    
+                                <td class="hidden-xs hidden-sm"><button>60 buổi</button></td>
+                                <td class="hidden-xs hidden-sm"><button class="gia-goc"
+                                        oninput="calculateTotal(this)" >1.050.000vnđ</button></td>
+                                <td class=" hidden-xs hidden-sm"><input type="number" placeholder="10%"
+                                        class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                                <td class="hidden-xs hidden-sm">
+                                    <input type="number" class="tong-giam" value="1350.000" readonly>vnđ
+                                </td>
+                            </tr>
+
+                            <tr class="table-content">
+                                <td class="hidden-xs hidden-sm">
+                                        <button>120 buổi</button>
+                                </td>
+                                <td class="hidden-xs hidden-sm">
+                                    <select class="select-field">
+                                        <option selected>6 tháng</option>
+                                    </select>
+                                </td>
+                                <td class="hidden-xs hidden-sm"><button>72 buổi</button></td>
+                                <td class="hidden-xs hidden-sm"><button class="gia-goc"
+                                        oninput="calculateTotal(this)">3.000.000vnđ </button></td>
+                                <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%"
+                                        class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                                <td class="hidden-xs hidden-sm">
+                                    <input type="number" class="tong-giam" value="2700.000" readonly>vnđ
+                                </td>
+    
+                            </tr>
+                        </tbody>
+
+
+                        <!-- TL Yoga  -->
+                        <thead>
+                            <tr style="font-weight: 300; text-align: center; transform: translate(41%);">
+                                <td>
+                                    <h4 style="margin: 16px; font-size: 22px;">Yoga Trị Liệu</h4>
+                                </td>
+                            </tr>
+                        </thead>
+                        <!--package-default12 TL-->
+                        <tr class="table-content" onclick="show12TL()">
+                            <td class="hidden-xs hidden-sm">
+                                <i class="gi gi-play"></i>
+                                <input type="text" value="12" >
+                                buổi
+                            </td>
+                            <td class="hidden-xs hidden-sm">
+                                <button>1 tháng</button>
+                            </td>
+                            <td class="hidden-xs hidden-sm"><input type="number" value="12">buổi</td>
+                            <td class="hidden-xs hidden-sm"><input type="text" class="gia-goc"
+                                    oninput="calculateTotal(this)" value="350.000">vnđ</td>
+                            <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%"
+                                    class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                            <td class="hidden-xs hidden-sm">
+                                <input type="number" class="tong-giam" value="350.000" readonly>vnđ
+                            </td>
+                        </tr>
+                        <!--End package-default12 TL-->
+                        <tbody class="pacList12TL" id="openPackageList12TL">
+                            <tr class="table-content">
+                                <td class="hidden-xs hidden-sm">
+                                        <button>36 buổi</button>
+                                </td>
+                                <td class="hidden-xs hidden-sm">
+                                    <select class="select-field">
+                                        <option selected>3 tháng</option>
+                                    </select>
+                                </td>
+
+                                <td class="hidden-xs hidden-sm"><button>36 buổi</button></td>
+                                <td class="hidden-xs hidden-sm"><button class="gia-goc"
+                                        oninput="calculateTotal(this)" >1.050.000vnđ</button></td>
+                                <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%"
+                                        class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                                <td class="hidden-xs hidden-sm">
+                                    <input type="number" class="tong-giam" value="945.000" readonly>vnđ
+                                </td>
+                            </tr>
+
+                            <tr class="table-content">
+
+                                <td class="hidden-xs hidden-sm">
+                                        <button>72 buổi</button>
+                                </td>
+                                <td class="hidden-xs hidden-sm">
+                                    <select class="select-field">
+                                        <option selected>6 tháng</option>
+                                    </select>
+                                </td>
+
+                                <td class="hidden-xs hidden-sm"><button>72 buổi</button></td>
+                                <td class="hidden-xs hidden-sm"><button class="gia-goc"
+                                        oninput="calculateTotal(this)" >2.100.000vnđ</td>
+                                <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%"
+                                        class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                                <td class="hidden-xs hidden-sm">
+                                    <input type="number" class="tong-giam" value="2100.000" readonly>vnđ
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <!--package-default20 TL-->
+                        <tr class="table-content" onclick="show20TL()">
+                            <td class="hidden-xs hidden-sm">
+                                <i class="gi gi-play"></i>
+                                <input type="text" value="20" >
+                                buổi
+                            </td>
+                            <td class="hidden-xs hidden-sm">
+                                <button>1 tháng</button>
+                            </td>
+
+                            <td class="hidden-xs hidden-sm"><input type="number" value="12">buổi</td>
+                            <td class="hidden-xs hidden-sm"><input type="text" class="gia-goc"
+                                    oninput="calculateTotal(this)" value="500.000">vnđ</td>
+                            <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%"
+                                    class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                            <td class="hidden-xs hidden-sm">
+                                <input type="number" class="tong-giam" value="500.000" readonly>vnđ
+                            </td>
+                        </tr>
+                        <!--End package-default20 TL-->
+                        <tbody class="pacList20TL" id="openPackageList20TL">
+                            <tr class="table-content">
+                                <td class="hidden-xs hidden-sm">
+                                        <button>60 buổi</button>
+                                </td>
+                                <td class="hidden-xs hidden-sm">
+                                    <select class="select-field">
+                                        <option selected>3 tháng</option>
+                                    </select>
+                                </td>
+    
+                                <td class="hidden-xs hidden-sm"><button>60 buổi</button></td>
+                                <td class="hidden-xs hidden-sm"><button class="gia-goc"
+                                        oninput="calculateTotal(this)" >1.050.000vnđ</button></td>
+                                <td class=" hidden-xs hidden-sm"><input type="number" placeholder="10%"
+                                        class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                                <td class="hidden-xs hidden-sm">
+                                    <input type="number" class="tong-giam" value="1350.000" readonly>vnđ
+                                </td>
+                            </tr>
+
+                            <tr class="table-content">
+                                <td class="hidden-xs hidden-sm">
+                                        <button>120 buổi</button>
+                                </td>
+                                <td class="hidden-xs hidden-sm">
+                                    <select class="select-field">
+                                        <option selected>6 tháng</option>
+                                    </select>
+                                </td>
+                                <td class="hidden-xs hidden-sm"><button>72 buổi</button></td>
+                                <td class="hidden-xs hidden-sm"><button class="gia-goc"
+                                        oninput="calculateTotal(this)">3.000.000vnđ </button></td>
+                                <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%"
+                                        class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                                <td class="hidden-xs hidden-sm">
+                                    <input type="number" class="tong-giam" value="2700.000" readonly>vnđ
+                                </td>
+    
+                            </tr>
+                        </tbody>
+
+
+                        <!-- NT Yoga  -->
+                        <thead>
+                            <tr style="font-weight: 300; text-align: center; transform: translate(42%);">
+                                <td>
+                                    <h4 style="margin: 16px; font-size: 22px;" >Yoga Nghệ Thuật</h4>
+                                </td>
+                            </tr>
+                        </thead>
+                        <!--package-default12 NT-->
+                        <tr class="table-content" onclick="show12NT()">
+                            <td class="hidden-xs hidden-sm">
+                                <i class="gi gi-play"></i>
+                                <input type="text" value="12" >
+                                buổi
+                            </td>
+                            <td class="hidden-xs hidden-sm">
+                                <button>1 tháng</button>
+                            </td>
+                            <td class="hidden-xs hidden-sm"><input type="number" value="12">buổi</td>
+                            <td class="hidden-xs hidden-sm"><input type="text" class="gia-goc"
+                                    oninput="calculateTotal(this)" value="350.000">vnđ</td>
+                            <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%"
+                                    class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                            <td class="hidden-xs hidden-sm">
+                                <input type="number" class="tong-giam" value="350.000" readonly>vnđ
+                            </td>
+                        </tr>
+                        <!--End package-default12 NT-->
+                        <tbody class="pacList12NT" id="openPackageList12NT">
+                            <tr class="table-content">
+                                <td class="hidden-xs hidden-sm">
+                                        <button>36 buổi</button>
+                                </td>
+                                <td class="hidden-xs hidden-sm">
+                                    <select class="select-field">
+                                        <option selected>3 tháng</option>
+                                    </select>
+                                </td>
+
+                                <td class="hidden-xs hidden-sm"><button>36 buổi</button></td>
+                                <td class="hidden-xs hidden-sm"><button class="gia-goc"
+                                        oninput="calculateTotal(this)" >1.050.000vnđ</button></td>
+                                <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%"
+                                        class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                                <td class="hidden-xs hidden-sm">
+                                    <input type="number" class="tong-giam" value="945.000" readonly>vnđ
+                                </td>
+                            </tr>
+
+                            <tr class="table-content">
+
+                                <td class="hidden-xs hidden-sm">
+                                        <button>72 buổi</button>
+                                </td>
+                                <td class="hidden-xs hidden-sm">
+                                    <select class="select-field">
+                                        <option selected>6 tháng</option>
+                                    </select>
+                                </td>
+
+                                <td class="hidden-xs hidden-sm"><button>72 buổi</button></td>
+                                <td class="hidden-xs hidden-sm"><button class="gia-goc"
+                                        oninput="calculateTotal(this)" >2.100.000vnđ</td>
+                                <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%"
+                                        class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                                <td class="hidden-xs hidden-sm">
+                                    <input type="number" class="tong-giam" value="2100.000" readonly>vnđ
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <!--package-default20 NT-->
+                        <tr class="table-content" onclick="show20NT()">
+                            <td class="hidden-xs hidden-sm">
+                                <i class="gi gi-play"></i>
+                                <input type="text" value="20" >
+                                buổi
+                            </td>
+                            <td class="hidden-xs hidden-sm">
+                                <button>1 tháng</button>
+                            </td>
+
+                            <td class="hidden-xs hidden-sm"><input type="number" value="12">buổi</td>
+                            <td class="hidden-xs hidden-sm"><input type="text" class="gia-goc"
+                                    oninput="calculateTotal(this)" value="500.000">vnđ</td>
+                            <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%"
+                                    class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                            <td class="hidden-xs hidden-sm">
+                                <input type="number" class="tong-giam" value="500.000" readonly>vnđ
+                            </td>
+                        </tr>
+                        <!--End package-default20 NT-->
+                        <tbody class="pacList20NT" id="openPackageList20NT">
+                            <tr class="table-content">
+                                <td class="hidden-xs hidden-sm">
+                                        <button>60 buổi</button>
+                                </td>
+                                <td class="hidden-xs hidden-sm">
+                                    <select class="select-field">
+                                        <option selected>3 tháng</option>
+                                    </select>
+                                </td>
+    
+                                <td class="hidden-xs hidden-sm"><button>60 buổi</button></td>
+                                <td class="hidden-xs hidden-sm"><button class="gia-goc"
+                                        oninput="calculateTotal(this)" >1.050.000vnđ</button></td>
+                                <td class=" hidden-xs hidden-sm"><input type="number" placeholder="10%"
+                                        class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                                <td class="hidden-xs hidden-sm">
+                                    <input type="number" class="tong-giam" value="1350.000" readonly>vnđ
+                                </td>
+                            </tr>
+
+                            <tr class="table-content">
+                                <td class="hidden-xs hidden-sm">
+                                        <button>120 buổi</button>
+                                </td>
+                                <td class="hidden-xs hidden-sm">
+                                    <select class="select-field">
+                                        <option selected>6 tháng</option>
+                                    </select>
+                                </td>
+                                <td class="hidden-xs hidden-sm"><button>72 buổi</button></td>
+                                <td class="hidden-xs hidden-sm"><button class="gia-goc"
+                                        oninput="calculateTotal(this)">3.000.000vnđ </button></td>
+                                <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%"
+                                        class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                                <td class="hidden-xs hidden-sm">
+                                    <input type="number" class="tong-giam" value="2700.000" readonly>vnđ
+                                </td>
+    
+                            </tr>
+                        </tbody>
                     </tbody>
                 </table>
                 <!-- END List 1 -->
@@ -454,145 +847,69 @@
     <!-- END Page Container -->
 
 
-    <!-- form edit class -->
-    <div id="formContainer">
-        <button id="closeButton" onclick="hideForm()">Close</button>
-        <form id="registrationForm">
-            <h2>Edit Class</h2>
-            <label for="name">Class name</label>
-            <input type="text" id="class" name="name" required><br>
 
-            <label for="name">Courses name</label>
-            <input type="text" id="course" name="name" required><br>
+    <!-- Form create pacckage  -->
+    <div id="formCreatePac">
+        <form id="createForm">
+            <button id="closeButton" onclick="hideFormPrice()">X</button>
+            <h2>Tạo mới Gói</h2>
 
-            <label for="name">Teacher name</label>
-            <input type="text" id="teacher" name="name" required><br>
+            <label for="course">Khoá </label>
+            <select name="" id="course">
+                <option value="">-- Chọn một tùy chọn --</option>
+                <option value="">Hatha Yoga</option>
+                <option value="">Asanas Yoga</option>
+                <option value="">Yoga Trị Liệu</option>
+                <option value="">Yoga Nghệ Thuật</option>
+            </select>
 
-            <label for="name">Quantity</label>
-            <input type="number" id="quantity" name="quantity" required><br>
+            <label for="">Tên gói </label>
+            <select id="package" onchange="showSelectedDiv()">
+                <option value="">-- Chọn một tùy chọn --</option>
+                <option value="list12">12 buổi / tháng</option>
+                <option value="list20">20 buổi / tháng</option>
+                <option value="order">Khác...</option>
+            </select>
+
+            <div id="order" class="form-pacDefault">
+                <label for="name">Tên gói mới</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="name">Số buổi / tháng</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="name">Giá gói</label>
+                <input type="text" id="price" name="price" required><br>
+            </div>
+
+            <div id="list12" class="form-pacDetail">
+                <label for="name">Tên danh sách gói mới</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="name">Số buổi / tháng</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="name">Giá gói</label>
+                <input type="text" id="price" name="price" required><br>
+            </div>
+            <div id="list20" class="form-pacDetail">
+                <label for="name">Tên danh sách gói mới</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="name">Số buổi / tháng</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="name">Giá gói</label>
+                <input type="text" id="price" name="price" required><br>
+            </div>
 
             <input type="submit" value="Save" id="save">
         </form>
     </div>
 
-    <!-- form create Discount -->
-    <div id="formCreateContainer">
-        <button id="closeButton2" onclick="hideForm()">Close</button>
-        <form id="registrationForm2">
-            <h2>Create Discount</h2>
-            <label for="id">Class ID</label>
-            <input type="text" id="classid" name="classId" required><br>
-
-            <label for="name">Class name</label>
-            <input type="text" id="class2" name="className" required><br>
-
-            <label for="name">Courses name</label>
-            <input type="text" id="course2" name="courseName" required><br>
-
-            <label for="name">Teacher name</label>
-            <input type="text" id="teacher2" name="teacherName" required><br>
-
-            <label for="name">Quantity</label>
-            <input type="number" id="quantity2" name="classQuantity" required><br>
-
-            <input type="submit" value="Save" id="save2">
-        </form>
-    </div>
-    <!-- End form create class-->
-
-    <style>
-        #formContainer,
-        #formCreateContainer {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #f1f1f1;
-            padding: 20px;
-            box-shadow: rgb(152, 152, 152, 0.6);
-            border: rgba(0, 0, 0, 0.6) solid 1px;
-        }
-
-        #registrationForm,
-        #registrationForm2 {
-            width: 300px;
-            margin: 0 auto;
-        }
-
-        #registrationForm label,
-        #registrationForm input[type="text"],
-        #registrationForm input[type="number"],
-        #registrationForm input[type="submit"],
-        #registrationForm2 label,
-        #registrationForm2 input[type="text"],
-        #registrationForm2 input[type="number"],
-        #registrationForm2 input[type="submit"] {
-            display: block;
-            margin-bottom: 10px;
-            width: 100%;
-        }
-
-        #class,
-        #course,
-        #teacher,
-        #quantity,
-        #class2,
-        #course2,
-        #teacher2,
-        #quantity2,
-        #classid {
-            border: rgba(0, 0, 0, 0.6) solid 1px;
-        }
-
-        #save,
-        #save2 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .save-bnt {
-            border-radius: 8px;
-            margin-left: 10px;
-            padding: 5px;
-            background-color: #87c4f6;
-            color: #000;
-        }
-
-        #registrationForm input[type="submit"],
-        #registrationForm2 input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
-
-        #closeButton,
-        #closeButton2 {
-            transform: translateX(500%);
-        }
-    </style>
+    
 
     <script>
-        //hiện form
-        function showForm() {
-
-            var formContainer = document.getElementById("formContainer");
-            formContainer.style.display = "block";
-        }
-        function showCreateClass() {
-            var formCreateContainer = document.getElementById("formCreateContainer");
-            formCreateContainer.style.display = "block";
-        }
-        //tắt form
-        function hideForm() {
-            var formContainer = document.getElementById("formContainer");
-            formContainer.style.display = "none";
-            var formCreateContainer = document.getElementById("formCreateContainer");
-            formCreateContainer.style.display = "none";
-        }
 
         //chạy option của tháng
         var selectFields = document.querySelectorAll(".select-field");

@@ -1178,6 +1178,19 @@ header
     display: none;
 }
 
+.table-content input{
+    width: 120px;
+}
+
+.table-content i{
+    font-size: 10px;
+}
+
+.save-bnt {
+    margin-left: 400px;
+    margin-right: 18px;
+}
+
 #formCreatePac {
     display: none;
     position: fixed;
