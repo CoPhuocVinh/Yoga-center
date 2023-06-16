@@ -93,12 +93,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>Lịch học Hatha Yoga</h2>
+                    <h2>Lịch dạy Hatha Yoga</h2>
                 </div>
                 <div class="col-12">
                     <a href="index.html">Trang chủ</a>
-                    <a href="user.html">Học viên</a>
-                    <a href="">Lịch học</a>
+                    <a href="hlv.html">Huấn luyện viên</a>
+                    <a href="">Lịch dạy</a>
                 </div>
             </div>
         </div>
@@ -110,12 +110,12 @@
     <section class="ftco-section">
         <div class="container schedule-detail">
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <h1>Lịch tập</h1>
+                <h1>Lịch dạy</h1>
                 <h3>Từ 19/06 - 14/07/2023</h3>
             </div>
             <div class="row">
                 <div class="col-md-12 ftco-animate">
-                    <h5>Nhấn vào từng lớp để xem thông tin chi tiết.</h5>
+                    <h5>Nhấn vào từng lớp để điểm danh.</h5>
                     <div class="sched-list">
                         <table class="table">
                             <thead class="thead-primary">
@@ -136,22 +136,20 @@
                                         <p class="time">7:00 - 8:00</p>
                                     </td>
                                     <td class="color-2" >
-                                        <a href="feedback.html">Class A</a>
+                                        <button href="" class="a attend" id="openModalButtonRegister">Class A</button>
                                     </td>
                                     <td class="color-2">
-                                        <a href="feedback.html">Class B</a>
                                     </td>
                                     <td class="color-2">
-                                        <a href="feedback.html">Class A</a>
+                                        <button href="" class="a attend" id="openModalButtonRegister">Class A</button>
                                     </td>
                                     <td class="color-2">
-                                        <a href="feedback.html">Class B</a>
+                                        <button href="" class="a attend" id="openModalButtonRegister">Class B</button>
                                     </td>
                                     <td class="color-2">
-                                        <a href="feedback.html">Class A</a>
                                     </td>
                                     <td class="color-2">
-                                        <a href="feedback.html">Class B</a>
+                                        <button href="" class="a attend" id="openModalButtonRegister">Class B</button>
                                     </td>
                                 </tr><!-- END TR-->
 
@@ -160,22 +158,18 @@
                                         <p class="time">8:30 - 9:30</p>
                                     </td>
                                     <td class="color-3">
-                                        Class C
                                     </td>
                                     <td class="color-3">
-                                        Class D
+                                        <button href="" class="a attend" id="openModalButtonRegister">Class D</button>
                                     </td>
                                     <td class="color-3">
-                                        Class C
                                     </td>
                                     <td class="color-3">
-                                        Class D
                                     </td>
                                     <td class="color-3">
-                                        Class C
+                                        <button href="" class="a attend" id="openModalButtonRegister">Class C</button>
                                     </td>
                                     <td class="color-3">
-                                        Class D
                                     </td>
                                 </tr><!-- END TR-->
 
@@ -187,19 +181,16 @@
 
                                     </td>
                                     <td class="color-4">
-                                        Class F
                                     </td>
                                     <td class="color-4">
 
                                     </td>
                                     <td class="color-4">
-                                        Class F
                                     </td>
                                     <td class="color-4">
 
                                     </td>
                                     <td class="color-4">
-                                        Class F
                                     </td>
 
                                 </tr><!-- END TR-->
@@ -208,46 +199,37 @@
                                         <p class="time">18:00 - 19:00</p>
                                     </td>
                                     <td class="color-5">
-                                        Class H
+                                        <button href="" class="a attend" id="openModalButtonRegister">Class H</button>
                                     </td>
                                     <td class="color-5">
-                                        Class G
+                                        <button href="" class="a attend" id="openModalButtonRegister">Class G</button>
                                     </td>
                                     <td class="color-5">
-                                        Class H
                                     </td>
                                     <td class="color-5">
-                                        Class G
                                     </td>
                                     <td class="color-5">
-                                        Class H
                                     </td>
                                     <td class="color-5">
-                                        Class G
+                                        <button href="" class="a attend" id="openModalButtonRegister">Class G</button>
                                     </td>
                                 </tr><!-- END TR-->
                                 <tr class="text-center">
                                     <td class="color">
                                         <p class="time">19:30 - 20:30</p>
                                     </td>
-
-
-
                                     <td class="color-1">
-                                        Class I
                                     </td>
 
                                     <td class="color-1">
 
                                     </td>
                                     <td class="color-1">
-                                        Class I
                                     </td>
                                     <td class="color-1">
 
                                     </td>
                                     <td class="color-1">
-                                        Class I
                                     </td>
                                     <td class="color-1">
 
@@ -261,62 +243,108 @@
             </div>
         </div>
 
-        <button href="" class="a pp" id="openModalButtonRegister">Đăng Ký</button>
     </section>
     <!-- schedule End -->
 
     <div class="modal-schedule" id="registerModal">
-        <div class="modal-container-schedule-end">
+        <div class="modal-container-schedule-teacher">
             <span class="close" id="myButton"><a>&times;</a></span>
             <header class="modal-header-register">
-                Đăng Ký
+                Điểm danh
             </header>
 
-            <form action="#">
-                <div class="modal-body-schedule">
-                    <div class="modal-boxsh">
-                        <input type="checkbox" name="class" value="Class A">Class A
-                    </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID tài khoản</th>
+                        <th class="hidden-xs hidden-sm">Họ và tên</th>
+                        <th class="hidden-xs hidden-sm">Điểm danh</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <!-- <td class="text-center">1</td> -->
+                        <td>1</td>
+                        <td class="hidden-xs hidden-sm">Nguyễn Hoài Phương</td>
+                        <td class="hidden-xs hidden-sm"> 
+                            <div class="modal-boxsh">
+                                <input type="checkbox" name="attendence" value="Attendence">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="hidden-xs hidden-sm">Nguyễn Hàn Anh</td>
+                        <td class="hidden-xs hidden-sm"> 
+                            <div class="modal-boxsh">
+                                <input type="checkbox" name="attendence" value="Attendence">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="hidden-xs hidden-sm">Nguyễn Văn Tuấn</td>
+                        <td class="hidden-xs hidden-sm"> 
+                            <div class="modal-boxsh">
+                                <input type="checkbox" name="attendence" value="Attendence">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="hidden-xs hidden-sm">Đỗ Kim Hậu</td>
+                        <td class="hidden-xs hidden-sm"> 
+                            <div class="modal-boxsh">
+                                <input type="checkbox" name="attendence" value="Attendence">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="hidden-xs hidden-sm">Nguyễn Dinh</td>
+                        <td class="hidden-xs hidden-sm"> 
+                            <div class="modal-boxsh">
+                                <input type="checkbox" name="attendence" value="Attendence">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="hidden-xs hidden-sm">Nguyễn Văn B</td>
+                        <td class="hidden-xs hidden-sm"> 
+                            <div class="modal-boxsh">
+                                <input type="checkbox" name="attendence" value="Attendence">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="hidden-xs hidden-sm">Đỗ Kim Hậu</td>
+                        <td class="hidden-xs hidden-sm"> 
+                            <div class="modal-boxsh">
+                                <input type="checkbox" name="attendence" value="Attendence">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td class="hidden-xs hidden-sm">Nguyễn Văn B</td>
+                        <td class="hidden-xs hidden-sm"> 
+                            <div class="modal-boxsh">
+                                <input type="checkbox" name="attendence" value="Attendence">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-                    <div class="modal-boxsh">
-                        <input type="checkbox" name="class" value="Class B">Class B
-
-                    </div>
-
-                    <div class="modal-boxsh">
-                        <input type="checkbox" name="class" value="Class C">Class C
-
-                    </div>
-
-                    <div class="modal-boxsh">
-                        <input type="checkbox" name="class" value="Class D">Class D
-
-                    </div>
-
-                    <div class="modal-boxsh">
-                        <input type="checkbox" name="class" value="Class F">Class F
-                    </div>
-
-                    <div class="modal-boxsh">
-                        <input type="checkbox" name="class" value="Class G">Class G
-
-                    </div>
-                    <div class="modal-boxsh">
-                        <input type="checkbox" name="class" value="Class H">Class H
-
-                    </div>
-                    <div class="modal-boxsh">
-                        <input type="checkbox" name="class" value="Class I">Class I
-                    </div>
-                </div>
-            </form>
-
-            <button id="modal-login-button-re" type="submit">
-                Đăng Ký
+            <button id="modal-login-button-re-schedule" type="submit">
+                Lưu
             </button>
 
             <footer class="modal-footer-schedule">
-                <a href="schedule-detail.html">Hủy</a>
+                <a href="schedule-teacher.html">Hủy</a>
             </footer>
         </div>
     </div>

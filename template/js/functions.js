@@ -1,5 +1,3 @@
-
-
 var openModalButtonRegister = document.getElementById("openModalButtonRegister");
 
 var registerModal = document.getElementById("registerModal");
@@ -14,18 +12,14 @@ openModalButtonRegister.onclick = function () {
 // Xử lý sự kiện khi nhấp vào nút đóng cửa sổ đăng nhập
 closeButton.onclick = function () {
   registerModal.style.display = "none";
-  
 }
 
 
 // Xử lý sự kiện khi nhấp vào bất kỳ vị trí nào bên ngoài cửa sổ đăng nhập
 window.onclick = function (event) {
- 
     if (event.target == registerModal ) {
       registerModal.style.display = "none";
     }
-  
-
 }
 
 
