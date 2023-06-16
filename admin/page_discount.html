@@ -273,170 +273,162 @@
                 <!-- END Navigation info -->
 
                 <!-- List Staff -->
-                <h3 class="page-header page-header-top">Discount <a href="#" data-toggle="tooltip" title="Edit"
-                        class="btn btn-xs btn-success" onclick="showCreateClass()"><i class="fa fa-plus"></i></a>
+                <h3 class="page-header page-header-top">Discount <button class="save-bnt">save</button>
 
                 </h3>
 
-                <table class="table active-list">
-
+                <table class="table">
                     <thead>
+                        <tr style="font-weight: 300;">
+                            <td>
+                                <h4>Hatha Yoga</h4>
+                            </td>
+                        </tr>
                         <tr style="background-color: #4CAF50;">
-                            <th class="text-center">#</th>
-                            <th class="hidden-xs hidden-sm"><i class="fa "></i>courses name</th>
-                            <th class="hidden-xs hidden-sm">giá muốn giảm</th>
+                            <!-- <th class="text-center">#</th> -->
+                            <!-- <th class="hidden-xs hidden-sm"><i class="fa "></i>Tên gói</th> -->
+                            <th class="hidden-xs hidden-sm"><i class="fa "></i>số buổi của tháng</th>
+                            <th class="hidden-xs hidden-sm"><i class="fa "></i>số tháng</th>
+                            <th class="hidden-xs hidden-sm">Tổng buổi</th>
+                            <th class="hidden-xs hidden-sm">giá ban đầu</th>
                             <th class="hidden-xs hidden-sm">% muốn giảm</th>
-                            <th class="text-center"><i class="fa fa-bolt"></i>Actions</th>
+                            <th class="hidden-xs hidden-sm">Tổng</th>
+                            <!-- <th class="text-center"><i class="fa fa-bolt"></i>Actions</th> -->
+
                         </tr>
                     </thead>
-
-
                     <tbody>
-                        <!--dòng lớp-->
+
+                        <!--dòng mới-->
                         <tr>
-
-                            <td class="text-center">1</td>
-                            <td class="hidden-xs hidden-sm">Hatha Yoga</td><!--tên khóa-->
-                            <td class="hidden-xs hidden-sm"><input type="number" placeholder="1.000.000 vnd"></td>
-                            <td class="hidden-xs hidden-sm"><input type="text" placeholder="10%"></td>
-
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
-                                        class="btn btn-xs btn-success" onclick="showForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                </div>
+                            <td class="hidden-xs hidden-sm">
+                                <button>
+                                    <option value="12slot">12 slot</option>
+                                </button>
+                            </td>
+                            <td class="hidden-xs hidden-sm">
+                                <select class="select-field">
+                                    <option value="1">1 tháng</option>
+                                </select>
+                            </td>
+                            <td class="hidden-xs hidden-sm"><input type="number" value="12">buổi</td>
+                            <td class="hidden-xs hidden-sm"><input type="text" class="gia-goc"
+                                    oninput="calculateTotal(this)">vnđ</td>
+                            <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%"
+                                    class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                            <td class="hidden-xs hidden-sm">
+                                <input type="number" class="tong-giam" readonly>vnđ
                             </td>
                         </tr>
-                        <!-- dòng lớp -->
+                        <!--dòng mới-->
                         <tr>
 
-                            <td class="text-center">2</td>
+                            <td class="hidden-xs hidden-sm">
+                                <button>
+                                    <option value="12slot">12 slot</option>
+                                </button>
+                            </td>
+                            <td class="hidden-xs hidden-sm">
+                                <select class="select-field">
+                                    <option selected>3 tháng</option>
+                                </select>
+                            </td>
 
-                            <td class="hidden-xs hidden-sm">Asanas Yoga</td><!--tên khóa-->
-                            <td class="hidden-xs hidden-sm"><input type="number" placeholder="1.000.000 vnd"></td>
+                            <td class="hidden-xs hidden-sm"><input type="number" value="36">buổi</td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="945.000">vnđ</td>
                             <td class="hidden-xs hidden-sm"><input type="text" placeholder="10%"></td>
-
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
-                                        class="btn btn-xs btn-success" onclick="showForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                </div>
+                            <td class="hidden-xs hidden-sm">
+                                <input type="button" value="945K">
                             </td>
                         </tr>
-                        <!-- dòng lớp -->
+                        <!--dòng mới-->
                         <tr>
 
-                            <td class="text-center">3</td>
+                            <td class="hidden-xs hidden-sm">
+                                <button>
+                                    <option value="12slot">12 slot</option>
+                                </button>
+                            </td>
+                            <td class="hidden-xs hidden-sm">
+                                <select class="select-field">
+                                    <option selected>6 tháng</option>
+                                </select>
+                            </td>
 
-                            <td class="hidden-xs hidden-sm">Yoga Trị Liệu</td><!--tên khóa-->
-                            <td class="hidden-xs hidden-sm"><input type="number" placeholder="1.000.000 vnd"></td>
+                            <td class="hidden-xs hidden-sm"><input type="number" value="72">buổi</td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="1.890.000">vnđ</td>
                             <td class="hidden-xs hidden-sm"><input type="text" placeholder="10%"></td>
-
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
-                                        class="btn btn-xs btn-success" onclick="showForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                </div>
+                            <td class="hidden-xs hidden-sm">
+                                <input type="button" value="1890K">
                             </td>
                         </tr>
-                        <!-- dòng lớp -->
+                        <!--dòng mới-->
                         <tr>
 
-                            <td class="text-center">4</td>
+                            <td class="hidden-xs hidden-sm">
+                                <button>
+                                    <option value="20slot">20 slot</option>
+                                </button>
+                            </td>
+                            <td class="hidden-xs hidden-sm">
+                                <select class="select-field">
+                                    <option selected>1 tháng</option>
+                                </select>
+                            </td>
 
-                            <td class="hidden-xs hidden-sm">Yoga Nghệ Thuật</td><!--tên khóa-->
-                            <td class="hidden-xs hidden-sm"><input type="number" placeholder="1.000.000 vnd"></td>
-                            <td class="hidden-xs hidden-sm"><input type="text" placeholder="10%"></td>
-
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
-                                        class="btn btn-xs btn-success" onclick="showForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                </div>
+                            <td class="hidden-xs hidden-sm"><input type="number" value="12">buổi</td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="500.000">vnđ</td>
+                            <td class="hidden-xs hidden-sm"><input type="text" placeholder="0%"></td>
+                            <td class="hidden-xs hidden-sm">
+                                <input type="button" value="500K">
                             </td>
                         </tr>
-                        <!-- dòng lớp -->
+                        <!--dòng mới-->
                         <tr>
 
-                            <td class="text-center">4</td>
+                            <td class="hidden-xs hidden-sm">
+                                <button>
+                                    <option value="20slot">20 slot</option>
+                                </button>
+                            </td>
+                            <td class="hidden-xs hidden-sm">
+                                <select class="select-field">
+                                    <option selected>3 tháng</option>
+                                </select>
+                            </td>
 
-                            <td class="hidden-xs hidden-sm">Hatha Yoga</td><!--tên khóa-->
-                            <td class="hidden-xs hidden-sm"><input type="number" placeholder="1.000.000 vnd"></td>
+                            <td class="hidden-xs hidden-sm"><input type="number" value="36">buổi</td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="1.350.000">vnđ</td>
                             <td class="hidden-xs hidden-sm"><input type="text" placeholder="10%"></td>
-
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
-                                        class="btn btn-xs btn-success" onclick="showForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                </div>
+                            <td class="hidden-xs hidden-sm">
+                                <input type="button" value="1.350K">
                             </td>
                         </tr>
-                        <!-- dòng lớp -->
+                        <!--dòng mới-->
                         <tr>
-
-                            <td class="text-center">4</td>
-
-                            <td class="hidden-xs hidden-sm">Yoga Trị Liệu</td><!--tên khóa-->
-                            <td class="hidden-xs hidden-sm"><input type="number" placeholder="1.000.000 vnd"></td>
-                            <td class="hidden-xs hidden-sm"><input type="text" placeholder="10%"></td>
-
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
-                                        class="btn btn-xs btn-success" onclick="showForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                </div>
+                            <td class="hidden-xs hidden-sm">
+                                <button>
+                                    <option value="20slot">20 slot</option>
+                                </button>
                             </td>
-                        </tr>
-                        <!-- dòng lớp -->
-                        <tr>
-
-                            <td class="text-center">4</td>
-
-                            <td class="hidden-xs hidden-sm NameCourse">Hatha Yoga</td><!--tên khóa-->
-                            <td class="hidden-xs hidden-sm"><input type="number" placeholder="1.000.000 vnd"></td>
-                            <td class="hidden-xs hidden-sm"><input type="text" placeholder="10%"></td>
-                            <!--tên giáo viên-->
-
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
-                                        class="btn btn-xs btn-success" onclick="showForm()"><i
-                                            class="fa fa-pencil"></i></a>
-
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                </div>
+                            <td class="hidden-xs hidden-sm">
+                                <select class="select-field">
+                                    <option selected>6 tháng</option>
+                                </select>
                             </td>
+
+                            <td class="hidden-xs hidden-sm"><input type="number" value="72">buổi</td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="3.000.000">vnđ</td>
+                            <td class="hidden-xs hidden-sm"><input type="text" placeholder="10%"></td>
+                            <td class="hidden-xs hidden-sm">
+                                <input type="button" value="2.700K">
+                            </td>
+
                         </tr>
                     </tbody>
-
                 </table>
-                <!-- END List Staff -->
+                <!-- END List 1 -->
+
             </div>
             <!-- END Page Content -->
 
@@ -548,8 +540,15 @@
         #save2 {
             display: flex;
             justify-content: center;
-
             align-items: center;
+        }
+
+        .save-bnt {
+            border-radius: 8px;
+            margin-left: 10px;
+            padding: 5px;
+            background-color: #87c4f6;
+            color: #000;
         }
 
         #registrationForm input[type="submit"],
@@ -586,7 +585,30 @@
             formCreateContainer.style.display = "none";
         }
 
+        //chạy option của tháng
+        var selectFields = document.querySelectorAll(".select-field");
 
+        selectFields.forEach(function (select) {
+            for (var i = 1; i <= 60; i++) {
+                var option = document.createElement("option");
+                option.value = "option" + i;
+                option.text = i + " tháng";
+                select.appendChild(option);
+            }
+        });
+
+        function calculateTotal(input) {
+            var row = input.parentNode.parentNode;
+            var giaGocInput = row.querySelector(".gia-goc");
+            var phanTramGiamInput = row.querySelector(".phan-tram-giam");
+            var tongGiamInput = row.querySelector(".tong-giam");
+
+            var giaGoc = giaGocInput.value;
+            var phanTramGiam = phanTramGiamInput.value;
+            var tongGiam = giaGoc - (giaGoc * phanTramGiam / 100);
+
+            tongGiamInput.value = tongGiam;
+        }
     </script>
     <!--END form edit class -->
 
