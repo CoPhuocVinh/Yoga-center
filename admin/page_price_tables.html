@@ -276,415 +276,417 @@
                 </ul>
                 <!-- END Navigation info -->
 
-                <!-- Price Tables -->
-                <!-- <h2 class="page-header page-header-top text-center">Normal</h2> -->
-
-                <div class="price-tables">
-                    <!-- Basic Plan -->
-                    <!-- <div class="plan">
-                        <h2 class="plan-header">Basic</h2>
-                        <ul class="fa-ul">
-                            <li><i class="fa fa-li fa-check text-success"></i> <strong>10GB</strong> Storage</li>
-                            <li><i class="fa fa-li fa-check text-success"></i> <strong>500GB</strong> Bandwidth</li>
-                            <li><i class="fa fa-li fa-check text-success"></i> <strong>5</strong> Domains</li>
-                            <li><i class="fa fa-li fa-check text-success"></i> <strong>10</strong> Email Addresses</li>
-                            <li><i class="fa fa-li fa-check text-success"></i> <strong>Email</strong> Support</li>
-                        </ul>
-                        <h1><sup>$</sup>5<small>per month</small></h1>
-                        <a href="javascript:void(0)" class="btn btn-lg btn-success">Sign Up</a>
-                    </div> -->
-                    <!-- END Basic Plan -->
-
-                    <!-- Featured Plan -->
-                    <!-- <div class="plan plan-featured">
-                        <h2 class="plan-header"><i class="fa fa-check"></i> Pro</h2>
-                        <ul class="fa-ul">
-                            <li><i class="fa fa-li fa-check text-success"></i> <strong>30GB</strong> Storage</li>
-                            <li><i class="fa fa-li fa-check text-success"></i> <strong>3TB</strong> Bandwidth</li>
-                            <li><i class="fa fa-li fa-check text-success"></i> <strong>10</strong> Domains</li>
-                            <li><i class="fa fa-li fa-check text-success"></i> <strong>30</strong> Email Addresses</li>
-                            <li><i class="fa fa-li fa-check text-success"></i> <strong>FULL</strong> Support</li>
-                        </ul>
-                        <h1><sup>$</sup>19<small>per month</small></h1>
-                        <a href="javascript:void(0)" class="btn btn-lg btn-success">Sign Up</a>
-                    </div> -->
-                    <!-- END Featured Plan -->
-
-                    <!-- Premium -->
-                    <!-- <div class="plan">
-                        <h2 class="plan-header">Premium</h2>
-                        <ul class="fa-ul">
-                            <li><i class="fa fa-li fa-check text-success"></i> <strong>100GB</strong> Storage</li>
-                            <li><i class="fa fa-li fa-check text-success"></i> <strong>10TB</strong> Bandwidth</li>
-                            <li><i class="fa fa-li fa-check text-success"></i> <strong>Unlimited</strong> Domains</li>
-                            <li><i class="fa fa-li fa-check text-success"></i> <strong>Unlimited</strong> Email
-                                Addresses</li>
-                            <li><i class="fa fa-li fa-check text-success"></i> <strong>FULL</strong> Support</li>
-                        </ul>
-                        <h1><sup>$</sup>49<small>per month</small></h1>
-                        <a href="javascript:void(0)" class="btn btn-lg btn-success">Sign Up</a>
-                    </div> -->
-                    <!-- END Premium -->
-
-                    <!-- VIP -->
-                    <!-- <div class="plan">
-                        <h2 class="plan-header">VIP</h2>
-                        <ul class="fa-ul">
-                            <li><i class="fa fa-li fa-check text-success"></i> <strong>1TB</strong> Storage</li>
-                            <li><i class="fa fa-li fa-check text-success"></i> <strong>Unlimited</strong> Bandwidth</li>
-                            <li><i class="fa fa-li fa-check text-success"></i> <strong>Unlimited</strong> Domains</li>
-                            <li><i class="fa fa-li fa-check text-success"></i> <strong>Unlimited</strong> Email
-                                Addresses</li>
-                            <li><i class="fa fa-li fa-check text-success"></i> <strong>FULL</strong> Support</li>
-                        </ul>
-                        <h1><sup>$</sup>99<small>per month</small></h1>
-                        <a href="javascript:void(0)" class="btn btn-lg btn-success">Sign Up</a>
-                    </div> -->
-                    <!-- END VIP -->
+                <!-- Package -->
+                <div class="package">
+                    <div class="package-header">
+                        <h4>Hatha Yoga<a href="#" data-toggle="tooltip" title="Tạo mới" class="btn btn-xs btn-success"
+                                onclick="showCreatePackage()"><i class="fa fa-plus"></i></a></h4>
+                    </div>
+                    <div class="package-hatha">
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr data-widget="expandable-table" aria-expanded="false">
+                                    <td>
+                                        <i onclick="show12Hatha()"
+                                            class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                                        12 buổi / tháng
+                                        <span>350.000đ</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="btn-group">
+                                            <!--nút sửa-->
+                                            <a href="#createButton" data-toggle="tooltip" title="Sửa"
+                                                class="btn btn-xs btn-success" onclick="showForm()"><i
+                                                    class="fa fa-pencil"></i></a>
+                                            <a href="javascript:void(0)" data-toggle="tooltip" title="Xoá"
+                                                class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="pacList12Hatha" id="openPackageList12Hatha">
+                                    <td>
+                                        <div class="p-0">
+                                            <table class="table table-hover">
+                                                <tbody>
+                                                    <tr data-widget="expandable-table" aria-expanded="false">
+                                                        <td>
+                                                            36 buổi / 3 tháng
+                                                            <span>1.050.000đ</span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="btn-group">
+                                                                <!--nút sửa-->
+                                                                <a href="#createButton" data-toggle="tooltip"
+                                                                    title="Sửa" class="btn btn-xs btn-success"
+                                                                    onclick="showForm()"><i
+                                                                        class="fa fa-pencil"></i></a>
+                                                                <a href="javascript:void(0)" data-toggle="tooltip"
+                                                                    title="Xoá" class="btn btn-xs btn-danger"><i
+                                                                        class="fa fa-times"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-widget="expandable-table" aria-expanded="false">
+                                                        <td>
+                                                            72 buổi / 6 tháng
+                                                            <span>350.000đ</span>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="btn-group">
+                                                                <!--nút sửa-->
+                                                                <a href="#createButton" data-toggle="tooltip"
+                                                                    title="Sửa" class="btn btn-xs btn-success"
+                                                                    onclick="showForm()"><i
+                                                                        class="fa fa-pencil"></i></a>
+                                                                <a href="javascript:void(0)" data-toggle="tooltip"
+                                                                    title="Xoá" class="btn btn-xs btn-danger"><i
+                                                                        class="fa fa-times"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-widget="expandable-table" aria-expanded="false">
+                                    <td>
+                                        <i onclick="show20Hatha()"
+                                            class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                                        20 buổi / tháng
+                                        <span>350.000đ</span>
+                                    </td>
+                                </tr>
+                                <tr class="pacList20Hatha" id="openPackageList20Hatha">
+                                    <td>
+                                        <div class="p-0">
+                                            <table class="table table-hover">
+                                                <tbody>
+                                                    <tr data-widget="expandable-table" aria-expanded="false">
+                                                        <td>
+                                                            60 buổi / 3 tháng
+                                                            <span>350.000đ</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-widget="expandable-table" aria-expanded="false">
+                                                        <td>
+                                                            120 buổi / 6 tháng
+                                                            <span>350.000đ</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
                 </div>
-                <!-- END Price Tables -->
+                <div class="package">
+                    <div class="package-header">
+                        <h4>Asanas Yoga<a href="#" data-toggle="tooltip" title="Tạo mới" class="btn btn-xs btn-success"
+                                onclick="showCreatePackage()"><i class="fa fa-plus"></i></a></h4>
+                    </div>
+                    <div class="package-hatha">
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr data-widget="expandable-table" aria-expanded="false">
+                                    <td>
+                                        <i onclick="show12Asanas()"
+                                            class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                                        12 buổi / tháng
+                                        <span>350.000đ</span>
+                                    </td>
 
-                <!-- HATHA PACKAGE -->
-                <div class="price-title">
-                    <h2 class="page-header text-center">Hatha Yoga</h2>
-                    <button onclick="showFromPrice()"><i class="gi gi-circle_plus"></i></button>
+                                </tr>
+                                <tr class="pacList12Asanas" id="openPackageList12Asanas">
+                                    <td>
+                                        <div class="p-0">
+                                            <table class="table table-hover">
+                                                <tbody>
+                                                    <tr data-widget="expandable-table" aria-expanded="false">
+                                                        <td>
+                                                            36 buổi / 3 tháng
+                                                            <span>1.050.000đ</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-widget="expandable-table" aria-expanded="false">
+                                                        <td>
+                                                            72 buổi / 6 tháng
+                                                            <span>350.000đ</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-widget="expandable-table" aria-expanded="false">
+                                    <td>
+                                        <i onclick="show20Asanas()"
+                                            class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                                        20 buổi / tháng
+                                        <span>350.000đ</span>
+                                    </td>
+                                </tr>
+                                <tr class="pacList20Asanas" id="openPackageList20Asanas">
+                                    <td>
+                                        <div class="p-0">
+                                            <table class="table table-hover">
+                                                <tbody>
+                                                    <tr data-widget="expandable-table" aria-expanded="false">
+                                                        <td>
+                                                            60 buổi / 3 tháng
+                                                            <span>350.000đ</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-widget="expandable-table" aria-expanded="false">
+                                                        <td>
+                                                            120 buổi / 6 tháng
+                                                            <span>350.000đ</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
                 </div>
-                <div class="price-tables">
-                    <!-- Featured Plan -->
-                    <div class="plan plan-featured">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 12 buổi / tháng</h3>
-                        <h1>350K</h1>
+                <div class="package">
+                    <div class="package-header">
+                        <h4>Yoga Trị Liệu<a href="#" data-toggle="tooltip" title="Tạo mới"
+                                class="btn btn-xs btn-success" onclick="showCreatePackage()"><i
+                                    class="fa fa-plus"></i></a></h4>
                     </div>
-                    <!-- END Featured Plan -->
+                    <div class="package-hatha">
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr data-widget="expandable-table" aria-expanded="false">
+                                    <td>
+                                        <i onclick="show12TL()"
+                                            class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                                        12 buổi / tháng
+                                        <span>350.000đ</span>
+                                    </td>
 
-                    <!-- Featured Plan -->
-                    <div class="plan plan-featured">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 20 buổi / tháng</h3>
-                        <h1>500K</h1>
+                                </tr>
+                                <tr class="pacList12TL" id="openPackageList12TL">
+                                    <td>
+                                        <div class="p-0">
+                                            <table class="table table-hover">
+                                                <tbody>
+                                                    <tr data-widget="expandable-table" aria-expanded="false">
+                                                        <td>
+                                                            36 buổi / 3 tháng
+                                                            <span>1.050.000đ</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-widget="expandable-table" aria-expanded="false">
+                                                        <td>
+                                                            72 buổi / 6 tháng
+                                                            <span>350.000đ</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-widget="expandable-table" aria-expanded="false">
+                                    <td>
+                                        <i onclick="show20TL()"
+                                            class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                                        20 buổi / tháng
+                                        <span>350.000đ</span>
+                                    </td>
+                                </tr>
+                                <tr class="pacList20TL" id="openPackageList20TL">
+                                    <td>
+                                        <div class="p-0">
+                                            <table class="table table-hover">
+                                                <tbody>
+                                                    <tr data-widget="expandable-table" aria-expanded="false">
+                                                        <td>
+                                                            60 buổi / 3 tháng
+                                                            <span>350.000đ</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-widget="expandable-table" aria-expanded="false">
+                                                        <td>
+                                                            120 buổi / 6 tháng
+                                                            <span>350.000đ</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <!-- END Featured Plan -->
+                    <!-- /.card-body -->
                 </div>
-                <button onclick="packageDiv1()" class="btn-more"><i class="fas fa-chevron-circle-down"></i>
-                </button>
-                <!-- price-detail -->
-                <div class="package-list-Hatha price-package" id="openPackageListHatha">
-                    <div class="plan price-detail">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 36 buổi / 3 tháng</h3>
-                        <h1>945K</h1>
+                <div class="package">
+                    <div class="package-header">
+                        <h4>Yoga Nghệ Thuật<a href="#" data-toggle="tooltip" title="Tạo mới"
+                                class="btn btn-xs btn-success" onclick="showCreatePackage()"><i
+                                    class="fa fa-plus"></i></a></h4>
                     </div>
+                    <div class="package-hatha">
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr data-widget="expandable-table" aria-expanded="false">
+                                    <td>
+                                        <i onclick="show12NT()"
+                                            class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                                        12 buổi / tháng
+                                        <span>350.000đ</span>
+                                    </td>
 
-                    <div class="plan price-detail">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 72 buổi / 6 tháng</h3>
-                        <h1>1.890K</h1>
+                                </tr>
+                                <tr class="pacList12NT" id="openPackageList12NT">
+                                    <td>
+                                        <div class="p-0">
+                                            <table class="table table-hover">
+                                                <tbody>
+                                                    <tr data-widget="expandable-table" aria-expanded="false">
+                                                        <td>
+                                                            36 buổi / 3 tháng
+                                                            <span>1.050.000đ</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-widget="expandable-table" aria-expanded="false">
+                                                        <td>
+                                                            72 buổi / 6 tháng
+                                                            <span>350.000đ</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-widget="expandable-table" aria-expanded="false">
+                                    <td>
+                                        <i onclick="show20NT()"
+                                            class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                                        20 buổi / tháng
+                                        <span>350.000đ</span>
+                                    </td>
+                                </tr>
+                                <tr class="pacList20NT" id="openPackageList20NT">
+                                    <td>
+                                        <div class="p-0">
+                                            <table class="table table-hover">
+                                                <tbody>
+                                                    <tr data-widget="expandable-table" aria-expanded="false">
+                                                        <td>
+                                                            60 buổi / 3 tháng
+                                                            <span>350.000đ</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-widget="expandable-table" aria-expanded="false">
+                                                        <td>
+                                                            120 buổi / 6 tháng
+                                                            <span>350.000đ</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-
-                    <div class="plan price-detail">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 60 buổi / 3 tháng</h3>
-                        <h1>1.350K</h1>
-                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
-                            Xem thêm</a> -->
-                    </div>
-
-                    <div class="plan price-detail">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 120 buổi / 6 tháng</h3>
-                        <h1>2.700K</h1>
-                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
-                            Xem thêm</a> -->
-                    </div>
-                    <button class="btn-packagelist" onclick="showFromPriceList()">Tạo mới danh sách gói học</button>
-
+                    <!-- /.card-body -->
                 </div>
 
-                <!-- END HATHA PACKAGE -->
 
-                <!-- YOGA-TL PACKAGE -->
-                <h2 class="page-header text-center">Yoga Trị Liệu</h2>
-                <div class="price-tables">
-                    <!-- Featured Plan -->
-                    <div class="plan plan-featured">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 12 buổi / tháng</h3>
-                        <h1>450K</h1>
-                    </div>
-                    <!-- END Featured Plan -->
+                <!-- End-Package -->
 
-                    <!-- Featured Plan -->
-                    <div class="plan plan-featured">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 20 buổi / tháng</h3>
-                        <h1>700K</h1>
-                    </div>
-                    <!-- END Featured Plan -->
-                </div>
-                <button onclick="packageDiv2()" class="btn-more"><i class="fas fa-chevron-circle-down"></i>
-                </button>
-                <!-- price-detail -->
-                <div class="package-list-TL price-package" id="openPackageListTL">
-                    <div class="plan price-detail">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 36 buổi / 3 tháng</h3>
-                        <h1>1.215K</h1>
-                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
-                            Xem thêm</a> -->
-                    </div>
 
-                    <div class="plan price-detail">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 72 buổi / 6 tháng</h3>
-                        <h1>2.430K</h1>
-                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
-                            Xem thêm</a> -->
-                    </div>
 
-                    <div class="plan price-detail">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 60 buổi / 3 tháng</h3>
-                        <h1>1.890K</h1>
-                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
-                            Xem thêm</a> -->
-                    </div>
-
-                    <div class="plan price-detail">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 120 buổi / 6 tháng</h3>
-                        <h1>3.780K</h1>
-                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
-                            Xem thêm</a> -->
-                    </div>
-                </div>
-                <!-- END YOGA-TL PACKAGE -->
-
-                <!-- ASANAS PACKAGE -->
-                <h2 class="page-header text-center">Asanas Yoga</h2>
-                <div class="price-tables">
-                    <div class="plan plan-featured">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 12 buổi / tháng</h3>
-                        <h1>450K</h1>
-                    </div>
-
-                    <div class="plan plan-featured">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 20 buổi / tháng</h3>
-                        <h1>700K</h1>
-                    </div>
-                </div>
-                <button onclick="packageDiv3()" class="btn-more"><i class="fas fa-chevron-circle-down"></i>
-                </button>
-                <!-- price-detail -->
-                <div class="package-list-Asanas price-package" id="openPackageListAsanas">
-                    <div class="plan price-detail">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 36 buổi / 3 tháng</h3>
-                        <h1>1.215K</h1>
-                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
-                            Xem thêm</a> -->
-                    </div>
-
-                    <div class="plan price-detail">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 72 buổi / 6 tháng</h3>
-                        <h1>2.430K</h1>
-                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
-                            Xem thêm</a> -->
-                    </div>
-
-                    <div class="plan price-detail">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 60 buổi / 3 tháng</h3>
-                        <h1>1.890K</h1>
-                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
-                            Xem thêm</a> -->
-                    </div>
-
-                    <div class="plan price-detail">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 120 buổi / 6 tháng</h3>
-                        <h1>3.780K</h1>
-                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
-                            Xem thêm</a> -->
-                    </div>
-                </div>
-                <!-- END ASANAS PACKAGE -->
-
-                <!-- YOGA-NT PACKAGE -->
-                <h2 class="page-header text-center">Yoga Nghệ Thuật</h2>
-
-                <div class="price-tables">
-                    <!-- Featured Plan -->
-                    <div class="plan plan-featured">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 12 buổi / tháng</h3>
-                        <h1>550K</h1>
-                    </div>
-                    <!-- END Featured Plan -->
-
-                    <!-- Featured Plan -->
-                    <div class="plan plan-featured">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 20 buổi / tháng</h3>
-                        <h1>900K</h1>
-                    </div>
-                    <!-- END Featured Plan -->
-                </div>
-                <button onclick="packageDiv4()" class="btn-more"><i class="fas fa-chevron-circle-down"></i>
-                </button>
-                <!-- price-detail -->
-                <div class="package-list-NT price-package" id="openPackageListNT">
-                    <div class="plan price-detail">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 36 buổi / 3 tháng</h3>
-                        <h1>1.485K</h1>
-                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
-                            Xem thêm</a> -->
-                    </div>
-
-                    <div class="plan price-detail">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 72 buổi / 6 tháng</h3>
-                        <h1>2.970K</h1>
-                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
-                            Xem thêm</a> -->
-                    </div>
-
-                    <div class="plan price-detail">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 60 buổi / 3 tháng</h3>
-                        <h1>2.430K</h1>
-                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
-                            Xem thêm</a> -->
-                    </div>
-
-                    <div class="plan price-detail">
-                        <h3 class="plan-header"><i class="fa fa-check"></i> 120 buổi / 6 tháng</h3>
-                        <h1>4.860K</h1>
-                        <!-- <a href="javascript:void(0)" class="btn btn-lg btn-danger"><i class="fa fa-chevron-right"></i>
-                            Xem thêm</a> -->
-                    </div>
-                </div>
-                <!-- END YOGA-NT PACKAGE -->
-                <!-- Footer -->
-                <footer>
-                    <span id="year-copy"></span> &copy; <strong><a href="https://1.envato.market/7jd">uAdmin
-                            2.1</a></strong> - Crafted with <i class="fa fa-heart text-danger"></i> by <strong><a
-                            href="https://1.envato.market/ydb" target="_blank">pixelcave</a></strong>
-                </footer>
-                <!-- END Footer -->
             </div>
+
+            <!-- Footer -->
+            <footer>
+                <span id="year-copy"></span> &copy; <strong><a href="https://1.envato.market/7jd">uAdmin
+                        2.1</a></strong> - Crafted with <i class="fa fa-heart text-danger"></i> by <strong><a
+                        href="https://1.envato.market/ydb" target="_blank">pixelcave</a></strong>
+            </footer>
+            <!-- END Footer -->
             <!-- END Page Content -->
 
             <!-- form create package-default -->
-            <div id="formPriceContainer">
-                <button id="closeButton" onclick="hideFormPrice()">X</button>
+            <div id="formCreatePac">
                 <form id="createForm">
+                    <button id="closeButton" onclick="hideFormPrice()">X</button>
                     <h2>Tạo mới Gói</h2>
-                    <label for="name">Tên gói</label>
-                    <input type="text" id="package" name="name" required><br>
 
-                    <label for="name">Số buổi</label>
-                    <input type="number" id="day" name="day" required><br>
-
-                    <label for="name">Số tháng</label>
-                    <input type="number" id="month" name="month" required><br>
-
-                    <label for="name">Giá gói</label>
-                    <input type="text" id="price" name="price" required><br>
-
-                    <label for="course-name">Khoá</label>
-                    <select name="course" id="course-name">
-                        <option value="hahta">Hatha Yoga</option>
-                        <option value="asanas">Asanas Yoga</option>
-                        <option value="trilieu">Yoga Trị Liệu</option>
-                        <option value="nghethuat">Yoga Nghệ Thuật</option>
+                    <label for="course">Khoá </label>
+                    <select name="" id="course">
+                        <option value="">-- Chọn một tùy chọn --</option>
+                        <option value="">Hatha Yoga</option>
+                        <option value="">Asanas Yoga</option>
+                        <option value="">Yoga Trị Liệu</option>
+                        <option value="">Yoga Nghệ Thuật</option>
                     </select>
+
+                    <label for="">Tên gói </label>
+                    <select id="package" onchange="showSelectedDiv()">
+                        <option value="">-- Chọn một tùy chọn --</option>
+                        <option value="list12">12 buổi / tháng</option>
+                        <option value="list20">20 buổi / tháng</option>
+                        <option value="order">Khác...</option>
+                    </select>
+
+                    <div id="order" class="form-pacDefault">
+                        <label for="name">Tên gói mới</label>
+                        <input type="text" id="name" name="name" required><br>
+
+                        <label for="name">Số buổi / tháng</label>
+                        <input type="text" id="name" name="name" required><br>
+
+                        <label for="name">Giá gói</label>
+                        <input type="text" id="price" name="price" required><br>
+                    </div>
+
+                    <div id="list12" class="form-pacDetail">
+                        <label for="name">Tên danh sách gói mới</label>
+                        <input type="text" id="name" name="name" required><br>
+
+                        <label for="name">Số buổi / tháng</label>
+                        <input type="text" id="name" name="name" required><br>
+
+                        <label for="name">Giá gói</label>
+                        <input type="text" id="price" name="price" required><br>
+                    </div>
+                    <div id="list20" class="form-pacDetail">
+                        <label for="name">Tên danh sách gói mới</label>
+                        <input type="text" id="name" name="name" required><br>
+
+                        <label for="name">Số buổi / tháng</label>
+                        <input type="text" id="name" name="name" required><br>
+
+                        <label for="name">Giá gói</label>
+                        <input type="text" id="price" name="price" required><br>
+                    </div>
+
+
+
                     <input type="submit" value="Save" id="save">
                 </form>
             </div>
 
-            <div id="formPriceListContainer">
-                <button id="closeButton" onclick="hideFormPriceList()">X</button>
-                <form id="createForm">
-                    <h2>Tạo mới danh sách gói</h2>
-                    <label for="course-name">Khoá</label>
-                    <select name="course" id="course-name">
-                        <option value="hahta">Hatha Yoga</option>
-                        <option value="asanas">Asanas Yoga</option>
-                        <option value="trilieu">Yoga Trị Liệu</option>
-                        <option value="nghethuat">Yoga Nghệ Thuật</option>
-                    </select>
 
-                    <label for="name">Số buổi</label>
-                    <input type="number" id="day" name="day" required><br>
-
-                    <label for="name">Số tháng</label>
-                    <input type="number" id="month" name="month" required><br>
-
-                    <label for="name">Giá gói</label>
-                    <input type="text" id="price" name="price" required><br>
-
-                    <input type="submit" value="Save" id="save">
-                </form>
-            </div>
-
-            <style>
-                #formPriceContainer {
-                    display: none;
-                    position: fixed;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    background-color: #f1f1f1;
-                    padding: 20px;
-                    box-shadow: rgb(152, 152, 152, 0.6);
-                    border: rgba(0, 0, 0, 0.6) solid 1px;
-                }
-
-                #createForm {
-                    width: 300px;
-                    margin: 0 auto;
-                }
-
-                #createForm label,
-                #createForm input[type="text"],
-                #createForm input[type="number"] {
-                    display: block;
-                    margin-bottom: 10px;
-                    width: 100%;
-                }
-
-                #package,
-                #day,
-                #month,
-                #price,
-                #course-name {
-                    border: rgba(0, 0, 0, 0.6) solid 1px;
-                }
-
-                #save {
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-
-                    align-items: center;
-                }
-
-                #createForm input[type="submit"] {
-                    background-color: #4CAF50;
-                    color: white;
-                    border: none;
-                    padding: 10px;
-                    cursor: pointer;
-                }
-
-                #closeButton {
-                    margin-left: 280px;
-                }
-            </style>
-            <script>
-                function showFromPrice() {
-                    var formPriceContainer = document.getElementById("formPriceContainer");
-                    formPriceContainer.style.display = "block";
-                }
-
-                function hideFormPrice() {
-                    var formPriceContainer = document.getElementById("formPriceContainer");
-                    formPriceContainer.style.display = "none";
-                }
-                function showFromPriceList() {
-                    var formPriceListContainer = document.getElementById("formPriceListContainer");
-                    formPriceListContainer.style.display = "block";
-                }
-
-                function hideFormPriceList() {
-                    var formPriceListContainer = document.getElementById("formPriceListContainer");
-                    formPriceListContainer.style.display = "none";
-                }
-        // function getdata
-
-            </script>
             <!--END form edit class -->
         </div>
         <!-- END Inner Container -->
