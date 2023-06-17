@@ -540,6 +540,7 @@ a:focus {
     position: relative;
     font-size: 40px;
     font-weight: 700;
+    width: max-content;
 }
 
 @media (max-width: 767.98px) {
@@ -2384,7 +2385,7 @@ a:focus {
     border-radius: 8px;
 }
 
-.modal-container-schedule-end{
+.modal-container-schedule-end {
     margin-top: 60px;
     background-color: #fff;
     width: 600px;
@@ -2392,7 +2393,7 @@ a:focus {
     border-radius: 8px;
 }
 
-.modal-container-schedule-teacher{
+.modal-container-schedule-teacher {
     margin-top: 60px;
     background-color: #fff;
     width: 600px;
@@ -2415,11 +2416,12 @@ a:focus {
     padding: 10px 40px;
 }
 
-.modal-body-schedule .mo{
-margin-left: 25px;
+.modal-body-schedule .mo {
+    margin-top: 16px;
+    text-align: center;
 }
 
-.modal-header-register img{
+.modal-header-register img {
     height: 70px;
     width: 70px;
     margin-top: 50px;
@@ -2707,7 +2709,7 @@ textarea.enter-feedback {
     font-weight: 600;
 }
 
-.btn-feedback-js{
+.btn-feedback-js {
     background: #62BEC8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     border-radius: 50px;
@@ -2723,7 +2725,7 @@ textarea.enter-feedback {
 }
 
 
-button.pp{
+button.pp {
     margin-left: 750px;
     margin-top: 20px;
     background: #ff9898;
@@ -2733,8 +2735,64 @@ button.pp{
     color: #fff;
 }
 
-button.attend{
+button.attend {
     background: bottom;
     border: none;
     color: #000000;
+}
+
+.btn-checkout {
+    background: #62BEC8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+    margin-top: 25px;
+    color: #fff;
+    font-size: 20px;
+    margin-left: calc(50% - 150px/2);
+    border: none;
+}
+
+.btn-checkout:hover {
+    background-color: #3cb5c3;
+    cursor: pointer;
+}
+
+.modal-body-forgot{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.modal-body-forgot input{
+    width: 85%;
+}
+
+.modal-container-reset {
+    margin-top: 60px;
+    background-color: #fff;
+    width: 562px;
+    height: 422px;
+    border-radius: 8px;
+}
+
+.btn-resetPass {
+    background: #62BEC8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    width: 150px;
+    height: 48px;
+    color: #fff;
+    font-size: 20px;
+    margin-left: calc(50% - 150px/2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.btn-resetPass:hover {
+    background-color: #3cb5c3;
+    color: #fff;
 }

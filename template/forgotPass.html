@@ -79,7 +79,7 @@
                 <div class="nav-item nav-link-dk">
                     <!-- <i class="fa fa-user"></i> -->
                     <!-- <a href="login.html" class="a" >Đăng nhập</a> -->
-                    <a href="register.html" class="a" id="openModalButtonRegister">Đăng Ký</a>
+                    <a href="index.html" class="a">Đăng Xuất</a>
                 </div>
             </div>
 
@@ -88,63 +88,53 @@
     <!-- Nav Bar End -->
 
     <!-- Modal Login -->
-    <div class="modal-login open" id="loginModal">
+    <div class="modal-login">
         <div class="modal-container">
-            <span class="close" id="myButton">&times;</span>
             <header class="modal-header">
-                Đăng Nhập
+                Quên mật khẩu
             </header>
 
             <div class="modal-body">
                 <form id="myForm">
                     <div class="modal-login-user">
-                        <input class="modal-input" id="txtlogin" placeholder="Email đăng nhập" required>
-                        <span id="error1" style="display: none; color: red; justify-content: center;">Vui lòng nhập đúng
-                            địa chỉ
-                            email.</span><br>
-                        <input type="password" class="modal-input" placeholder="Mật khẩu" required>
+                        <p>Nhập địa chỉ email của bạn để khôi phục mật khẩu</p>
+                        <br>
+                        <input class="modal-input" type="email" placeholder="Nhập email" required>
                     </div>
-                    <button id="modal-login-button" type="submit">
-                        Đăng Nhập
+                    <button id="openModalButtonRegister" class="btn-checkout" type="button">
+                        Tiếp Tục
                     </button>
                 </form>
             </div>
-            <footer class="modal-footer">
-                <p class="modal-register-but"><a href="register.html" id="register-link">Bạn chưa có tài khoản?</a></p>
-                <p class="modal-register-but"><a href="forgotPass.html">Quên mật khẩu?</a></p>
+        </div>
+    </div>
+
+    <div class="modal-schedule" id="registerModal">
+        <div class="modal-container-reset">
+            <span class="close" id="myButton"><a>&times;</a></span>
+            <header class="modal-header-register">
+                Đặt lại mật khẩu
+            </header>
+
+            <form action="#">
+                <div class="modal-body-forgot">
+                    <input class="modal-input" type="password" placeholder="Nhập mật khẩu mới" required>
+                    <input class="modal-input" type="password" placeholder="Xác nhận mật khẩu" required>
+                </div>
+            </form>
+
+            <a href="index.html" class="btn-resetPass" type="submit">
+                Đổi mật khẩu
+            </a>
+
+            <footer class="modal-footer-schedule">
+                <a href="forgotPass.html">Hủy</a>
             </footer>
         </div>
     </div>
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-    <!-- xử lý check login-->
-    <script>
-        var inputElement = document.getElementById("modal-login-button");
-        var errorElement = document.getElementById("error1");
-
-
-        inputElement.addEventListener("click", function (event) {
-            var nameInput = document.getElementById("txtlogin");
-            // Kiểm tra định dạng địa chỉ email
-            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            for (let index = 0; ; index++) {
-                if (nameInput.value === "" || !emailRegex.test(nameInput.value)) {
-                    // alert("Vui lòng nhập đúng địa chỉ email.");
-                    errorElement.style.display = "flex";
-                    event.preventDefault();
-                    return false;
-                } else {
-                    // Ẩn thông báo lỗi nếu giá trị hợp lệ
-                    errorElement.style.display = "none";
-                    break;
-                };
-
-            }
-
-
-        });
-
-    </script>
+    
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>

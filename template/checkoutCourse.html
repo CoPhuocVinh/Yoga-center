@@ -79,7 +79,7 @@
                 <div class="nav-item nav-link-dk">
                     <!-- <i class="fa fa-user"></i> -->
                     <!-- <a href="login.html" class="a" >Đăng nhập</a> -->
-                    <a href="register.html" class="a" id="openModalButtonRegister">Đăng Ký</a>
+                    <a href="index.html" class="a">Đăng Xuất</a>
                 </div>
             </div>
 
@@ -88,63 +88,54 @@
     <!-- Nav Bar End -->
 
     <!-- Modal Login -->
-    <div class="modal-login open" id="loginModal">
+    <div class="modal-login">
         <div class="modal-container">
-            <span class="close" id="myButton">&times;</span>
             <header class="modal-header">
-                Đăng Nhập
+                Kiểm tra thông tin đăng ký
             </header>
 
             <div class="modal-body">
                 <form id="myForm">
                     <div class="modal-login-user">
-                        <input class="modal-input" id="txtlogin" placeholder="Email đăng nhập" required>
-                        <span id="error1" style="display: none; color: red; justify-content: center;">Vui lòng nhập đúng
-                            địa chỉ
-                            email.</span><br>
-                        <input type="password" class="modal-input" placeholder="Mật khẩu" required>
+                        <p>Ngày đăng ký: 18/06/2023</p>
+                        <p>Tên course: Hatha Yoga</p>
+                        <p>Giá: 350.000 vnđ</p>
+                        <p>Số buổi: 12 buổi</p>
                     </div>
-                    <button id="modal-login-button" type="submit">
-                        Đăng Nhập
+                    <button id="openModalButtonRegister" class="btn-checkout" type="button">
+                        Xác Nhận
                     </button>
                 </form>
             </div>
-            <footer class="modal-footer">
-                <p class="modal-register-but"><a href="register.html" id="register-link">Bạn chưa có tài khoản?</a></p>
-                <p class="modal-register-but"><a href="forgotPass.html">Quên mật khẩu?</a></p>
+        </div>
+    </div>
+
+    <div class="modal-schedule" id="registerModal">
+        <div class="modal-container-schedule">
+            <span class="close" id="myButton"><a>&times;</a></span>
+            <header class="modal-header-register">
+                <img src="img/kisspng-check-mark-tick-clip-art-green-tick-mark-5aa8e457000d23.5682297315210179430002.png">
+            </header>
+
+            <form action="#">
+                <div class="modal-body-schedule">
+                    <h3 class="mo">Bạn đã đăng kí khóa học thành công</h3>
+                    <h5 class="mo">Vui lòng xem lịch học để đăng ký lớp</h5>
+                </div>
+            </form>
+
+            <a href="schedule-detail.html" id="modal-login-button-re-hatha" type="submit">
+                Đặt lịch
+            </a>
+
+            <footer class="modal-footer-schedule">
+                <a href="priceHatha.html">Hủy</a>
             </footer>
         </div>
     </div>
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-    <!-- xử lý check login-->
-    <script>
-        var inputElement = document.getElementById("modal-login-button");
-        var errorElement = document.getElementById("error1");
-
-
-        inputElement.addEventListener("click", function (event) {
-            var nameInput = document.getElementById("txtlogin");
-            // Kiểm tra định dạng địa chỉ email
-            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            for (let index = 0; ; index++) {
-                if (nameInput.value === "" || !emailRegex.test(nameInput.value)) {
-                    // alert("Vui lòng nhập đúng địa chỉ email.");
-                    errorElement.style.display = "flex";
-                    event.preventDefault();
-                    return false;
-                } else {
-                    // Ẩn thông báo lỗi nếu giá trị hợp lệ
-                    errorElement.style.display = "none";
-                    break;
-                };
-
-            }
-
-
-        });
-
-    </script>
+    
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
