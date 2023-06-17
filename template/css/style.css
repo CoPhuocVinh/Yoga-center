@@ -1131,7 +1131,7 @@ a:focus {
     border-top: none;
 }
 
-.price .price-action a.btn {
+.price .price-action .btn {
     margin-bottom: 30px;
     padding: 12px 20px;
     color: #343148;
@@ -1143,13 +1143,13 @@ a:focus {
     transition: .3s;
 }
 
-.price .price-action a:hover,
-.price .price-item.featured-item .price-action a {
+.price .price-action button:hover,
+.price .price-item.featured-item .price-action button {
     color: #F7CAC9;
     background: #343148;
 }
 
-.price .price-item.featured-item .price-action a:hover {
+.price .price-item.featured-item .price-action button:hover {
     color: #343148;
     background: #F7CAC9;
 }
@@ -1634,11 +1634,9 @@ a:focus {
 /*******************************/
 
 .table {
-    min-width: 1000px !important;
     width: 100%;
     text-align: center;
 }
-
 
 .table .thead-primary {
     background: #d291bc;
@@ -2382,7 +2380,23 @@ a:focus {
     margin-top: 60px;
     background-color: #fff;
     width: 600px;
-    height: 500px;
+    height: 450px;
+    border-radius: 8px;
+}
+
+.modal-container-schedule-end{
+    margin-top: 60px;
+    background-color: #fff;
+    width: 600px;
+    height: 540px;
+    border-radius: 8px;
+}
+
+.modal-container-schedule-teacher{
+    margin-top: 60px;
+    background-color: #fff;
+    width: 600px;
+    height: 600px;
     border-radius: 8px;
 }
 
@@ -2397,15 +2411,22 @@ a:focus {
 }
 
 .modal-body-schedule {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: list-item;
     padding: 10px 40px;
 }
 
+.modal-body-schedule .mo{
+margin-left: 25px;
+}
+
+.modal-header-register img{
+    height: 70px;
+    width: 70px;
+    margin-top: 50px;
+}
+
 .modal-boxsh {
-    margin-right: 180px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 
 }
 
@@ -2484,12 +2505,48 @@ a:focus {
     color: #fff;
     font-size: 20px;
     margin-left: calc(50% - 150px/2);
-    margin-bottom: 20px;
-    margin-top: 45px;
-    border: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #modal-login-button-re:hover {
+    background-color: #3cb5c3;
+    cursor: pointer;
+}
+
+#modal-login-button-re-schedule {
+    background: #62BEC8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    margin-left: calc(50% - 150px/2);
+}
+
+#modal-login-button-re-schedule:hover {
+    background-color: #3cb5c3;
+    cursor: pointer;
+}
+
+#modal-login-button-re-hatha {
+    background: #62BEC8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    margin-left: calc(50% - 150px/2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#modal-login-button-re-hatha:hover {
     background-color: #3cb5c3;
     cursor: pointer;
 }
@@ -2650,12 +2707,23 @@ textarea.enter-feedback {
     font-weight: 600;
 }
 
+.btn-feedback-js{
+    background: #62BEC8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 75%;
+}
+
 .btn-feedback:hover {
     background-color: #e7af4e;
 }
 
 
-button#openModalButtonRegister {
+button.pp{
     margin-left: 750px;
     margin-top: 20px;
     background: #ff9898;
@@ -2665,6 +2733,8 @@ button#openModalButtonRegister {
     color: #fff;
 }
 
-button#openModalButtonRegister:hover {
-    border: 1px solid rgb(91 84 84);
+button.attend{
+    background: bottom;
+    border: none;
+    color: #000000;
 }

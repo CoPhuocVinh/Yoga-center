@@ -65,15 +65,6 @@
                     <a href="index.html" class="nav-item nav-link">Lịch học</a>
                     <a href="index.html" class="nav-item nav-link">Huấn luyện viên</a>
                     <a href="index.html" class="nav-item nav-link">Blog</a>
-
-
-                    <!-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
-                        <div class="dropdown-menu">
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                            <a href="single.html" class="dropdown-item">Blog chi tiết</a>
-                        </div>
-                    </div> -->
                     <a href="#footer" class="nav-item nav-link">Liên hệ</a>
 
 
@@ -135,7 +126,7 @@
                         </div>
                         <div class="price-footer">
                             <div class="price-action">
-                                <a class="btn" href="">Đăng Ký</a>
+                                <button href="" class="btn" id="openModalButtonRegister">Đăng Ký</button>                            
                             </div>
                         </div>
                     </div>
@@ -284,19 +275,30 @@
             </div>
         </div>
     </div>
-    <!-- Price End -->
 
+    <div class="modal-schedule" id="registerModal">
+        <div class="modal-container-schedule">
+            <span class="close" id="myButton"><a>&times;</a></span>
+            <header class="modal-header-register">
+                <img src="img/kisspng-check-mark-tick-clip-art-green-tick-mark-5aa8e457000d23.5682297315210179430002.png">
+            </header>
 
-    <!-- Discount Start -->
-    <!-- <div class="discount wow zoomIn" data-wow-delay="0.1s" style="margin-bottom: 90px;">
-        <div class="container">
-            <div class="section-header text-center">
-                <p>KHUYẾN MÃI</p>
-                <h2>TẶNG <span>10 BUỔI</span> <br> Khi tích luỹ đủ 100 buổi</h2>
-            </div>
+            <form action="#">
+                <div class="modal-body-schedule">
+                    <h3 class="mo">Bạn đã đăng kí khóa học thành công</h3>
+                    <h5 class="mo">Vui lòng xem lịch học để đăng ký lớp</h5>
+                </div>
+            </form>
+
+            <a href="schedule-detail.html" id="modal-login-button-re-hatha" type="submit">
+                Lịch học
+            </a>
+
+            <footer class="modal-footer-schedule">
+                <a href="priceHatha.html">Hủy</a>
+            </footer>
         </div>
-    </div> -->
-    <!-- Discount End -->
+    </div>
 
 
     <!-- Footer Start -->

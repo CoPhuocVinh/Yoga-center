@@ -66,20 +66,10 @@
                     <a href="index.html" class="nav-item nav-link">Lịch học</a>
                     <a href="index.html" class="nav-item nav-link">Huấn luyện viên</a>
                     <a href="index.html" class="nav-item nav-link">Blog</a>
-
-                    <!-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
-                        <div class="dropdown-menu">
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                            <a href="single.html" class="dropdown-item">Blog chi tiết</a>
-                        </div>
-                    </div> -->
                     <a href="#footer" class="nav-item nav-link">Liên hệ</a>
                 </div>
-                <div class="nav-item nav-link-dk">
-                    <!-- <i class="fa fa-user"></i> -->
-                    <a href="login.html" class="a">Đăng nhập</a>
-                    <a href="register.html">Đăng kí</a>
+                <div class="nav-item nav-link-dk">                    
+                    <a href="index.html" class="a">Đăng Xuất</a>
                 </div>
             </div>
 
@@ -111,6 +101,7 @@
         <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
             <h2>Huấn luyện viên</h2>
         </div>
+        <button href="" class="btn-feedback-js" id="openModalButtonRegister">Đăng Ký lớp A</button> 
         <div class="row user-display">
             <img class="user-img" src="img/avatar-ga76e04ee0_1280.png" alt="">
             <div class="info">
@@ -202,6 +193,25 @@
             <button class="btn-feedback" type="submit">Gửi</button>
         </div>
 
+    </div>
+
+    <div class="modal-schedule" id="registerModal">
+        <div class="modal-container-schedule">
+            <span class="close" id="myButton"><a>&times;</a></span>
+            <header class="modal-header-register">
+                <img src="img/kisspng-check-mark-tick-clip-art-green-tick-mark-5aa8e457000d23.5682297315210179430002.png">
+            </header>
+
+            <form action="#">
+                <div class="modal-body-feedback">
+                    <h3 class="mo">Bạn đã đăng kí lớp học thành công</h3>
+                </div>
+            </form>
+
+            <footer class="modal-footer-schedule">
+                <a href="feedback.html">Đóng</a>
+            </footer>
+        </div>
     </div>
 
     <!-- Footer Start -->
