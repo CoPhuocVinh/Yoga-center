@@ -236,7 +236,7 @@
                                     <a href="page_list_class.html"><i class="fa fa-file"></i>Lớp học</a>
                                 </li>
 
-                                
+
 
                             </ul>
                         </li>
@@ -271,7 +271,7 @@
                 </ul>
                 <!-- END Navigation info -->
 
-      <h3>Khóa học đang diễn ra</h3>
+                <h3>Khóa học đang diễn ra</h3>
                 <!-- Tiles -->
                 <!-- Row 1 -->
                 <div class="dash-tiles row">
@@ -294,7 +294,7 @@
                                 </div>
                                 Hatha Yoga
                             </div>
-                            
+
                             <div class="dash-tile-icon"><i class="fa fa-users"></i></div>
                             <div class="dash-tile-text">30</div>
                         </div>
@@ -361,9 +361,9 @@
                             <div class="dash-tile-header">
                                 <div class="dash-tile-options">
                                     <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
-                                            title="Đóng"><i class="fa fa-close"></i></a>
+                                        title="Đóng"><i class="fa fa-close"></i></a>
                                     <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
-                                            title="Giáo viên"><i class="fa fa-user"></i></a>
+                                        title="Giáo viên"><i class="fa fa-user"></i></a>
                                     <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
                                         title="Chỉnh sửa"><i class="fa fa-cog"></i></a>
                                     <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
@@ -392,24 +392,24 @@
                                             title="Đóng"><i class="fa fa-close"></i></a>
                                         <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
                                             title="Giáo viên"><i class="fa fa-user"></i></a>
-                                        <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
-                                            title="Chỉnh sửa"><i class="fa fa-cog"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Chỉnh sửa"
+                                            class="btn btn-default" onclick="showForm2()"><i class="fa fa-cog"></i></a>
                                         <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip"
                                             title="Khách hàng"><i class="fa fa-bar-chart-o"></i></a>
                                     </div>
                                 </div>
                                 Hatha Yoga
-                                
+
                             </div>
-                            
+
                             <div class="dash-tile-icon"><i class="fa fa-users"></i></div>
                             <div class="dash-tile-text">30</div>
                         </div>
                         <!-- END Total Users Tile -->
                     </div>
-                <!-- END Row 1 -->
-                <!--Form Validation, Validation Initialization happens at the bottom of the page-->
-            </div>
+                    <!-- END Row 1 -->
+                    <!--Form Validation, Validation Initialization happens at the bottom of the page-->
+                </div>
                 <form id="form-validation" action="page_form_validation.html" method="post"
                     class="form-horizontal form-box remove-margin">
                     <!-- Form Header -->
@@ -435,7 +435,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <label class="control-label col-md-3" for="val_password">Chi tiết *</label>
                             <div class="col-md-6">
@@ -473,33 +473,33 @@
                                         <div class="modal-teacher">
                                             <input type="checkbox" name="class" value="Class A">A
                                         </div>
-                    
+
                                         <div class="modal-teacher">
                                             <input type="checkbox" name="class" value="Class B">B
-                    
+
                                         </div>
-                    
+
                                         <div class="modal-teacher">
                                             <input type="checkbox" name="class" value="Class C">C
-                    
+
                                         </div>
-                    
+
                                         <div class="modal-teacher">
                                             <input type="checkbox" name="class" value="Class D">D
-                    
+
                                         </div>
-                    
+
                                         <div class="modal-teacher">
                                             <input type="checkbox" name="class" value="Class F">F
                                         </div>
-                    
+
                                         <div class="modal-teacher">
                                             <input type="checkbox" name="class" value="Class G">G
-                    
+
                                         </div>
                                         <div class="modal-teacher">
                                             <input type="checkbox" name="class" value="Class H">H
-                    
+
                                         </div>
                                         <div class="modal-teacher">
                                             <input type="checkbox" name="class" value="Class I">I
@@ -814,8 +814,186 @@
             <!-- END Modal Content -->
         </div>
         <!-- END Modal Dialog -->
+
+        <div id="formCourse">
+            <button id="closeButton" onclick="hideForm()">X</button>
+            <form id="registrationForm">
+                <h2>Chỉnh sửa khóa học</h2>
+                <div class="form-box-content">
+                    <div class="form-group">
+                        <label class="control-label col-md-3" for="val_username">Khóa ID *</label>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-pencil fa-fw"></i></span>
+                                <input type="text" id="val_username" name="val_username" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3" for="val_username">Giới thiệu *</label>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-pencil fa-fw"></i></span>
+                                <input type="text" id="val_username" name="val_username" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3" for="val_password">Chi tiết *</label>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-comments fa-fw"></i></span>
+                                <input type="password" id="val_password" name="val_password" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3" for="val_website">Hình ảnh *</label>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-asterisk fa-fw"></i></span>
+                                <input type="text" id="val_website" name="val_website" value="http://"
+                                    class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3" for="val_date">Tên khóa *</label>
+                        <div class="col-md-6">
+                            <div class="input-group date input-datepicker" data-date="04-30-2013"
+                                data-date-format="mm-dd-yyyy">
+                                <span class="input-group-addon"><i class="fa fa-pencil fa-fw"></i></span>
+                                <input type="text" id="val_date" name="val_date" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3" for="val_email">Giáo viên *</label>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <div class="modal-body-teacher">
+                                    <div class="modal-teacher">
+                                        <input type="checkbox" name="class" value="Class A">A
+                                    </div>
+
+                                    <div class="modal-teacher">
+                                        <input type="checkbox" name="class" value="Class B">B
+
+                                    </div>
+
+                                    <div class="modal-teacher">
+                                        <input type="checkbox" name="class" value="Class C">C
+
+                                    </div>
+
+                                    <div class="modal-teacher">
+                                        <input type="checkbox" name="class" value="Class D">D
+
+                                    </div>
+
+                                    <div class="modal-teacher">
+                                        <input type="checkbox" name="class" value="Class F">F
+                                    </div>
+
+                                    <div class="modal-teacher">
+                                        <input type="checkbox" name="class" value="Class G">G
+
+                                    </div>
+                                    <div class="modal-teacher">
+                                        <input type="checkbox" name="class" value="Class H">H
+
+                                    </div>
+                                    <div class="modal-teacher">
+                                        <input type="checkbox" name="class" value="Class I">I
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="control-label col-md-6" for="val_terms">Service Terms *</label>
+                        <div class="col-md-6">
+                            <div class="checkbox">
+                                <label for="val_terms">
+                                    <input type="checkbox" id="val_terms" name="val_terms" value="1"> I agree
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group form-actions">
+                        <div class="col-md-10 col-md-offset-2">
+                            <button type="reset" class="btn btn-danger"><i class="fa fa-repeat"></i> Xóa</button>
+                            <button type="submit" class="btn btn-success"><i class="fa fa-check"></i>
+                                Tạo</button>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="submit" value="Save" id="save">
+            </form>
+        </div>
     </div>
     <!-- END User Modal Settings -->
+
+    <style>
+        #formCourse {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f1f1f1;
+            padding: 20px;
+            box-shadow: rgb(152, 152, 152, 0.6);
+            border: rgba(0, 0, 0, 0.6) solid 1px;
+        }
+
+        #registrationForm {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        #registrationForm label,
+        #registrationForm input[type="text"],
+        #registrationForm input[type="file"],
+        #registrationForm input[type="number"],
+        #registrationForm input[type="submit"],
+        #registrationForm input[type="datetime-local"] {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+            
+        }
+
+        #name,
+        #roleID,
+        #fullName,
+        #datet,
+        #Sdt {
+            border: rgba(0, 0, 0, 0.6) solid 1px;
+        }
+
+        #save {
+            display: flex;
+            justify-content: center;
+
+            align-items: center;
+        }
+
+        #registrationForm input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #closeButton {
+            margin-left: 280px;
+        }
+    </style>
 
     <!-- Excanvas for canvas support on IE8 -->
     <!--[if lte IE 8]><script src="js/helpers/excanvas.min.js"></script><![endif]-->
@@ -833,6 +1011,15 @@
 
     <!-- Javascript code only for this page -->
     <script>
+        function showForm2() {
+            var formContainer = document.getElementById("formCourse");
+            formContainer.style.display = "block";
+        }
+        function hideForm() {
+            var formContainer = document.getElementById("formCourse");
+            formContainer.style.display = "none";
+        }
+
         $(function () {
 
             /* For advanced usage and examples please check out
