@@ -2450,7 +2450,9 @@ margin-left: 25px;
     font-size: 14px;
 
 }
-
+.modal-body-feedback .mo{
+    text-align: center;
+}
 .modal-input-name {
     margin-top: 8px;
 }
