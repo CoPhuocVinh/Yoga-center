@@ -341,8 +341,9 @@
                 <!-- END Navigation info -->
 
                 <!-- List Staff -->
-                <h3 class="page-header page-header-top">Danh sách huấn luyện viên<a href="javascript:void(0)"
-                        data-toggle="tooltip" title="Edit" class="btn btn-xs btn-success"><i class="fa fa-plus"></i></a>
+                <h3 class="page-header page-header-top">Danh sách huấn luyện viên<a href="#" data-toggle="tooltip"
+                        title="Thêm mới" class="btn btn-xs btn-success" onclick="showCreateClass()"><i
+                            class="fa fa-plus"></i></a>
                     <div class="card-header section-bnt">
                         <div class="card-tools">
                             <ul class="nav nav-pills ml-auto">
@@ -384,10 +385,10 @@
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
+                                    <a href="#createButton" data-toggle="tooltip" title="sửa"
                                         class="btn btn-xs btn-success" onclick="showForm()"><i
                                             class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="xóa"
                                         class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                 </div>
                             </td>
@@ -402,10 +403,10 @@
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
+                                    <a href="#createButton" data-toggle="tooltip" title="sửa"
                                         class="btn btn-xs btn-success" onclick="showForm()"><i
                                             class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="xóa"
                                         class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                 </div>
                             </td>
@@ -420,10 +421,10 @@
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
+                                    <a href="#createButton" data-toggle="tooltip" title="sửa"
                                         class="btn btn-xs btn-success" onclick="showForm()"><i
                                             class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="xóa"
                                         class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                 </div>
                             </td>
@@ -438,10 +439,10 @@
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
+                                    <a href="#createButton" data-toggle="tooltip" title="sửa"
                                         class="btn btn-xs btn-success" onclick="showForm()"><i
                                             class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="xóa"
                                         class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                 </div>
                             </td>
@@ -456,10 +457,10 @@
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
+                                    <a href="#createButton" data-toggle="tooltip" title="sửa"
                                         class="btn btn-xs btn-success" onclick="showForm()"><i
                                             class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="xóa"
                                         class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                 </div>
                             </td>
@@ -474,10 +475,10 @@
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
+                                    <a href="#createButton" data-toggle="tooltip" title="sửa"
                                         class="btn btn-xs btn-success" onclick="showForm()"><i
                                             class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="xóa"
                                         class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                 </div>
                             </td>
@@ -492,10 +493,10 @@
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
+                                    <a href="#createButton" data-toggle="tooltip" title="sửa"
                                         class="btn btn-xs btn-success" onclick="showForm()"><i
                                             class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="xóa"
                                         class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                 </div>
                             </td>
@@ -529,11 +530,8 @@
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
-                                        class="btn btn-xs btn-success" onclick="showForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Hoàn tác"
+                                        class="btn btn-xs btn-success"><i class="fa fa-check"></i></a>
                                 </div>
                             </td>
                         </tr>
@@ -547,11 +545,8 @@
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
-                                        class="btn btn-xs btn-success" onclick="showForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Hoàn tác"
+                                        class="btn btn-xs btn-success"><i class="fa fa-check"></i></a>
                                 </div>
                             </td>
                         </tr>
@@ -565,11 +560,8 @@
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
-                                        class="btn btn-xs btn-success" onclick="showForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Hoàn tác"
+                                        class="btn btn-xs btn-success"><i class="fa fa-check"></i></a>
                                 </div>
                             </td>
                         </tr>
@@ -583,11 +575,8 @@
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
-                                        class="btn btn-xs btn-success" onclick="showForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Hoàn tác"
+                                        class="btn btn-xs btn-success"><i class="fa fa-check"></i></a>
                                 </div>
                             </td>
                         </tr>
@@ -601,11 +590,8 @@
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
-                                        class="btn btn-xs btn-success" onclick="showForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Hoàn tác"
+                                        class="btn btn-xs btn-success"><i class="fa fa-check"></i></a>
                                 </div>
                             </td>
                         </tr>
@@ -619,11 +605,8 @@
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
-                                        class="btn btn-xs btn-success" onclick="showForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Hoàn tác"
+                                        class="btn btn-xs btn-success"><i class="fa fa-check"></i></a>
                                 </div>
                             </td>
                         </tr>
@@ -637,11 +620,8 @@
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Edit"
-                                        class="btn btn-xs btn-success" onclick="showForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Delete"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Hoàn tác"
+                                        class="btn btn-xs btn-success"><i class="fa fa-check"></i></a>
                                 </div>
                             </td>
                         </tr>
@@ -665,7 +645,7 @@
     <!-- END Page Container -->
 
 
-    <!-- form edit class -->
+    <!-- form sửa class -->
     <div id="formContainer">
         <button id="closeButton" onclick="hideForm()">X</button>
         <form id="registrationForm">
@@ -691,8 +671,31 @@
             <input type="submit" value="Save" id="save">
         </form>
     </div>
+
+    <!-- form create teacher -->
+    <div id="formCreateContainer">
+        <button id="closeButton2" onclick="hideForm()">X</button>
+        <form id="registrationForm2">
+            <h2>Thêm mới giáo viên</h2>
+            <label for="id">ID tài khoản</label>
+            <input type="text" id="idname" name="Idname" required><br>
+
+            <label for="name">Email</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="name">Họ và Tên</label>
+            <input type="text" id="fullname" name="fullname" required><br>
+
+            <label for="phone">Số điện thoại</label>
+            <input type="tel" name="phone" id="numberphone">
+            <input type="submit" value="Save" id="save2">
+        </form>
+    </div>
+    <!-- End form create teacher-->
+
     <style>
-        #formContainer {
+        #formContainer,
+        #formCreateContainer {
             display: none;
             position: fixed;
             top: 50%;
@@ -704,39 +707,49 @@
             border: rgba(0, 0, 0, 0.6) solid 1px;
         }
 
-        #registrationForm {
+        #registrationForm,
+        #registrationForm2 {
             width: 300px;
             margin: 0 auto;
         }
 
         #registrationForm label,
         #registrationForm input[type="text"],
-        #registrationForm input[type="file"],
         #registrationForm input[type="number"],
         #registrationForm input[type="submit"],
-        #registrationForm input[type="datetime-local"] {
+        #registrationForm2 label,
+        #registrationForm2 input[type="text"],
+        #registrationForm2 input[type="number"],
+        #registrationForm2 input[type="submit"],
+        #registrationForm2 input[type="tel"] {
             display: block;
             margin-bottom: 10px;
             width: 100%;
-
         }
 
-        #name,
-        #roleID,
-        #fullName,
-        #datet,
-        #Sdt {
+        #class,
+        #course,
+        #teacher,
+        #quantity,
+        #email,
+        #fullname,
+        #teacher2,
+        #quantity2,
+        #idname,
+        #numberphone {
             border: rgba(0, 0, 0, 0.6) solid 1px;
         }
 
-        #save {
+        #save,
+        #save2 {
             display: flex;
             justify-content: center;
 
             align-items: center;
         }
 
-        #registrationForm input[type="submit"] {
+        #registrationForm input[type="submit"],
+        #registrationForm2 input[type="submit"] {
             background-color: #4CAF50;
             color: white;
             border: none;
@@ -744,19 +757,29 @@
             cursor: pointer;
         }
 
-        #closeButton {
-            margin-left: 280px;
+        #closeButton,
+        #closeButton2 {
+            transform: translateX(00%);
         }
     </style>
     <script>
+        // xử lý tạo mới
         function showForm() {
             var formContainer = document.getElementById("formContainer");
             formContainer.style.display = "block";
         }
 
+        //xử lý nút tắt
         function hideForm() {
             var formContainer = document.getElementById("formContainer");
             formContainer.style.display = "none";
+            var formCreateContainer = document.getElementById("formCreateContainer");
+            formCreateContainer.style.display = "none";
+        }
+        // hiện form tạo mới
+        function showCreateClass() {
+            var formCreateContainer = document.getElementById("formCreateContainer");
+            formCreateContainer.style.display = "block";
         }
         // function getdata
         //xử lý nút bấm active và inactive
@@ -777,7 +800,7 @@
         });
 
     </script>
-    <!--END form edit class -->
+    <!--END form sửa class -->
 
 
 
