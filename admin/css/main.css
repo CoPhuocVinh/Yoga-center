@@ -3181,3 +3181,12 @@ only screen and (min-device-pixel-ratio: 1.5) {
         background-image: url('../img/loading.gifs/loading12@2x.gif');
     }
 }
+
+/* -------- List teacher -----------  */
+.list-teacherHeader th{
+    text-align: center;
+}
+
+.list-teacherBody td{
+    text-align: center;
+}
