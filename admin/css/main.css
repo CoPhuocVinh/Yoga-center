@@ -204,6 +204,7 @@ header
     -webkit-box-pack: center !important;
     -ms-flex-pack: center !important;
     justify-content: center !important;
+    width: 100%;
 }
 
 .align-items-center {
@@ -216,7 +217,8 @@ header
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
-
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .package-program {
