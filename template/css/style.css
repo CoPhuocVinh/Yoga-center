@@ -540,7 +540,6 @@ a:focus {
     position: relative;
     font-size: 40px;
     font-weight: 700;
-    width: max-content;
 }
 
 @media (max-width: 767.98px) {
@@ -1155,6 +1154,9 @@ a:focus {
     background: #F7CAC9;
 }
 
+.price .section-header h2{
+    width: max-content;
+}
 
 /*******************************/
 /*********** Team CSS **********/
@@ -2684,6 +2686,11 @@ a:focus {
     background: #F7CAC9;
 }
 
+.modal-body-feedback{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .modal-hlv-detail.feedback-send {
     width: 100%;
     text-align: center;
@@ -2775,6 +2782,14 @@ button.attend {
     background-color: #fff;
     width: 562px;
     height: 422px;
+    border-radius: 8px;
+}
+
+.modal-container-feedback {
+    margin-top: 60px;
+    background-color: #fff;
+    width: 550px;
+    height: 360px;
     border-radius: 8px;
 }
 
