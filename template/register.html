@@ -110,19 +110,25 @@
                     </div>
 
                     <div class="modal-box">
-                        <span class="details">Số điện thoại</span>
-                        <input class="modal-input-name" placeholder="Nhập số điện thoại của bạn" required>
+                        <span class="details">Mật khẩu</span>
+                        <input type="password" class="modal-input-name" id="passwordInput"
+                            placeholder="Nhập mật khẩu của bạn" required>
                     </div>
 
                     <div class="modal-box">
-                        <span class="details">Mật khẩu</span>
-                        <input type="password" class="modal-input-name" placeholder="Nhập mật khẩu của bạn" required>
+                        <span class="details">Số điện thoại</span>
+                        <input class="modal-input-name" id="phoneInput" placeholder="Nhập số điện thoại của bạn"
+                            required>
+                        <span id="phoneError" style="display: none; color: red; justify-content: center;">Vui lòng nhập
+                            đúng định dạng số điện thoại.</span>
                     </div>
 
                     <div class="modal-box">
                         <span class="details">Xác thực mật khẩu</span>
-                        <input type="password" class="modal-input-name" placeholder="Nhập lại mật khẩu của bạn"
-                            required>
+                        <input type="password" class="modal-input-name" id="confirmPasswordInput"
+                            placeholder="Nhập lại mật khẩu của bạn" required>
+                        <span id="passwordMatchError" style="display: none; color: red; justify-content: center;">Mật
+                            khẩu xác thực không đúng.</span>
                     </div>
 
                     <div class="modal-gender"><br>
@@ -133,7 +139,7 @@
                 </div>
             </form>
 
-            <button id="modal-login-button-re" type="submit">
+            <button id="modal-login-button-re" type="submit" onclick="return validateForm()">
                 Đăng Ký
             </button>
 
@@ -168,12 +174,38 @@
                     errorElement.style.display = "none";
                     break;
                 };
-
             }
-
-
         });
 
+        function validateForm() {
+            // Kiểm tra xác thực mật khẩu
+            var passwordInput = document.getElementById("passwordInput");
+            var confirmPasswordInput = document.getElementById("confirmPasswordInput");
+            var passwordMatchError = document.getElementById("passwordMatchError");
+
+            if (passwordInput.value !== confirmPasswordInput.value) {
+                passwordMatchError.style.display = "block";
+                return false; // Ngăn form submit
+            } else {
+                passwordMatchError.style.display = "none";
+            }
+
+            // Kiểm tra số điện thoại
+            var phoneInput = document.getElementById("phoneInput");
+            var phoneNumber = phoneInput.value;
+
+            // Kiểm tra số điện thoại có bắt đầu bằng số 0 và tối đa 11 số
+            if (!phoneNumber.match(/^0[0-9]{9,10}$/)) {
+                var phoneError = document.getElementById("phoneError");
+                phoneError.style.display = "block";
+                return false; // Ngăn form submit
+            } else {
+                phoneError.style.display = "none";
+            }
+
+            // Nếu các điều kiện đúng, cho phép submit form
+            return true;
+        }
     </script>
 
     <!-- JavaScript Libraries -->
