@@ -400,3 +400,15 @@ function showSelectedDiv() {
     }
 }
 
+//Open form create calendar
+function showCreateCalendar() {
+    var selectedOption = document.getElementById("option").value;
+    if (selectedOption === "orderDay") {
+        document.getElementById("formCalendarContainer").style.display = "block";
+      }   
+}
+function hideForm(){
+    var formCalendarContainer = document.getElementById("formCalendarContainer");
+    formCalendarContainer.style.display = "none";
+}
+
