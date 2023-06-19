@@ -256,21 +256,40 @@ header
     text-align: center;
 
 }
+
 .text-center th{
     text-align: center !important;
 }
 .text-center-button {
-    margin-left:900px;
     display:flex;
+    align-items: center;
+    justify-content: right;
 }
 
 .text-center-button input{
-    margin-right: 10px;
-    margin-bottom: 40px;
-    font-size: 22px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    font-size: 19px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    background: mediumseagreen;
+    color: #fff;
+}
+
+.text-center-button input:hover{
+    border: 1px solid mediumseagreen;
+    background-color: #fff;
+    color: #000;
 }
 .table .thead-primary {
     background: #d291bc;
+    font-size: 16px;
+}
+
+.text-center .color{
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .table tbody tr td .trainer {
@@ -278,7 +297,7 @@ header
 }
 
 .color-1 select{
-   width: 115px;
+   width: 120px;
 }
 
 
@@ -1233,6 +1252,11 @@ header
     border: 1px dashed #333;
 }
 
+.calendar-day{
+    font-size: 20px;
+    padding: 6px;
+}
+
 /* Wizard */
 .wizard-steps>div {
     padding: 20px 2px;
@@ -1251,6 +1275,16 @@ header
 }
 
 /* Price Tables */
+
+.discount-head th{
+    text-align: center;
+}
+
+.page-header button{
+    padding: 4px 16px;
+    border: none;
+    background-color: lightgrey;
+}
 
 .pacList12Hatha,
 .pacList20Hatha,
