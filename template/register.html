@@ -195,7 +195,7 @@
             var phoneNumber = phoneInput.value;
 
             // Kiểm tra số điện thoại có bắt đầu bằng số 0 và tối đa 11 số
-            if (!phoneNumber.match(/^0[0-9]{9,10}$/)) {
+            if (!phoneNumber.match(/^0[0-9]{8,10}$/)) {
                 var phoneError = document.getElementById("phoneError");
                 phoneError.style.display = "block";
                 return false; // Ngăn form submit
