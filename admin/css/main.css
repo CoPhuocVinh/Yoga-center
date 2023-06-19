@@ -256,6 +256,7 @@ header
     text-align: center;
 
 }
+
 .text-center th{
     text-align: center !important;
 }
@@ -1274,6 +1275,16 @@ header
 }
 
 /* Price Tables */
+
+.discount-head th{
+    text-align: center;
+}
+
+.page-header button{
+    padding: 4px 16px;
+    border: none;
+    background-color: lightgrey;
+}
 
 .pacList12Hatha,
 .pacList20Hatha,
