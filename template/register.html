@@ -98,15 +98,13 @@
                 <div class="modal-body-re">
                     <div class="modal-box">
                         <span class="details">Họ và tên</span>
-                        <input class="modal-input-name" placeholder="Nhập họ và tên của bạn" required>
+                        <input class="modal-input-name" type="text" placeholder="Nhập họ và tên của bạn" required>
                     </div>
 
                     <div class="modal-box">
                         <span class="details">Email</span>
                         <input type="email" class="modal-input-name" id="txtlogin" placeholder="Nhập email của bạn">
-                        <span id="error1" style="display: none; color: red; justify-content: center;">Vui lòng nhập đúng
-                            địa chỉ
-                            email.</span><br>
+
                     </div>
 
                     <div class="modal-box">
@@ -118,16 +116,18 @@
                     <div class="modal-box">
                         <span class="details">Số điện thoại</span>
                         <input class="modal-input-name" id="phoneInput" placeholder="Nhập số điện thoại của bạn"
-                            required>
-                        <span id="phoneError" style="display: none; color: red; justify-content: center;">Vui lòng nhập
-                            đúng định dạng số điện thoại.</span>
+                            type="text" required>
+                        <span id="phoneError"
+                            style="display: none; color: red; justify-content: center; margin-bottom: 5px;">Vui lòng
+                            nhập số điện thoại bắt đầu từ 0 và có 9 đến 11 số.</span>
                     </div>
 
                     <div class="modal-box">
                         <span class="details">Xác thực mật khẩu</span>
                         <input type="password" class="modal-input-name" id="confirmPasswordInput"
                             placeholder="Nhập lại mật khẩu của bạn" required>
-                        <span id="passwordMatchError" style="display: none; color: red; justify-content: center;">Mật
+                        <span id="passwordMatchError"
+                            style="display: none; color: red; justify-content: center; margin-bottom: 5px;">Mật
                             khẩu xác thực không đúng.</span>
                     </div>
 
@@ -136,12 +136,12 @@
                         <input type="radio" name="gender" id="genderNam">Nam
                         <input type="radio" name="gender" id="genderNu">Nữ
                     </div>
+                    <button id="modal-login-button-re" type="submit">
+                        Đăng Ký
+                    </button>
                 </div>
-            </form>
 
-            <button id="modal-login-button-re" type="submit" onclick="return validateForm()">
-                Đăng Ký
-            </button>
+            </form>
 
             <footer class="modal-footer">
                 <p class="modal-register-but" id="login-link"><a href="login.html">Bạn đã có tài khoản?</a></p>
@@ -159,53 +159,38 @@
 
 
         inputElement.addEventListener("click", function (event) {
-            var nameInput = document.getElementById("txtlogin");
-            // Kiểm tra định dạng địa chỉ email
-            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            for (let index = 0; ; index++) {
-                if (nameInput.value === "" || !emailRegex.test(nameInput.value)) {
-                    // alert("Vui lòng nhập đúng địa chỉ email.");
-                    errorElement.style.display = "flex";
-
-                    event.preventDefault();
-                    return true;
+            // Kiểm tra số điện thoại
+            var phoneInput = document.getElementById("phoneInput");
+            var phoneNumber = phoneInput.value;
+            var phoneError = document.getElementById("phoneError");
+            while (true) {
+                // Kiểm tra số điện thoại có bắt đầu bằng số 0 và tối đa 11 số
+                if (!phoneNumber.match(/^0[0-9]{9,10}$/)) {
+                    phoneError.style.display = "block";
+                    return false; // Ngăn form submit
                 } else {
-                    // Ẩn thông báo lỗi nếu giá trị hợp lệ
-                    errorElement.style.display = "none";
+                    phoneError.style.display = "none";
                     break;
-                };
+                }
             }
-        });
 
-        function validateForm() {
             // Kiểm tra xác thực mật khẩu
             var passwordInput = document.getElementById("passwordInput");
             var confirmPasswordInput = document.getElementById("confirmPasswordInput");
             var passwordMatchError = document.getElementById("passwordMatchError");
-
-            if (passwordInput.value !== confirmPasswordInput.value) {
-                passwordMatchError.style.display = "block";
-                return false; // Ngăn form submit
-            } else {
-                passwordMatchError.style.display = "none";
+            while (true) {
+                if (passwordInput.value !== confirmPasswordInput.value) {
+                    passwordMatchError.style.display = "block";
+                    return false; // Ngăn form submit
+                } else {
+                    passwordMatchError.style.display = "none";
+                    break;
+                }
             }
 
-            // Kiểm tra số điện thoại
-            var phoneInput = document.getElementById("phoneInput");
-            var phoneNumber = phoneInput.value;
+        });
 
-            // Kiểm tra số điện thoại có bắt đầu bằng số 0 và tối đa 11 số
-            if (!phoneNumber.match(/^0[0-9]{9,10}$/)) {
-                var phoneError = document.getElementById("phoneError");
-                phoneError.style.display = "block";
-                return false; // Ngăn form submit
-            } else {
-                phoneError.style.display = "none";
-            }
 
-            // Nếu các điều kiện đúng, cho phép submit form
-            return true;
-        }
     </script>
 
     <!-- JavaScript Libraries -->
