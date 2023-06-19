@@ -279,18 +279,498 @@
                     <li><a href="index.html"><i class="fa fa-home"></i></a></li>
                     <!-- <li><a href="javascript:void(0)">Components</a></li> -->
                     <li class="active"><a href="">Lịch học</a></li>
+
                 </ul>
                 <!-- END Navigation info -->
 
                 <!-- FullCalendar -->
-                <h3 class="page-header page-header-top">Lịch học</h3>
+                <!-- <h3 class="page-header page-header-top">Lịch học</h3> -->
 
                 <!-- <div id="example-fullcalendar"></div> -->
                 <!-- END FullCalendar -->
 
                 <!-- FullCalendar (Drop Events) -->
 
-                <div class="row">
+                <div class="containerSchedule">
+                    <div class="section-header-lich text-center wow zoomIn" data-wow-delay="0.1s">
+                        <h2>Lịch học</h2><br>
+                        
+                        <select>
+                            <option value="ngay">19/06/2023 - 24/06/2023</option>
+                            <option value="ngay">26/06/2023 - 01/07/2023</option>
+                            <option value="ngay">03/07/2023 - 08/07/2023</option>
+                            <option value="ngay">10/07/2023 - 17/07/2023</option>
+                            <option value="ngay">24/07/2023 - 29/07/2023</option>
+                            <option onclick="showForm()" value="ngay">...</option>
+                            </select>
+
+                    </div>
+                    <div class="text-center-button">
+                        <input type="submit" value="Đăng lịch" id="Create">
+                        <input type="reset" value="Đặt lại" id="Reset">
+                        <input type="submit" value="Lưu" id="save3">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 ftco-animate">
+                            <div class="sched-list">
+                                <table class="table">
+                                    <thead class="thead-primary">
+                                        <tr class="text-center">
+                                            <th>&nbsp;</th>
+                                            <th>Thứ 2</th>
+                                            <th>Thứ 3</th>
+                                            <th>Thứ 4</th>
+                                            <th>Thứ 5</th>
+                                            <th>Thứ 6</th>
+                                            <th>Thứ 7</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="text-center">
+                                            <td class="color">
+                                                <p class="time">7:00 - 8:00</p>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                            </td>
+                                        </tr><!-- END TR-->
+    
+                                        <tr class="text-center">
+                                            <td class="color">
+                                                <p class="time">8:30 - 9:30</p>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+                                        </tr><!-- END TR-->
+    
+                                        <tr class="text-center">
+                                            <td class="color">
+                                                <p class="time">10:00 - 11:00</p>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+                                        </tr><!-- END TR-->
+                                        <tr class="text-center">
+                                            <td class="color">
+                                                <p class="time">18:00 - 19:00</p>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+                                        </tr><!-- END TR-->
+                                        <tr class="text-center">
+                                            <td class="color">
+                                                <p class="time">19:30 - 20:30</p>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                                <select name="schedule-details" id="">
+                                                    <option value="">Chọn lớp</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn</option>
+                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn</option>
+                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon</option>                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E - Ms.Mèo</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F - Ms.Vịt</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ</option>
+                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H - Mr.Châu</option>
+                                                </select>
+                                            </td>
+    
+                                            <td class="color-1">
+                                            </td>
+                                        </tr><!-- END TR-->
+    
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="formCreateContainer">
+                    <button id="closeButton2" onclick="hideForm()">X</button>
+                    <form id="registrationForm2">
+                        <h2>Thêm lịch mới</h2>
+                        <label for="id">Thời gian bắt đầu</label>
+                        <input type="text" id="idname" name="Idname" required><br>
+                        <label for="name">Thời gian kết thúc</label>
+                        <input type="text" id="fullname" name="fullname" required><br>
+                        <input type="submit" value="Lưu" id="save2">
+                    </form>
+                </div>
+                <!-- <div class="row">
                     <div class="col-md-2">
                         <div id="fc-external-events">
                             <h5>Các khóa học hiện có</h5>
@@ -304,7 +784,7 @@
                     <div class="col-md-10">
                         <div id="example-fullcalendar2"></div>
                     </div>
-                </div>
+                </div> -->
                 <!-- END FullCalendar (Drop Events) -->
             </div>
             <!-- END Page Content -->
@@ -499,7 +979,76 @@
 
     <!-- Excanvas for canvas support on IE8 -->
     <!--[if lte IE 8]><script src="js/helpers/excanvas.min.js"></script><![endif]-->
+    <style>
+        #formContainer,
+        #formCreateContainer {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f1f1f1;
+            padding: 20px;
+            box-shadow: rgb(152, 152, 152, 0.6);
+            border: rgba(0, 0, 0, 0.6) solid 1px;
+        }
 
+        #registrationForm,
+        #registrationForm2 {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        #registrationForm label,
+        #registrationForm input[type="text"],
+        #registrationForm input[type="number"],
+        #registrationForm input[type="submit"],
+        #registrationForm2 label,
+        #registrationForm2 input[type="text"],
+        #registrationForm2 input[type="number"],
+        #registrationForm2 input[type="submit"],
+        #registrationForm2 input[type="tel"],
+        #registrationForm2 input[type="email"] {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        #class,
+        #course,
+        #teacher,
+        #quantity,
+        #email,
+        #fullname,
+        #teacher2,
+        #quantity2,
+        #idname,
+        #numberphone {
+            border: rgba(0, 0, 0, 0.6) solid 1px;
+        }
+
+        #save,
+        #save2 {
+            display: flex;
+            justify-content: center;
+
+            align-items: center;
+        }
+
+        #registrationForm input[type="submit"],
+        #registrationForm2 input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #closeButton,
+        #closeButton2 {
+            transform: translateX(00%);
+        }
+    </style>
     <!-- Include Jquery library from Google's CDN but if something goes wrong get Jquery from local file (Remove 'http:' if you have SSL) -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>!window.jQuery && document.write(decodeURI('%3Cscript src="js/vendor/jquery-1.11.1.min.js"%3E%3C/script%3E'));</script>
@@ -513,580 +1062,40 @@
 
     <!-- Javascript code only for this page -->
     <script>
-        $(function () {
-            /* Initialize FullCalendar */
-            var date = new Date();
-            var d = date.getDate();
-            var m = date.getMonth();
-            var y = date.getFullYear();
+        // xử lý hiện form
+        function showForm() {
+            var formContainer = document.getElementById("formCreateContainer");
+            formContainer.style.display = "block";
+        }
+        //xử lý nút tắt
+        function hideForm() {
+            var formContainer = document.getElementById("formContainer");
+            formContainer.style.display = "none";
+            var formCreateContainer = document.getElementById("formCreateContainer");
+            formCreateContainer.style.display = "none";
+        }
+        // hiện form tạo mới
+        function showCreateClass() {
+            var formCreateContainer = document.getElementById("formCreateContainer");
+            formCreateContainer.style.display = "block";
+        }
+        //xử lý nút bấm active và inactive
+        var activeBtn = document.getElementById('active-bnt');
+        var inactiveBtn = document.getElementById('inactive-btn');
+        var activeList = document.getElementById('active-list');
+        var inactiveList = document.getElementById('inactive-list');
 
-            $('#example-fullcalendar').fullCalendar({
-                header: {
-                    left: 'prev,next today',
-                    center: 'title',
-                    right: 'month,agendaWeek,agendaDay'
-                },
-                editable: true,
-                events: [
-                    {
-                        title: 'Relax Day',
-                        start: new Date(y, m, 1)
-                    },
-                    {
-                        title: 'Project #1',
-                        start: new Date(y, m, 5),
-                        end: new Date(y, m, 10)
-                    },
-                    {
-                        id: 999,
-                        title: 'Gym (repeated)',
-                        start: new Date(y, m, d - 4, 18, 0),
-                        allDay: false
-                    },
-                    {
-                        id: 999,
-                        title: 'Gym (repeated)',
-                        start: new Date(y, m, d + 3, 18, 0),
-                        allDay: false
-                    },
-                    {
-                        title: 'Lunch',
-                        start: new Date(y, m, d, 13, 0),
-                        allDay: false
-                    },
-                    {
-                        title: 'Project #2',
-                        start: new Date(y, m, d, 8, 0),
-                        end: new Date(y, m, d, 13, 0),
-                        allDay: false
-                    },
-                    {
-                        title: 'Party',
-                        start: new Date(y, m, d + 6, 19, 0),
-                        end: new Date(y, m, d + 6, 22, 30),
-                        allDay: false
-                    },
-                    {
-                        title: 'Follow me on Twitter',
-                        start: new Date(y, m, 26),
-                        end: new Date(y, m, 26),
-                        url: 'http://twitter.com/pixelcave'
-                    }
-                ]
-            });
-
-            /* Initialize FullCalendar with drag and drop events, Demo from http://arshaw.com/fullcalendar/ */
-            $('#fc-external-events .fc-external-event').each(function () {
-
-                // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
-                // it doesn't need to have a start or end
-                var eventObject = {
-                    title: $.trim($(this).text()) // use the element's text as the event title
-                };
-
-                // store the Event Object in the DOM element so we can get to it later
-                $(this).data('eventObject', eventObject);
-
-                // make the event draggable using jQuery UI
-                $(this).draggable({
-                    zIndex: 999,
-                    revert: true, // will cause the event to go back to its
-                    revertDuration: 100  //  original position after the drag
-                });
-            });
-
-            $('#example-fullcalendar2').fullCalendar({
-                header: {
-                    left: 'prev,next today',
-                    center: 'title',
-                    right: 'month,agendaWeek,agendaDay'
-                },
-                header: {
-                    left: 'prev,next today',
-                    center: 'title',
-                    right: 'month,agendaWeek,agendaDay'
-                },
-                editable: true,
-                events: [
-                    {
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d -15, 7 , 0),
-                        end: new Date(y, m, d -15 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d - 15, 8 , 30 ),
-                        end: new Date(y, m, d -15 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d - 15 , 10, 0),
-                        end : new Date(y, m, d - 15, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d - 15, 18,0),
-                        end : new Date(y, m, d - 15, 19, 0),
-                    },
-                    {
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d -14, 7 , 0),
-                        end: new Date(y, m, d -14 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d - 14, 8 , 30 ),
-                        end: new Date(y, m, d -14 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d - 14 , 10, 0),
-                        end : new Date(y, m, d - 14, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d - 14, 18,0),
-                        end : new Date(y, m, d - 14, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d -13, 7 , 0),
-                        end: new Date(y, m, d -13 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d - 13, 8 , 30 ),
-                        end: new Date(y, m, d -13 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d - 13 , 10, 0),
-                        end : new Date(y, m, d - 13, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d - 13, 18,0),
-                        end : new Date(y, m, d - 13, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d -11, 7 , 0),
-                        end: new Date(y, m, d -11 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d - 11, 8 , 30 ),
-                        end: new Date(y, m, d -11 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d - 11 , 10, 0),
-                        end : new Date(y, m, d - 11, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d - 11, 18,0),
-                        end : new Date(y, m, d - 11, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d -10, 7 , 0),
-                        end: new Date(y, m, d -10 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d - 10, 8 , 30 ),
-                        end: new Date(y, m, d -10 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d - 10 , 10, 0),
-                        end : new Date(y, m, d - 10, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d - 10, 18,0),
-                        end : new Date(y, m, d - 10, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d -9, 7 , 0),
-                        end: new Date(y, m, d -9 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d - 9, 8 , 30 ),
-                        end: new Date(y, m, d -9 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d - 9 , 10, 0),
-                        end : new Date(y, m, d - 9, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d - 9, 18,0),
-                        end : new Date(y, m, d - 9, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d -8, 7 , 0),
-                        end: new Date(y, m, d -8 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d - 8, 8 , 30 ),
-                        end: new Date(y, m, d -8 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d - 8 , 10, 0),
-                        end : new Date(y, m, d - 8, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d - 8, 18,0),
-                        end : new Date(y, m, d - 8, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d -7, 7 , 0),
-                        end: new Date(y, m, d -7 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d - 7, 8 , 30 ),
-                        end: new Date(y, m, d -7 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d - 7 , 10, 0),
-                        end : new Date(y, m, d - 7, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d - 7, 18,0),
-                        end : new Date(y, m, d - 7, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d -6, 7 , 0),
-                        end: new Date(y, m, d -6 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d - 6, 8 , 30 ),
-                        end: new Date(y, m, d -6 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d - 6 , 10, 0),
-                        end : new Date(y, m, d - 6, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d - 6, 18,0),
-                        end : new Date(y, m, d - 6, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d -4, 7 , 0),
-                        end: new Date(y, m, d -4 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d - 4, 8 , 30 ),
-                        end: new Date(y, m, d -4 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d - 4 , 10, 0),
-                        end : new Date(y, m, d - 4, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d - 4, 18,0),
-                        end : new Date(y, m, d - 4, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d -3, 7 , 0),
-                        end: new Date(y, m, d -3 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d - 3, 8 , 30 ),
-                        end: new Date(y, m, d -3 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d - 3 , 10, 0),
-                        end : new Date(y, m, d - 3, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d - 3, 18,0),
-                        end : new Date(y, m, d - 3, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d -2, 7 , 0),
-                        end: new Date(y, m, d -2 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d - 2, 8 , 30 ),
-                        end: new Date(y, m, d -2 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d - 2 , 10, 0),
-                        end : new Date(y, m, d - 2, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d - 2, 18,0),
-                        end : new Date(y, m, d - 2, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d -1, 7 , 0),
-                        end: new Date(y, m, d -1 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d - 1, 8 , 30 ),
-                        end: new Date(y, m, d -1 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d - 1 , 10, 0),
-                        end : new Date(y, m, d - 1, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d - 1, 18,0),
-                        end : new Date(y, m, d - 1, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d -0, 7 , 0),
-                        end: new Date(y, m, d -0 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d - 0, 8 , 30 ),
-                        end: new Date(y, m, d -0 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d - 0 , 10, 0),
-                        end : new Date(y, m, d - 0, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d - 0, 18,0),
-                        end : new Date(y, m, d - 0, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d +1, 7 , 0),
-                        end: new Date(y, m, d +1 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d +1, 8 , 30 ),
-                        end: new Date(y, m, d +1 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d + 1 , 10, 0),
-                        end : new Date(y, m, d + 1, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d + 1, 18,0),
-                        end : new Date(y, m, d + 1, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d +3, 7 , 0),
-                        end: new Date(y, m, d +3 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d +3, 8 , 30 ),
-                        end: new Date(y, m, d +3 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d + 3 , 10, 0),
-                        end : new Date(y, m, d + 3, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d + 3, 18,0),
-                        end : new Date(y, m, d + 3, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d +4, 7 , 0),
-                        end: new Date(y, m, d +4 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d +4, 8 , 30 ),
-                        end: new Date(y, m, d +4 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d + 4 , 10, 0),
-                        end : new Date(y, m, d + 4, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d + 4, 18,0),
-                        end : new Date(y, m, d + 4, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d +5, 7 , 0),
-                        end: new Date(y, m, d +5 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d +5, 8 , 30 ),
-                        end: new Date(y, m, d +5 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d + 5 , 10, 0),
-                        end : new Date(y, m, d + 5, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d + 5, 18,0),
-                        end : new Date(y, m, d + 5, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d +6, 7 , 0),
-                        end: new Date(y, m, d +6 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d +6, 8 , 30 ),
-                        end: new Date(y, m, d +6 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d + 6 , 10, 0),
-                        end : new Date(y, m, d + 6, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d + 6, 18,0),
-                        end : new Date(y, m, d + 6, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d +7, 7 , 0),
-                        end: new Date(y, m, d +7 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d +7, 8 , 30 ),
-                        end: new Date(y, m, d +7 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d + 7 , 10, 0),
-                        end : new Date(y, m, d + 7, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d + 7, 18,0),
-                        end : new Date(y, m, d + 7, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d +8, 7 , 0),
-                        end: new Date(y, m, d +8 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d +8, 8 , 30 ),
-                        end: new Date(y, m, d +8 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d + 8 , 10, 0),
-                        end : new Date(y, m, d + 8, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d + 8, 18,0),
-                        end : new Date(y, m, d + 8, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d +10, 7 , 0),
-                        end: new Date(y, m, d +10 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d +10, 8 , 30 ),
-                        end: new Date(y, m, d +10 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d + 10 , 10, 0),
-                        end : new Date(y, m, d + 10, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d + 10, 18,0),
-                        end : new Date(y, m, d + 10, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d +11, 7 , 0),
-                        end: new Date(y, m, d +11 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d +11, 8 , 30 ),
-                        end: new Date(y, m, d +11 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d + 11 , 10, 0),
-                        end : new Date(y, m, d + 11, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d + 11, 18,0),
-                        end : new Date(y, m, d + 11, 19, 0),
-                    },{
-                        title: 'Hatha Yoga \n'  +  'Phương', 
-                        start: new Date(y, m, d +12, 7 , 0),
-                        end: new Date(y, m, d +12 ,8, 0)
-                    },
-                    {
-                        title: 'Asanas Yoga \n' + 'Phương', 
-                        start: new Date(y, m, d +12, 8 , 30 ),
-                        end: new Date(y, m, d +12 ,9, 30)
-                    },
-                    {
-                        title: 'Yoga Trị Liệu \n' + 'Hậu', 
-                        start: new Date(y, m, d + 12 , 10, 0),
-                        end : new Date(y, m, d + 12, 11, 0),
-                    },
-                    {
-                        title: 'Yoga Nghệ Thuật \n' + 'Tứn', 
-                        start: new Date(y, m, d + 12, 18,0),
-                        end : new Date(y, m, d + 12, 19, 0),
-                    },
-                ],
-                firstDay: 1,
-                editable: true,
-                droppable: true, // this allows things to be dropped onto the calendar !!!
-                drop: function (date, allDay) { // this function is called when something is dropped
-
-                    // retrieve the dropped element's stored Event Object
-                    var originalEventObject = $(this).data('eventObject');
-
-                    // we need to copy it, so that multiple events don't have a reference to the same object
-                    var copiedEventObject = $.extend({}, originalEventObject);
-
-                    // assign it the date that was reported
-                    copiedEventObject.start = date;
-
-                    // render the event on the calendar
-                    // the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
-                    $('#example-fullcalendar2').fullCalendar('renderEvent', copiedEventObject, true);
-                }
-            });
+        activeBtn.addEventListener('click', function () {
+            activeList.style.display = 'inline-table';
+            inactiveList.style.display = 'none';
         });
+
+
+        inactiveBtn.addEventListener('click', function () {
+            activeList.style.display = 'none';
+            inactiveList.style.display = 'inline-table';
+        });
+
     </script>
 </body>
 
