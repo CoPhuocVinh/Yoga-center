@@ -2515,8 +2515,8 @@ a:focus {
     color: #fff;
     font-size: 20px;
     margin-left: calc(50% - 150px/2);
-    margin-top: 3px;
-    margin-bottom: 4px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #modal-login-button-re:hover {
