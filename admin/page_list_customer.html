@@ -784,18 +784,21 @@
 
             // Thêm các ô (cell) vào hàng mới
             var cell1 = newRow.insertCell();
+            // cell1 = document.createElement("a");
             cell1.appendChild(document.createTextNode(accountId));
+
 
             var cell2 = newRow.insertCell();
             cell2.appendChild(document.createTextNode(email));
 
             var cell3 = newRow.insertCell();
             cell3.appendChild(document.createTextNode(fullName));
+
             var cell4 = newRow.insertCell();
             var editLink = document.createElement("a");
             editLink.href = "#createButton";
             editLink.setAttribute("data-toggle", "tooltip");
-            editLink.title = "Sửa";
+            editLink.title = "sửa";
             editLink.classList.add("btn", "btn-xs", "btn-success", "editLink");
             editLink.innerHTML = '<i class="fa fa-pencil"></i>';
             cell4.appendChild(editLink);

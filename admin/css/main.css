@@ -165,7 +165,24 @@ header
     margin-bottom: 45px;
 }
 
-.section-header p {
+
+
+.section-button {
+    margin-left: 900px;
+    margin-bottom: 30px;
+}
+.section-button input{
+    margin: 0 auto;
+}
+
+.section-header-lich {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+.section-header-lich p {
     display: inline-block;
     margin: 0 30px;
     margin-bottom: 5px;
@@ -175,6 +192,41 @@ header
     font-weight: 600;
     background: #ffffff;
 }
+
+.section-header-lich p::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    top: 11px;
+    right: -30px;
+    left: -30px;
+    background: #F7CAC9;
+    z-index: -1;
+}
+
+.section-header-lich h2 {
+    margin: 0;
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+    .section-header-lich h2 {
+        font-size: 30px;
+    }
+}
+
+
+/* .section-header-lich h2 {
+    display: inline;
+    margin-left: 400px;
+    margin-bottom: 5px;
+    /* padding: 0 10px;
+    position: relative;
+    font-weight: 600; */
+    /* font-size: 30px;
+}  */
 
 .section-header p::after {
     position: absolute;
@@ -199,6 +251,37 @@ header
         font-size: 30px;
     }
 }
+.table {
+    width: 100%;
+    text-align: center;
+
+}
+.text-center th{
+    text-align: center !important;
+}
+.text-center-button {
+    margin-left:900px;
+    display:flex;
+}
+
+.text-center-button input{
+    margin-right: 10px;
+    margin-bottom: 40px;
+    font-size: 22px;
+}
+.table .thead-primary {
+    background: #d291bc;
+}
+
+.table tbody tr td .trainer {
+    color: #fff;
+}
+
+.color-1 select{
+   width: 115px;
+}
+
+
 
 .justify-content-center {
     -webkit-box-pack: center !important;
@@ -1176,15 +1259,15 @@ header
 .pacList12TL,
 .pacList20TL,
 .pacList12NT,
-.pacList20NT{
+.pacList20NT {
     display: none;
 }
 
-.table-content input{
+.table-content input {
     width: 120px;
 }
 
-.table-content i{
+.table-content i {
     font-size: 10px;
 }
 
@@ -1207,7 +1290,7 @@ header
 
 #order,
 #list12,
-#list20{
+#list20 {
     display: none;
 }
 
@@ -1251,6 +1334,7 @@ header
 #closeButton {
     margin-left: 280px;
 }
+
 /* Icon Set List */
 .iconset-list {
     list-style: none;
@@ -2333,12 +2417,14 @@ span.input-group-addon {
     margin-top: -1px;
     margin-left: 340px;
 }
-.luu{
+
+.luu {
     margin-left: 980px;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.luu button{
+
+.luu button {
 
     border-radius: 8px;
     padding: 10px 24px;
@@ -3185,10 +3271,10 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 /* -------- List teacher -----------  */
-.list-teacherHeader th{
+.list-teacherHeader th {
     text-align: center;
 }
 
-.list-teacherBody td{
+.list-teacherBody td {
     text-align: center;
 }
