@@ -546,6 +546,16 @@ header
 (#m03hws) HEADER WIDGETS
 =================================================================
 */
+.formCalendar{
+    margin:20px;
+}
+.formCalendar label{
+    text-align: center;
+}
+
+.formCalendar input{
+text-align: center;
+}
 
 .widget {
     padding: 0;
