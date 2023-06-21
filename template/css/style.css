@@ -1016,7 +1016,7 @@ a:focus {
 .price {
     position: relative;
     width: 100%;
-    padding: 45px 0 15px 0;
+    padding: 0 0 15px 0;
 }
 
 .price .price-item {
@@ -1156,6 +1156,131 @@ a:focus {
 
 .price .section-header h2 {
     width: max-content;
+}
+
+.price-course{
+    position: relative;
+    width: 100%;
+    padding: 0 0 15px 0;
+}
+
+.price-row {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.price-row h4{
+    font-weight: 700;
+}
+
+.price-header{
+    margin: 40px 0;
+}
+
+.text-center-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.price-row .price-picked {
+    height: 86px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px 20px;
+    background: rgb(255, 210, 215);
+}
+
+.price-row .price-picked h5{
+    font-weight: 600;
+}
+
+.price-body{
+    text-align: left;
+    padding: 24px 0px 16px;
+}
+
+.price-body h4{
+    font-size: 20px;
+}
+
+.price-body ul{
+    padding: 0;
+    margin: 0;
+}
+
+.box-1month{
+    margin: 20px 0 50px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.payment-up{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-3month{
+    margin-top: 20px;
+    border: 1px solid grey;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.box-6month{
+    border: 1px solid grey;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.packageName{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 210, 215);
+    border-radius: 4px;
+    padding: 4px 8px;
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 15px;
+    margin-block: 0px 8px;
+    font-weight: 550;
+}
+
+.payments{
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.pricePackage{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.payments-down{
+    display: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 10px;
+    width: 536px;
+    height: 90px;
+    padding: 15px;
+}
+
+.payments-down.active{
+    display: block;
+}
+
+.payments-down:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /*******************************/
@@ -1673,9 +1798,10 @@ a:focus {
     background: #cbcbcb;
 }
 
-.text-center .idcourse{
+.text-center .idcourse {
     font-size: 13px;
 }
+
 /*******************************/
 /******* Single Post CSS *******/
 /*******************************/
