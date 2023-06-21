@@ -124,3 +124,13 @@
     
 })(jQuery);
 
+const paymentUps = document.querySelectorAll('.payment-up');
+  
+  paymentUps.forEach(function(paymentUp) {
+    const paymentsDown = paymentUp.nextElementSibling;
+
+    paymentUp.addEventListener('click', function() {
+      paymentsDown.classList.toggle('active');
+    });
+  });
+
