@@ -1673,6 +1673,9 @@ a:focus {
     background: #cbcbcb;
 }
 
+.text-center .idcourse{
+    font-size: 13px;
+}
 /*******************************/
 /******* Single Post CSS *******/
 /*******************************/
