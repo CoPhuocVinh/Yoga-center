@@ -558,7 +558,7 @@
 
     <!-- form chỉnh sửa class -->
     <div id="formContainer">
-        <button id="closeButton" onclick="hideForm()">X</button>
+        <button id="closeButton" onclick="hideFormCreateAndEdit()">X</button>
         <form id="registrationForm">
             <h2>chỉnh sửa Class</h2>
             <label for="name">Tên lớp học</label>
@@ -579,7 +579,7 @@
 
     <!-- form create class -->
     <div id="formCreateContainer">
-        <button id="closeButton2" onclick="hideForm()">X</button>
+        <button id="closeButton2" onclick="hideFormCreateAndEdit()">X</button>
         <form id="registrationForm2">
             <h2>Thêm mới lớp học</h2>
             <label for="id">ID lớp học</label>
@@ -683,7 +683,7 @@
             formCreateContainer.style.display = "block";
         }
         //tắt form
-        function hideForm() {
+        function hideFormCreateAndEdit() {
             var formContainer = document.getElementById("formContainer");
             formContainer.style.display = "none";
             var formCreateContainer = document.getElementById("formCreateContainer");
