@@ -2389,8 +2389,8 @@ a:focus {
 .modal-container-schedule-end {
     margin-top: 60px;
     background-color: #fff;
-    width: 600px;
-    height: 540px;
+    width: 400px;
+    height: 450px;
     border-radius: 8px;
 }
 
@@ -2429,7 +2429,13 @@ a:focus {
 }
 
 .modal-boxsh {
-    margin-bottom: 0px;
+ 
+    display: inline-flex;
+    
+    margin:auto 40px;
+
+  
+
 
 }
 
