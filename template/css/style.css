@@ -1267,6 +1267,10 @@ a:focus {
 
 .payments-down{
     display: none;
+    
+}
+
+.box-pay{
     border: 1px solid grey;
     border-radius: 5px;
     margin: 10px;
@@ -1279,7 +1283,7 @@ a:focus {
     display: block;
 }
 
-.payments-down:hover{
+.box-pay:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -2894,7 +2898,7 @@ button.attend {
     border-radius: 50px;
     width: 150px;
     height: 40px;
-    margin-top: 25px;
+    margin: 10px 0;
     color: #fff;
     font-size: 20px;
     margin-left: calc(50% - 150px/2);
