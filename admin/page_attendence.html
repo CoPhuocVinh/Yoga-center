@@ -427,7 +427,7 @@
 
     <!-- form edit class -->
     <div id="formContainer">
-        <button id="closeButton" onclick="hideForm()">X</button>
+        <button id="closeButton" onclick="hideFormCreateAndEdit()">X</button>
         <form id="registrationForm">
             <h2>Chỉnh sửa thông tin</h2>
             <label for="name">Trạng thái</label>
@@ -509,7 +509,7 @@
             formContainer.style.display = "block";
         }
 
-        function hideForm() {
+        function hideFormCreateAndEdit() {
             var formContainer = document.getElementById("formContainer");
             formContainer.style.display = "none";
         }
