@@ -171,7 +171,8 @@ header
     margin-left: 900px;
     margin-bottom: 30px;
 }
-.section-button input{
+
+.section-button input {
     margin: 0 auto;
 }
 
@@ -225,7 +226,7 @@ header
     /* padding: 0 10px;
     position: relative;
     font-weight: 600; */
-    /* font-size: 30px;
+/* font-size: 30px;
 }  */
 
 .section-header p::after {
@@ -251,22 +252,24 @@ header
         font-size: 30px;
     }
 }
+
 .table {
     width: 100%;
     text-align: center;
 
 }
 
-.text-center th{
+.text-center th {
     text-align: center !important;
 }
+
 .text-center-button {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: right;
 }
 
-.text-center-button input{
+.text-center-button input {
     margin-right: 20px;
     margin-bottom: 30px;
     font-size: 19px;
@@ -277,17 +280,18 @@ header
     color: #fff;
 }
 
-.text-center-button input:hover{
+.text-center-button input:hover {
     border: 1px solid mediumseagreen;
     background-color: #fff;
     color: #000;
 }
+
 .table .thead-primary {
     background: #d291bc;
     font-size: 16px;
 }
 
-.text-center .color{
+.text-center .color {
     font-size: 15px;
     font-weight: 600;
 }
@@ -296,8 +300,8 @@ header
     color: #fff;
 }
 
-.color-1 select{
-   width: 120px;
+.color-1 select {
+    width: 120px;
 }
 
 
@@ -546,15 +550,16 @@ header
 (#m03hws) HEADER WIDGETS
 =================================================================
 */
-.formCalendar{
-    margin:20px;
+.formCalendar {
+    margin: 20px;
 }
-.formCalendar label{
+
+.formCalendar label {
     text-align: center;
 }
 
-.formCalendar input{
-text-align: center;
+.formCalendar input {
+    text-align: center;
 }
 
 .widget {
@@ -956,6 +961,10 @@ text-align: center;
 
 }
 
+.section-bnt .active-bnt.active {
+    background-color: #db4a39;
+}
+
 .section-bnt .inactive-bnt {
     margin-left: 20px;
 }
@@ -1262,7 +1271,7 @@ text-align: center;
     border: 1px dashed #333;
 }
 
-.calendar-day{
+.calendar-day {
     font-size: 20px;
     padding: 6px;
 }
@@ -1286,11 +1295,11 @@ text-align: center;
 
 /* Price Tables */
 
-.discount-head th{
+.discount-head th {
     text-align: center;
 }
 
-.page-header button{
+.page-header button {
     padding: 4px 16px;
     border: none;
     background-color: lightgrey;
