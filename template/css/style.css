@@ -3056,10 +3056,19 @@ button.attend {
     margin-bottom: 50px;
 }
 
-li.nav-item {
+li.nav-item a{
     background: burlywood;
     margin: 0 40px;
-    padding: 8px 12px;
+    padding: 12px 15px;
     border-radius: 5px;
     font-size: 18px;
+}
+
+li.nav-item a:hover{
+    background-color:rgb(217, 174, 118);
+    color: #000;
+}
+
+.history-body{
+    height: 800px;
 }

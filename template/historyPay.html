@@ -108,283 +108,92 @@
     </div>
     <!-- Page Header End -->
 
-    <div class="card-tools">
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link active-bnt" href="#active" id="active-bnt" data-toggle="tab">Hoạt
-                    động</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link inactive-bnt" href="#inactive" id="inactive-btn" data-toggle="tab">Không hoạt
-                    động</a>
-            </li>
-        </ul>
+
+    <div class="history-body">
+        <!-- Nút nhấn  -->
+        <div class="card-tools">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a href="" id="notpay-btn" data-toggle="tab">Chưa thanh toán</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" id="pay-btn" data-toggle="tab">Đã thanh toán</a>
+                </li>
+            </ul>
+        </div>
+        <!-- list not pay-->
+        <table class="table active-list" id="notpay-list">
+            <thead>
+                <tr class="list-teacherHeader" style="background-color: #4CAF50;">
+                    <th>#</th>
+                    <th class="hidden-xs hidden-sm"><i class="fa "></i>Tên khoá học</th>
+                    <th class="hidden-xs hidden-sm">Tên gói</th>
+                    <th class="hidden-xs hidden-sm">Giá</th>
+                </tr>
+            </thead>
+            <tbody class="list-teacherBody">
+                <tr>
+                    <td><a href="javascript:void(0)">1</a></td>
+                    <td class="hidden-xs hidden-sm">Hatha Yoga</td>
+                    <td class="hidden-xs hidden-sm">12 buổi / tháng</td>
+                    <td class="hidden-xs hidden-sm">350.000₫</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- END List not pay-->
+        
+        <!-- list pay-->
+        <table class="table inactive-list" id="pay-list" style="display: none;">
+            <thead style="background-color: aqua">
+                <tr class="list-teacherHeader">
+                    <th>#</th>
+                    <th class="hidden-xs hidden-sm"><i class="fa "></i>Tên khoá học</th>
+                    <th class="hidden-xs hidden-sm">Tên gói</th>
+                    <th class="hidden-xs hidden-sm">Giá</th>
+                </tr>
+            </thead>
+            <tbody class="list-teacherBody">
+                <tr>
+                    <td><a href="javascript:void(0)">1</a></td>
+                    <td class="hidden-xs hidden-sm">Hatha Yoga</td>
+                    <td class="hidden-xs hidden-sm">12 buổi / tháng</td>
+                    <td class="hidden-xs hidden-sm">350.000₫</td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:void(0)">1</a></td>
+                    <td class="hidden-xs hidden-sm">Hatha Yoga</td>
+                    <td class="hidden-xs hidden-sm">12 buổi / tháng</td>
+                    <td class="hidden-xs hidden-sm">350.000₫</td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:void(0)">1</a></td>
+                    <td class="hidden-xs hidden-sm">Hatha Yoga</td>
+                    <td class="hidden-xs hidden-sm">12 buổi / tháng</td>
+                    <td class="hidden-xs hidden-sm">350.000₫</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- END List pay-->
     </div>
 
 
+    <script>
+        //xử lý nút bấm active và inactive
+        var notPayBtn = document.getElementById('notpay-btn');
+        var payBtn = document.getElementById('pay-btn');
+        var notpayList = document.getElementById('notpay-list');
+        var payList = document.getElementById('pay-list');
 
+        notPayBtn.addEventListener('click', function () {
+            notpayList.style.display = 'table';
+            payList.style.display = 'none';
+        });
 
-    <!-- list teacher active-->
-    <table class="table active-list" id="active-list">
-        <thead>
-            <tr class="list-teacherHeader" style="background-color: #4CAF50;">
-                <!-- <th class="cell-small text-center" data-toggle="tooltip" title="Toggle all!"><input
-                                    type="checkbox" id="check1-all" name="check1-all"></th> -->
-                <!-- <th class="text-center">#</th> -->
-                <th>ID Tài khoản</th>
-                <th class="hidden-xs hidden-sm"><i class="fa "></i>Họ và tên</th>
-                <th class="hidden-xs hidden-sm">Email</th>
-                <th class="hidden-xs hidden-sm"></th>
-                <!-- <th class="text-center"><i class="fa fa-bolt"></i> </th> -->
-            </tr>
-        </thead>
-        <tbody class="list-teacherBody">
-            <tr>
-                <!-- <td class="text-center"><input type="checkbox" id="check1-td1" name="check1-td1"></td> -->
-                <td><a href="javascript:void(0)">1</a></td>
-                <!-- <td><a href="javascript:void(0)">001</a></td>tên lớp -->
-                <td class="hidden-xs hidden-sm">Đặn Ngũy Hoài Pon</td><!--tên khóa-->
-                <td class="hidden-xs hidden-sm">pon@gmail.com</td><!--tên giáo viên-->
-
-                <td class="text-center">
-                    <div class="btn-group">
-                        <!--nút sửa-->
-                        <a href="#createButton" data-toggle="tooltip" title="sửa" class="btn btn-xs btn-success"
-                            onclick="showForm()"><i class="fa fa-pencil"></i></a>
-                        <a href="javascript:void(0)" data-toggle="tooltip" title="xóa" class="btn btn-xs btn-danger"><i
-                                class="fa fa-times"></i></a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <!-- <td class="text-center"><input type="checkbox" id="check1-td2" name="check1-td2"></td> -->
-                <td><a href="javascript:void(0)">2</a></td>
-                <!-- <td><a href="javascript:void(0)">Class B</a></td>tên lớp -->
-                <td class="hidden-xs hidden-sm">Vẫn là chị Pon</td><!--tên khóa-->
-                <td class="hidden-xs hidden-sm">pon@gmail.com</td><!--tên giáo viên-->
-
-                <td class="text-center">
-                    <div class="btn-group">
-                        <!--nút sửa-->
-                        <a href="#createButton" data-toggle="tooltip" title="sửa" class="btn btn-xs btn-success"
-                            onclick="showForm()"><i class="fa fa-pencil"></i></a>
-                        <a href="javascript:void(0)" data-toggle="tooltip" title="xóa" class="btn btn-xs btn-danger"><i
-                                class="fa fa-times"></i></a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <!-- <td class="text-center"><input type="checkbox" id="check1-td3" name="check1-td3"></td> -->
-                <td><a href="javascript:void(0)">3</a></td>
-                <!-- <td><a href="javascript:void(0)">Class C</a></td>tên lớp -->
-                <td class="hidden-xs hidden-sm">Acc chị Pon nữa</td><!--tên khóa-->
-                <td class="hidden-xs hidden-sm">pon@gmail.com</td><!--tên giáo viên-->
-
-                <td class="text-center">
-                    <div class="btn-group">
-                        <!--nút sửa-->
-                        <a href="#createButton" data-toggle="tooltip" title="sửa" class="btn btn-xs btn-success"
-                            onclick="showForm()"><i class="fa fa-pencil"></i></a>
-                        <a href="javascript:void(0)" data-toggle="tooltip" title="xóa" class="btn btn-xs btn-danger"><i
-                                class="fa fa-times"></i></a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <!-- <td class="text-center"><input type="checkbox" id="check1-td4" name="check1-td4"></td> -->
-                <td><a href="javascript:void(0)">4</a></td>
-                <!-- <td><a href="javascript:void(0)">Class D</a></td>tên lớp -->
-                <td class="hidden-xs hidden-sm">Chị pon húp</td><!--tên khóa-->
-                <td class="hidden-xs hidden-sm">pon@gmail.com</td><!--tên giáo viên-->
-
-                <td class="text-center">
-                    <div class="btn-group">
-                        <!--nút sửa-->
-                        <a href="#createButton" data-toggle="tooltip" title="sửa" class="btn btn-xs btn-success"
-                            onclick="showForm()"><i class="fa fa-pencil"></i></a>
-                        <a href="javascript:void(0)" data-toggle="tooltip" title="xóa" class="btn btn-xs btn-danger"><i
-                                class="fa fa-times"></i></a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <!-- <td class="text-center"><input type="checkbox" id="check1-td4" name="check1-td4"></td> -->
-                <td><a href="javascript:void(0)">5</a></td>
-                <!-- <td><a href="javascript:void(0)">Class E</a></td> tên lớp -->
-                <td class="hidden-xs hidden-sm">Bé Mỹ</td><!--tên khóa-->
-                <td class="hidden-xs hidden-sm">pon@gmail.com</td><!--tên giáo viên-->
-
-                <td class="text-center">
-                    <div class="btn-group">
-                        <!--nút sửa-->
-                        <a href="#createButton" data-toggle="tooltip" title="sửa" class="btn btn-xs btn-success"
-                            onclick="showForm()"><i class="fa fa-pencil"></i></a>
-                        <a href="javascript:void(0)" data-toggle="tooltip" title="xóa" class="btn btn-xs btn-danger"><i
-                                class="fa fa-times"></i></a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <!-- <td class="text-center"><input type="checkbox" id="check1-td4" name="check1-td4"></td> -->
-                <td><a href="javascript:void(0)">6</a></td>
-                <!-- <td><a href="javascript:void(0)">Class F</a></td>tên lớp -->
-                <td class="hidden-xs hidden-sm">Ái Thơ</td><!--tên khóa-->
-                <td class="hidden-xs hidden-sm">pon@gmail.com</td><!--tên giáo viên-->
-
-                <td class="text-center">
-                    <div class="btn-group">
-                        <!--nút sửa-->
-                        <a href="#createButton" data-toggle="tooltip" title="sửa" class="btn btn-xs btn-success"
-                            onclick="showForm()"><i class="fa fa-pencil"></i></a>
-                        <a href="javascript:void(0)" data-toggle="tooltip" title="xóa" class="btn btn-xs btn-danger"><i
-                                class="fa fa-times"></i></a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <!-- <td class="text-center"><input type="checkbox" id="check1-td4" name="check1-td4"></td> -->
-                <td><a href="javascript:void(0)">7</a></td>
-                <!-- <td><a href="javascript:void(0)">Class F</a></td>tên lớp -->
-                <td class="hidden-xs hidden-sm">hoàn Yén</td><!--tên khóa-->
-                <td class="hidden-xs hidden-sm">eyn@gmail.com</td><!--tên giáo viên-->
-
-                <td class="text-center">
-                    <div class="btn-group">
-                        <!--nút sửa-->
-                        <a href="#createButton" data-toggle="tooltip" title="sửa" class="btn btn-xs btn-success"
-                            onclick="showForm()"><i class="fa fa-pencil"></i></a>
-                        <a href="javascript:void(0)" data-toggle="tooltip" title="xóa" class="btn btn-xs btn-danger"><i
-                                class="fa fa-times"></i></a>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <!-- END List teacher active-->
-    <!-- list teacher active-->
-    <table class="table inactive-list" id="inactive-list" style="display: none;">
-        <thead style="background-color: aqua">
-            <tr class="list-teacherHeader">
-                <!-- <th class="cell-small text-center" data-toggle="tooltip" title="Toggle all!"><input
-                                    type="checkbox" id="check1-all" name="check1-all"></th> -->
-                <!-- <th class="text-center">#</th> -->
-                <th>ID Tài khoản</th>
-                <th class="hidden-xs hidden-sm"><i class="fa "></i>Họ và tên</th>
-                <th class="hidden-xs hidden-sm">Email</th>
-                <th class="hidden-xs hidden-sm"></th>
-
-                <!-- <th class="text-center"><i class="fa fa-bolt"></i> </th> -->
-            </tr>
-        </thead>
-        <tbody class="list-teacherBody">
-            <tr>
-                <!-- <td class="text-center"><input type="checkbox" id="check2-td1" name="check1-td1"></td> -->
-                <td><a href="javascript:void(0)">1</a></td>
-                <!-- <td><a href="javascript:void(0)">001</a></td>tên lớp -->
-                <td class="hidden-xs hidden-sm">Đặn Ngũy Hoài Pon</td><!--tên khóa-->
-                <td class="hidden-xs hidden-sm">pon@gmail.com</td><!--tên giáo viên-->
-
-                <td class="text-center">
-                    <div class="btn-group">
-                        <!--nút sửa-->
-                        <a href="javascript:void(0)" data-toggle="tooltip" title="Hoàn tác"
-                            class="btn btn-xs btn-success"><i class="fa fa-check"></i></a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <!-- <td class="text-center"><input type="checkbox" id="check2-td2" name="check1-td2"></td> -->
-                <td><a href="javascript:void(0)">2</a></td>
-                <!-- <td><a href="javascript:void(0)">Class B</a></td>tên lớp -->
-                <td class="hidden-xs hidden-sm">Vẫn là chị Pon</td><!--tên khóa-->
-                <td class="hidden-xs hidden-sm">pon@gmail.com</td><!--tên giáo viên-->
-
-                <td class="text-center">
-                    <div class="btn-group">
-                        <!--nút sửa-->
-                        <a href="javascript:void(0)" data-toggle="tooltip" title="Hoàn tác"
-                            class="btn btn-xs btn-success"><i class="fa fa-check"></i></a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <!-- <td class="text-center"><input type="checkbox" id="check2-td3" name="check1-td3"></td> -->
-                <td><a href="javascript:void(0)">3</a></td>
-                <!-- <td><a href="javascript:void(0)">Class C</a></td>tên lớp -->
-                <td class="hidden-xs hidden-sm">Acc chị Pon nữa</td><!--tên khóa-->
-                <td class="hidden-xs hidden-sm">pon@gmail.com</td><!--tên giáo viên-->
-
-                <td class="text-center">
-                    <div class="btn-group">
-                        <!--nút sửa-->
-                        <a href="javascript:void(0)" data-toggle="tooltip" title="Hoàn tác"
-                            class="btn btn-xs btn-success"><i class="fa fa-check"></i></a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <!-- <td class="text-center"><input type="checkbox" id="check2-td4" name="check1-td4"></td> -->
-                <td><a href="javascript:void(0)">4</a></td>
-                <!-- <td><a href="javascript:void(0)">Class D</a></td>tên lớp -->
-                <td class="hidden-xs hidden-sm">Chị pon húp</td><!--tên khóa-->
-                <td class="hidden-xs hidden-sm">pon@gmail.com</td><!--tên giáo viên-->
-
-                <td class="text-center">
-                    <div class="btn-group">
-                        <!--nút sửa-->
-                        <a href="javascript:void(0)" data-toggle="tooltip" title="Hoàn tác"
-                            class="btn btn-xs btn-success"><i class="fa fa-check"></i></a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <!-- <td class="text-center"><input type="checkbox" id="check2-td4" name="check1-td4"></td> -->
-                <td><a href="javascript:void(0)">5</a></td>
-                <!-- <td><a href="javascript:void(0)">Class E</a></td> tên lớp -->
-                <td class="hidden-xs hidden-sm">Bé Mỹ</td><!--tên khóa-->
-                <td class="hidden-xs hidden-sm">pon@gmail.com</td><!--tên giáo viên-->
-
-                <td class="text-center">
-                    <div class="btn-group">
-                        <!--nút sửa-->
-                        <a href="javascript:void(0)" data-toggle="tooltip" title="Hoàn tác"
-                            class="btn btn-xs btn-success"><i class="fa fa-check"></i></a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <!-- <td class="text-center"><input type="checkbox" id="check2-td4" name="check1-td4"></td> -->
-                <td><a href="javascript:void(0)">6</a></td>
-                <!-- <td><a href="javascript:void(0)">Class F</a></td>tên lớp -->
-                <td class="hidden-xs hidden-sm">Ái Thơ</td><!--tên khóa-->
-                <td class="hidden-xs hidden-sm">pon@gmail.com</td><!--tên giáo viên-->
-
-                <td class="text-center">
-                    <div class="btn-group">
-                        <!--nút sửa-->
-                        <a href="javascript:void(0)" data-toggle="tooltip" title="Hoàn tác"
-                            class="btn btn-xs btn-success"><i class="fa fa-check"></i></a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <!-- <td class="text-center"><input type="checkbox" id="check2-td4" name="check1-td4"></td> -->
-                <td><a href="javascript:void(0)">7</a></td>
-                <!-- <td><a href="javascript:void(0)">Class F</a></td>tên lớp -->
-                <td class="hidden-xs hidden-sm">hoàn Yén</td><!--tên khóa-->
-                <td class="hidden-xs hidden-sm">eyn@gmail.com</td><!--tên giáo viên-->
-
-                <td class="text-center">
-                    <div class="btn-group">
-                        <!--nút sửa-->
-                        <a href="javascript:void(0)" data-toggle="tooltip" title="Hoàn tác"
-                            class="btn btn-xs btn-success"><i class="fa fa-check"></i></a>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <!-- END List teacher active-->
+        payBtn.addEventListener('click', function () {
+            notpayList.style.display = 'none';
+            payList.style.display = 'table';
+        });
+    </script>
 
     <!-- Footer Start -->
     <div id="footer" class="footer wow fadeIn" data-wow-delay="0.3s">

@@ -29,23 +29,6 @@ window.onclick = function (event) {
     }
 }
 
-//xử lý nút bấm active và inactive
-var activeBtn = document.getElementById('active-bnt');
-var inactiveBtn = document.getElementById('inactive-btn');
-var activeList = document.getElementById('active-list');
-var inactiveList = document.getElementById('inactive-list');
-
-activeBtn.addEventListener('click', function () {
-    activeList.style.display = 'inline-table';
-    inactiveList.style.display = 'none';
-});
-
-
-inactiveBtn.addEventListener('click', function () {
-    activeList.style.display = 'none';
-    inactiveList.style.display = 'inline-table';
-});
-
 
 
 
