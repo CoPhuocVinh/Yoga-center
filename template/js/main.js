@@ -134,3 +134,7 @@ const paymentUps = document.querySelectorAll('.payment-up');
     });
   });
 
+  function checkoutPage(url) {
+    window.location.href = url;
+  }
+
