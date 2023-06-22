@@ -289,15 +289,15 @@
                                     data-toggle="tab">Hatha Yoga</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link inactive-bnt" href="#asanasyoga" id="asanas-btn"
+                                    <a class="nav-link active-bnt" href="#asanasyoga" id="asanas-btn"
                                         data-toggle="tab">Asanas Yoga</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link inactive-bnt" href="#yogatl" id="yogatl-btn"
+                                    <a class="nav-link active-bnt" href="#yogatl" id="yogatl-btn"
                                         data-toggle="tab">Yoga Trị Liệu</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link inactive-bnt" href="#yogant" id="yogant-btn"
+                                    <a class="nav-link active-bnt" href="#yogant" id="yogant-btn"
                                         data-toggle="tab">Yoga Nghệ Thuật</a>
                                 </li>
                                 <li class="nav-item">
@@ -466,9 +466,9 @@
                 </table>
                 <!-- END List Staff -->
 
-                <table class="table inactive-list" id="asanas-list" style="display: none;">
+                <table class="table " id="asanas-list" style="display: none;">
                     <thead>
-                        <tr style="background-color: aqua;" class="list-teacherHeader">
+                        <tr style="background-color: rgb(156, 174, 84);" class="list-teacherHeader">
                             <!-- <th class="cell-small text-center" data-toggle="tooltip" title="Toggle all!"><input
                                     type="checkbox" id="check2-all" name="check1-all"></th> -->
                             <th class="text-center">#</th>
@@ -551,9 +551,9 @@
                     </tbody>
                 </table>
 
-                <table class="table inactive-list" id="yogatl-list" style="display: none;">
+                <table class="table " id="yogatl-list" style="display: none;">
                     <thead>
-                        <tr style="background-color: aqua;" class="list-teacherHeader">
+                        <tr style="background-color: rgb(162, 55, 68);" class="list-teacherHeader">
                             <!-- <th class="cell-small text-center" data-toggle="tooltip" title="Toggle all!"><input
                                     type="checkbox" id="check2-all" name="check1-all"></th> -->
                             <th class="text-center">#</th>
@@ -636,9 +636,9 @@
                     </tbody>
                 </table>
 
-                <table class="table inactive-list" id="yogant-list" style="display: none;">
+                <table class="table " id="yogant-list" style="display: none;">
                     <thead>
-                        <tr style="background-color: aqua;" class="list-teacherHeader">
+                        <tr style="background-color: rgb(221, 114, 37);" class="list-teacherHeader">
                             <!-- <th class="cell-small text-center" data-toggle="tooltip" title="Toggle all!"><input
                                     type="checkbox" id="check2-all" name="check1-all"></th> -->
                             <th class="text-center">#</th>
@@ -938,17 +938,17 @@
         var hatha = document.getElementById('hatha-bnt');
         var hathaList = document.getElementById('hathayoga-list');
 
-        var inactiveBtn = document.getElementById('inactive-btn');  
-        var inactiveList = document.getElementById('inactive-list');
-
-        var asanas = document.getElementById('asanas-bnt');
+        var asanas = document.getElementById('asanas-btn');
         var asanasList = document.getElementById('asanas-list');
-
+        
         var yogatl = document.getElementById('yogatl-btn');
         var yogatlList = document.getElementById('yogatl-list');
-
+        
         var yogant = document.getElementById('yogant-btn');
         var yogantList = document.getElementById('yogant-list');
+        
+        var inactiveBtn = document.getElementById('inactive-btn');  
+        var inactiveList = document.getElementById('inactive-list');
 
         hatha.addEventListener('click', function () {
             hathaList.style.display = 'inline-table';
@@ -959,13 +959,6 @@
         });
 
 
-        inactiveBtn.addEventListener('click', function () {
-            hathaList.style.display = 'none';
-            inactiveList.style.display = 'inline-table';
-            asanasList.style.display = 'none';
-            yogatlList.style.display = 'none';
-            yogantList.style.display ='none';
-        });
         asanas.addEventListener('click', function () {
             hathaList.style.display = 'none';
             inactiveList.style.display = 'none';
@@ -973,6 +966,7 @@
             yogatlList.style.display = 'none';
             yogantList.style.display ='none';
         });
+
         yogatl.addEventListener('click', function () {
             hathaList.style.display = 'none';
             inactiveList.style.display = 'none';
@@ -980,12 +974,21 @@
             yogatlList.style.display = 'inline-table';
             yogantList.style.display ='none';
         });
+
         yogant.addEventListener('click', function () {
             hathaList.style.display = 'none';
             inactiveList.style.display = 'none';
             asanasList.style.display = 'none';
             yogatlList.style.display = 'none';
             yogantList.style.display ='inline-table';
+        });
+
+        inactiveBtn.addEventListener('click', function () {
+            hathaList.style.display = 'none';
+            inactiveList.style.display = 'inline-table';
+            asanasList.style.display = 'none';
+            yogatlList.style.display = 'none';
+            yogantList.style.display ='none';
         });
     </script>
     <!--END form edit class -->
