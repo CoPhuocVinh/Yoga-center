@@ -711,7 +711,7 @@ function showCreateCalendar() {
     document.getElementById("formCalendarContainer").style.display = "block";
   }
 }
-function hideForm() {
+function hideFormCalendar() {
   var formCalendarContainer = document.getElementById("formCalendarContainer");
   formCalendarContainer.style.display = "none";
 }
