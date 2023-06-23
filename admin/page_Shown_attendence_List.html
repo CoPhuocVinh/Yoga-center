@@ -284,234 +284,90 @@
 
                 <h3 class="page-header page-header-top">Danh Sách Học Viên
                     <div class="card-header section-bnt">
+                        <button class="back-bnt" onclick="goToPageAttendence()">trở lại</button>
                         <div class="card-tools">
                             <ul class="nav nav-pills ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link active-bnt" href="#active" id="active-bnt" data-toggle="tab">Hoạt
-                                        động</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link inactive-bnt" href="#inactive" id="inactive-btn"
-                                        data-toggle="tab">Không hoạt động</a>
-                                </li>
                                 <li class="nav-item">
                                     <a class="nav-link acttendence-bnt" href="#attendence" id="acttendence-bnt"
                                         onclick="" data-toggle="tab">Điểm danh</a>
                                 </li>
                             </ul>
                         </div>
+
                     </div>
                 </h3>
 
                 <!-- danh sách hoạt động -->
-                <table class="table active-list" id="active-list">
+                <table class="table attendence-list" id="attendence-list">
                     <thead>
                         <tr class="list-teacherHeader" style="background-color: #4CAF50;">
-
-                            <th class="hidden-xs hidden-sm">ID tài khoản</th>
-                            <th class="hidden-xs hidden-sm"><i class="fa "></i>Email</th>
-                            <th class="hidden-xs hidden-sm">Họ và tên</th>
-
+                            <th class="hidden-xs hidden-sm">Tên học viên</th>
+                            <th class="hidden-xs hidden-sm checkbox-column">
+                                <input type="checkbox" class="checkbox-item" checked>
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-
-                            <td><a href="javascript:void(0)">1</a></td>
-                            <td class="hidden-xs hidden-sm">pon@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Hoài Phương</td>
-
+                            <td class="hidden-xs hidden-sm">Lê Thị Pon</td>
+                            <td class="hidden-xs hidden-sm checkbox-column">
+                                <input type="checkbox" class="checkbox-item" checked>
+                            </td>
                         </tr>
                         <tr>
-                            <td><a href="javascript:void(0)">2</a></td>
-                            <td class="hidden-xs hidden-sm">top@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Hàn Anh</td>
-
+                            <td class="hidden-xs hidden-sm">Quách Zinh</td>
+                            <td class="hidden-xs hidden-sm checkbox-column">
+                                <input type="checkbox" class="checkbox-item" checked>
+                            </td>
                         </tr>
                         <tr>
-                            <td><a href="javascript:void(0)">3</a></td>
-                            <td class="hidden-xs hidden-sm">lag@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Văn Tuấn</td>
-
+                            <td class="hidden-xs hidden-sm">Đại Ngọc Hậu</td>
+                            <td class="hidden-xs hidden-sm checkbox-column">
+                                <input type="checkbox" class="checkbox-item" checked>
+                            </td>
                         </tr>
                         <tr>
-                            <td><a href="javascript:void(0)">4</a></td>
-                            <td class="hidden-xs hidden-sm">dkhau@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Đỗ Kim Hậu</td>
 
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">5</a></td>
-                            <td class="hidden-xs hidden-sm">dinh@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Dinh</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">6</a></td>
-                            <td class="hidden-xs hidden-sm">acb@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Văn B</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">7</a></td>
-                            <td class="hidden-xs hidden-sm">dkhau@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Đỗ Kim Hậu</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">8</a></td>
-                            <td class="hidden-xs hidden-sm">dinh@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Dinh</td>
+                            <td class="hidden-xs hidden-sm">Đinh Hàn Anh</td>
+                            <td class="hidden-xs hidden-sm checkbox-column">
+                                <input type="checkbox" class="checkbox-item" checked>
+                            </td>
 
                         </tr>
                         <tr>
 
-                            <td><a href="javascript:void(0)">12</a></td>
-                            <td class="hidden-xs hidden-sm">acb@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Văn B</td>
+                            <td class="hidden-xs hidden-sm">Lưu Lê Tuấn</td>
+                            <td class="hidden-xs hidden-sm checkbox-column">
+                                <input type="checkbox" class="checkbox-item" checked>
+                            </td>
 
+                        </tr>
+                        <tr>
+
+                            <td class="hidden-xs hidden-sm">Cao Ngọc Khỏi</td>
+                            <td class="hidden-xs hidden-sm checkbox-column">
+                                <input type="checkbox" class="checkbox-item" checked>
+                            </td>
+
+                        </tr>
+                        <tr>
+
+                            <td class="hidden-xs hidden-sm">Lại Đức Ngắm</td>
+                            <td class="hidden-xs hidden-sm checkbox-column">
+                                <input type="checkbox" class="checkbox-item" checked>
+                            </td>
+
+                        </tr>
+                        <tr>
+
+                            <td class="hidden-xs hidden-sm">Đậu Thị Ngọc Dung</td>
+                            <td class="hidden-xs hidden-sm checkbox-column">
+                                <input type="checkbox" class="checkbox-item" checked>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
                 <!-- END List Staff -->
-
-                <!-- danh sách không hoạt động -->
-                <table class="table " id="inactive-list" style="display: none;">
-                    <thead>
-                        <tr class="list-teacherHeader" style="background-color: aqua">
-                            <th class="hidden-xs hidden-sm">ID tài khoản</th>
-                            <th class="hidden-xs hidden-sm">Email</th>
-                            <th class="hidden-xs hidden-sm">Họ và tên</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="javascript:void(0)">1</a></td>
-                            <td class="hidden-xs hidden-sm">pon@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Hoài Phương</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">2</a></td>
-                            <td class="hidden-xs hidden-sm">top@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Hàn Anh</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">3</a></td>
-                            <td class="hidden-xs hidden-sm">lag@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Văn Tuấn</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">4</a></td>
-                            <td class="hidden-xs hidden-sm">dkhau@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Đỗ Kim Hậu</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">5</a></td>
-                            <td class="hidden-xs hidden-sm">dinh@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Dinh</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">6</a></td>
-                            <td class="hidden-xs hidden-sm">acb@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Văn B</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">7</a></td>
-                            <td class="hidden-xs hidden-sm">dkhau@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Đỗ Kim Hậu</td>
-
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- END List Staff -->
-
-                <!-- danh sách điểm danh  -->
-
-                <table class="table acttendence-list" id="attendence-list" style="display: none;">
-                    <thead>
-                        <tr>
-                            <th>Class A</th>
-                        </tr>
-                        <tr class="list-teacherHeader" style="background-color: blanchedalmond;">
-
-                            <th class="hidden-xs hidden-sm">Ngày</th>
-                            <th class="hidden-xs hidden-sm"><i></i>Sĩ số </th>
-                            <!-- nút xem  -->
-                            <th class="hidden-xs hidden-sm"></th>
-
-                        </tr>
-                    </thead>
-                    <tbody class="list-teacherBody">
-                        <tr>
-                            <td>
-                                <input type="date" name="" id="">
-                            </td>
-                            <td class="hidden-xs hidden-sm"><input type="text" value="9/15" readonly></td>
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút xem-->
-                                    <a href="page_Shown_attendence_List.html">xem</a>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <input type="date" name="" id="">
-                            </td>
-                            <td class="hidden-xs hidden-sm"><input type="text" value="11/15" readonly></td>
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút xem-->
-                                    <a href="page_Shown_attendence_List.html">xem</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="date" name="" id="">
-                            </td>
-                            <td class="hidden-xs hidden-sm"><input type="text" value="13/15" readonly></td>
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút xem-->
-                                    <a href="page_Shown_attendence_List.html">xem</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="date" name="" id="">
-                            </td>
-                            <td class="hidden-xs hidden-sm"><input type="text" value="8/15" readonly></td>
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút xem-->
-                                    <a href="page_Shown_attendence_List.html">xem</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="date" name="" id="">
-                            </td>
-                            <td class="hidden-xs hidden-sm"><input type="text" value="14/15" readonly></td>
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút xem-->
-                                    <a href="page_Shown_attendence_List.html">xem</a>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
                 <div class="luu">
                     <button type="submit">Lưu</button>
                 </div>
@@ -650,6 +506,9 @@
             attendenceList.style.display = 'inline-table';
         });
 
+        function goToPageAttendence() {
+            window.location.href = "page_attendence.html";
+        }
     </script>
     <!--END form edit class -->
 

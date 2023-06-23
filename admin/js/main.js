@@ -715,3 +715,16 @@ function hideFormCalendar() {
   var formCalendarContainer = document.getElementById("formCalendarContainer");
   formCalendarContainer.style.display = "none";
 }
+function toggleForm() {
+  // var forms = document.getElementsByClassName("see-list-bnt-attendence");
+
+  // var form = forms[0];
+  var form = document.querySelector(".see-list-bnt-attendence");
+  if (form.style.display === "none") {
+    form.style.display = "inline-block";
+    form.classList.add("centered-form");
+  } else {
+    form.style.display = "none";
+    form.classList.remove("centered-form");
+  }
+}
