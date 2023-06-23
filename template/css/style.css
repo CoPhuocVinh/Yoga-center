@@ -1179,9 +1179,6 @@ a:focus {
     font-weight: 700;
 }
 
-.price-header {
-    margin: 40px 0;
-}
 
 .text-center-header {
     display: flex;
@@ -1776,40 +1773,58 @@ a:focus {
     text-align: center;
 }
 
-.table .thead-primary {
-    background: #d291bc;
+.sched-list{
+    width: 1160px;
+    padding-right: 6px;
 }
 
-.table tbody tr td .trainer {
-    color: #fff;
+.sched-list-course{
+    width: 1120px;
+    padding-right: 6px;
 }
 
-.table tbody tr td.color {
-    background: #d291bc;
+ .thead-primary {
+    background: #FFF5E5;
+    border: 1px solid #F59395;
 }
 
-.table tbody tr td.color-1 {
-    background: #7acfdf;
+ tbody tr td .trainer {
+    color: #3b3a3a;
 }
 
-.table tbody tr td.color-2 {
-    background: #26baee;
+ tbody tr td.color {
+    background: #FBD0D1;
+    border: 1px solid #F59395;
+    width: 120px;
 }
 
-.table tbody tr td.color-3 {
-    background: #fb929e;
+ tbody tr td.color-sche {
+    background: #FBD0D1;
+    border: 1px solid #F59395;
+    width: 125px;
 }
 
-.table tbody tr td.color-4 {
-    background: #12e6c8;
-}
-
-.table tbody tr td.color-5 {
-    background: #cbcbcb;
+ tbody tr td.color-1,
+ tbody tr td.color-2,
+ tbody tr td.color-3,
+ tbody tr td.color-4,
+ tbody tr td.color-5 {
+    border: 1px solid #F59395;
+    width: 170px;
 }
 
 .text-center .idcourse {
     font-size: 13px;
+}
+
+p.time {
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+p.time-sche{
+    font-weight: 700;
+    padding-top: 15px;
 }
 
 /*******************************/

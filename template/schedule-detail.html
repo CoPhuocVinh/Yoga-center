@@ -111,6 +111,7 @@
         <div class="container schedule-detail">
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                 <h1>Lịch tập</h1>
+                <!-- <h3>Từ 19/06 - 14/07/2023</h3> -->
             </div>
             <div class="row">
                 <div class="col-md-12 ftco-animate">
@@ -118,7 +119,7 @@
                         <h5>Nhấn vào từng lớp để xem thông tin chi tiết.</h5>
                         <button href="" id="openModalRequest">Đề Xuất Mở Lớp</button>
                     </div>
-                    <div class="sched-list">
+                    <div class="sched-list-course">
                         <table class="table">
                             <thead class="thead-primary">
                                 <tr class="text-center">
@@ -134,8 +135,8 @@
                             </thead>
                             <tbody>
                                 <tr class="text-center">
-                                    <td class="color">
-                                        <p class="time">7:00 - 8:00</p>
+                                    <td class="color-sche">
+                                        <p class="time-sche">7:00 - 8:00</p>
                                     </td>
                                     <td class="color-2">
                                         <a href="feedback.html">Class A</a>
@@ -158,8 +159,8 @@
                                 </tr><!-- END TR-->
 
                                 <tr class="text-center">
-                                    <td class="color">
-                                        <p class="time">8:30 - 9:30</p>
+                                    <td class="color-sche">
+                                        <p class="time-sche">8:30 - 9:30</p>
                                     </td>
                                     <td class="color-3">
                                         Class C
@@ -182,8 +183,8 @@
                                 </tr><!-- END TR-->
 
                                 <tr class="text-center">
-                                    <td class="color">
-                                        <p class="time">10:00 - 11:00</p>
+                                    <td class="color-sche">
+                                        <p class="time-sche">10:00 - 11:00</p>
                                     </td>
                                     <td class="color-4">
 
@@ -206,8 +207,8 @@
 
                                 </tr><!-- END TR-->
                                 <tr class="text-center">
-                                    <td class="color">
-                                        <p class="time">18:00 - 19:00</p>
+                                    <td class="color-sche">
+                                        <p class="time-sche">18:00 - 19:00</p>
                                     </td>
                                     <td class="color-5">
                                         Class H
@@ -229,8 +230,8 @@
                                     </td>
                                 </tr><!-- END TR-->
                                 <tr class="text-center">
-                                    <td class="color">
-                                        <p class="time">19:30 - 20:30</p>
+                                    <td class="color-sche">
+                                        <p class="time-sche">19:30 - 20:30</p>
                                     </td>
 
 
@@ -263,7 +264,7 @@
             </div>
         </div>
 
-        <button href="" class="a pp" id="openModalButtonRegister">Đăng Ký</button>
+        <!-- <button href="" class="a pp" id="openModalButtonRegister">Đăng Ký</button> -->
     </section>
     <!-- schedule End -->
 
@@ -338,6 +339,22 @@
             </div>
         </div>
     </div>
+
+    <script>
+        var openModalRequest = document.getElementById("openModalRequest");
+        var requestModal = document.getElementById("requestModal");
+
+        // xử lý đề xuất
+        openModalRequest.onclick = function () {
+            requestModal.style.display = "flex";
+        }
+        // Xử lý sự kiện khi nhấp vào bất kỳ vị trí nào bên ngoài cửa sổ đăng nhập
+        window.onclick = function (event) {
+            if (event.target == requestModal) {
+                requestModal.style.display = "none";
+            }
+        }
+    </script>
 
 
     <!-- Form Đăng ký lớp  -->
