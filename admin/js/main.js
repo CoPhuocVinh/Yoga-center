@@ -728,3 +728,33 @@ function toggleForm() {
     form.classList.remove("centered-form");
   }
 }
+/* 
+test
+*/
+$(document).ready(function () {
+  // Khi trang được tải lại, chỉ có ô đang active mới có hiệu ứng hover
+  $(".nav-link.active-bnt").addClass("hover");
+
+  // Khi chuột đi qua các ô, thay đổi hiệu ứng hover
+  $(".nav-link")
+    .on("mouseenter", function () {
+      $(this).addClass("hover"); // Thêm hiệu ứng hover cho ô hiện tại
+    })
+    .on("mouseleave", function () {
+      $(this).removeClass("hover"); // Xóa hiệu ứng hover khi chuột rời khỏi ô
+    });
+
+  // Khi click vào ô, chỉ có ô đó mới được active và không có hiệu ứng hover
+  $(".nav-link").on("click", function (e) {
+    e.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ <a>
+    $(".nav-link.active-bnt").removeClass("active-bnt"); // Xóa active class của ô "Hoạt động"
+    $(this).addClass("active-bnt"); // Thêm active class cho ô được click
+    $(".nav-link.hover").removeClass("hover"); // Xóa hiệu ứng hover của ô khác (nếu có)
+    $(this).addClass("hover"); // Thêm hiệu ứng hover cho ô hiện tại
+  });
+});
+
+/* 
+end
+test
+*/

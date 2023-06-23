@@ -888,6 +888,8 @@ header
     color: #db4a39;
 }
 
+
+
 /* Navigation Dash */
 .nav-dash {
     list-style: none;
@@ -963,6 +965,7 @@ header
 
 .section-bnt .active-bnt.active {
     background-color: #db4a39;
+    color: #fff;
 }
 
 .section-bnt .inactive-bnt {
@@ -1915,6 +1918,24 @@ header
     transform: translate(-50%, -50%);
 }
 
+/*test*/
+
+/* Hiệu ứng mặc định cho ô "Hoạt động" */
+.active-bnt {
+    background-color: #ff0000;
+    /* Màu nền mặc định */
+    color: #fff;
+    transition: background-color 0.3s;
+    /* Thời gian chuyển đổi hiệu ứng */
+}
+
+/* Hiệu ứng hover khi chuột đi qua ô "Hoạt động" */
+.active-bnt:hover {
+    background-color: #00ff00;
+    /* Màu nền hover */
+}
+
+/*end test*/
 
 /* Theme Options */
 a.btn-theme-options {
