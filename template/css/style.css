@@ -255,10 +255,11 @@ a:focus {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
+.navbar-dark .navbar-nav .nav-link.active{
     background: rgba(256, 256, 256, .1);
     transition: none;
 }
+
 
 @media (min-width: 992px) {
     .navbar {
@@ -881,6 +882,10 @@ a:focus {
     margin-bottom: 10px;
 }
 
+.class .class-text .history-btn{
+    margin-left: 74px;
+}
+
 .class .class-teacher {
     position: relative;
     height: 40px;
@@ -1268,10 +1273,10 @@ a:focus {
 
 .payments-down {
     display: none;
-    
+
 }
 
-.box-pay{
+.box-pay {
     border: 1px solid grey;
     border-radius: 5px;
     margin: 10px;
@@ -1284,7 +1289,7 @@ a:focus {
     display: block;
 }
 
-.box-pay:hover{
+.box-pay:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -2762,6 +2767,25 @@ a:focus {
     margin-top: 80px;
 }
 
+.sched-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.sched-text button {
+    font-size: 17px;
+    border: none;
+    background: lightblue;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.sched-text button:hover {
+    background: rgb(144, 196, 213);
+}
+
 /* .schedule-detail .color-2:hover,
 .schedule-detail .color-1:hover,
 .schedule-detail .color-3:hover,
@@ -2956,4 +2980,96 @@ button.attend {
 .btn-resetPass:hover {
     background-color: #3cb5c3;
     color: #fff;
+}
+
+/* Form đề xuất  */
+.modal-request {
+    position: fixed;
+    top: 35px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-request-container {
+    margin-top: 60px;
+    background-color: #fff;
+    width: 450px;
+    height: 600px;
+    border-radius: 8px;
+}
+
+.modal-request-content {
+    text-align: center;
+}
+
+.box-request {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-request label {
+    width: max-content;
+    font-weight: 600;
+}
+
+.box-request input {
+    width: auto;
+}
+
+.box-day {
+    display: block;
+    margin-bottom: 14px;
+}
+
+.box-day label {
+    width: -webkit-fill-available;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.box-slot {
+    margin-top: 20px;
+}
+
+.box-slot label {
+    font-size: 17px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.box-slot select {
+    width: 160px;
+    text-align: center;
+    height: 30px;
+}
+
+/* History page  */
+.card-tools{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+li.nav-item a{
+    background: burlywood;
+    margin: 0 40px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+li.nav-item a:hover{
+    background-color:rgb(217, 174, 118);
+    color: #000;
+}
+
+.history-body{
+    height: 800px;
 }
