@@ -81,7 +81,93 @@
                 <!-- Just a divider -->
                 <li class="divider-vertical"></li>
 
+                <!-- RSS Widget -->
+                <!-- Add .dropdown-left-responsive class to align the dropdown menu left (so its visible on mobile) -->
+                <li id="rss-widget" class="dropdown dropdown-left-responsive">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-rss"></i>
+                        <span class="badge badge-warning display-none"></span>
+                    </a>
+                    <!-- By adding the class .widget-fluid, dropdown width will be set to auto with min value 180px and max value 250px -->
+                    <ul class="dropdown-menu dropdown-menu-right widget widget-fluid">
+                        <li class="widget-heading text-center">Web Design</li>
+                        <li class="li-hover"><a href="javascript:void(0)" class="widget-link"><i
+                                    class="fa fa-umbrella"></i>This is a headline</a></li>
+                        <li class="divider"></li>
+                        <li class="li-hover"><a href="javascript:void(0)" class="widget-link"><i
+                                    class="fa fa-trophy"></i>Another headline</a></li>
+                        <li class="divider"></li>
+                        <li class="li-hover"><a href="javascript:void(0)" class="widget-link"><i
+                                    class="fa fa-suitcase"></i>Headlines keep coming!</a></li>
+                        <li class="widget-heading text-center">Web Developent</li>
+                        <li class="li-hover"><a href="javascript:void(0)" class="widget-link"><i
+                                    class="fa fa-phone"></i>New headline</a></li>
+                        <li class="divider"></li>
+                        <li class="li-hover"><a href="javascript:void(0)" class="widget-link"><i
+                                    class="fa fa-pencil"></i>Another one</a></li>
+                        <li class="divider"></li>
+                        <li><a href="javascript:void(0)" class="text-center">All News</a></li>
+                    </ul>
+                </li>
+                <!-- END RSS Widget -->
+
                 <li class="divider-vertical"></li>
+
+                <!-- Messages Widget -->
+                <!-- Add .dropdown-left-responsive class to align the dropdown menu left (so its visible on mobile) -->
+                <li id="messages-widget" class="dropdown dropdown-left-responsive">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-envelope"></i>
+                        <!-- If the <span> element with .badge class has no content it will disappear (not in IE8 and below because of using :empty in CSS) -->
+                        <span class="badge badge-success">1</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right widget">
+                        <li class="widget-heading"><i class="fa fa-comment pull-right"></i>Latest Messages</li>
+                        <li class="new-on">
+                            <div class="media">
+                                <a class="pull-left" href="javascript:void(0)">
+                                    <img src="img/placeholders/image_light_64x64.png" alt="fakeimg">
+                                </a>
+                                <div class="media-body">
+                                    <h6 class="media-heading"><a href="javascript:void(0)">George</a><span
+                                            class="label label-success">2 min ago</span></h6>
+                                    <div class="media">Thanks for your help! The tutorial really helped me a lot!</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="media">
+                                <a class="pull-left" href="javascript:void(0)">
+                                    <img src="img/placeholders/image_light_64x64.png" alt="fakeimg">
+                                </a>
+                                <div class="media-body">
+                                    <h6 class="media-heading"><a href="javascript:void(0)">Mike</a><span
+                                            class="label label-default">6 hours ago</span></h6>
+                                    <div class="media">The logo is ready, have a look and let me know what you think!
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="media">
+                                <a class="pull-left" href="javascript:void(0)">
+                                    <img src="img/placeholders/image_light_64x64.png" alt="fakeimg">
+                                </a>
+                                <div class="media-body">
+                                    <h6 class="media-heading"><a href="javascript:void(0)">Julia</a><span
+                                            class="label label-default">1 day ago</span></h6>
+                                    <div class="media">We should better consider our social media marketing strategy!
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="text-center"><a href="page_inbox.html">View All Messages</a></li>
+                    </ul>
+                </li>
+                <!-- END Messages Widget -->
 
                 <li class="divider-vertical"></li>
 
@@ -126,7 +212,7 @@
 
                 <!-- Primary Navigation -->
                 <nav id="primary-nav">
-                    <h3 class="admin-title">Admin</h3>
+                    <h3 class="staff-title">Nhân viên</h3>
                     <ul>
                         <li>
                             <a href="index.html" class="active"><i class="fa fa-fire"></i>Bảng điều khiển</a>
@@ -134,9 +220,7 @@
                         <li>
                             <a href="#"><i class="fa fa-th-list"></i>Quản lý hệ thống</a>
                             <ul>
-                                <li>
-                                    <a href="page_list_staff.html"><i class="fa fa-clipboard"></i>Nhân viên</a>
-                                </li>
+                                
                                 <li>
                                     <a href="page_list_teacher.html"><i class="fa fa-file-o"></i>Huấn luyện viên</a>
                                 </li>
@@ -194,9 +278,9 @@
                 <!-- Nav Dash -->
                 <ul class="nav-dash">
                     <li>
-                        <h6>Nhân viên</h6>
-                        <a href="page_list_staff.html" data-toggle="tooltip" class="animation-fadeIn">
-                            <i class="fa fa-clipboard"></i><span class="badge badge-danger">3</span>
+                        <h6>Yêu cầu mở lớp</h6>
+                        <a href="requestopenclass.html" data-toggle="tooltip" class="animation-fadeIn">
+                            <i class="fa fa-clipboard"></i><span class="badge badge-danger">69</span>
                         </a>
                     </li>
                     <li>
@@ -219,7 +303,7 @@
                     </li>
                     <li>
                         <h6>Lớp học</h6>
-                        <a href="page_list_class.html" data-toggle="tooltip" class="animation-fadeIn">
+                        <a href="Attendence.html" data-toggle="tooltip" class="animation-fadeIn">
                             <i class="fa fa-file"></i><span class="badge badge-inverse">8</span>
                         </a>
                     </li>
@@ -251,8 +335,8 @@
                                         title="Đóng"><i class="fa fa-close"></i></a>
                                     <a href="page_list_teacher.html" class="btn btn-default" data-toggle="tooltip"
                                         title="Huấn luyện viên"><i class="fa fa-file-o"></i></a>
-                                    <a href="page_list_class.html" class="btn btn-default" data-toggle="tooltip"
-                                        title="Lớp"><i class="fa fa-file"></i></a>
+                                        <a href="page_list_class.html" class="btn btn-default" data-toggle="tooltip"
+                                    title="Lớp"><i class="fa fa-file"></i></a>
                                     <a href="page_list_customer.html" class="btn btn-default" data-toggle="tooltip"
                                         title="Khách hàng"><i class="fa fa-users"></i>
                                     </a>
@@ -260,7 +344,7 @@
                                         class="btn btn-default" onclick="showForm2()"><i class="fa fa-cog"></i>
                                     </a>
                                 </div>
-                                <h4> Hatha Yoga</h4>
+                              <h4>  Hatha Yoga</h4>
                             </div>
                             <div class="dash-tile-icon"><i class="fa fa-users"></i></div>
                             <div class="dash-tile-text">30</div>
@@ -279,8 +363,8 @@
                                         title="Đóng"><i class="fa fa-close"></i></a>
                                     <a href="page_list_teacher.html" class="btn btn-default" data-toggle="tooltip"
                                         title="Huấn luyện viên"><i class="fa fa-file-o"></i></a>
-                                    <a href="page_list_class.html" class="btn btn-default" data-toggle="tooltip"
-                                        title="Lớp"><i class="fa fa-file"></i></a>
+                                        <a href="page_list_class.html" class="btn btn-default" data-toggle="tooltip"
+                                    title="Lớp"><i class="fa fa-file"></i></a>
                                     <a href="page_list_customer.html" class="btn btn-default" data-toggle="tooltip"
                                         title="Khách hàng"><i class="fa fa-users"></i>
                                     </a>
@@ -288,7 +372,7 @@
                                         class="btn btn-default" onclick="showForm2()"><i class="fa fa-cog"></i>
                                     </a>
                                 </div>
-                                <h4> Asanas Yoga</h4>
+                              <h4>  Asanas Yoga</h4>
                             </div>
                             <div class="dash-tile-icon"><i class="fa fa-users"></i></div>
                             <div class="dash-tile-text">30</div>
@@ -307,8 +391,8 @@
                                         title="Đóng"><i class="fa fa-close"></i></a>
                                     <a href="page_list_teacher.html" class="btn btn-default" data-toggle="tooltip"
                                         title="Huấn luyện viên"><i class="fa fa-file-o"></i></a>
-                                    <a href="page_list_class.html" class="btn btn-default" data-toggle="tooltip"
-                                        title="Lớp"><i class="fa fa-file"></i></a>
+                                        <a href="page_list_class.html" class="btn btn-default" data-toggle="tooltip"
+                                    title="Lớp"><i class="fa fa-file"></i></a>
                                     <a href="page_list_customer.html" class="btn btn-default" data-toggle="tooltip"
                                         title="Khách hàng"><i class="fa fa-users"></i>
                                     </a>
@@ -316,7 +400,7 @@
                                         class="btn btn-default" onclick="showForm2()"><i class="fa fa-cog"></i>
                                     </a>
                                 </div>
-                                <h4> Yoga Trị Liệu</h4>
+                              <h4>  Yoga Trị Liệu</h4>
                             </div>
                             <div class="dash-tile-icon"><i class="fa fa-users"></i></div>
                             <div class="dash-tile-text">30</div>
@@ -335,8 +419,8 @@
                                         title="Đóng"><i class="fa fa-close"></i></a>
                                     <a href="page_list_teacher.html" class="btn btn-default" data-toggle="tooltip"
                                         title="Huấn luyện viên"><i class="fa fa-file-o"></i></a>
-                                    <a href="page_list_class.html" class="btn btn-default" data-toggle="tooltip"
-                                        title="Lớp"><i class="fa fa-file"></i></a>
+                                        <a href="page_list_class.html" class="btn btn-default" data-toggle="tooltip"
+                                    title="Lớp"><i class="fa fa-file"></i></a>
                                     <a href="page_list_customer.html" class="btn btn-default" data-toggle="tooltip"
                                         title="Khách hàng"><i class="fa fa-users"></i>
                                     </a>
@@ -344,7 +428,7 @@
                                         class="btn btn-default" onclick="showForm2()"><i class="fa fa-cog"></i>
                                     </a>
                                 </div>
-                                <h4> Yoga Nghệ Thuật</h4>
+                              <h4>  Yoga Nghệ Thuật</h4>
                             </div>
                             <div class="dash-tile-icon"><i class="fa fa-users"></i></div>
                             <div class="dash-tile-text">30</div>
@@ -384,6 +468,13 @@
             </div>
             <!-- END Page Content -->
 
+            <!-- Footer -->
+            <footer>
+                <span id="year-copy"></span> &copy; <strong><a href="https://1.envato.market/7jd">uAdmin
+                        2.1</a></strong> - Crafted with <i class="fa fa-heart text-danger"></i> by <strong><a
+                        href="https://1.envato.market/ydb" target="_blank">pixelcave</a></strong>
+            </footer>
+            <!-- END Footer -->
         </div>
         <!-- END Inner Container -->
     </div>

@@ -888,6 +888,8 @@ header
     color: #db4a39;
 }
 
+
+
 /* Navigation Dash */
 .nav-dash {
     list-style: none;
@@ -963,6 +965,7 @@ header
 
 .section-bnt .active-bnt.active {
     background-color: #db4a39;
+    color: #fff;
 }
 
 .section-bnt .inactive-bnt {
@@ -1867,6 +1870,72 @@ header
 .table.forum-cat td.sticky {
     background-color: #eee;
 }
+
+/* attendence show list*/
+.back-bnt {
+    height: 40px;
+    font-size: small;
+    justify-items: center;
+    transform: translate(-540px, 10px);
+}
+
+.see-list-bnt-attendence {
+    margin-right: -105px;
+}
+
+.name-std-att {
+    margin-right: 10px;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 50px;
+    /* border: #f53e3e solid 1px; */
+    transform: translate(-25px, 10px);
+}
+
+.check-box-att {
+    text-align: right;
+    padding-right: 25px;
+    justify-content: right;
+    transform: translate(-25px, 10px);
+}
+
+.txtTen {
+    padding-top: 10px;
+    transform: translateX(-15px);
+}
+
+.txtDiemdanh {
+    padding-top: 10px;
+    transform: translateX(75px);
+}
+
+.centered-form {
+    border: #000 solid 1px;
+    background-color: #468847;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*test*/
+
+/* Hiệu ứng mặc định cho ô "Hoạt động" */
+.active-bnt {
+    background-color: #ff0000;
+    /* Màu nền mặc định */
+    color: #fff;
+    transition: background-color 0.3s;
+    /* Thời gian chuyển đổi hiệu ứng */
+}
+
+/* Hiệu ứng hover khi chuột đi qua ô "Hoạt động" */
+.active-bnt:hover {
+    background-color: #00ff00;
+    /* Màu nền hover */
+}
+
+/*end test*/
 
 /* Theme Options */
 a.btn-theme-options {
