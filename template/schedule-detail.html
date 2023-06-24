@@ -294,7 +294,7 @@
                         </div>
 
                         <div class="box-request">
-                            <label for="">Tên user</label>
+                            <label for="">Tên học viên</label>
                             <input type="text" class="modal-input" placeholder="Pon" readonly>
                         </div>
 
@@ -343,6 +343,10 @@
                     <button id="modal-login-button" onclick="showFormSuccess()" type="button">
                         Gửi
                     </button>
+                    <br><br>
+                    <footer class="modal-footer-schedule">
+                        <a href="schedule-detail.html">Hủy</a>
+                    </footer>
                 </form>
             </div>
         </div>
@@ -438,12 +442,7 @@
         openModalRequest.onclick = function () {
             requestModal.style.display = "flex";
         }
-        // Xử lý sự kiện khi nhấp vào bất kỳ vị trí nào bên ngoài cửa sổ đăng nhập
-        window.onclick = function (event) {
-            if (event.target == requestModal) {
-                requestModal.style.display = "none";
-            }
-        }
+       
 
         function showFormSuccess() {
             var successModal = document.getElementById("successModal");

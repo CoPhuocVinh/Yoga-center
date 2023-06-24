@@ -17,8 +17,9 @@ closeButton.onclick = function () {
 
 // Xử lý sự kiện khi nhấp vào bất kỳ vị trí nào bên ngoài cửa sổ đăng nhập
 window.onclick = function (event) {
-    if (event.target == registerModal ) {
+    if (event.target == registerModal || event.target == requestModal) {
       registerModal.style.display = "none";
+      requestModal.style.display = "none";
     }
 }
 
