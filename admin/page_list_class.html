@@ -206,9 +206,10 @@
                 <!-- END Navigation info -->
 
                 <!-- List Staff -->
-                <h3 class="page-header page-header-top">Danh sách lớp <a href="createnewclass.html" data-toggle="tooltip" title="Thêm mới lớp học"
-                    class="btn btn-xs btn-success"><i class="fa fa-plus"></i></a>
-                        
+                <h3 class="page-header page-header-top">Danh sách lớp <a href="createnewclass.html"
+                        data-toggle="tooltip" title="Thêm mới lớp học" class="btn btn-xs btn-success"><i
+                            class="fa fa-plus"></i></a>
+
                     <div class="card-header section-bnt">
                         <div class="card-tools">
                             <ul class="nav nav-pills ml-auto">
@@ -238,8 +239,6 @@
                             <!-- <th class="text-center"><i class="fa fa-bolt"></i>Actions</th> -->
                         </tr>
                     </thead>
-
-
                     <tbody class="list-teacherBody">
                         <!--dòng lớp-->
                         <tr>
@@ -477,7 +476,7 @@
     <!-- form chỉnh sửa class -->
     <div id="formContainer">
         <button id="closeButton" onclick="hideFormCreateAndEdit()">X</button>
-        <form id="registrationForm">
+        <form id="registrationForm" onsubmit="saveEditListForm(); return false;">
             <h2>chỉnh sửa Class</h2>
             <!-- <label for="name">Tên lớp học</label>
             <input type="text" id="class" name="name" required><br>
@@ -485,7 +484,7 @@
             <label for="name">Tên khóa học</label>
             <input type="text" id="course" name="name" required><br> -->
 
-            <label for="name">Tên giáo viên</label>
+            <label for="teacher">Tên giáo viên</label>
             <input type="text" id="teacher" name="name" required><br>
 
             <!-- <label for="name">Sĩ số học sinh</label>
@@ -494,6 +493,7 @@
             <input type="submit" value="Lưu" id="save">
         </form>
     </div>
+
 
     <!-- form create class -->
     <!-- <div id="formCreateContainer">
@@ -618,12 +618,48 @@
             activeList.style.display = 'inline-table';
             inactiveList.style.display = 'none';
         });
-
-
         inactiveBtn.addEventListener('click', function () {
             activeList.style.display = 'none';
             inactiveList.style.display = 'inline-table';
         });
+
+
+        // xử lý fill tên giáo viên và nút sửa
+
+        function showEditListForm() {
+            var formContainer = document.getElementById("formContainer");
+            formContainer.style.display = "block";
+
+            // Lấy nội dung tên huấn luyện viên từ hàng tương ứng trong bảng
+            var row = event.target.closest("tr");
+            var teacherName = row.getElementsByClassName("hidden-xs hidden-sm")[1].innerText;
+
+            // Đặt nội dung tên huấn luyện viên vào input trong form chỉnh sửa
+            var teacherInput = document.getElementById("teacher");
+            teacherInput.value = teacherName;
+
+            // Lưu hàng tương ứng để cập nhật sau khi nhấn nút "Lưu"
+            var saveButton = document.getElementById("save");
+            saveButton.dataset.rowIndex = row.rowIndex;
+        }
+
+        function saveEditListForm() {
+            var formContainer = document.getElementById("formContainer");
+            formContainer.style.display = "none";
+
+            // Lấy nội dung đã chỉnh sửa từ input trong form
+            var teacherInput = document.getElementById("teacher");
+            var editedTeacherName = teacherInput.value;
+
+            // Lấy thông tin hàng cần cập nhật từ thuộc tính "data-row-index"
+            var saveButton = document.getElementById("save");
+            var rowIndex = saveButton.dataset.rowIndex;
+            var table = document.getElementById("active-list");
+            var row = table.rows[rowIndex];
+            var teacherCell = row.getElementsByClassName("hidden-xs hidden-sm")[1];
+            teacherCell.innerText = editedTeacherName;
+        }
+
 
     </script>
     <!--END form chỉnh sửa class -->
