@@ -211,42 +211,40 @@
                 <!-- List Staff -->
                 <h2 class="page-create-header">Thêm mới lớp học</h2>
                 <div class="form-create-class">
-                    <label for="lang-select">Khóa học:</label>
-                    <select name="lang" id="lang-select">
-                        <option value="">--Hãy chọn một khóa học--</option>
-                        <option value="hathayoga">Hatha Yoga</option>
-                        <option value="asanasyoga">Asanas Yoga</option>
-                        <option value="yogatl">Yoga Trị Liệu</option>
-                        <option value="yogant">Yoga Nghệ Thuật</option>
 
-                    </select>
-                    <button type="submit" name="hienthi">Hiển Thị</button><br>
-
-                    <label for="teacher">Huấn luyện viên</label>
-                    <select name="lang" id="lang-select">
-                        <option value="">--Hãy chọn một huấn luyện viên--</option>
-                        <option value="teacher">Chị Phưn</option>
-                        <option value="teacher">Chị Ma Văn Mèo</option>
-                        <option value="teacher">Anh Thanh</option>
-                        <option value="teacher">Anh Pom</option>
-                    </select><br>
-
-                    <label for="schedule">Lịch học</label>
-                    <select name="lang" id="lang-select">
-                        <option value="">--Hãy chọn thời gian--</option>
-                        <option value="time">T2 - S3</option>
-                        <option value="time">T4 - S5</option>
-                        <option value="time">T6 - S1</option>
-                        <option value="time">T6 - S2</option>
-                    </select><br>
-
-                    <label for="start-time">Thời gian bắt đầu</label>
-                    <input type="date" id="time" name="quantity" required><br>
-
-                    <label for="end-time">Thời gian kết thúc</label>
-                    <input type="date" id="time" name="quantity" required><br>
-                    <button type="reset">Đặt lại</button>
-                    <button type="submit">Tạo</button>
+                    <div class="createClass-container">
+                        <label for="lang-select">Khóa học:</label>
+                        <select name="lang" id="lang-select">
+                            <option value="">--Hãy chọn một khóa học--</option>
+                            <option value="hathayoga">Hatha Yoga</option>
+                            <option value="asanasyoga">Asanas Yoga</option>
+                            <option value="yogatl">Yoga Trị Liệu</option>
+                            <option value="yogant">Yoga Nghệ Thuật</option>
+                        </select>
+                        <button type="submit" name="hienthi">Hiển Thị</button><br>
+                        <label for="teacher">Huấn luyện viên</label>
+                        <select name="lang" id="lang-select">
+                            <option value="">--Hãy chọn một huấn luyện viên--</option>
+                            <option value="teacher">Chị Phưn</option>
+                            <option value="teacher">Chị Ma Văn Mèo</option>
+                            <option value="teacher">Anh Thanh</option>
+                            <option value="teacher">Anh Pom</option>
+                        </select><br>
+                        <label for="schedule">Lịch học</label>
+                        <select name="lang" id="lang-select">
+                            <option value="">--Hãy chọn thời gian--</option>
+                            <option value="time">T2 - S3</option>
+                            <option value="time">T4 - S5</option>
+                            <option value="time">T6 - S1</option>
+                            <option value="time">T6 - S2</option>
+                        </select><br>
+                        <label for="start-time">Thời gian bắt đầu</label>
+                        <input type="date" id="time" name="quantity" required><br>
+                        <label for="end-time">Thời gian kết thúc</label>
+                        <input type="date" id="time" name="quantity" required><br>
+                        <button type="reset">Đặt lại</button>
+                        <button type="submit">Tạo</button>
+                    </div>
             </div>
             <style>
                 #formCourse {

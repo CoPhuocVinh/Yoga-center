@@ -3401,6 +3401,26 @@ only screen and (min-device-pixel-ratio: 1.5) {
     text-align: center;
 }
 .form-create-class{
-    font-size: 20px; 
+    font-size: 20px;
+    background: #f0f0f0;
+    height: 600px;
+}
+
+.createClass-container{
+    /* transform: translate(32%, 80%); */
+    text-align: center;
+    margin-top: 50px;
+}
+
+.createClass-container label{
+
+}
+
+.createClass-container select{
+
+}
+
+.createClass-container button{
+
 }
 
