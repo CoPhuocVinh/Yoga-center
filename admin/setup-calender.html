@@ -82,12 +82,14 @@
                 <li class="divider-vertical"></li>
 
 
-
                 <li class="divider-vertical"></li>
+
+
 
                 <li class="divider-vertical"></li>
 
                 <!-- Notifications Widget -->
+
                 <li class="divider-vertical"></li>
 
                 <!-- User Menu -->
@@ -97,7 +99,7 @@
                     <ul class="dropdown-menu">
                         <!-- Just a button demostrating how loading of widgets could happen, check main.js- - uiDemo() -->
                         <li>
-                            <a href="javascript:void(0)" class="loading-on"><i class="fa fa-refresh"></i> Đặt lại</a>
+                            <a href="javascript:void(0)" class="loading-on"><i class="fa fa-refresh"></i> Refresh</a>
                         </li>
                         <li class="divider"></li>
                         <li>
@@ -200,183 +202,299 @@
                 <!-- Navigation info -->
                 <ul id="nav-info" class="clearfix">
                     <li><a href="index.html"><i class="fa fa-home"></i></a></li>
-                    <li><a href="javascript:void(0)">Nhân viên</a></li>
+                    <!-- <li><a href="javascript:void(0)">Components</a></li> -->
+                    <li class="active"><a href="">Lịch học</a></li>
+
                 </ul>
                 <!-- END Navigation info -->
 
-                <!-- List Staff -->
-                <h3 class="page-header page-header-top">Danh sách Slot học
-                </h3>
+                <!-- FullCalendar -->
+                <!-- <h3 class="page-header page-header-top">Lịch học</h3> -->
 
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Slot name</th>
-                            <th class="hidden-xs hidden-sm"><i class="fa "></i>Thời gian bắt đầu</th>
-                            <th class="hidden-xs hidden-sm">Thời gian kết thúc</th>
-                            <!-- <th class="text-center"><i class="fa fa-bolt"></i> </th> -->
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="javascript:void(0)">1</a></td>
-                            <!-- <td><a href="javascript:void(0)">001</a></td>tên lớp -->
-                            <td class="hidden-xs hidden-sm"><input type="time" value="12:00 CH"></td>
-                            <td class="hidden-xs hidden-sm"><input type="time" value="12:01 CH"></td>
+                <!-- <div id="example-fullcalendar"></div> -->
+                <!-- END FullCalendar -->
 
-                            <td class="text-center"></td>
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">2</a></td>
-                            <!-- <td><a href="javascript:void(0)">Class B</a></td>tên lớp -->
-                            <td class="hidden-xs hidden-sm"><input type="time" value="12:00 CH"></td>
-                            <td class="hidden-xs hidden-sm"><input type="time" value="12:01 CH"></td>
+                <!-- FullCalendar (Drop Events) -->
 
-                            <td class="text-center"></td>
-                        </tr>
-                        <tr>
+                <div class="containerSchedule">
+                    <div class="section-header-lich text-center wow zoomIn" data-wow-delay="0.1s">
+                        <h2>Lịch học</h2><br>
 
-                            <td><a href="javascript:void(0)">3</a></td>
-                            <!-- <td><a href="javascript:void(0)">Class B</a></td>tên lớp -->
-                            <td class="hidden-xs hidden-sm"><input type="time" value="12:00 CH"></td>
-                            <td class="hidden-xs hidden-sm"><input type="time" value="12:01 CH"></td>
+                        <select class="calendar-day" id="option" onchange="showCreateCalendar()">
 
-                            <td class="text-center"></td>
-                        </tr>
-                        <tr>
+                            <option value="ngay">19/06/2023 - 24/06/2023</option>
+                            <option value="ngay">26/06/2023 - 01/07/2023</option>
+                            <option value="ngay">03/07/2023 - 08/07/2023</option>
+                            <option value="ngay">10/07/2023 - 17/07/2023</option>
+                            <option value="ngay">24/07/2023 - 29/07/2023</option>
+                            <option value="orderDay">...</option>
+                        </select>
 
-                            <td><a href="javascript:void(0)">4</a></td>
-                            <!-- <td><a href="javascript:void(0)">Class B</a></td>tên lớp -->
-                            <td class="hidden-xs hidden-sm"><input type="time" value="12:00 CH"></td>
-                            <td class="hidden-xs hidden-sm"><input type="time" value="12:01 CH"></td>
-
-                            <td class="text-center"></td>
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">5</a></td>
-                            <!-- <td><a href="javascript:void(0)">Class B</a></td>tên lớp -->
-                            <td class="hidden-xs hidden-sm"><input type="time" value="12:00 CH"></td>
-                            <td class="hidden-xs hidden-sm"><input type="time" value="12:01 CH"></td>
-
-                            <td class="text-center"></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- END List Staff -->
-                <div class="save-bnt">
-                    <button type="submit">Lưu</button>
+                    </div>
+                    <div class="text-center-button">
+                        <input type="submit" value="Đăng lịch" id="Create">
+                        <input type="reset" value="Đặt lại" id="Reset">
+                        <input type="submit" value="Lưu" id="save3">
+                    </div>
+                    
+                    <div id="service" class="service">
+                        <section class="ftco-section">
+                            <div class="container1">
+                                
+                                <div class="row">
+                                    <div class=" ftco-animate">
+                                        <div class="sched-list">
+                                            <table class="table">
+                                                <thead class="thead-primary">
+                                                    <tr class="text-center">
+                                                        <th>&nbsp;</th>
+                                                        <th>Thứ 2</th>
+                                                        <th>Thứ 3</th>
+                                                        <th>Thứ 4</th>
+                                                        <th>Thứ 5</th>
+                                                        <th>Thứ 6</th>
+                                                        <th>Thứ 7</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="text-center">
+                                                        <td class="color">
+                                                            <p class="time">7:00 - 8:00</p>
+                                                        </td>
+                
+                                                        <td class="color-1">
+                                                            <h6><a href="#">HATHA YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T2-S1</p>
+                                                            <span class="trainer">Giáo viên A</span>
+                                                        </td>
+                
+                                                        <td class="color-1">
+                                                            <h6><a href="#">YOGA TRỊ LIỆU</a></h6>
+                                                            <p class="idcourse">Hatha-T3-S1</p>
+                                                            <span class="trainer">Giáo viên B</span>
+                                                        </td>
+                
+                                                        <td class="color-1">
+                                                            <h6><a href="#">YOGA NGHỆ THUẬT</a></h6>
+                                                            <p class="idcourse">Hatha-T4-S1</p>
+                                                            <span class="trainer">Giáo viên C</span>
+                                                        </td>
+                
+                                                        <td class="color-1">
+                                                            <h6><a href="#">ASANAS YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T5-S1</p>
+                                                            <span class="trainer">Giáo viên D</span>
+                                                        </td>
+                
+                                                        <td class="color-1">
+                                                            <h6><a href="#">HATHA YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T6-S1</p>
+                                                            <span class="trainer">Giáo viên A</span>
+                                                        </td>
+                
+                                                        <td class="color-1">
+                                                        </td>
+                                                    </tr><!-- END TR-->
+                
+                                                    <tr class="text-center">
+                                                        <td class="color">
+                                                            <p class="time">8:30 - 9:30</p>
+                                                        </td>
+                
+                                                        <td class="color-2">
+                                                            <h6><a href="#">YOGA NGHỆ THUẬT</a></h6>
+                                                            <p class="idcourse">Hatha-T2-S2</p>
+                                                            <span class="trainer">Giáo viên C</span>
+                                                        </td>
+                
+                                                        <td class="color-2">
+                                                            <h6><a href="#">YOGA NGHỆ THUẬT</a></h6>
+                                                            <p class="idcourse">Hatha-T3-S2</p>
+                                                            <span class="trainer">Giáo viên C</span>
+                                                        </td>
+                
+                                                        <td class="color-2">
+                                                        </td>
+                
+                                                        <td class="color-2">
+                                                            <h6><a href="#">ASANAS YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T5-S2</p>
+                                                            <span class="trainer">Giáo viên D</span>
+                                                        </td>
+                
+                                                        <td class="color-2">
+                                                            <h6><a href="#">HATHA YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T6-S2</p>
+                                                            <span class="trainer">Giáo viên A</span>
+                                                        </td>
+                
+                                                        <td class="color-2">
+                                                            <h6><a href="#">YOGA NGHỆ THUẬT</a></h6>
+                                                            <p class="idcourse">Hatha-T7-S2</p>
+                                                            <span class="trainer">Giáo viên C</span>
+                                                        </td>
+                                                    </tr><!-- END TR-->
+                
+                                                    <tr class="text-center">
+                                                        <td class="color">
+                                                            <p class="time">10:00 - 11:00</p>
+                                                        </td>
+                
+                                                        <td class="color-3">
+                                                            <h6><a href="#">YOGA TRỊ LIỆU</a></h6>
+                                                            <p class="idcourse">Hatha-T2-S3</p>
+                                                            <span class="trainer">Giáo viên B</span>
+                                                        </td>
+                
+                                                        <td class="color-3">
+                                                            <h6><a href="#">ASANAS YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T3-S3</p>
+                                                            <span class="trainer">Giáo viên D</span>
+                                                        </td>
+                
+                                                        <td class="color-3">
+                                                            <h6><a href="#">HATHA YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T4-S3</p>
+                                                            <span class="trainer">Giáo viên A</span>
+                                                        </td>
+                
+                                                        <td class="color-3">
+                                                            <h6><a href="#">YOGA TRỊ LIỆU</a></h6>
+                                                            <p class="idcourse">Hatha-T5-S3</p>
+                                                            <span class="trainer">Giáo viên B</span>
+                                                        </td>
+                
+                                                        <td class="color-3">
+                                                            <h6><a href="#">HATHA YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T6-S3</p>
+                                                            <span class="trainer">Giáo viên A</span>
+                                                        </td>
+                
+                                                        <td class="color-3">
+                                                            <h6><a href="#">ASANAS YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T7-S3</p>
+                                                            <span class="trainer">Giáo viên D</span>
+                                                        </td>
+                                                    </tr><!-- END TR-->
+                                                    <tr class="text-center">
+                                                        <td class="color">
+                                                            <p class="time">18:00 - 19:00</p>
+                                                        </td>
+                
+                                                        <td class="color-4">
+                                                            <h6><a href="#">YOGA TRỊ LIỆU</a></h6>
+                                                            <p class="idcourse">Hatha-T2-S4</p>
+                                                            <span class="trainer">Giáo viên B</span>
+                                                        </td>
+                
+                                                        <td class="color-4">
+                                                            <h6><a href="#">YOGA NGHỆ THUẬT</a></h6>
+                                                            <p class="idcourse">Hatha-T3-S4</p>
+                                                            <span class="trainer">Giáo viên C</span>
+                                                        </td>
+                
+                                                        <td class="color-4">
+                                                            <h6><a href="#">ASANAS YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T4-S4</p>
+                                                            <span class="trainer">Giáo viên D</span>
+                                                        </td>
+                
+                                                        <td class="color-4">
+                                                            <h6><a href="#">HATHA YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T5-S4</p>
+                                                            <span class="trainer">Giáo viên A</span>
+                                                        </td>
+                
+                                                        <td class="color-4">
+                                                            <h6><a href="#">YOGA NGHỆ THUẬT</a></h6>
+                                                            <p class="idcourse">Hatha-T6-S4</p>
+                                                            <span class="trainer">Giáo viên C</span>
+                                                        </td>
+                
+                                                        <td class="color-4">
+                                                        </td>
+                                                    </tr><!-- END TR-->
+                                                    <tr class="text-center">
+                                                        <td class="color">
+                                                            <p class="time">19:30 - 20:30</p>
+                                                        </td>
+                
+                                                        <td class="color-5">
+                                                        </td>
+                
+                                                        <td class="color-5">
+                                                        </td>
+                
+                                                        <td class="color-5">
+                                                            <h6><a href="#">YOGA TRỊ LIỆU</a></h6>
+                                                            <p class="idcourse">Hatha-T4-S5</p>
+                                                            <span class="trainer">Giáo viên B</span>
+                                                        </td>
+                
+                                                        <td class="color-5">
+                                                            <h6><a href="#">ASANAS YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T5-S5</p>
+                                                            <span class="trainer">Giáo viên D</span>
+                                                        </td>
+                
+                                                        <td class="color-5">
+                                                            <h6><a href="#">YOGA TRỊ LIỆU</a></h6>
+                                                            <p class="idcourse">Hatha-T6-S5</p>
+                                                            <span class="trainer">Giáo viên B</span>
+                                                        </td>
+                
+                                                        <td class="color-5">
+                                                        </td>
+                                                    </tr><!-- END TR-->
+                
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Schedule End -->
                 </div>
+
+
+                <div id="formCalendarContainer" class="formCalendar">
+                    <button id="closeButton2" onclick="hideFormCalendar()">X</button>
+                    <form id="registrationForm2">
+                        <h2>Thêm lịch mới</h2>
+                        <label for="id">Thời gian bắt đầu</label>
+                        <input type="date" id="idname" name="Idname" required><br>
+                        <label for="name">Thời gian kết thúc</label>
+                        <input type="date" id="fullname" name="fullname" required><br>
+                        <input type="submit" value="Tạo" id="save2">
+                    </form>
+                </div>
+
             </div>
-            <!-- END Page Content -->
-
-
         </div>
-        <!-- END Inner Container -->
+    </div>
+    <div class="col-md-10">
+        <div id="example-fullcalendar2"></div>
+    </div>
+    </div> -->
+    <!-- END FullCalendar (Drop Events) -->
+    </div>
+    <!-- END Page Content -->
+    </div>
+    </div>
+    <div class="col-md-10">
+        <div id="example-fullcalendar2"></div>
+    </div>
+    </div> -->
+    <!-- END FullCalendar (Drop Events) -->
+    </div>
+    <!-- END Page Content -->
+
+    </div>
+    <!-- END Inner Container -->
     </div>
     <!-- END Page Container -->
-
-
-    <!-- form edit class -->
-    <div id="formContainer">
-        <button id="closeButton" onclick="hideForm()">X</button>
-        <form id="registrationForm">
-            <h2>Chỉnh sửa thông tin slot</h2>
-            <label for="name">slot name</label>
-            <input type="text" id="name" name="name" required><br>
-
-            <label for="name">Thời gian bắt đầu </Th></label>
-            <input type="time" id="StartTime" name="name" required><br>
-
-            <label for="name">Thời gian kết thúc</label>
-            <input type="time" id="EndTime" name="name" required><br>
-
-            <input type="submit" value="Save" id="save">
-        </form>
-    </div>
-    <style>
-        #formContainer {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #f1f1f1;
-            padding: 20px;
-            box-shadow: rgb(152, 152, 152, 0.6);
-            border: rgba(0, 0, 0, 0.6) solid 1px;
-        }
-
-        #registrationForm {
-            width: 300px;
-            margin: 0 auto;
-        }
-
-        #registrationForm label,
-        #registrationForm input[type="text"],
-        #registrationForm input[type="file"],
-        #registrationForm input[type="number"],
-        #registrationForm input[type="submit"],
-        #registrationForm input[type="datetime-local"] {
-            display: block;
-            margin-bottom: 10px;
-            width: 100%;
-
-        }
-
-        #name,
-        #StartTime,
-        #EndTime {
-            border: rgba(0, 0, 0, 0.6) solid 1px;
-        }
-
-        #save {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .save-bnt {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .save-bnt button {
-            border-radius: 8px;
-            padding: 10px 24px;
-            background-color: #69afe8;
-            color: #000;
-        }
-
-        #registrationForm input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            margin-top: 16px;
-        }
-
-        #closeButton {
-            margin-left: 280px;
-        }
-    </style>
-    <script>
-        function showForm() {
-            var formContainer = document.getElementById("formContainer");
-            formContainer.style.display = "block";
-        }
-
-        function hideForm() {
-            var formContainer = document.getElementById("formContainer");
-            formContainer.style.display = "none";
-        }
-        // function getdata
-
-    </script>
-    <!--END form edit class -->
-
-
 
     <!-- Scroll to top link, check main.js - scrollToTop() -->
     <a href="javascript:void(0)" id="to-top"><i class="fa fa-chevron-up"></i></a>
@@ -556,7 +674,78 @@
 
     <!-- Excanvas for canvas support on IE8 -->
     <!--[if lte IE 8]><script src="js/helpers/excanvas.min.js"></script><![endif]-->
+    <style>
+        #formCalendarContainer {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f1f1f1;
+            padding: 20px;
+            box-shadow: rgb(152, 152, 152, 0.6);
+            border: rgba(0, 0, 0, 0.6) solid 1px;
+        }
 
+        #registrationForm2 {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        #registrationForm label,
+        #registrationForm input[type="text"],
+        #registrationForm input[type="number"],
+        #registrationForm input[type="submit"],
+        #registrationForm2 label,
+        #registrationForm2 input[type="text"],
+        #registrationForm2 input[type="number"],
+        #registrationForm2 input[type="submit"],
+        #registrationForm2 input[type="date"],
+        #registrationForm2 input[type="email"] {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+
+
+
+
+        #class,
+        #course,
+        #teacher,
+        #quantity,
+        #email,
+        #fullname,
+        #teacher2,
+        #quantity2,
+        #idname,
+        #numberphone {
+            border: rgba(0, 0, 0, 0.6) solid 1px;
+        }
+
+        #save,
+        #save2 {
+            display: flex;
+            justify-content: center;
+
+            align-items: center;
+        }
+
+        #registrationForm input[type="submit"],
+        #registrationForm2 input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #closeButton,
+        #closeButton2 {
+            transform: translateX(00%);
+        }
+    </style>
     <!-- Include Jquery library from Google's CDN but if something goes wrong get Jquery from local file (Remove 'http:' if you have SSL) -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>!window.jQuery && document.write(decodeURI('%3Cscript src="js/vendor/jquery-1.11.1.min.js"%3E%3C/script%3E'));</script>
@@ -567,6 +756,8 @@
     <!-- Jquery plugins and custom javascript code -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- Javascript code only for this page -->
 </body>
 
 </html>
