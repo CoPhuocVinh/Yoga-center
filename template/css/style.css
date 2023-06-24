@@ -255,7 +255,7 @@ a:focus {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active{
+.navbar-dark .navbar-nav .nav-link.active {
     background: rgba(256, 256, 256, .1);
     transition: none;
 }
@@ -882,7 +882,7 @@ a:focus {
     margin-bottom: 10px;
 }
 
-.class .class-text .history-btn{
+.class .class-text .history-btn {
     margin-left: 74px;
 }
 
@@ -1773,42 +1773,42 @@ a:focus {
     text-align: center;
 }
 
-.sched-list{
+.sched-list {
     width: 1160px;
     padding-right: 6px;
 }
 
-.sched-list-course{
+.sched-list-course {
     width: 1120px;
     padding-right: 6px;
 }
 
- .thead-primary {
+.thead-primary {
     background: #FFF5E5;
     border: 1px solid #F59395;
 }
 
- tbody tr td .trainer {
+tbody tr td .trainer {
     color: #3b3a3a;
 }
 
- tbody tr td.color {
+tbody tr td.color {
     background: #FBD0D1;
     border: 1px solid #F59395;
     width: 120px;
 }
 
- tbody tr td.color-sche {
+tbody tr td.color-sche {
     background: #FBD0D1;
     border: 1px solid #F59395;
     width: 125px;
 }
 
- tbody tr td.color-1,
- tbody tr td.color-2,
- tbody tr td.color-3,
- tbody tr td.color-4,
- tbody tr td.color-5 {
+tbody tr td.color-1,
+tbody tr td.color-2,
+tbody tr td.color-3,
+tbody tr td.color-4,
+tbody tr td.color-5 {
     border: 1px solid #F59395;
     width: 170px;
 }
@@ -1830,7 +1830,7 @@ p.time {
     padding-top: 30px;
 }
 
-p.time-sche{
+p.time-sche {
     font-weight: 700;
     padding-top: 15px;
 }
@@ -2271,7 +2271,7 @@ p.time-sche{
 /********* Footer CSS **********/
 /*******************************/
 .footer {
-    position: relative;
+    position: inherit;
     margin-top: 45px;
     background: #000000;
 }
@@ -2830,7 +2830,7 @@ p.time-sche{
 }
 
 .feedback {
-    position: relative;
+    position: sticky;
     width: 100%;
     margin-top: 10px;
 }
@@ -2959,7 +2959,7 @@ button.attend {
     cursor: pointer;
 }
 
-.checkoutCourse span{
+.checkoutCourse span {
     font-weight: 600;
 }
 
@@ -2981,6 +2981,8 @@ button.attend {
 }
 
 .modal-container-feedback {
+    position: fixed;
+    display: inline-block;
     margin-top: 60px;
     background-color: #fff;
     width: 550px;
@@ -3079,14 +3081,14 @@ button.attend {
 }
 
 /* History page  */
-.card-tools{
+.card-tools {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
 }
 
-li.nav-item a{
+li.nav-item a {
     background: burlywood;
     margin: 0 40px;
     padding: 12px 15px;
@@ -3094,17 +3096,17 @@ li.nav-item a{
     font-size: 18px;
 }
 
-li.nav-item a:hover{
-    background-color:rgb(217, 174, 118);
+li.nav-item a:hover {
+    background-color: rgb(217, 174, 118);
     color: #000;
 }
 
-.history-body{
+.history-body {
     height: 800px;
 }
 
 /* Success Form  */
-.modal-container-success{
+.modal-container-success {
     margin-top: 60px;
     background-color: #fff;
     width: 600px;
