@@ -159,7 +159,15 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="page_calendar.html"><i class="fa fa-calendar"></i>Lịch học</a>
+                            <a href="#"><i class="fa fa-th-list"></i>Lịch</a>
+                            <ul>
+                                <li>
+                                    <a href="page_calendar.html"><i class="fa fa-clipboard"></i>Lịch học</a>
+                                </li>
+                                <li>
+                                    <a href="setup-calender.html"><i class="fa fa-file-o"></i>Lịch đang xếp</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="page_slots.html"><i class="gi gi-unchecked"></i>Slot</a>
@@ -223,781 +231,227 @@
                         </select>
 
                     </div>
-                    <div class="text-center-button">
-                        <input type="submit" value="Đăng lịch" id="Create">
-                        <input type="reset" value="Đặt lại" id="Reset">
-                        <input type="submit" value="Lưu" id="save3">
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 ftco-animate">
-                            <div class="sched-list">
-                                <table class="table">
-                                    <thead class="thead-primary">
-                                        <tr class="text-center">
-                                            <th>&nbsp;</th>
-                                            <th>Thứ 2</th>
-                                            <th>Thứ 3</th>
-                                            <th>Thứ 4</th>
-                                            <th>Thứ 5</th>
-                                            <th>Thứ 6</th>
-                                            <th>Thứ 7</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="text-center">
-                                            <td class="color">
-                                                <p class="time">7:00 - 8:00</p>
-                                            </td>
-
-                                            <td class="color-1">
-
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-                                        </tr><!-- END TR-->
-
-                                        <tr class="text-center">
-                                            <td class="color">
-                                                <p class="time">8:30 - 9:30</p>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-                                        </tr><!-- END TR-->
-
-                                        <tr class="text-center">
-                                            <td class="color">
-                                                <p class="time">10:00 - 11:00</p>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-                                        </tr><!-- END TR-->
-                                        <tr class="text-center">
-                                            <td class="color">
-                                                <p class="time">18:00 - 19:00</p>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-                                        </tr><!-- END TR-->
-                                        <tr class="text-center">
-                                            <td class="color">
-                                                <p class="time">19:30 - 20:30</p>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-
-                                            <td class="color-1">
-                                                <select name="schedule-details" id="">
-                                                    <option value="">Chọn lớp</option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class B - Mr.Tứn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas Yoga - Class C - Ms.Phưn
-                                                    </option>
-                                                    <option value="course-class-teacher">Asanas yoga - Class D - Ms.Jhon
-                                                    </option>
-                                                    <option value="course-class-teacher">Hatha yoga - Class A - Ms.Pon
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class E -
-                                                        Ms.Mèo</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class F -
-                                                        Ms.Vịt</option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class G - Mr.Bọ
-                                                    </option>
-                                                    <option value="course-class-teacher">Yoga Trị Liệu - Class H -
-                                                        Mr.Châu</option>
-                                                </select>
-                                            </td>
-                                        </tr><!-- END TR-->
-
-                                    </tbody>
-                                </table>
+                   
+                    
+                    <div id="service" class="service">
+                        <section class="ftco-section">
+                            <div class="container1">
+                                
+                                <div class="row">
+                                    <div class=" ftco-animate">
+                                        <div class="sched-list">
+                                            <table class="table">
+                                                <thead class="thead-primary">
+                                                    <tr class="text-center">
+                                                        <th>&nbsp;</th>
+                                                        <th>Thứ 2</th>
+                                                        <th>Thứ 3</th>
+                                                        <th>Thứ 4</th>
+                                                        <th>Thứ 5</th>
+                                                        <th>Thứ 6</th>
+                                                        <th>Thứ 7</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="text-center">
+                                                        <td class="color">
+                                                            <p class="time">7:00 - 8:00</p>
+                                                        </td>
+                
+                                                        <td class="color-1">
+                                                            <h6><a href="#">HATHA YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T2-S1</p>
+                                                            <span class="trainer">Giáo viên A</span>
+                                                        </td>
+                
+                                                        <td class="color-1">
+                                                            <h6><a href="#">YOGA TRỊ LIỆU</a></h6>
+                                                            <p class="idcourse">Hatha-T3-S1</p>
+                                                            <span class="trainer">Giáo viên B</span>
+                                                        </td>
+                
+                                                        <td class="color-1">
+                                                            <h6><a href="#">YOGA NGHỆ THUẬT</a></h6>
+                                                            <p class="idcourse">Hatha-T4-S1</p>
+                                                            <span class="trainer">Giáo viên C</span>
+                                                        </td>
+                
+                                                        <td class="color-1">
+                                                            <h6><a href="#">ASANAS YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T5-S1</p>
+                                                            <span class="trainer">Giáo viên D</span>
+                                                        </td>
+                
+                                                        <td class="color-1">
+                                                            <h6><a href="#">HATHA YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T6-S1</p>
+                                                            <span class="trainer">Giáo viên A</span>
+                                                        </td>
+                
+                                                        <td class="color-1">
+                                                        </td>
+                                                    </tr><!-- END TR-->
+                
+                                                    <tr class="text-center">
+                                                        <td class="color">
+                                                            <p class="time">8:30 - 9:30</p>
+                                                        </td>
+                
+                                                        <td class="color-2">
+                                                            <h6><a href="#">YOGA NGHỆ THUẬT</a></h6>
+                                                            <p class="idcourse">Hatha-T2-S2</p>
+                                                            <span class="trainer">Giáo viên C</span>
+                                                        </td>
+                
+                                                        <td class="color-2">
+                                                            <h6><a href="#">YOGA NGHỆ THUẬT</a></h6>
+                                                            <p class="idcourse">Hatha-T3-S2</p>
+                                                            <span class="trainer">Giáo viên C</span>
+                                                        </td>
+                
+                                                        <td class="color-2">
+                                                        </td>
+                
+                                                        <td class="color-2">
+                                                            <h6><a href="#">ASANAS YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T5-S2</p>
+                                                            <span class="trainer">Giáo viên D</span>
+                                                        </td>
+                
+                                                        <td class="color-2">
+                                                            <h6><a href="#">HATHA YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T6-S2</p>
+                                                            <span class="trainer">Giáo viên A</span>
+                                                        </td>
+                
+                                                        <td class="color-2">
+                                                            <h6><a href="#">YOGA NGHỆ THUẬT</a></h6>
+                                                            <p class="idcourse">Hatha-T7-S2</p>
+                                                            <span class="trainer">Giáo viên C</span>
+                                                        </td>
+                                                    </tr><!-- END TR-->
+                
+                                                    <tr class="text-center">
+                                                        <td class="color">
+                                                            <p class="time">10:00 - 11:00</p>
+                                                        </td>
+                
+                                                        <td class="color-3">
+                                                            <h6><a href="#">YOGA TRỊ LIỆU</a></h6>
+                                                            <p class="idcourse">Hatha-T2-S3</p>
+                                                            <span class="trainer">Giáo viên B</span>
+                                                        </td>
+                
+                                                        <td class="color-3">
+                                                            <h6><a href="#">ASANAS YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T3-S3</p>
+                                                            <span class="trainer">Giáo viên D</span>
+                                                        </td>
+                
+                                                        <td class="color-3">
+                                                            <h6><a href="#">HATHA YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T4-S3</p>
+                                                            <span class="trainer">Giáo viên A</span>
+                                                        </td>
+                
+                                                        <td class="color-3">
+                                                            <h6><a href="#">YOGA TRỊ LIỆU</a></h6>
+                                                            <p class="idcourse">Hatha-T5-S3</p>
+                                                            <span class="trainer">Giáo viên B</span>
+                                                        </td>
+                
+                                                        <td class="color-3">
+                                                            <h6><a href="#">HATHA YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T6-S3</p>
+                                                            <span class="trainer">Giáo viên A</span>
+                                                        </td>
+                
+                                                        <td class="color-3">
+                                                            <h6><a href="#">ASANAS YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T7-S3</p>
+                                                            <span class="trainer">Giáo viên D</span>
+                                                        </td>
+                                                    </tr><!-- END TR-->
+                                                    <tr class="text-center">
+                                                        <td class="color">
+                                                            <p class="time">18:00 - 19:00</p>
+                                                        </td>
+                
+                                                        <td class="color-4">
+                                                            <h6><a href="#">YOGA TRỊ LIỆU</a></h6>
+                                                            <p class="idcourse">Hatha-T2-S4</p>
+                                                            <span class="trainer">Giáo viên B</span>
+                                                        </td>
+                
+                                                        <td class="color-4">
+                                                            <h6><a href="#">YOGA NGHỆ THUẬT</a></h6>
+                                                            <p class="idcourse">Hatha-T3-S4</p>
+                                                            <span class="trainer">Giáo viên C</span>
+                                                        </td>
+                
+                                                        <td class="color-4">
+                                                            <h6><a href="#">ASANAS YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T4-S4</p>
+                                                            <span class="trainer">Giáo viên D</span>
+                                                        </td>
+                
+                                                        <td class="color-4">
+                                                            <h6><a href="#">HATHA YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T5-S4</p>
+                                                            <span class="trainer">Giáo viên A</span>
+                                                        </td>
+                
+                                                        <td class="color-4">
+                                                            <h6><a href="#">YOGA NGHỆ THUẬT</a></h6>
+                                                            <p class="idcourse">Hatha-T6-S4</p>
+                                                            <span class="trainer">Giáo viên C</span>
+                                                        </td>
+                
+                                                        <td class="color-4">
+                                                        </td>
+                                                    </tr><!-- END TR-->
+                                                    <tr class="text-center">
+                                                        <td class="color">
+                                                            <p class="time">19:30 - 20:30</p>
+                                                        </td>
+                
+                                                        <td class="color-5">
+                                                        </td>
+                
+                                                        <td class="color-5">
+                                                        </td>
+                
+                                                        <td class="color-5">
+                                                            <h6><a href="#">YOGA TRỊ LIỆU</a></h6>
+                                                            <p class="idcourse">Hatha-T4-S5</p>
+                                                            <span class="trainer">Giáo viên B</span>
+                                                        </td>
+                
+                                                        <td class="color-5">
+                                                            <h6><a href="#">ASANAS YOGA</a></h6>
+                                                            <p class="idcourse">Hatha-T5-S5</p>
+                                                            <span class="trainer">Giáo viên D</span>
+                                                        </td>
+                
+                                                        <td class="color-5">
+                                                            <h6><a href="#">YOGA TRỊ LIỆU</a></h6>
+                                                            <p class="idcourse">Hatha-T6-S5</p>
+                                                            <span class="trainer">Giáo viên B</span>
+                                                        </td>
+                
+                                                        <td class="color-5">
+                                                        </td>
+                                                    </tr><!-- END TR-->
+                
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </section>
                     </div>
+                    <!-- Schedule End -->
                 </div>
 
 
