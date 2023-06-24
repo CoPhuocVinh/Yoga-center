@@ -537,7 +537,7 @@ a:focus {
 }
 
 .section-header h2 {
-    padding-top: 40px;
+    padding-top: 65px;
     margin: 0;
     position: relative;
     font-size: 40px;
@@ -2951,6 +2951,10 @@ button.attend {
     cursor: pointer;
 }
 
+.checkoutCourse span{
+    font-weight: 600;
+}
+
 .modal-body-forgot {
     text-align: center;
     margin-top: 40px;
@@ -3087,4 +3091,13 @@ li.nav-item a:hover{
 
 .history-body{
     height: 800px;
+}
+
+/* Success Form  */
+.modal-container-success{
+    margin-top: 60px;
+    background-color: #fff;
+    width: 600px;
+    height: 300px;
+    border-radius: 8px;
 }
