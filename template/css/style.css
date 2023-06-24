@@ -1813,6 +1813,14 @@ a:focus {
     width: 170px;
 }
 
+ tbody tr td.color-1 h6,
+ tbody tr td.color-2 h6,
+ tbody tr td.color-3 h6,
+ tbody tr td.color-4 h6,
+ tbody tr td.color-5 h6{
+    color: #d68d8c;
+}
+
 .text-center .idcourse {
     font-size: 13px;
 }
