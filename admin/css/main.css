@@ -3529,3 +3529,19 @@ only screen and (min-device-pixel-ratio: 1.5) {
     background-color: rgb(184, 181, 181);
 }
 
+.modal-header-register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 70px;
+}
+.modal-footer-schedule {
+    display: flex;
+    justify-content: center;
+}
+.modal-footer-schedule button{
+    margin:20px;
+}

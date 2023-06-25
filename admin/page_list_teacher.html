@@ -260,7 +260,8 @@
                                         class="btn btn-xs btn-success" onclick="showForm()"><i
                                             class="fa fa-pencil"></i></a>
                                     <a href="javascript:void(0)" data-toggle="tooltip" title="xóa"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                        class="btn btn-xs btn-danger" onclick="showCreateClass()"><i
+                                            class="fa fa-times"></i></a>
                                 </div>
                             </td>
                         </tr>
@@ -539,25 +540,26 @@
 
     <!-- form create teacher -->
     <div id="formCreateContainer">
-        <button id="closeButton2" onclick="hideFormCreateAndEdit()">X</button>
+        <!-- <button id="closeButton2" onclick="hideFormCreateAndEdit()">X</button> -->
         <form id="registrationForm2">
-            <h2>Thêm mới giáo viên</h2>
-            <label for="id">ID tài khoản</label>
-            <input type="text" id="idname" name="Idname" required><br>
+            <header class="modal-header-register">
+                <img src="img/images.png">
+            </header>
 
-            <label for="name">Email</label>
-            <input type="email" id="email" name="email" required><br>
+            <form action="#">
+                <div class="modal-body-schedule">
+                    <h3 class="mo">Bạn có chắc muốn xóa không ?</h3>
+                </div>
+            </form>
+            <footer class="modal-footer-schedule">
+                <button class="btn-footer" type="reset"> <a href="page_list_teacher.html">Xóa</a></button>
+                <button class="btn-footer" type="submit"><a href="page_list_teacher.html">Hủy</a></button>
 
-            <label for="name">Họ và Tên</label>
-            <input type="text" id="fullname" name="fullname" required><br>
-
-            <label for="phone">Số điện thoại</label>
-            <input type="tel" name="phone" id="numberphone">
-            <input type="submit" value="Lưu" id="save2">
+            </footer>
         </form>
     </div>
     <!-- End form create teacher-->
-    <div class="modal-schedule" id="registerModal">
+    <!-- <div class="modal-schedule" id="registerModal">
         <div class="modal-container-schedule">
             <span class="close" id="myButton"><a>&times;</a></span>
             <header class="modal-header-register">
@@ -579,7 +581,7 @@
                 <a href="page_list_teacher.html">Hủy</a>
             </footer>
         </div>
-    </div>
+    </div> -->
     <style>
         #formContainer,
         #formCreateContainer {
