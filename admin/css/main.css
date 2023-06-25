@@ -3545,3 +3545,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .modal-footer-schedule button{
     margin:20px;
 }
+
+.modal-body-schedule h3{
+    text-align: center;
+    font-size: 21px;
+}
