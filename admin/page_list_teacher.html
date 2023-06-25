@@ -256,7 +256,7 @@
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="sửa"
+                                    <a href="editTeacher.html" data-toggle="tooltip" title="sửa"
                                         class="btn btn-xs btn-success" onclick="showForm()"><i
                                             class="fa fa-pencil"></i></a>
                                     <a href="javascript:void(0)" data-toggle="tooltip" title="xóa"
@@ -274,7 +274,7 @@
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="sửa"
+                                    <a href="editTeacher.html" data-toggle="tooltip" title="sửa"
                                         class="btn btn-xs btn-success" onclick="showForm()"><i
                                             class="fa fa-pencil"></i></a>
                                     <a href="javascript:void(0)" data-toggle="tooltip" title="xóa"
@@ -292,7 +292,7 @@
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="sửa"
+                                    <a href="editTeacher.html" data-toggle="tooltip" title="sửa"
                                         class="btn btn-xs btn-success" onclick="showForm()"><i
                                             class="fa fa-pencil"></i></a>
                                     <a href="javascript:void(0)" data-toggle="tooltip" title="xóa"
@@ -310,7 +310,7 @@
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="sửa"
+                                    <a href="editTeacher.html" data-toggle="tooltip" title="sửa"
                                         class="btn btn-xs btn-success" onclick="showForm()"><i
                                             class="fa fa-pencil"></i></a>
                                     <a href="javascript:void(0)" data-toggle="tooltip" title="xóa"
@@ -328,7 +328,7 @@
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="sửa"
+                                    <a href="editTeacher.html" data-toggle="tooltip" title="sửa"
                                         class="btn btn-xs btn-success" onclick="showForm()"><i
                                             class="fa fa-pencil"></i></a>
                                     <a href="javascript:void(0)" data-toggle="tooltip" title="xóa"
@@ -346,7 +346,7 @@
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="sửa"
+                                    <a href="editTeacher.html" data-toggle="tooltip" title="sửa"
                                         class="btn btn-xs btn-success" onclick="showForm()"><i
                                             class="fa fa-pencil"></i></a>
                                     <a href="javascript:void(0)" data-toggle="tooltip" title="xóa"
@@ -364,7 +364,7 @@
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="sửa"
+                                    <a href="editTeacher.html" data-toggle="tooltip" title="sửa"
                                         class="btn btn-xs btn-success" onclick="showForm()"><i
                                             class="fa fa-pencil"></i></a>
                                     <a href="javascript:void(0)" data-toggle="tooltip" title="xóa"
@@ -511,7 +511,7 @@
 
 
     <!-- form sửa class -->
-    <div id="formContainer">
+    <!-- <div id="formContainer">
         <button id="closeButton" onclick="hideFormCreateAndEdit()">X</button>
         <form id="registrationForm">
             <h2>Chỉnh sửa thông tin</h2>
@@ -535,7 +535,7 @@
 
             <input type="submit" value="Lưu" id="save">
         </form>
-    </div>
+    </div> -->
 
     <!-- form create teacher -->
     <div id="formCreateContainer">
@@ -557,7 +557,29 @@
         </form>
     </div>
     <!-- End form create teacher-->
+    <div class="modal-schedule" id="registerModal">
+        <div class="modal-container-schedule">
+            <span class="close" id="myButton"><a>&times;</a></span>
+            <header class="modal-header-register">
+                <img
+                    src="img/images.png">
+            </header>
 
+            <form action="#">
+                <div class="modal-body-schedule">
+                    <h3 class="mo">Bạn có chắc muốn xóa không ?</h3>
+                </div>
+            </form>
+
+            <a href="page_list_teacher.html" id="modal-login-button-re-hatha" type="submit">
+                Xác nhận
+            </a>
+
+            <footer class="modal-footer-schedule">
+                <a href="page_list_teacher.html">Hủy</a>
+            </footer>
+        </div>
+    </div>
     <style>
         #formContainer,
         #formCreateContainer {

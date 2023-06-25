@@ -3436,12 +3436,22 @@ only screen and (min-device-pixel-ratio: 1.5) {
     background: #e3e2e2;
     height: 650px;
 }
-
+.form-create-customer{
+    font-size: 20px;
+    background: #e3e2e2;
+    height: 650px;
+}
 .create-header{
     text-align: center;
     padding-top: 50px;
 }
-
+.create-header-customer label{
+    margin-left: 90px;  
+} 
+.create-header-customer{
+    text-align: center;
+    padding-top: 50px;
+}
 .createClass-container{
     text-align: justify;
     margin-top: 50px;
@@ -3449,6 +3459,17 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 .createClass-container label{
+    width: 30%;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.createCustomer-container{
+    text-align: justify;
+    margin-top: 50px;
+    margin-left: 20%;
+}
+
+.createCustomer-container label{
     width: 30%;
     margin-bottom: 30px;
     font-size: 22px;
@@ -3482,6 +3503,29 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 .createClass-container .btn-footer:hover{
+    background-color: rgb(184, 181, 181);
+}
+.createCustomer-container input{
+    width: 40%;
+    margin-right: 30px;
+    padding: 6px;
+    text-align: center;
+}
+
+.createCustomer-container button{
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-right: 26px;
+}
+
+.createCustomer-container .btn-footer{
+    transform: translate(320px, 50px);
+    padding: 10px 20px;
+    background: lightgrey;
+}
+
+.createCustomer-container .btn-footer:hover{
     background-color: rgb(184, 181, 181);
 }
 
