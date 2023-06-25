@@ -82,8 +82,8 @@
                 <li class="divider-vertical"></li>
 
 
-                <li class="divider-vertical"></li>
 
+                <li class="divider-vertical"></li>
 
 
                 <li class="divider-vertical"></li>
@@ -204,24 +204,22 @@
                 <!-- Navigation info -->
                 <ul id="nav-info" class="clearfix">
                     <li><a href="index.html"><i class="fa fa-home"></i></a></li>
-                    <li><a href="javascript:void(0)">Danh sách khách hàng</a></li>
+                    <li><a href="javascript:void(0)">Xác nhận đăng ký</a></li>
                 </ul>
                 <!-- END Navigation info -->
 
                 <!-- List Staff -->
-                <h3 class="page-header page-header-top">Danh Sách Khách Hàng <a href="#" data-toggle="tooltip"
-                        title="Thêm mới" class="btn btn-xs btn-success" onclick="showCreateClass()"><i
-                            class="fa fa-plus"></i></a>
+                <h3 class="page-header page-header-top">Danh sách Xác nhận đăng ký
                     <div class="card-header section-bnt">
                         <div class="card-tools">
                             <ul class="nav nav-pills ml-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link active-bnt" href="#active" id="active-bnt" data-toggle="tab">Hoạt
-                                        động</a>
+                                    <a class="nav-link active-bnt" href="#active" id="active-bnt" data-toggle="tab">Chờ
+                                        thanh toán </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link inactive-bnt" href="#inactive" id="inactive-btn"
-                                        data-toggle="tab">Không hoạt động</a>
+                                        data-toggle="tab">Đã thanh toán </a>
                                 </li>
                             </ul>
                         </div>
@@ -231,434 +229,302 @@
                 <table class="table active-list" id="active-list">
                     <thead>
                         <tr style="background-color: #4CAF50;" class="list-teacherHeader">
-                            <th>ID tài khoản</th>
-                            <th class="hidden-xs hidden-sm"><i class="fa "></i>Email</th>
-                            <th class="hidden-xs hidden-sm">Họ và tên</th>
-                            <th class="hidden-xs hidden-sm"></th>
+                            <th class="hidden-xs hidden-sm"><i class="fa "></i>Tên khoá</th>
+                            <th class="hidden-xs hidden-sm">Tên học viên</th>
+                            <th class="hidden-xs hidden-sm">Ngày đăng ký</th>
+                            <th class="hidden-xs hidden-sm">Giá</th>
+                            <th class="hidden-xs hidden-sm">Số buổi</th>
+                            <th class="hidden-xs hidden-sm">xác nhận</th>
                         </tr>
                     </thead>
                     <tbody class="list-teacherBody">
+                        <!--dòng lớp-->
                         <tr>
-                            <td><a href="javascript:void(0)">1</a></td>
-                            <td class="hidden-xs hidden-sm">pon@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Hoài Phương</td>
-
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <a href="#createButton" data-toggle="tooltip" title="Sửa"
-                                        class="btn btn-xs btn-success" onclick="showEditListForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Xoá"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                </div>
+                            <td><a href="page_attendence.html">Hatha Yoga</a></td><!--tên lớp-->
+                            <td class="hidden-xs hidden-sm">Mã Hành Quân</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm">
+                                <input type="date" class="DateConfirmRegister" disabled>
                             </td>
-                        </tr>
-                        <tr>
-
-                            <td><a href="javascript:void(0)">2</a></td>
-                            <td class="hidden-xs hidden-sm">top@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Hàn Anh</td>
-
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <a href="#createButton" data-toggle="tooltip" title="Sửa"
-                                        class="btn btn-xs btn-success" onclick="showEditListForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Xoá"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td><a href="javascript:void(0)">3</a></td>
-                            <td class="hidden-xs hidden-sm">lag@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Văn Tuấn</td>
-
-                            <td class="text-center">
-                                <div class="btn-group">
-
-                                    <a href="#createButton" data-toggle="tooltip" title="Sửa"
-                                        class="btn btn-xs btn-success" onclick="showEditListForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Xoá"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td><a href="javascript:void(0)">4</a></td>
-                            <td class="hidden-xs hidden-sm">dkhau@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Đỗ Kim Hậu</td>
-
-                            <td class="text-center">
-                                <div class="btn-group">
-
-                                    <a href="#createButton" data-toggle="tooltip" title="Sửa"
-                                        class="btn btn-xs btn-success" onclick="showEditListForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Xoá"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <!-- <td class="text-center"><input type="checkbox" id="check1-td1" name="check1-td1"></td> -->
-                            <!-- <td class="text-center">1</td> -->
-                            <td><a href="javascript:void(0)">5</a></td>
-                            <td class="hidden-xs hidden-sm">dinh@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Dinh</td>
-
+                            <td class="hidden-xs hidden-sm"><input type="text" value="350.000 vnđ" readonly></td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="12 buổi" readonly></td>
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Sửa"
-                                        class="btn btn-xs btn-success" onclick="showEditListForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Xoá"
+                                    <a href="#createButton" data-toggle="tooltip" title="Xác nhận"
+                                        class="confirmButton btn btn-xs btn-success" onclick="openFormConfirm()"><i
+                                            class="gi gi-ok_2"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Từ chối"
                                         class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                 </div>
                             </td>
                         </tr>
+                        <!-- dòng lớp -->
                         <tr>
-                            <!-- <td class="text-center"><input type="checkbox" id="check1-td1" name="check1-td1"></td> -->
-                            <!-- <td class="text-center">1</td> -->
-                            <td><a href="javascript:void(0)">6</a></td>
-                            <td class="hidden-xs hidden-sm">acb@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Văn B</td>
-
+                            <td><a href="javascript:void(0)">Hatha Yoga</a></td><!--tên lớp-->
+                            <td class="hidden-xs hidden-sm">Đại Ngọc Thụ</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm"><input type="date" class="DateConfirmRegister" disabled>
+                            </td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="350.000 vnđ" readonly></td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="12 buổi" readonly></td>
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Sửa"
-                                        class="btn btn-xs btn-success" onclick="showEditListForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Xoá"
+                                    <a href="#createButton" data-toggle="tooltip" title="Xác nhận"
+                                        class="btn btn-xs btn-success"><i class="gi gi-ok_2"
+                                            onclick="openFormConfirm()"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Từ chối"
                                         class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                 </div>
                             </td>
                         </tr>
+                        <!-- dòng lớp -->
                         <tr>
-                            <!-- <td class="text-center"><input type="checkbox" id="check1-td1" name="check1-td1"></td> -->
-                            <!-- <td class="text-center">1</td> -->
-                            <td><a href="javascript:void(0)">4</a></td>
-                            <td class="hidden-xs hidden-sm">dkhau@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Đỗ Kim Hậu</td>
-
+                            <td><a href="javascript:void(0)">Yoga trị liệu</a></td><!--tên lớp-->
+                            <td class="hidden-xs hidden-sm">Bác Đại Thần</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm"><input type="date" class="DateConfirmRegister" disabled>
+                            </td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="350.000 vnđ" readonly></td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="12 buổi" readonly></td>
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Sửa"
-                                        class="btn btn-xs btn-success" onclick="showEditListForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Xoá"
+                                    <a href="#createButton" data-toggle="tooltip" title="Xác nhận"
+                                        class=" btn btn-xs btn-success"><i class="gi gi-ok_2"
+                                            onclick="openFormConfirm()"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Từ chối"
                                         class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                 </div>
                             </td>
                         </tr>
+                        <!-- dòng lớp -->
                         <tr>
-                            <!-- <td class="text-center"><input type="checkbox" id="check1-td1" name="check1-td1"></td> -->
-                            <!-- <td class="text-center">1</td> -->
-                            <td><a href="javascript:void(0)">5</a></td>
-                            <td class="hidden-xs hidden-sm">dinh@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Dinh</td>
-
+                            <td><a href="javascript:void(0)">Yoga Nghệ Thuật</a></td><!--tên lớp-->
+                            <td class="hidden-xs hidden-sm">Trương Vô Kỵ</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm"><input type="date" class="DateConfirmRegister" disabled>
+                            </td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="350.000 vnđ" readonly></td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="12 buổi" readonly></td>
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Sửa"
-                                        class="btn btn-xs btn-success" onclick="showEditListForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Xoá"
+                                    <a href="#createButton" data-toggle="tooltip" title="Xác nhận"
+                                        class="btn btn-xs btn-success"><i class="gi gi-ok_2"
+                                            onclick="openFormConfirm()"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Từ chối"
                                         class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                 </div>
                             </td>
                         </tr>
+                        <!-- dòng lớp -->
                         <tr>
-                            <!-- <td class="text-center"><input type="checkbox" id="check1-td1" name="check1-td1"></td> -->
-                            <!-- <td class="text-center">1</td> -->
-                            <td><a href="javascript:void(0)">6</a></td>
-                            <td class="hidden-xs hidden-sm">acb@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Văn B</td>
-
+                            <td><a href="javascript:void(0)">Assanas Yoga</a></td> <!-- tên lớp-->
+                            <td class="hidden-xs hidden-sm">Dương Quá</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm"><input type="date" class="DateConfirmRegister" disabled>
+                            </td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="350.000 vnđ" readonly></td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="12 buổi" readonly></td>
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Sửa"
-                                        class="btn btn-xs btn-success" onclick="showEditListForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Xoá"
+                                    <a href="#createButton" data-toggle="tooltip" title="Xác nhận"
+                                        class="btn btn-xs btn-success"><i class="gi gi-ok_2"
+                                            onclick="openFormConfirm()"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Từ chối"
                                         class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                 </div>
                             </td>
                         </tr>
-                        <tr">
-                            <!-- <td class="text-center"><input type="checkbox" id="check1-td1" name="check1-td1"></td> -->
-                            <!-- <td class="text-center">1</td> -->
-                            <td><a href="javascript:void(0)">4</a></td>
-                            <td class="hidden-xs hidden-sm">dkhau@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Đỗ Kim Hậu</td>
-
+                        <!-- dòng lớp -->
+                        <tr>
+                            <td><a href="javascript:void(0)">Yoga Trị Liệu</a></td><!--tên lớp-->
+                            <td class="hidden-xs hidden-sm">Bạch Tiểu Thuần</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm"><input type="date" class="DateConfirmRegister" disabled>
+                            </td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="350.000 vnđ" readonly></td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="12 buổi" readonly></td>
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Sửa"
-                                        class="btn btn-xs btn-success" onclick="showEditListForm()"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Xoá"
+                                    <a href="#createButton" data-toggle="tooltip" title="Xác nhận"
+                                        class="btn btn-xs btn-success"><i class="gi gi-ok_2"
+                                            onclick="openFormConfirm()"></i></a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Từ chối"
                                         class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
                                 </div>
                             </td>
-                            </tr>
-                            <tr">
-                                <!-- <td class="text-center"><input type="checkbox" id="check1-td1" name="check1-td1"></td> -->
-                                <!-- <td class="text-center">1</td> -->
-                                <td><a href="javascript:void(0)">5</a></td>
-                                <td class="hidden-xs hidden-sm">dinh@gmail.com</td>
-                                <td class="hidden-xs hidden-sm">Nguyễn Dinh</td>
+                        </tr>
+                        <!-- dòng lớp -->
+                        <tr>
 
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <!--nút sửa-->
-                                        <a href="#createButton" data-toggle="tooltip" title="Sửa"
-                                            class="btn btn-xs btn-success" onclick="showEditListForm()"><i
-                                                class="fa fa-pencil"></i></a>
-                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Xoá"
-                                            class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                    </div>
-                                </td>
-                                </tr>
-                                <tr">
-                                    <td><a href="#">6</a></td>
-                                    <td class="hidden-xs hidden-sm">acb@gmail.com</td>
-                                    <td class="hidden-xs hidden-sm">Nguyễn Văn B</td>
+                            <td class="NameClass"><a href="#">Hatha Yoga</a></td><!--tên lớp-->
+                            <td class="hidden-xs hidden-sm NameCourse">Hồng Thị Xanh</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm"><input type="date" class="DateConfirmRegister" disabled>
+                            </td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="350.000 vnđ" readonly></td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="12 buổi" readonly></td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Xác nhận"
+                                        class="btn btn-xs btn-success"><i class="gi gi-ok_2"
+                                            onclick="openFormConfirm()"></i></a>
 
-                                    <td class="text-center">
-                                        <div class="btn-group">
-                                            <!--nút sửa-->
-                                            <a href="#createButton" data-toggle="tooltip" title="Sửa"
-                                                class="btn btn-xs btn-success" onclick="showEditListForm()"><i
-                                                    class="fa fa-pencil"></i></a>
-                                            <a href="javascript:void(0)" data-toggle="tooltip" title="Xoá"
-                                                class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
-                                        </div>
-                                    </td>
-                                    </tr>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Từ chối"
+                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                </div>
+                            </td>
+                        </tr>
                     </tbody>
+
+
                 </table>
                 <!-- END List Staff -->
 
                 <table class="table inactive-list" id="inactive-list" style="display: none;">
                     <thead>
-                        <tr style="background-color: aqua" class="list-teacherHeader">
-                            <!-- <th class="cell-small text-center" data-toggle="tooltip" title="Toggle all!"><input
-                                    type="checkbox" id="check1-all" name="check1-all"></th> -->
-                            <!-- <th class="text-center">#</th> -->
-                            <th>ID tài khoản</th>
-                            <th class="hidden-xs hidden-sm"><i class="fa "></i>Email</th>
-                            <th class="hidden-xs hidden-sm">Họ và tên</th>
-                            <th class="hidden-xs hidden-sm"></th>
-
-                            <!-- <th class="text-center"><i class="fa fa-bolt"></i> Actions</th> -->
+                        <tr style="background-color: aqua;" class="list-teacherHeader">
+                            <th class="hidden-xs hidden-sm"><i class="fa "></i>Tên khoá</th>
+                            <th class="hidden-xs hidden-sm">Tên học viên</th>
+                            <th class="hidden-xs hidden-sm">Ngày đăng ký</th>
+                            <th class="hidden-xs hidden-sm">Giá</th>
+                            <th class="hidden-xs hidden-sm">Số buổi</th>
+                            <th class="hidden-xs hidden-sm">Xác nhận</th>
                         </tr>
                     </thead>
+
+
                     <tbody class="list-teacherBody">
+                        <!-- dòng lớp -->
                         <tr>
-                            <!-- <td class="text-center"><input type="checkbox" id="check1-td1" name="check1-td1"></td> -->
-                            <!-- <td class="text-center">1</td> -->
-                            <td><a href="javascript:void(0)">1</a></td>
-                            <td class="hidden-xs hidden-sm">pon@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Hoài Phương</td>
+
+                            <td><a href="page_attendence.html">Hatha Yoga</a></td><!--tên lớp-->
+                            <td class="hidden-xs hidden-sm">Mã Hành Quân</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm">
+                                <input type="date" class="DateConfirmRegister" disabled>
+                            </td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="350.000 vnđ" readonly></td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="12 buổi" readonly></td>
 
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Hoàn tác"
-                                        class="btn btn-xs btn-success">
-                                        <i class=" fa fa-check"></i>
-                                    </a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Đã thanh toán"
+                                        class="btn btn-xs btn-success"><i class="gi gi-ok"></i></a>
+                                </div>
+                            </td>
+
+                        </tr>
+                        <!-- dòng lớp -->
+                        <tr>
+                            <td><a href="page_attendence.html">Yoga Nghệ Thuật</a></td><!--tên lớp-->
+                            <td class="hidden-xs hidden-sm">Mã Hành Quân</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm">
+                                <input type="date" class="DateConfirmRegister" disabled>
+                            </td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="350.000 vnđ" readonly></td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="12 buổi" readonly></td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Đã thanh toán"
+                                        class="btn btn-xs btn-success"><i class="gi gi-ok"></i></a>
                                 </div>
                             </td>
                         </tr>
+                        <!-- dòng lớp -->
                         <tr>
-                            <!-- <td class="text-center"><input type="checkbox" id="check1-td1" name="check1-td1"></td> -->
-                            <!-- <td class="text-center">1</td> -->
-                            <td><a href="javascript:void(0)">2</a></td>
-                            <td class="hidden-xs hidden-sm">top@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Hàn Anh</td>
-
+                            <td><a href="page_attendence.html">Asanas Yoga</a></td><!--tên lớp-->
+                            <td class="hidden-xs hidden-sm">Mã Hành Quân</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm">
+                                <input type="date" class="DateConfirmRegister" disabled>
+                            </td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="350.000 vnđ" readonly></td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="12 buổi" readonly></td>
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Hoàn tác"
-                                        class="btn btn-xs btn-success">
-                                        <i class=" fa fa-check"></i>
-                                    </a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Đã thanh toán"
+                                        class="btn btn-xs btn-success"><i class="gi gi-ok"></i></a>
                                 </div>
                             </td>
                         </tr>
+                        <!-- dòng lớp -->
                         <tr>
-                            <!-- <td class="text-center"><input type="checkbox" id="check1-td1" name="check1-td1"></td> -->
-                            <!-- <td class="text-center">1</td> -->
-                            <td><a href="javascript:void(0)">3</a></td>
-                            <td class="hidden-xs hidden-sm">lag@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Văn Tuấn</td>
-
+                            <td><a href="page_attendence.html">Yoga Trị Liệu</a></td><!--tên lớp-->
+                            <td class="hidden-xs hidden-sm">Mã Hành Quân</td><!--tên khóa-->
+                            <td class="hidden-xs hidden-sm">
+                                <input type="date" class="DateConfirmRegister" disabled>
+                            </td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="350.000 vnđ" readonly></td>
+                            <td class="hidden-xs hidden-sm"><input type="text" value="12 buổi" readonly></td>
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Hoàn tác"
-                                        class="btn btn-xs btn-success">
-                                        <i class=" fa fa-check"></i>
-                                    </a>
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Đã thanh toán"
+                                        class="btn btn-xs btn-success"><i class="gi gi-ok"></i></a>
                                 </div>
                             </td>
                         </tr>
                     </tbody>
                 </table>
+                <!-- END List Staff -->
             </div>
             <!-- END Page Content -->
-
         </div>
         <!-- END Inner Container -->
     </div>
     <!-- END Page Container -->
 
-
-    <!-- form sửa class -->
-    <div id="formContainer">
-        <button id="closeButton" onclick="hideFormCreateAndEdit()">X</button>
-        <form id="registrationForm">
-            <h2>Chỉnh sửa thông tin</h2>
-            <label for="name">Email</label>
-            <input type="email" id="status" name="name" required><br>
-
-            <input type="hidden">
-
-            <label for="name">Họ và tên</label>
-            <input type="text" id="customer" name="name" required><br>
-
-            <label for="name">Số điện thoại</label>
-            <input type="text" id="phone" name="name" required><br>
-
-            <label for="name">Ảnh đại diện</label>
-            <input type="file" id="avatar" name="quantity" required><br>
-
-            <label for="name">Thời gian cập nhật</label>
-            <input type="date" id="time" name="quantity" required><br>
-
-            <input type="submit" value="Lưu" id="save" onclick="hideFormCreateAndEdit()">
-        </form>
+    <div id="overlay" class="overlay" style="display: none;">
+        <div class="form">
+            <h2 class="txt-notificate">Bạn có chắc xác nhận!</h2>
+            <button class="bnt-accept bnt-confirm" onclick="closeFormConfirm()">Xác Nhận</button>
+            <button class="bnt-cancel bnt-confirm" onclick="closeFormConfirm()">Hủy</button>
+        </div>
     </div>
-
-    <!-- form create class -->
-    <div id="formCreateContainer">
-        <button id="closeButton2" onclick="hideFormCreateAndEdit()">X</button>
-        <form id="registrationForm2">
-            <h2>Thêm mới khách hàng</h2>
-            <label for="idname">ID tài khoản</label>
-            <input type="text" id="idname" name="Idname" required><br>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required><br>
-
-            <label for="fullname">Họ và tên</label>
-            <input type="text" id="fullname" name="fullname" required><br>
-
-            <input type="submit" value="Lưu" id="save2" onclick="hideFormCreateAndEdit()">
-        </form>
-    </div>
-    <!-- End form create class-->
 
     <style>
-        #formContainer,
-        #formCreateContainer {
-            display: none;
+        .overlay {
             position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #f1f1f1;
-            padding: 20px;
-            box-shadow: rgb(152, 152, 152, 0.6);
-            border: rgba(0, 0, 0, 0.6) solid 1px;
-        }
-
-        #registrationForm,
-        #registrationForm2 {
-            width: 300px;
-            margin: 0 auto;
-        }
-
-        #registrationForm label,
-        #registrationForm input[type="text"],
-        #registrationForm input[type="number"],
-        #registrationForm input[type="email"],
-        #registrationForm input[type="submit"],
-        #registrationForm2 label,
-        #registrationForm2 input[type="text"],
-        #registrationForm2 input[type="number"],
-        #registrationForm2 input[type="submit"],
-        #registrationForm2 input[type="email"] {
-            display: block;
-            margin-bottom: 10px;
+            top: 0;
+            left: 0;
             width: 100%;
-        }
-
-        #class,
-        #course,
-        #teacher,
-        #quantity,
-        #email,
-        #fullname,
-        #teacher2,
-        #quantity2,
-        #idname {
-            border: rgba(0, 0, 0, 0.6) solid 1px;
-        }
-
-        #save,
-        #save2 {
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
         }
 
-        #registrationForm input[type="submit"],
-        #registrationForm2 input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
+        .form {
+            background-color: white;
+            padding: 20px;
         }
 
-        #closeButton,
-        #closeButton2 {
-            display: inline;
+        .txt-notificate {
+            transform: translatey(-31px);
+        }
+
+        .bnt-confirm {
+            text-align: center;
+            transform: translateX(45px);
+        }
+
+        .bnt-accept {
+            padding-left: 0;
+            height: 50px;
+            width: 100px;
+            border-radius: 20px;
+        }
+
+        .bnt-cancel {
+            height: 50px;
+            width: 100px;
+            border-radius: 20px;
         }
     </style>
 
     <script>
-        function showEditListForm() {
-            var formContainer = document.getElementById("formContainer");
-            formContainer.style.display = "block";
-
-        }
-
-        // hiện form tạo mới
-        function showCreateClass() {
-            var formCreateContainer = document.getElementById("formCreateContainer");
-            formCreateContainer.style.display = "block";
-        }
-        //tắt form
-        function hideFormCreateAndEdit() {
-            var formContainer = document.getElementById("formContainer");
-            formContainer.style.display = "none";
-            var formCreateContainer = document.getElementById("formCreateContainer");
-            formCreateContainer.style.display = "none";
-        }
 
         //xử lý nút bấm active và inactive
         var activeBtn = document.getElementById('active-bnt');
@@ -670,102 +536,24 @@
             activeList.style.display = 'inline-table';
             inactiveList.style.display = 'none';
         });
-
-
         inactiveBtn.addEventListener('click', function () {
             activeList.style.display = 'none';
             inactiveList.style.display = 'inline-table';
         });
 
-
-        // Thêm mới thành viên
-        function createMember() {
-            // Lấy giá trị từ các trường input trong form tạo mới
-            var id = document.getElementById("idname").value;
-            var email = document.getElementById("email").value;
-            var fullname = document.getElementById("fullname").value;
-
-            // Tạo một hàng mới trong bảng
-            var table = document.getElementById("active-list");
-            var newRow = table.insertRow();
-
-            // Thêm các ô dữ liệu vào hàng mới
-            var idCell = newRow.insertCell(0);
-            var emailCell = newRow.insertCell(1);
-            var fullnameCell = newRow.insertCell(2);
-            var actionCell = newRow.insertCell(3);
-
-            idCell.innerHTML = id;
-            emailCell.innerHTML = email;
-            fullnameCell.innerHTML = fullname;
-            actionCell.innerHTML =
-                '<div class="btn-group">' +
-                '<a href="#" data-toggle="tooltip" title="Sửa" class="btn btn-xs btn-success" onclick="showEditListForm()"><i class="fa fa-pencil"></i></a>' +
-                '<a href="#" data-toggle="tooltip" title="Xoá" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>' +
-                '</div>';
-
-            // Xóa dữ liệu đã nhập trong form tạo mới
-            document.getElementById("idname").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("fullname").value = "";
-
-            // Đóng form tạo mới
-            hideFormCreateAndEdit();
+        /* xử lý nút confirm*/
+        function openFormConfirm() {
+            var overlay = document.getElementById("overlay");
+            overlay.style.display = "flex";
         }
 
-        // Sửa thông tin thành viên
-        function editMember() {
-            // Lấy giá trị từ các trường input trong form sửa
-            var email = document.getElementById("emailEdit").value;
-            var fullname = document.getElementById("customer").value;
-
-            // Cập nhật dữ liệu trong bảng
-            var table = document.getElementById("active-list");
-            var row = table.rows[1]; // Giả sử chỉ sửa hàng đầu tiên (index 1)
-
-            // Cập nhật các ô dữ liệu
-            row.cells[1].innerHTML = email;
-            row.cells[2].innerHTML = fullname;
-
-            // Đóng form sửa
-            hideFormCreateAndEdit();
+        function closeFormConfirm() {
+            var overlay = document.getElementById("overlay");
+            overlay.style.display = "none";
         }
 
-        // Xoá thành viên
-        function deleteMember() {
-            // Xác định hàng cần xoá
-            var table = document.getElementById("active-list");
-            var row = table.rows[1]; // Giả sử chỉ xoá hàng đầu tiên (index 1)
-
-            // Xoá hàng
-            row.remove();
-        }
-
-        // Gọi hàm hideFormCreateAndEdit() khi nhấn vào nút "X" trong form tạo mới và form sửa
-
-        // Gọi hàm createMember() khi nhấn vào nút "Lưu" trong form tạo mới
-        document.getElementById("save2").addEventListener("click", function (event) {
-            event.preventDefault();
-            createMember();
-        });
-
-        // Gọi hàm editMember() khi nhấn vào nút "Lưu" trong form sửa
-        document.getElementById("save").addEventListener("click", function (event) {
-            event.preventDefault();
-            editMember();
-        });
-
-        // Gọi hàm deleteMember() khi nhấn vào nút "Xoá" trong bảng
-        var deleteButtons = document.getElementsByClassName("btn btn-xs btn-danger");
-        for (var i = 0; i < deleteButtons.length; i++) {
-            deleteButtons[i].addEventListener("click", function (event) {
-                event.preventDefault();
-                deleteMember();
-            });
-        }
     </script>
-    <!--END form sửa class -->
-
+    <!--END form chỉnh sửa class -->
 
     <!-- Scroll to top link, check main.js - scrollToTop() -->
     <a href="javascript:void(0)" id="to-top"><i class="fa fa-chevron-up"></i></a>
@@ -836,8 +624,7 @@
                             <div class="form-horizontal">
                                 <div class="form-group">
                                     <div class="col-md-3">
-                                        <img src="img/placeholders/image_dark_120x120.png" alt="image"
-                                            class="img-responsive push">
+                                        <img src="" alt="image" class="img-responsive push">
                                     </div>
                                     <div class="col-md-9">
                                         <form action="index.html" class="dropzone">

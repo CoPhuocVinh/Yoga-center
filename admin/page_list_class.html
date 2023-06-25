@@ -188,6 +188,9 @@
                         <li>
                             <a href="page_form_wizard.html"><i class="fa fa-pencil"></i>Blog</a>
                         </li>
+                        <li>
+                            <a href="page_list_confirm_register.html"><i class="fa fa-pencil"></i>Xác nhận đăng ký</a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- END Primary Navigation -->
@@ -235,8 +238,8 @@
                             <th>Tên lớp</th>
                             <th class="hidden-xs hidden-sm"><i class="fa "></i>Tên khoá</th>
                             <th class="hidden-xs hidden-sm">Tên huấn luyện viên</th>
-                            <th></th>
                             <!-- <th class="text-center"><i class="fa fa-bolt"></i>Actions</th> -->
+                            <th class="hidden-xs hidden-sm"></th>
                         </tr>
                     </thead>
                     <tbody class="list-teacherBody">
@@ -591,7 +594,6 @@
     <script>
         //hiện form
         function showForm() {
-
             var formContainer = document.getElementById("formContainer");
             formContainer.style.display = "block";
         }
@@ -623,48 +625,45 @@
             inactiveList.style.display = 'inline-table';
         });
 
-
         // xử lý fill tên giáo viên và nút sửa
+        var tableRows = document.querySelectorAll(".list-teacherBody tr");
 
-        function showEditListForm() {
-            var formContainer = document.getElementById("formContainer");
-            formContainer.style.display = "block";
+        // Lặp qua từng hàng và gán sự kiện click cho nút "sửa"
+        tableRows.forEach(function (row) {
+            var editButton = row.querySelector(".btn-success");
+            editButton.addEventListener("click", function () {
+                // Lấy thông tin từ trường giáo viên của hàng
+                var teacherName = row.querySelector(".hidden-xs.hidden-sm:nth-child(4)").textContent;
 
-            // Lấy nội dung tên huấn luyện viên từ hàng tương ứng trong bảng
-            var row = event.target.closest("tr");
-            var teacherName = row.getElementsByClassName("hidden-xs hidden-sm")[1].innerText;
+                // Điền thông tin vào trường nhập liệu trong form
+                var teacherField = document.getElementById("teacher");
+                teacherField.value = teacherName;
 
-            // Đặt nội dung tên huấn luyện viên vào input trong form chỉnh sửa
-            var teacherInput = document.getElementById("teacher");
-            teacherInput.value = teacherName;
+                // Hiển thị form
+                var formContainer = document.getElementById("formContainer");
+                formContainer.style.display = "block";
+            });
+        });
 
-            // Lưu hàng tương ứng để cập nhật sau khi nhấn nút "Lưu"
-            var saveButton = document.getElementById("save");
-            saveButton.dataset.rowIndex = row.rowIndex;
-        }
+        // Gán sự kiện submit cho form
+        var registrationForm = document.getElementById("registrationForm");
+        registrationForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // Ngăn chặn hành vi mặc định của nút submit
 
-        function saveEditListForm() {
-            var formContainer = document.getElementById("formContainer");
-            formContainer.style.display = "none";
+            // Lấy giá trị từ trường nhập liệu trong form
+            var teacherField = document.getElementById("teacher");
+            var teacherValue = teacherField.value;
 
-            // Lấy nội dung đã chỉnh sửa từ input trong form
-            var teacherInput = document.getElementById("teacher");
-            var editedTeacherName = teacherInput.value;
+            // Cập nhật nội dung trong trường giáo viên của hàng đang được chỉnh sửa
+            var currentRow = document.querySelector(".list-teacherBody tr.editing");
+            currentRow.querySelector(".hidden-xs.hidden-sm:nth-child(4)").textContent = teacherValue;
 
-            // Lấy thông tin hàng cần cập nhật từ thuộc tính "data-row-index"
-            var saveButton = document.getElementById("save");
-            var rowIndex = saveButton.dataset.rowIndex;
-            var table = document.getElementById("active-list");
-            var row = table.rows[rowIndex];
-            var teacherCell = row.getElementsByClassName("hidden-xs hidden-sm")[1];
-            teacherCell.innerText = editedTeacherName;
-        }
-
+            // Ẩn form
+            hideFormCreateAndEdit();
+        });
 
     </script>
     <!--END form chỉnh sửa class -->
-
-
 
     <!-- Scroll to top link, check main.js - scrollToTop() -->
     <a href="javascript:void(0)" id="to-top"><i class="fa fa-chevron-up"></i></a>

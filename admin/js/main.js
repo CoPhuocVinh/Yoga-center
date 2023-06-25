@@ -758,3 +758,32 @@ $(document).ready(function () {
 end
 test
 */
+
+/* test DateConfirmRegister */
+
+var dateInputs = document.getElementsByClassName("DateConfirmRegister");
+var defaultDates = [
+  "2023-06-26",
+  "2023-06-27",
+  "2023-06-28",
+  "2023-05-11",
+  "2023-03-21",
+  "2023-05-24",
+  "2023-01-30",
+  "2023-03-21",
+  "2023-05-24",
+  "2023-03-30",
+  "2023-02-28",
+];
+// Thay đổi các giá trị trong mảng defaultDates cho từng trường input
+
+for (var i = 0; i < dateInputs.length; i++) {
+  var input = dateInputs[i];
+  input.value = defaultDates[i];
+
+  input.addEventListener("keydown", function (event) {
+    event.preventDefault();
+  });
+}
+
+/* end DateConfirmRegister */
