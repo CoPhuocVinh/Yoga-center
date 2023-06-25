@@ -1332,6 +1332,26 @@ header
     margin-right: 18px;
 }
 
+.save-bnt-slot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 26px;
+}
+
+.save-bnt-slot button{
+    padding: 12px 30px;
+    font-weight: 600;
+    background: lightblue;
+    color: #000;
+    border: none;
+    font-size: 16px;
+}
+
+.save-bnt-slot button:hover{
+    background-color: rgb(151, 211, 231);
+}
+
 #formCreatePac {
     display: none;
     position: fixed;
@@ -1922,7 +1942,7 @@ header
 
 /* Hiệu ứng mặc định cho ô "Hoạt động" */
 .active-bnt {
-    background-color: #ff0000;
+    background-color: #cc3636;
     /* Màu nền mặc định */
     color: #fff;
     transition: background-color 0.3s;
