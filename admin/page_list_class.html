@@ -494,14 +494,83 @@
                 </div>
             </form>
             <footer class="modal-footer-schedule">
-                <button class="btn-footer" type="reset"> <a href="page_list_customer.html">Xóa</a></button>
-                <button class="btn-footer" type="submit"><a href="page_list_customer.html">Hủy</a></button>
+                <button class="btn-footer" type="reset"> <a href="page_list_class.html">Xóa</a></button>
+                <button class="btn-footer" type="submit"><a href="page_list_class.html">Hủy</a></button>
 
             </footer>
         </form>
     </div>
 
-    <!-- form chỉnh sửa class -->
+    <style>
+        #formContainer,
+        #formCreateContainer {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f1f1f1;
+            padding: 20px;
+            box-shadow: rgb(152, 152, 152, 0.6);
+            border: rgba(0, 0, 0, 0.6) solid 1px;
+        }
+
+        #registrationForm,
+        #registrationForm2 {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        #registrationForm label,
+        #registrationForm input[type="text"],
+        #registrationForm input[type="number"],
+        #registrationForm input[type="submit"],
+        #registrationForm2 label,
+        #registrationForm2 input[type="text"],
+        #registrationForm2 input[type="number"],
+        #registrationForm2 input[type="submit"],
+        #registrationForm2 input[type="tel"],
+        #registrationForm2 input[type="email"] {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        #class,
+        #course,
+        #teacher,
+        #quantity,
+        #email,
+        #fullname,
+        #teacher2,
+        #quantity2,
+        #idname,
+        #numberphone {
+            border: rgba(0, 0, 0, 0.6) solid 1px;
+        }
+
+        #save,
+        #save2 {
+            display: flex;
+            justify-content: center;
+
+            align-items: center;
+        }
+
+        #registrationForm input[type="submit"],
+        #registrationForm2 input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #closeButton,
+        #closeButton2 {
+            transform: translateX(00%);
+        }
+    </style>
 
 
     <script>
