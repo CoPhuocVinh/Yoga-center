@@ -201,290 +201,200 @@
                 <!-- Navigation info -->
                 <ul id="nav-info" class="clearfix">
                     <li><a href="index.html"><i class="fa fa-home"></i></a></li>
-                    <li><a href="javascript:void(0)">Danh sách lớp</a></li>
+                    <li><a href="page_list_class.html">Danh sách lớp</a></li>
+                    <li><a href="javascript:void(0)">Điểm danh lớp A</a></li>
                 </ul>
                 <!-- END Navigation info -->
 
                 <!-- List Staff -->
-                <h3 class="page-header page-header-top">Danh sách lớp <a href="createnewclass.html"
-                        data-toggle="tooltip" title="Thêm mới lớp học" class="btn btn-xs btn-success"><i
-                            class="fa fa-plus"></i></a>
-
-                    <div class="card-header section-bnt">
-                        <div class="card-tools">
-                            <ul class="nav nav-pills ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link active-bnt" href="#active" id="active-bnt" data-toggle="tab">Hoạt
-                                        động</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link inactive-bnt" href="#inactive" id="inactive-btn"
-                                        data-toggle="tab">Không hoạt động</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><!-- /.card-header -->
+                <h3 class="page-header page-header-top">Điểm danh lớp A
                 </h3>
 
-                <table class="table active-list" id="active-list">
+                <table class="table">
                     <thead>
-                        <tr style="background-color: #4CAF50;" class="list-teacherHeader">
-                            <!-- <th class="cell-small text-center" data-toggle="tooltip" title="Toggle all!"><input
-                                    type="checkbox" id="check1-all" name="check1-all"></th> -->
+                        <tr style="background-color: #2da5d1;" class="list-teacherHeader">
                             <th class="text-center">#</th>
-                            <th>Tên lớp</th>
-                            <th class="hidden-xs hidden-sm"><i class="fa "></i>Tên khoá</th>
-                            <th class="hidden-xs hidden-sm">Tên huấn luyện viên</th>
+                            <th>Tên học viên</th>
+                            <th class="hidden-xs hidden-sm">Vắng mặt</th>
+                            <th class="hidden-xs hidden-sm">Có mặt</th>
                             <th></th>
-                            <!-- <th class="text-center"><i class="fa fa-bolt"></i>Actions</th> -->
                         </tr>
                     </thead>
                     <tbody class="list-teacherBody">
-                        <!--dòng lớp-->
                         <tr>
-                            <!-- <td class="text-center"><input type="checkbox" id="check1-td1" name="check1-td1"></td> -->
                             <td class="text-center">1</td>
-                            <td><a href="page_attendence.html">Class A</a></td><!--tên lớp-->
-                            <td class="hidden-xs hidden-sm">Hatha Yoga</td><!--tên khóa-->
-                            <td class="hidden-xs hidden-sm">Millie Harper</td><!--tên giáo viên-->
+                            <td class="text-center">Tom</td>
+                            <td class="text-center"><input type="radio" name="check1"></td>
+                            <td class="text-center"><input type="radio" name="check1"></td>
+                            
 
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="checkattendance.html" data-toggle="tooltip" title="Điểm danh"
-                                        class="btn btn-xs btn-check"><i
-                                            class="gi gi-check"></i></a>
-                                    <a href="editClass.html" data-toggle="tooltip" title="Chỉnh sửa"
-                                        class="btn btn-xs btn-success"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Xóa"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    <a href="#createButton" data-toggle="tooltip" title="Lưu"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="gi gi-disk_saved"></i></a>
                                 </div>
                             </td>
                         </tr>
-                        <!-- dòng lớp -->
+
                         <tr>
-                            <!-- <td class="text-center"><input type="checkbox" id="check1-td2" name="check1-td2"></td> -->
                             <td class="text-center">2</td>
-                            <td><a href="javascript:void(0)">Class B</a></td><!--tên lớp-->
-                            <td class="hidden-xs hidden-sm">Asanas Yoga</td><!--tên khóa-->
-                            <td class="hidden-xs hidden-sm">Lilly Fry</td><!--tên giáo viên-->
+                            <td class="text-center">Jerry</td>
+                            <td class="text-center"><input type="radio" name="check2"></td>
+                            <td class="text-center"><input type="radio" name="check2"></td>
+                            
 
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="checkattendance.html" data-toggle="tooltip" title="Điểm danh"
-                                        class="btn btn-xs btn-check"><i
-                                            class="gi gi-check"></i></a>
-                                    <a href="editClass.html" data-toggle="tooltip" title="Chỉnh sửa"
-                                        class="btn btn-xs btn-success"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Xóa"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    <a href="#createButton" data-toggle="tooltip" title="Lưu"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="gi gi-disk_saved"></i></a>
                                 </div>
                             </td>
                         </tr>
-                        <!-- dòng lớp -->
+
                         <tr>
-                            <!-- <td class="text-center"><input type="checkbox" id="check1-td3" name="check1-td3"></td> -->
                             <td class="text-center">3</td>
-                            <td><a href="javascript:void(0)">Class C</a></td><!--tên lớp-->
-                            <td class="hidden-xs hidden-sm">Yoga Trị Liệu</td><!--tên khóa-->
-                            <td class="hidden-xs hidden-sm">Elise Moran</td><!--tên giáo viên-->
+                            <td class="text-center">Pon</td>
+                            <td class="text-center"><input type="radio" name="check3"></td>
+                            <td class="text-center"><input type="radio" name="check3"></td>
+                            
 
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Điểm danh"
-                                        class="btn btn-xs btn-check"><i
-                                            class="gi gi-check"></i></a>
-                                    <a href="#createButton" data-toggle="tooltip" title="Chỉnh sửa"
-                                        class="btn btn-xs btn-success"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Xóa"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    <a href="#createButton" data-toggle="tooltip" title="Lưu"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="gi gi-disk_saved"></i></a>
                                 </div>
                             </td>
                         </tr>
-                        <!-- dòng lớp -->
+
                         <tr>
-                            <!-- <td class="text-center"><input type="checkbox" id="check1-td4" name="check1-td4"></td> -->
                             <td class="text-center">4</td>
-                            <td><a href="javascript:void(0)">Class D</a></td><!--tên lớp-->
-                            <td class="hidden-xs hidden-sm">Yoga Nghệ Thuật</td><!--tên khóa-->
-                            <td class="hidden-xs hidden-sm">Kate Glover</td><!--tên giáo viên-->
+                            <td class="text-center">Bi</td>
+                            <td class="text-center"><input type="radio" name="check4"></td>
+                            <td class="text-center"><input type="radio" name="check4"></td>
+                            
 
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Điểm danh"
-                                        class="btn btn-xs btn-check"><i
-                                            class="gi gi-check"></i></a>
-                                    <a href="#createButton" data-toggle="tooltip" title="Chỉnh sửa"
-                                        class="btn btn-xs btn-success"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Xóa"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    <a href="#createButton" data-toggle="tooltip" title="Lưu"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="gi gi-disk_saved"></i></a>
                                 </div>
                             </td>
                         </tr>
-                        <!-- dòng lớp -->
+
                         <tr>
-                            <!-- <td class="text-center"><input type="checkbox" id="check1-td4" name="check1-td4"></td> -->
-                            <td class="text-center">4</td>
-                            <td><a href="javascript:void(0)">Class E</a></td> <!-- tên lớp-->
-                            <td class="hidden-xs hidden-sm">Hatha Yoga</td><!--tên khóa-->
-                            <td class="hidden-xs hidden-sm">Lilly Fry</td><!--tên giáo viên-->
+                            <td class="text-center">5</td>
+                            <td class="text-center">Chip</td>
+                            <td class="text-center"><input type="radio" name="check5"></td>
+                            <td class="text-center"><input type="radio" name="check5"></td>
+                            
 
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Điểm danh"
-                                        class="btn btn-xs btn-check"><i
-                                            class="gi gi-check"></i></a>
-                                    <a href="#createButton" data-toggle="tooltip" title="Chỉnh sửa"
-                                        class="btn btn-xs btn-success"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Xóa"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    <a href="#createButton" data-toggle="tooltip" title="Lưu"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="gi gi-disk_saved"></i></a>
                                 </div>
                             </td>
                         </tr>
-                        <!-- dòng lớp -->
+
                         <tr>
-                            <!-- <td class="text-center"><input type="checkbox" id="check1-td4" name="check1-td4"></td> -->
-                            <td class="text-center">4</td>
-                            <td><a href="javascript:void(0)">Class F</a></td><!--tên lớp-->
-                            <td class="hidden-xs hidden-sm">Yoga Trị Liệu</td><!--tên khóa-->
-                            <td class="hidden-xs hidden-sm">Kate Glover</td><!--tên giáo viên-->
+                            <td class="text-center">6</td>
+                            <td class="text-center">Top</td>
+                            <td class="text-center"><input type="radio" name="check6"></td>
+                            <td class="text-center"><input type="radio" name="check6"></td>
+                            
 
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Điểm danh"
-                                        class="btn btn-xs btn-check"><i
-                                            class="gi gi-check"></i></a>
-                                    <a href="#createButton" data-toggle="tooltip" title="Chỉnh sửa"
-                                        class="btn btn-xs btn-success"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Xóa"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    <a href="#createButton" data-toggle="tooltip" title="Lưu"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="gi gi-disk_saved"></i></a>
                                 </div>
                             </td>
                         </tr>
-                        <!-- dòng lớp -->
+
                         <tr>
-                            <!-- <td class="text-center"><input type="checkbox" id="check1-td4" name="check1-td4"></td> -->
-                            <td class="text-center">4</td>
-                            <td class="NameClass"><a href="#">Class D</a></td><!--tên lớp-->
-                            <td class="hidden-xs hidden-sm NameCourse">Hatha Yoga</td><!--tên khóa-->
-                            <td class="hidden-xs hidden-sm NameTeacher">Lilly Fry</td>
-                            <!--tên giáo viên-->
+                            <td class="text-center">7</td>
+                            <td class="text-center">Tứn</td>
+                            <td class="text-center"><input type="radio" name="check7"></td>
+                            <td class="text-center"><input type="radio" name="check7"></td>
+                            
 
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="#createButton" data-toggle="tooltip" title="Điểm danh"
-                                        class="btn btn-xs btn-check"><i
-                                            class="gi gi-check"></i></a>
-                                    <a href="#createButton" data-toggle="tooltip" title="Chỉnh sửa"
-                                        class="btn btn-xs btn-success"><i
-                                            class="fa fa-pencil"></i></a>
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Xóa"
-                                        class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    <a href="#createButton" data-toggle="tooltip" title="Lưu"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="gi gi-disk_saved"></i></a>
                                 </div>
                             </td>
                         </tr>
-                    </tbody>
 
-
-                </table>
-                <!-- END List Staff -->
-
-                <table class="table inactive-list" id="inactive-list" style="display: none;">
-                    <thead>
-                        <tr style="background-color: aqua;" class="list-teacherHeader">
-                            <!-- <th class="cell-small text-center" data-toggle="tooltip" title="Toggle all!"><input
-                                    type="checkbox" id="check2-all" name="check1-all"></th> -->
-                            <th class="text-center">#</th>
-                            <th>Tên lớp</th>
-                            <th class="hidden-xs hidden-sm"><i class="fa "></i>Tên khoá</th>
-                            <th class="hidden-xs hidden-sm">Tên huấn luyện viên</th>
-                            <th></th>
-
-                        </tr>
-                    </thead>
-
-
-                    <tbody class="list-teacherBody">
-                        <!-- dòng lớp -->
                         <tr>
-                            <!-- <td class="text-center"><input type="checkbox" id="check2-td4" name="check1-td4"></td> -->
-                            <td class="text-center">1</td>
-                            <td><a href="javascript:void(0)">Class D</a></td><!--tên lớp-->
-                            <td class="hidden-xs hidden-sm">Yoga Nghệ Thuật</td><!--tên khóa-->
-                            <td class="hidden-xs hidden-sm">Kate Glover</td><!--tên giáo viên-->
+                            <td class="text-center">8</td>
+                            <td class="text-center">Tứn</td>
+                            <td class="text-center"><input type="radio" name="check8"></td>
+                            <td class="text-center"><input type="radio" name="check8"></td>
+                            
 
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Hoàn tác"
-                                        class="btn btn-xs btn-success"><i class="fa fa-check"></i></a>
+                                    <a href="#createButton" data-toggle="tooltip" title="Lưu"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="gi gi-disk_saved"></i></a>
                                 </div>
                             </td>
                         </tr>
-                        <!-- dòng lớp -->
+
                         <tr>
-                            <!-- <td class="text-center"><input type="checkbox" id="check2-td4" name="check1-td4"></td> -->
-                            <td class="text-center">2</td>
-                            <td><a href="javascript:void(0)">Class E</a></td> <!-- tên lớp-->
-                            <td class="hidden-xs hidden-sm">Hatha Yoga</td><!--tên khóa-->
-                            <td class="hidden-xs hidden-sm">Lilly Fry</td><!--tên giáo viên-->
+                            <td class="text-center">9</td>
+                            <td class="text-center">Tứn</td>
+                            <td class="text-center"><input type="radio" name="check9"></td>
+                            <td class="text-center"><input type="radio" name="check9"></td>
+                            
 
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Hoàn tác"
-                                        class="btn btn-xs btn-success"><i class="fa fa-check"></i></a>
+                                    <a href="#createButton" data-toggle="tooltip" title="Lưu"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="gi gi-disk_saved"></i></a>
                                 </div>
                             </td>
                         </tr>
-                        <!-- dòng lớp -->
+
                         <tr>
-                            <!-- <td class="text-center"><input type="checkbox" id="check2-td4" name="check1-td4"></td> -->
-                            <td class="text-center">3</td>
-                            <td><a href="javascript:void(0)">Class F</a></td><!--tên lớp-->
-                            <td class="hidden-xs hidden-sm">Yoga Trị Liệu</td><!--tên khóa-->
-                            <td class="hidden-xs hidden-sm">Kate Glover</td><!--tên giáo viên-->
+                            <td class="text-center">10</td>
+                            <td class="text-center">Tứn</td>
+                            <td class="text-center"><input type="radio" name="check10"></td>
+                            <td class="text-center"><input type="radio" name="check10"></td>
+                            
 
                             <td class="text-center">
                                 <div class="btn-group">
                                     <!--nút sửa-->
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Hoàn tác"
-                                        class="btn btn-xs btn-success"><i class="fa fa-check"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <!-- dòng lớp -->
-                        <tr>
-                            <!-- <td class="text-center"><input type="checkbox" id="check2-td4" name="check1-td4"></td> -->
-                            <td class="text-center">4</td>
-                            <td class="NameClass"><a href="#">Class D</a></td><!--tên lớp-->
-                            <td class="hidden-xs hidden-sm NameCourse">Hatha Yoga</td><!--tên khóa-->
-                            <td class="hidden-xs hidden-sm NameTeacher">Lilly Fry</td>
-                            <!--tên giáo viên-->
-
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút sửa-->
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Hoàn tác"
-                                        class="btn btn-xs btn-success"><i class="fa fa-check"></i></a>
+                                    <a href="#createButton" data-toggle="tooltip" title="Lưu"
+                                        class="btn btn-xs btn-success" onclick="showForm()"><i
+                                            class="gi gi-disk_saved"></i></a>
                                 </div>
                             </td>
                         </tr>
                     </tbody>
                 </table>
-                <!-- END List Staff -->
+                <div class="save-bnt-slot">
+                    <button type="submit">Lưu</button>
+                </div>
             </div>
             <!-- END Page Content -->
         </div>
@@ -492,84 +402,9 @@
     </div>
     <!-- END Page Container -->
 
+    
 
-    <!-- form chỉnh sửa class -->
-    <div id="formContainer">
-        <button id="closeButton" onclick="hideFormCreateAndEdit()">X</button>
-        <form id="registrationForm" onsubmit="saveEditListForm(); return false;">
-            <h2>chỉnh sửa Class</h2>
-            <!-- <label for="name">Tên lớp học</label>
-            <input type="text" id="class" name="name" required><br>
-
-            <label for="name">Tên khóa học</label>
-            <input type="text" id="course" name="name" required><br> -->
-
-            <label for="teacher">Tên giáo viên</label>
-            <input type="text" id="teacher" name="name" required><br>
-
-            <!-- <label for="name">Sĩ số học sinh</label>
-            <input type="number" id="quantity" name="quantity" required><br> -->
-
-            <input type="submit" value="Lưu" id="save">
-        </form>
-    </div>
-
-    <script>
-
-        //xử lý nút bấm active và inactive
-        var activeBtn = document.getElementById('active-bnt');
-        var inactiveBtn = document.getElementById('inactive-btn');
-        var activeList = document.getElementById('active-list');
-        var inactiveList = document.getElementById('inactive-list');
-
-        activeBtn.addEventListener('click', function () {
-            activeList.style.display = 'inline-table';
-            inactiveList.style.display = 'none';
-        });
-        inactiveBtn.addEventListener('click', function () {
-            activeList.style.display = 'none';
-            inactiveList.style.display = 'inline-table';
-        });
-
-
-        // xử lý fill tên giáo viên và nút sửa
-
-        function showEditListForm() {
-            var formContainer = document.getElementById("formContainer");
-            formContainer.style.display = "block";
-
-            // Lấy nội dung tên huấn luyện viên từ hàng tương ứng trong bảng
-            var row = event.target.closest("tr");
-            var teacherName = row.getElementsByClassName("hidden-xs hidden-sm")[1].innerText;
-
-            // Đặt nội dung tên huấn luyện viên vào input trong form chỉnh sửa
-            var teacherInput = document.getElementById("teacher");
-            teacherInput.value = teacherName;
-
-            // Lưu hàng tương ứng để cập nhật sau khi nhấn nút "Lưu"
-            var saveButton = document.getElementById("save");
-            saveButton.dataset.rowIndex = row.rowIndex;
-        }
-
-        function saveEditListForm() {
-            var formContainer = document.getElementById("formContainer");
-            formContainer.style.display = "none";
-
-            // Lấy nội dung đã chỉnh sửa từ input trong form
-            var teacherInput = document.getElementById("teacher");
-            var editedTeacherName = teacherInput.value;
-
-            // Lấy thông tin hàng cần cập nhật từ thuộc tính "data-row-index"
-            var saveButton = document.getElementById("save");
-            var rowIndex = saveButton.dataset.rowIndex;
-            var table = document.getElementById("active-list");
-            var row = table.rows[rowIndex];
-            var teacherCell = row.getElementsByClassName("hidden-xs hidden-sm")[1];
-            teacherCell.innerText = editedTeacherName;
-        }
-
-
-    </script>
+    
     <!--END form chỉnh sửa class -->
 
 
