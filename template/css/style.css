@@ -1214,11 +1214,12 @@ a:focus {
 }
 
 .box-1month {
-    margin: 20px 0 50px;
     border: 1px solid grey;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     padding: 20px;
     cursor: pointer;
+    border-bottom: none;
 }
 
 .payment-up {
@@ -1228,11 +1229,8 @@ a:focus {
 }
 
 .box-3month {
-    margin-top: 20px;
     border: 1px solid grey;
     border-bottom: none;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
     padding: 20px;
     cursor: pointer;
 }
@@ -3281,4 +3279,9 @@ input[type=text] {
 
 .table-checkout td:nth-child(2) {
     text-align: right;
+}
+
+.payment-info .btn-cancle{
+    margin: 10px;
+    text-align: center;
 }
