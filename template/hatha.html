@@ -398,102 +398,91 @@
     <!-- schedule End -->
 
     <!-- Form đề xuất mở lớp  -->
-    <div class="modal-request" id="requestModal">
-        <div class="modal-request-container">
-            <span class="close" id="myButton"><a>&times;</a></span>
-            <header class="modal-header-register">
-                Yêu cầu mở lớp
-            </header>
-
-            <div class="modal-body">
-                <form id="myForm">
-                    <div class="modal-request-content">
-                        <div class="box-request">
-                            <label for="">Tên khoá học</label>
-                            <input class="modal-input" id="txtlogin" type="text" placeholder="Hatha Yoga"
-                                readonly>
+    <form method="post" action="">
+        <div class="modal-request" id="requestModal">
+            <div class="modal-request-container">
+                <span class="close" id="myButton"><a>&times;</a></span>
+                <header class="modal-header-register">
+                    Yêu cầu mở lớp
+                </header>
+                <div class="modal-body">
+                    <form id="myForm">
+                        <div class="modal-request-content">
+                            <div class="box-request">
+                                <label for="">Tên khoá học</label>
+                                <input class="modal-input" id="txtlogin" type="text" placeholder="Hatha Yoga"
+                                    readonly>
+                            </div>
+                            <div class="box-request">
+                                <label for="">Tên học viên</label>
+                                <input type="text" class="modal-input" placeholder="Pon" readonly>
+                            </div>
+                            <div class="box-day">
+                                <label for="">Thời gian</label>
+                                <div class="modal-boxsh">
+                                    <input type="checkbox" name="class" value="Class A">Thứ 2
+                                </div>
+                                <div class="modal-boxsh">
+                                    <input type="checkbox" name="class" value="Class B">Thứ 3
+                                </div>
+                                <div class="modal-boxsh">
+                                    <input type="checkbox" name="class" value="Class C">Thứ 4
+                                </div>
+                                <div class="modal-boxsh">
+                                    <input type="checkbox" name="class" value="Class D">Thứ 5
+                                </div>
+                                <div class="modal-boxsh">
+                                    <input type="checkbox" name="class" value="Class F">Thứ 6
+                                </div>
+                                <div class="modal-boxsh">
+                                    <input type="checkbox" name="class" value="Class G">Thứ 7
+                                </div>
+                            </div>
+                            <div class="box-slot">
+                                <label for="">Slot</label>
+                                <select name="" id="">
+                                    <option value="">7:00 - 8:00</option>
+                                    <option value="">8:30 - 9:30</option>
+                                    <option value="">10:00 - 11:00</option>
+                                    <option value="">18:00 - 19:00</option>
+                                    <option value="">19:30 - 20:30</option>
+                                </select>
+                            </div>
                         </div>
-
-                        <div class="box-request">
-                            <label for="">Tên học viên</label>
-                            <input type="text" class="modal-input" placeholder="Pon" readonly>
-                        </div>
-
-                        <div class="box-day">
-                            <label for="">Thời gian</label>
-
-                            <div class="modal-boxsh">
-                                <input type="checkbox" name="class" value="Class A">Thứ 2
-                            </div>
-
-                            <div class="modal-boxsh">
-                                <input type="checkbox" name="class" value="Class B">Thứ 3
-
-                            </div>
-
-                            <div class="modal-boxsh">
-                                <input type="checkbox" name="class" value="Class C">Thứ 4
-
-                            </div>
-
-                            <div class="modal-boxsh">
-                                <input type="checkbox" name="class" value="Class D">Thứ 5
-
-                            </div>
-
-                            <div class="modal-boxsh">
-                                <input type="checkbox" name="class" value="Class F">Thứ 6
-                            </div>
-
-                            <div class="modal-boxsh">
-                                <input type="checkbox" name="class" value="Class G">Thứ 7
-
-                            </div>
-                        </div>
-                        <div class="box-slot">
-                            <label for="">Slot</label>
-                            <select name="" id="">
-                                <option value="">7:00 - 8:00</option>
-                                <option value="">8:30 - 9:30</option>
-                                <option value="">10:00 - 11:00</option>
-                                <option value="">18:00 - 19:00</option>
-                                <option value="">19:30 - 20:30</option>
-                            </select>
-                        </div>
-                    </div>
-                    <button id="modal-login-button" onclick="showFormSuccess()" type="button">
-                        Gửi
-                    </button>
-                    <br> <br>
-                    <footer class="modal-footer-schedule">
-                        <a href="hatha.html">Hủy</a>
-                    </footer>
-                </form>
+                        <button id="modal-login-button" onclick="showFormSuccess()" type="button">
+                            Gửi
+                        </button>
+                        <br> <br>
+                        <footer class="modal-footer-schedule">
+                            <a href="hatha.html">Hủy</a>
+                        </footer>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+    </form>
 
     <!-- Form thông báo đky thành công  -->
-    <div class="modal-schedule" id="successModal">
-        <div class="modal-container-success">
-            <span class="close" id="myButton"><a>&times;</a></span>
-            <header class="modal-header-register">
-                <img
-                    src="img/kisspng-check-mark-tick-clip-art-green-tick-mark-5aa8e457000d23.5682297315210179430002.png">
-            </header>
-
-            <form action="#">
-                <div class="modal-body-schedule">
-                    <h3 class="mo">Bạn đã đề xuất lịch học thành công</h3>
-                    <!-- <h5 class="mo">Vui lòng xem lịch học để đăng ký lớp</h5> -->
-                </div>
-            </form>
-
-            <a id="modal-login-button-re-hatha"  href="hatha.html" type="submit">
-                Đóng
-            </a>
+    <form method="post" action="">
+        <div class="modal-schedule" id="successModal">
+            <div class="modal-container-success">
+                <span class="close" id="myButton"><a>&times;</a></span>
+                <header class="modal-header-register">
+                    <img
+                        src="img/kisspng-check-mark-tick-clip-art-green-tick-mark-5aa8e457000d23.5682297315210179430002.png">
+                </header>
+                <form action="#">
+                    <div class="modal-body-schedule">
+                        <h3 class="mo">Bạn đã đề xuất lịch học thành công</h3>
+                        <!-- <h5 class="mo">Vui lòng xem lịch học để đăng ký lớp</h5> -->
+                    </div>
+                </form>
+                <a id="modal-login-button-re-hatha"  href="hatha.html" type="submit">
+                    Đóng
+                </a>
+            </div>
         </div>
-    </div>
+    </form>
 
     <script>
         var openModalRequest = document.getElementById("openModalRequest");
@@ -576,18 +565,6 @@
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

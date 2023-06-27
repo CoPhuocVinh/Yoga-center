@@ -54,27 +54,14 @@
     <!-- Nav Bar Start -->
     <div class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
-            <a href="index.html" class="navbar-brand">FY<span>o</span>ga</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+
 
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto">
-                    <a href="index.html" class="nav-item nav-link active">Trang Chủ</a>
-                    <a href="index.html" class="nav-item nav-link">Khóa học</a>
-                    <a href="index.html" class="nav-item nav-link">Lịch học</a>
-                    <a href="index.html" class="nav-item nav-link">Huấn luyện viên</a>
-                    <a href="index.html" class="nav-item nav-link">Blog</a>
-
-                    <!-- <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
-                    <div class="dropdown-menu">
-                        <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                        <a href="single.html" class="dropdown-item">Blog chi tiết</a>
-                    </div>
-                </div> -->
-                    <a href="index.html" class="nav-item nav-link">Liên hệ</a>
+                <div class="navbar-nav ml-auto" style="transform: translateX(-350px);">
+                    <a href="index.html" class="navbar-brand">FY<span>o</span>ga</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
                 <div class="nav-item nav-link-dk">
                     <!-- <i class="fa fa-user"></i> -->
@@ -88,65 +75,50 @@
     <!-- Nav Bar End -->
 
     <!-- Modal Login -->
-    <div class="modal-login">
-        <div class="modal-container">
-            <header class="modal-header">
-                Quên mật khẩu
-            </header>
-
-            <div class="modal-body">
-                <form id="myForm">
-                    <div class="modal-login-user">
-                        <p>Nhập địa chỉ email của bạn để khôi phục mật khẩu</p>
-                        <br>
-                        <input class="modal-input" type="email" placeholder="Nhập email" required>
-                    </div>
-                    <button id="openModalButtonRegister" class="btn-checkout" type="button">
-                        Tiếp Tục
-                    </button>
-                </form>
+    <form method="post" action="">
+        <div class="modal-login">
+            <div class="modal-container">
+                <header class="modal-header">
+                    Quên mật khẩu
+                </header>
+                <div class="modal-body">
+                    <form id="myForm">
+                        <div class="modal-login-user">
+                            <p>Nhập địa chỉ email của bạn để khôi phục mật khẩu</p>
+                            <br>
+                            <input class="modal-input" type="email" placeholder="Nhập email" required>
+                        </div>
+                        <button id="openModalButtonRegister" class="btn-checkout" type="button">
+                            Tiếp Tục
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+    </form>
 
-    <div class="modal-schedule" id="registerModal">
-        <div class="modal-container-reset">
-            <span class="close" id="myButton"><a>&times;</a></span>
-            <header class="modal-header-register">
-                Đặt lại mật khẩu
-            </header>
-
-            <form action="#">
-                <div class="modal-body-forgot">
-                    <input class="modal-input" type="password" placeholder="Nhập mật khẩu mới" required>
-                    <input class="modal-input" type="password" placeholder="Xác nhận mật khẩu" required>
-                </div>
-            </form>
-
-            <a href="index.html" class="btn-resetPass" type="submit">
-                Đổi mật khẩu
-            </a>
-
-            <footer class="modal-footer-schedule">
-                <a href="forgotPass.html">Hủy</a>
-            </footer>
+    <form method="post" action="">
+        <div class="modal-schedule" id="registerModal">
+            <div class="modal-container-reset">
+                <span class="close" id="myButton"><a>&times;</a></span>
+                <header class="modal-header-register">
+                    Đặt lại mật khẩu
+                </header>
+                    <div class="modal-body-forgot">
+                        <input class="modal-input" type="password" placeholder="Nhập mật khẩu mới" required>
+                        <input class="modal-input" type="password" placeholder="Xác nhận mật khẩu" required>
+                    </div>
+                <a href="index.html" class="btn-resetPass" type="submit">
+                    Đổi mật khẩu
+                </a>
+                <footer class="modal-footer-schedule">
+                    <a href="forgotPass.html">Hủy</a>
+                </footer>
+            </div>
         </div>
-    </div>
+    </form>
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-    
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
 
     <script src="js/functions.js"></script>
     <Script src="js/main.js"></Script>
