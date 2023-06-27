@@ -215,15 +215,13 @@
                 <div class="form-create-class">
                     <h2 class="create-header">Thêm mới khách hàng</h2>
 
-                    <div class="createClass-container" id="registrationForm">
-                        <label for="idAccount" id="lang-select">Id khách hàng</label>
-                        <input type="text" name="idAccount" value="26" disabled>
+                    <div class="createClass-container">
 
                         <label for="Email">Địa chỉ email</label>
-                        <input type="email" name="Email" id="">
+                        <input type="email" name="Email"><br>
 
                         <label for="Name">Họ và tên</label>
-                        <input type="text" name="Name">
+                        <input type="text" name="Name"><br>
 
                         <label for="Number">Số điện thoại</label>
                         <input type="tel" name="Number" required><br>
@@ -231,6 +229,9 @@
                         <label for="image"></label>
                         <input type="file" name="image" required><br>
 
+                        <label for="gender">Giới tính:</label>
+                        <input type="radio" value="Nam" name="gender">Nam</input>
+                        <input type="radio" value="Nữ" name="gender">Nữ</input><br>
 
                         <button class="btn-footer" type="reset"
                             style="transform: translate(315px, 0px) !important; ">Đặt lại</button>
@@ -239,6 +240,11 @@
                     </div>
                 </div>
                 <style>
+                    input[type="radio"] {
+                        margin: 0;
+                        width: 40px;
+                    }
+
                     #formCourse {
                         display: none;
                         position: fixed;
@@ -264,7 +270,7 @@
                     #registrationForm input[type="file"],
                     #registrationForm input[type="submit"],
                     #registrationForm input[type="datetime-local"] {
-                        display: block;
+                        display: flow-root;
                         margin-bottom: 10px;
                         width: 100%;
 
@@ -295,6 +301,10 @@
 
                     #closeButton {
                         margin-left: 280px;
+                    }
+
+                    .create-kh {
+                        transform: translateX(-273px);
                     }
                 </style>
                 <!-- Include Jquery library from Google's CDN but if something goes wrong get Jquery from local file (Remove 'http:' if you have SSL) -->
