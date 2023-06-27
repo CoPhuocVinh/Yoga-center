@@ -209,8 +209,8 @@
                 <!-- END Navigation info -->
 
                 <!-- List Staff -->
-                <h3 class="page-header page-header-top">Danh Sách Khách Hàng <a href="#" data-toggle="tooltip"
-                        title="Thêm mới" class="btn btn-xs btn-success" onclick="showCreateClass()"><i
+                <h3 class="page-header page-header-top">Danh Sách Khách Hàng <a href="createnewCustomer.html"
+                        data-toggle="tooltip" title="Thêm mới" class="btn btn-xs btn-success"><i
                             class="fa fa-plus"></i></a>
                     <div class="card-header section-bnt">
                         <div class="card-tools">
@@ -249,7 +249,8 @@
                                         class="btn btn-xs btn-success" onclick="showEditListForm()"><i
                                             class="fa fa-pencil"></i></a>
                                     <a href="javascript:void(0)" data-toggle="tooltip" title="Xoá"
-                                        class="btn btn-xs btn-danger" onclick="showCreateClass()"><i class="fa fa-times"></i></a>
+                                        class="btn btn-xs btn-danger" onclick="showCreateClass()"><i
+                                            class="fa fa-times"></i></a>
                                 </div>
                             </td>
                         </tr>
@@ -689,98 +690,11 @@
             inactiveList.style.display = 'none';
         });
 
-
         inactiveBtn.addEventListener('click', function () {
             activeList.style.display = 'none';
             inactiveList.style.display = 'inline-table';
         });
 
-
-        // Thêm mới thành viên
-        function createMember() {
-            // Lấy giá trị từ các trường input trong form tạo mới
-            var id = document.getElementById("idname").value;
-            var email = document.getElementById("email").value;
-            var fullname = document.getElementById("fullname").value;
-
-            // Tạo một hàng mới trong bảng
-            var table = document.getElementById("active-list");
-            var newRow = table.insertRow();
-
-            // Thêm các ô dữ liệu vào hàng mới
-            var idCell = newRow.insertCell(0);
-            var emailCell = newRow.insertCell(1);
-            var fullnameCell = newRow.insertCell(2);
-            var actionCell = newRow.insertCell(3);
-
-            idCell.innerHTML = id;
-            emailCell.innerHTML = email;
-            fullnameCell.innerHTML = fullname;
-            actionCell.innerHTML =
-                '<div class="btn-group">' +
-                '<a href="#" data-toggle="tooltip" title="Sửa" class="btn btn-xs btn-success" onclick="showEditListForm()"><i class="fa fa-pencil"></i></a>' +
-                '<a href="#" data-toggle="tooltip" title="Xoá" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>' +
-                '</div>';
-
-            // Xóa dữ liệu đã nhập trong form tạo mới
-            document.getElementById("idname").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("fullname").value = "";
-
-            // Đóng form tạo mới
-            hideFormCreateAndEdit();
-        }
-
-        // Sửa thông tin thành viên
-        function editMember() {
-            // Lấy giá trị từ các trường input trong form sửa
-            var email = document.getElementById("emailEdit").value;
-            var fullname = document.getElementById("customer").value;
-
-            // Cập nhật dữ liệu trong bảng
-            var table = document.getElementById("active-list");
-            var row = table.rows[1]; // Giả sử chỉ sửa hàng đầu tiên (index 1)
-
-            // Cập nhật các ô dữ liệu
-            row.cells[1].innerHTML = email;
-            row.cells[2].innerHTML = fullname;
-
-            // Đóng form sửa
-            hideFormCreateAndEdit();
-        }
-
-        // Xoá thành viên
-        function deleteMember() {
-            // Xác định hàng cần xoá
-            var table = document.getElementById("active-list");
-            var row = table.rows[1]; // Giả sử chỉ xoá hàng đầu tiên (index 1)
-
-            // Xoá hàng
-            row.remove();
-        }
-
-        // Gọi hàm hideFormCreateAndEdit() khi nhấn vào nút "X" trong form tạo mới và form sửa
-
-        // Gọi hàm createMember() khi nhấn vào nút "Lưu" trong form tạo mới
-        document.getElementById("save2").addEventListener("click", function (event) {
-            event.preventDefault();
-            createMember();
-        });
-
-        // Gọi hàm editMember() khi nhấn vào nút "Lưu" trong form sửa
-        document.getElementById("save").addEventListener("click", function (event) {
-            event.preventDefault();
-            editMember();
-        });
-
-        // Gọi hàm deleteMember() khi nhấn vào nút "Xoá" trong bảng
-        var deleteButtons = document.getElementsByClassName("btn btn-xs btn-danger");
-        for (var i = 0; i < deleteButtons.length; i++) {
-            deleteButtons[i].addEventListener("click", function (event) {
-                event.preventDefault();
-                deleteMember();
-            });
-        }
     </script>
     <!--END form sửa class -->
 
