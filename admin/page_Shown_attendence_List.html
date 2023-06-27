@@ -202,7 +202,8 @@
                 <!-- Navigation info -->
                 <ul id="nav-info" class="clearfix">
                     <li><a href="index.html"><i class="fa fa-home"></i></a></li>
-                    <li><a href="javascript:void(0)">Danh sách học viên</a></li>
+                    <li><a href="page_attendence.html">Danh sách học viên</a></li>
+                    <li><a href="javascript:void(0)">Xem điểm danh</a></li>
                 </ul>
                 <!-- END Navigation info -->
 
@@ -210,12 +211,12 @@
 
                 <h3 class="page-header page-header-top">Danh Sách Học Viên
                     <div class="card-header section-bnt">
-                        <button class="back-bnt" onclick="goToPageAttendence()">trở lại</button>
+                        <!-- <button class="back-bnt" onclick="goToPageAttendence()">Trở lại</button> -->
                         <div class="card-tools">
                             <ul class="nav nav-pills ml-auto">
                                 <li class="nav-item">
                                     <a class="nav-link acttendence-bnt" href="#attendence" id="acttendence-bnt"
-                                        onclick="" data-toggle="tab">Điểm danh</a>
+                                        onclick="" data-toggle="tab">Xem điểm danh</a>
                                 </li>
                             </ul>
                         </div>
@@ -224,77 +225,180 @@
                 </h3>
 
                 <!-- danh sách hoạt động -->
-                <table class="table attendence-list" id="attendence-list">
+                <table class="table">
                     <thead>
-                        <tr class="list-teacherHeader" style="background-color: #4CAF50;">
-                            <th class="hidden-xs hidden-sm">Tên học viên</th>
-                            <th class="hidden-xs hidden-sm checkbox-column">
-                                <input type="checkbox" class="checkbox-item" checked>
-                            </th>
+                        <tr style="background-color: #2da5d1;" class="list-teacherHeader">
+                            <th class="text-center">#</th>
+                            <th>Tên học viên</th>
+                            <th class="hidden-xs hidden-sm">Vắng mặt</th>
+                            <th class="hidden-xs hidden-sm">Có mặt</th>
+                            <th></th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="list-teacherBody">
                         <tr>
-                            <td class="hidden-xs hidden-sm">Lê Thị Pon</td>
-                            <td class="hidden-xs hidden-sm checkbox-column">
-                                <input type="checkbox" class="checkbox-item" checked>
+                            <td class="text-center">1</td>
+                            <td class="text-center">Tom</td>
+                            <td class="text-center"><input type="radio" name="check1"></td>
+                            <td class="text-center"><input type="radio" name="check1" checked></td>
+
+
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Lưu"
+                                        class="btn btn-xs btn-success"><i class="gi gi-disk_saved"></i></a>
+                                </div>
                             </td>
                         </tr>
+
                         <tr>
-                            <td class="hidden-xs hidden-sm">Quách Zinh</td>
-                            <td class="hidden-xs hidden-sm checkbox-column">
-                                <input type="checkbox" class="checkbox-item" checked>
+                            <td class="text-center">2</td>
+                            <td class="text-center">Jerry</td>
+                            <td class="text-center"><input type="radio" name="check2"></td>
+                            <td class="text-center"><input type="radio" name="check2" checked></td>
+
+
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Lưu"
+                                        class="btn btn-xs btn-success"><i class="gi gi-disk_saved"></i></a>
+                                </div>
                             </td>
                         </tr>
+
                         <tr>
-                            <td class="hidden-xs hidden-sm">Đại Ngọc Hậu</td>
-                            <td class="hidden-xs hidden-sm checkbox-column">
-                                <input type="checkbox" class="checkbox-item" checked>
+                            <td class="text-center">3</td>
+                            <td class="text-center">Pon</td>
+                            <td class="text-center"><input type="radio" name="check3"></td>
+                            <td class="text-center"><input type="radio" name="check3" checked></td>
+
+
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Lưu"
+                                        class="btn btn-xs btn-success"><i class="gi gi-disk_saved"></i></a>
+                                </div>
                             </td>
                         </tr>
-                        <tr>
 
-                            <td class="hidden-xs hidden-sm">Đinh Hàn Anh</td>
-                            <td class="hidden-xs hidden-sm checkbox-column">
-                                <input type="checkbox" class="checkbox-item" checked>
+                        <tr>
+                            <td class="text-center">4</td>
+                            <td class="text-center">Bi</td>
+                            <td class="text-center"><input type="radio" name="check4"></td>
+                            <td class="text-center"><input type="radio" name="check4" checked></td>
+
+
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Lưu"
+                                        class="btn btn-xs btn-success"><i class="gi gi-disk_saved"></i></a>
+                                </div>
                             </td>
-
                         </tr>
-                        <tr>
 
-                            <td class="hidden-xs hidden-sm">Lưu Lê Tuấn</td>
-                            <td class="hidden-xs hidden-sm checkbox-column">
-                                <input type="checkbox" class="checkbox-item" checked>
+                        <tr>
+                            <td class="text-center">5</td>
+                            <td class="text-center">Chip</td>
+                            <td class="text-center"><input type="radio" name="check5"></td>
+                            <td class="text-center"><input type="radio" name="check5" checked></td>
+
+
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Lưu"
+                                        class="btn btn-xs btn-success"><i class="gi gi-disk_saved"></i></a>
+                                </div>
                             </td>
-
                         </tr>
-                        <tr>
 
-                            <td class="hidden-xs hidden-sm">Cao Ngọc Khỏi</td>
-                            <td class="hidden-xs hidden-sm checkbox-column">
-                                <input type="checkbox" class="checkbox-item" checked>
+                        <tr>
+                            <td class="text-center">6</td>
+                            <td class="text-center">Top</td>
+                            <td class="text-center"><input type="radio" name="check6"></td>
+                            <td class="text-center"><input type="radio" name="check6" checked></td>
+
+
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Lưu"
+                                        class="btn btn-xs btn-success"><i class="gi gi-disk_saved"></i></a>
+                                </div>
                             </td>
-
                         </tr>
-                        <tr>
 
-                            <td class="hidden-xs hidden-sm">Lại Đức Ngắm</td>
-                            <td class="hidden-xs hidden-sm checkbox-column">
-                                <input type="checkbox" class="checkbox-item" checked>
+                        <tr>
+                            <td class="text-center">7</td>
+                            <td class="text-center">Tứn</td>
+                            <td class="text-center"><input type="radio" name="check7" checked></td>
+                            <td class="text-center"><input type="radio" name="check7"></td>
+
+
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Lưu"
+                                        class="btn btn-xs btn-success"><i class="gi gi-disk_saved"></i></a>
+                                </div>
                             </td>
-
                         </tr>
-                        <tr>
 
-                            <td class="hidden-xs hidden-sm">Đậu Thị Ngọc Dung</td>
-                            <td class="hidden-xs hidden-sm checkbox-column">
-                                <input type="checkbox" class="checkbox-item" checked>
+                        <tr>
+                            <td class="text-center">8</td>
+                            <td class="text-center">Tứn</td>
+                            <td class="text-center"><input type="radio" name="check8"></td>
+                            <td class="text-center"><input type="radio" name="check8" checked></td>
+
+
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Lưu"
+                                        class="btn btn-xs btn-success"><i class="gi gi-disk_saved"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center">9</td>
+                            <td class="text-center">Tứn</td>
+                            <td class="text-center"><input type="radio" name="check9"></td>
+                            <td class="text-center"><input type="radio" name="check9" checked></td>
+
+
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Lưu"
+                                        class="btn btn-xs btn-success"><i class="gi gi-disk_saved"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-center">10</td>
+                            <td class="text-center">Tứn</td>
+                            <td class="text-center"><input type="radio" name="check10" checked></td>
+                            <td class="text-center"><input type="radio" name="check10"></td>
+
+
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <!--nút sửa-->
+                                    <a href="#createButton" data-toggle="tooltip" title="Lưu"
+                                        class="btn btn-xs btn-success"><i class="gi gi-disk_saved"></i></a>
+                                </div>
                             </td>
                         </tr>
                     </tbody>
                 </table>
                 <!-- END List Staff -->
-                <div class="luu">
+                <div class="save-bnt-slot">
                     <button type="submit">Lưu</button>
                 </div>
             </div>
