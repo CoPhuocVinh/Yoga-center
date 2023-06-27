@@ -206,18 +206,19 @@
                 <!-- Navigation info -->
                 <ul id="nav-info" class="clearfix">
                     <li><a href="index.html"><i class="fa fa-home"></i></a></li>
-                    <li><a href="page_list_staff.html">Danh sách nhân viên</a></li>
-                    <li><a href="createnewstaff.html">Thêm mới nhân viên</a></li>
+                    <li><a href="page_list_customer.html">Danh sách khách hàng</a></li>
+                    <li><a href="createnewCustomer.html">Thêm mới khách hàng</a></li>
                 </ul>
                 <!-- END Navigation info -->
 
                 <!-- List Staff -->
                 <div class="form-create-class">
-                    <h2 class="create-header">Thêm mới nhân viên</h2>
+                    <h2 class="create-header">Thêm mới khách hàng</h2>
 
                     <div class="createClass-container" id="registrationForm">
-                        <label for="id">ID nhân viên</label>
-                        <input type="text" name="id" disabled value="25">
+                        <label for="idAccount" id="lang-select">Id khách hàng</label>
+                        <input type="text" name="idAccount" value="26" disabled>
+
                         <label for="Email">Địa chỉ email</label>
                         <input type="email" name="Email" id="">
 
@@ -226,13 +227,15 @@
 
                         <label for="Number">Số điện thoại</label>
                         <input type="tel" name="Number" required><br>
+
                         <label for="image"></label>
-                        <input type="file" name="image">
+                        <input type="file" name="image" required><br>
+
 
                         <button class="btn-footer" type="reset"
-                            style="transform: translate(315px, 30px) !important; ">Đặt lại</button>
+                            style="transform: translate(315px, 0px) !important; ">Đặt lại</button>
                         <button class="btn-footer" type="submit"
-                            style="transform: translate(315px, 30px) !important; ">Tạo</button>
+                            style="transform: translate(315px, 0px) !important; ">Tạo</button>
                     </div>
                 </div>
                 <style>
