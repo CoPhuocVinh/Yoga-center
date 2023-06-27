@@ -215,19 +215,22 @@
                 <div class="form-create-class">
                     <h2 class="create-header">Thêm mới nhân viên</h2>
 
-                    <div class="createClass-container" id="registrationForm">
-                        <label for="id">ID nhân viên</label>
-                        <input type="text" name="id" disabled value="25">
+                    <div class="createClass-container">
+
                         <label for="Email">Địa chỉ email</label>
-                        <input type="email" name="Email" id="">
+                        <input type="email" name="Email" id=""><br>
 
                         <label for="Name">Họ và tên</label>
-                        <input type="text" name="Name">
+                        <input type="text" name="Name"><br>
 
                         <label for="Number">Số điện thoại</label>
                         <input type="tel" name="Number" required><br>
                         <label for="image"></label>
-                        <input type="file" name="image">
+                        <input type="file" name="image"><br>
+
+                        <label for="gender">Giới tính:</label>
+                        <input type="radio" value="Nam" name="gender">Nam</input>
+                        <input type="radio" value="Nữ" name="gender">Nữ</input><br>
 
                         <button class="btn-footer" type="reset"
                             style="transform: translate(315px, 30px) !important; ">Đặt lại</button>
@@ -236,6 +239,11 @@
                     </div>
                 </div>
                 <style>
+                    input[type="radio"] {
+                        margin: 0;
+                        width: 40px;
+                    }
+
                     #formCourse {
                         display: none;
                         position: fixed;
