@@ -2548,8 +2548,7 @@ span.input-group-addon {
 .form-box .form-group {
     margin: 0 -15px;
     padding: 8px 5px;
-
-
+    transform: translate(46px, 15px);
 }
 
 

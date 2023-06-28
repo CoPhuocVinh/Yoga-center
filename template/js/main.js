@@ -158,7 +158,7 @@ function showFormSetting() {
     modalSetting.style.display = "flex";
 }
 
-function hideFormSetting(){
+function hideFormSetting() {
     var modalSetting = document.getElementById("modal-user-settings");
     modalSetting.style.display = "none";
 }
@@ -186,9 +186,10 @@ document.getElementById("example-user-tabs").addEventListener("click", function 
 });
 
 // Xử lý sự kiện khi nhấn nút "Lưu"
-document.getElementById("save-account-btn").addEventListener("click", function() {
+    document.getElementById("save-account-btn").addEventListener("click", function () {
     // Hiển thị thông báo thành công
     document.getElementById("account-success-alert").style.display = "block";
-  });
+});
+
 
 
