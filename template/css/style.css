@@ -2762,6 +2762,41 @@ p.time-sche {
     justify-content: center;
 }
 
+#modal-user-settings{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    width: 508px;
+    top: 50px;
+    height: fit-content;
+}
+
+#example-user-tabs li{
+    margin-right: 20px;
+    padding: 5px;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 10px;
+}
+
+.control-label{
+    padding: 5px 15px;
+    font-weight: 700;
+}
+
+
 /* -------------------------Schedule-detail --------------------  */
 .modal-hlv-detail h2 {
     margin-top: 20px;
@@ -2784,6 +2819,15 @@ p.time-sche {
 .modal-hlv-detail .user-display .info {
     width: 250px;
     margin-left: 50px;
+}
+
+.info button{
+    border: none;
+}
+
+.info button:hover{
+    color: #F7CAC9;
+    border: none;
 }
 
 .schedule-detail {
