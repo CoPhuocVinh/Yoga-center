@@ -212,6 +212,12 @@ header
     font-weight: 700;
 }
 
+.section-header-lich label{
+    font-size: 18px;
+    margin-right: 10px;
+    color: brown;
+}
+
 @media (max-width: 767.98px) {
     .section-header-lich h2 {
         font-size: 30px;
@@ -286,14 +292,49 @@ header
     color: #000;
 }
 
-.table .thead-primary {
-    background: #d291bc;
+.table .thead-primary .head-thu th {
+    background: #FF9B9B;
     font-size: 16px;
+    color: #606060;
+    border: 1px solid #FFFEC4;
+}
+
+.table .thead-primary .head-day th{
+    background: #FFD6A5;
+    color: #606060;
+    font-size: 12px;
+    border: 1px solid #FFFEC4;
+    border-radius: 3px;
 }
 
 .text-center .color {
     font-size: 15px;
     font-weight: 600;
+    width: 110px;
+    line-height: 65px;
+    color: #000;
+}
+
+.text-center .color-1,
+.text-center .color-2,
+.text-center .color-3,
+.text-center .color-4,
+.text-center .color-5{
+    border: 1px solid lightgrey;
+    width: 135px;
+}
+
+.text-center .color-1:hover,
+.text-center .color-2:hover,
+.text-center .color-3:hover,
+.text-center .color-4:hover,
+.text-center .color-5:hover{
+    background-color: rgb(234, 233, 233);
+    cursor: pointer;
+}
+
+.table .text-center h6{
+    color: #80b260;
 }
 
 .table tbody tr td .trainer {
@@ -1275,8 +1316,9 @@ header
 }
 
 .calendar-day {
-    font-size: 20px;
-    padding: 6px;
+    text-align: center;
+    font-size: 17px;
+    padding: 5px;
 }
 
 /* Wizard */

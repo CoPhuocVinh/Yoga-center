@@ -220,16 +220,23 @@
                 <div class="containerSchedule">
                     <div class="section-header-lich text-center wow zoomIn" data-wow-delay="0.1s">
                         <h2>Lịch học</h2><br>
-
-                        <!-- <select class="calendar-day" id="option" onchange="showCreateCalendar()">
-
-                            <option value="ngay">19/06/2023 - 24/06/2023</option>
+                        <label for="">Năm</label>
+                        <select class="calendar-day" id="option">
+                            <option value="ngay">-- Chọn năm --</option>
+                            <option value="ngay">2020</option>
+                            <option value="ngay">2021</option>
+                            <option value="ngay">2022</option>
+                            <option value="ngay">2023</option>
+                        </select>  
+                        <br><br>
+                        <label for="">Tuần</label>
+                        <select class="calendar-day" id="option">
+                            <option value="ngay">-- Chọn tuần --</option>
                             <option value="ngay">26/06/2023 - 01/07/2023</option>
                             <option value="ngay">03/07/2023 - 08/07/2023</option>
                             <option value="ngay">10/07/2023 - 17/07/2023</option>
                             <option value="ngay">24/07/2023 - 29/07/2023</option>
-                            <option value="orderDay">...</option>
-                        </select> -->
+                        </select>
 
                     </div>
 
@@ -241,9 +248,18 @@
                                 <div class="row">
                                     <div class=" ftco-animate">
                                         <div class="sched-list">
-                                            <table class="table">
+                                            <table class="table" id="myTable">
                                                 <thead class="thead-primary">
-                                                    <tr class="text-center">
+                                                    <tr class="text-center head-day">
+                                                        <th>&nbsp;</th>
+                                                        <th>26/06</th>
+                                                        <th>27/06</th>
+                                                        <th>28/06</th>
+                                                        <th>29/06</th>
+                                                        <th>30/06</th>
+                                                        <th>31/06</th>
+                                                    </tr>
+                                                    <tr class="text-center head-thu">
                                                         <th>&nbsp;</th>
                                                         <th>Thứ 2</th>
                                                         <th>Thứ 3</th>
@@ -260,33 +276,28 @@
                                                         </td>
 
                                                         <td class="color-1">
-                                                            <h6><a href="#">HATHA YOGA</a></h6>
+                                                            <h6>HATHA YOGA</h6>
                                                             <p class="idcourse">Hatha-T2-S1</p>
-                                                            <span class="trainer">Giáo viên A</span>
                                                         </td>
 
                                                         <td class="color-1">
-                                                            <h6><a href="#">YOGA TRỊ LIỆU</a></h6>
+                                                            <h6>YOGA TRỊ LIỆU</h6>
                                                             <p class="idcourse">Hatha-T3-S1</p>
-                                                            <span class="trainer">Giáo viên B</span>
                                                         </td>
 
                                                         <td class="color-1">
-                                                            <h6><a href="#">YOGA NGHỆ THUẬT</a></h6>
+                                                            <h6>YOGA NGHỆ THUẬT</h6>
                                                             <p class="idcourse">Hatha-T4-S1</p>
-                                                            <span class="trainer">Giáo viên C</span>
                                                         </td>
 
                                                         <td class="color-1">
-                                                            <h6><a href="#">ASANAS YOGA</a></h6>
+                                                            <h6>ASANAS YOGA</h6>
                                                             <p class="idcourse">Hatha-T5-S1</p>
-                                                            <span class="trainer">Giáo viên D</span>
                                                         </td>
 
                                                         <td class="color-1">
-                                                            <h6><a href="#">HATHA YOGA</a></h6>
+                                                            <h6>HATHA YOGA</h6>
                                                             <p class="idcourse">Hatha-T6-S1</p>
-                                                            <span class="trainer">Giáo viên A</span>
                                                         </td>
 
                                                         <td class="color-1">
@@ -299,36 +310,32 @@
                                                         </td>
 
                                                         <td class="color-2">
-                                                            <h6><a href="#">YOGA NGHỆ THUẬT</a></h6>
+                                                            <h6>YOGA NGHỆ THUẬT</h6>
                                                             <p class="idcourse">Hatha-T2-S2</p>
-                                                            <span class="trainer">Giáo viên C</span>
                                                         </td>
 
                                                         <td class="color-2">
-                                                            <h6><a href="#">YOGA NGHỆ THUẬT</a></h6>
+                                                            <h6>YOGA NGHỆ THUẬT</h6>
                                                             <p class="idcourse">Hatha-T3-S2</p>
-                                                            <span class="trainer">Giáo viên C</span>
                                                         </td>
 
                                                         <td class="color-2">
+                                                            
                                                         </td>
 
                                                         <td class="color-2">
-                                                            <h6><a href="#">ASANAS YOGA</a></h6>
+                                                            <h6>ASANAS YOGA</h6>
                                                             <p class="idcourse">Hatha-T5-S2</p>
-                                                            <span class="trainer">Giáo viên D</span>
                                                         </td>
 
                                                         <td class="color-2">
-                                                            <h6><a href="#">HATHA YOGA</a></h6>
+                                                            <h6>HATHA YOGA</h6>
                                                             <p class="idcourse">Hatha-T6-S2</p>
-                                                            <span class="trainer">Giáo viên A</span>
                                                         </td>
 
                                                         <td class="color-2">
-                                                            <h6><a href="#">YOGA NGHỆ THUẬT</a></h6>
+                                                            <h6>YOGA NGHỆ THUẬT</h6>
                                                             <p class="idcourse">Hatha-T7-S2</p>
-                                                            <span class="trainer">Giáo viên C</span>
                                                         </td>
                                                     </tr><!-- END TR-->
 
@@ -338,39 +345,33 @@
                                                         </td>
 
                                                         <td class="color-3">
-                                                            <h6><a href="#">YOGA TRỊ LIỆU</a></h6>
+                                                            <h6>YOGA TRỊ LIỆU</h6>
                                                             <p class="idcourse">Hatha-T2-S3</p>
-                                                            <span class="trainer">Giáo viên B</span>
                                                         </td>
 
                                                         <td class="color-3">
-                                                            <h6><a href="#">ASANAS YOGA</a></h6>
+                                                            <h6>ASANAS YOGA</h6>
                                                             <p class="idcourse">Hatha-T3-S3</p>
-                                                            <span class="trainer">Giáo viên D</span>
                                                         </td>
 
                                                         <td class="color-3">
-                                                            <h6><a href="#">HATHA YOGA</a></h6>
+                                                            <h6>HATHA YOGA</h6>
                                                             <p class="idcourse">Hatha-T4-S3</p>
-                                                            <span class="trainer">Giáo viên A</span>
                                                         </td>
 
                                                         <td class="color-3">
-                                                            <h6><a href="#">YOGA TRỊ LIỆU</a></h6>
+                                                            <h6>YOGA TRỊ LIỆU</h6>
                                                             <p class="idcourse">Hatha-T5-S3</p>
-                                                            <span class="trainer">Giáo viên B</span>
                                                         </td>
 
                                                         <td class="color-3">
-                                                            <h6><a href="#">HATHA YOGA</a></h6>
+                                                            <h6>HATHA YOGA</h6>
                                                             <p class="idcourse">Hatha-T6-S3</p>
-                                                            <span class="trainer">Giáo viên A</span>
                                                         </td>
 
                                                         <td class="color-3">
-                                                            <h6><a href="#">ASANAS YOGA</a></h6>
+                                                            <h6>ASANAS YOGA</h6>
                                                             <p class="idcourse">Hatha-T7-S3</p>
-                                                            <span class="trainer">Giáo viên D</span>
                                                         </td>
                                                     </tr><!-- END TR-->
                                                     <tr class="text-center">
@@ -379,33 +380,28 @@
                                                         </td>
 
                                                         <td class="color-4">
-                                                            <h6><a href="#">YOGA TRỊ LIỆU</a></h6>
+                                                            <h6>YOGA TRỊ LIỆU</h6>
                                                             <p class="idcourse">Hatha-T2-S4</p>
-                                                            <span class="trainer">Giáo viên B</span>
                                                         </td>
 
                                                         <td class="color-4">
-                                                            <h6><a href="#">YOGA NGHỆ THUẬT</a></h6>
+                                                            <h6>YOGA NGHỆ THUẬT</h6>
                                                             <p class="idcourse">Hatha-T3-S4</p>
-                                                            <span class="trainer">Giáo viên C</span>
                                                         </td>
 
                                                         <td class="color-4">
-                                                            <h6><a href="#">ASANAS YOGA</a></h6>
+                                                            <h6>ASANAS YOGA</h6>
                                                             <p class="idcourse">Hatha-T4-S4</p>
-                                                            <span class="trainer">Giáo viên D</span>
                                                         </td>
 
                                                         <td class="color-4">
-                                                            <h6><a href="#">HATHA YOGA</a></h6>
+                                                            <h6>HATHA YOGA</h6>
                                                             <p class="idcourse">Hatha-T5-S4</p>
-                                                            <span class="trainer">Giáo viên A</span>
                                                         </td>
 
                                                         <td class="color-4">
-                                                            <h6><a href="#">YOGA NGHỆ THUẬT</a></h6>
+                                                            <h6>YOGA NGHỆ THUẬT</h6>
                                                             <p class="idcourse">Hatha-T6-S4</p>
-                                                            <span class="trainer">Giáo viên C</span>
                                                         </td>
 
                                                         <td class="color-4">
@@ -423,21 +419,18 @@
                                                         </td>
 
                                                         <td class="color-5">
-                                                            <h6><a href="#">YOGA TRỊ LIỆU</a></h6>
+                                                            <h6>YOGA TRỊ LIỆU</h6>
                                                             <p class="idcourse">Hatha-T4-S5</p>
-                                                            <span class="trainer">Giáo viên B</span>
                                                         </td>
 
                                                         <td class="color-5">
-                                                            <h6><a href="#">ASANAS YOGA</a></h6>
+                                                            <h6>ASANAS YOGA</h6>
                                                             <p class="idcourse">Hatha-T5-S5</p>
-                                                            <span class="trainer">Giáo viên D</span>
                                                         </td>
 
                                                         <td class="color-5">
-                                                            <h6><a href="#">YOGA TRỊ LIỆU</a></h6>
+                                                            <h6>YOGA TRỊ LIỆU</h6>
                                                             <p class="idcourse">Hatha-T6-S5</p>
-                                                            <span class="trainer">Giáo viên B</span>
                                                         </td>
 
                                                         <td class="color-5">
@@ -755,6 +748,18 @@
     <script src="js/main.js"></script>
 
     <!-- Javascript code only for this page -->
+    <script>
+        document.getElementById("myTable").addEventListener("click", function(event) {
+      var target = event.target;
+      if (target.tagName === "TD") {
+        redirectToPage("addClassOnSchedule.html");
+      }
+    });
+
+    function redirectToPage(pageUrl) {
+      window.location.href = pageUrl;
+    }
+    </script>
 </body>
 
 </html>
