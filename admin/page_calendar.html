@@ -248,7 +248,7 @@
                                 <div class="row">
                                     <div class=" ftco-animate">
                                         <div class="sched-list">
-                                            <table class="table" id="myTable">
+                                            <table class="table">
                                                 <thead class="thead-primary">
                                                     <tr class="text-center head-day">
                                                         <th>&nbsp;</th>
@@ -748,18 +748,6 @@
     <script src="js/main.js"></script>
 
     <!-- Javascript code only for this page -->
-    <script>
-        document.getElementById("myTable").addEventListener("click", function(event) {
-      var target = event.target;
-      if (target.tagName === "TD") {
-        redirectToPage("addClassOnSchedule.html");
-      }
-    });
-
-    function redirectToPage(pageUrl) {
-      window.location.href = pageUrl;
-    }
-    </script>
 </body>
 
 </html>
