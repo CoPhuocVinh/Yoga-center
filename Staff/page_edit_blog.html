@@ -44,6 +44,9 @@
 
     <!-- Modernizr (browser feature detection library) & Respond.js (Enable responsive CSS code on browsers that don't support it, eg IE8) -->
     <script src="js/vendor/modernizr-respond.min.js"></script>
+    <script type="text/javascript" src="web/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="web/ckfinder/ckfinder.js"></script>
+
 </head>
 
 <!-- Add the class .fixed to <body> for a fixed layout on large resolutions (min: 1200px) -->
@@ -80,7 +83,6 @@
             <ul id="widgets" class="navbar-nav-custom pull-right">
                 <!-- Just a divider -->
                 <li class="divider-vertical"></li>
-
 
 
                 <li class="divider-vertical"></li>
@@ -127,7 +129,7 @@
 
                 <!-- Primary Navigation -->
                 <nav id="primary-nav">
-                    <h3 class="admin-title">Admin</h3>
+                    <h3 class="staff-title">Nhân viên</h3>
                     <ul>
                         <li>
                             <a href="index.html" class="active"><i class="fa fa-fire"></i>Bảng điều khiển</a>
@@ -186,9 +188,6 @@
                         <li>
                             <a href="page_list_blog.html"><i class="fa fa-pencil"></i>Blog</a>
                         </li>
-                        <li>
-                            <a href="page_list_confirm_register.html"><i class="fa fa-pencil"></i>Xác nhận đăng ký</a>
-                        </li>
                     </ul>
                 </nav>
                 <!-- END Primary Navigation -->
@@ -200,379 +199,64 @@
             <!-- Page Content -->
             <div id="page-content">
                 <!-- Navigation info -->
-                <ul id="nav-info" class="clearfix">
-                    <li><a href="index.html"><i class="fa fa-home"></i></a></li>
-                    <li><a href="javascript:void(0)">Danh sách học viên</a></li>
-                </ul>
-                <!-- END Navigation info -->
+                <form method="POST" action="">
+                    <div class="row" style="margin-top: 8%;">
+                        <div class="p-4">
+                            <h4 class="text-center">Sửa Bài Viết</h4>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="p-3 py-5">
+                                <div class="col-md-12">Tiêu đề<input type="text" name="title" class="form-control"
+                                        placeholder="Nhập tiêu đề"></div>
+                                <div class="col-md-12">Thông tin rút gọn<textarea class="form-control"
+                                        name="brief_infor" rows="2"></textarea></div>
+                                <div class="col-md-12">Nội dung
 
-                <!-- List Staff -->
+                                    <textarea cols="20" rows="40" id="editor" name="content"></textarea>
+                                    <script>
+                                        var editor = CKEDITOR.replace('editor');
+                                        CKFinder.setupCKEditor(editor, '/ckfinder/');
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3 py-5">
+                                <div class="row mt-16">
+                                    <div class="col-md-12">Trạng thái
+                                        <br />
+                                        <input name="status" type="radio" value="1" checked />&nbsp;Hiện
+                                        <input name="status" type="radio" value="0" />&nbsp;Ẩn
+                                    </div>
+                                    <div class="col-md-12">
+                                        <br>
+                                        <span>
+                                            Hình thu nhỏ
+                                        </span><br>
+                                        <input type="file" name="thumbnail" class="form-control"
+                                            placeholder="Thumbnail">
+                                    </div>
+                                </div>
+                            </div>
 
-                <h3 class="page-header page-header-top">Danh Sách Học Viên
-                    <div class="card-header section-bnt">
-                        <div class="card-tools">
-                            <ul class="nav nav-pills ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link active-bnt" href="#active" id="active-bnt" data-toggle="tab">Hoạt
-                                        động</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link inactive-bnt" href="#inactive" id="inactive-btn"
-                                        data-toggle="tab">Không hoạt động</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link acttendence-bnt" href="#attendence" id="acttendence-bnt"
-                                        data-toggle="tab">Xem điểm danh</a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
-                </h3>
-
-                <!-- danh sách hoạt động -->
-                <table class="table active-list" id="active-list">
-                    <thead>
-                        <tr class="list-teacherHeader" style="background-color: #4CAF50;">
-
-                            <th class="hidden-xs hidden-sm">ID tài khoản</th>
-                            <th class="hidden-xs hidden-sm"><i class="fa "></i>Email</th>
-                            <th class="hidden-xs hidden-sm">Họ và tên</th>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-
-                            <td><a href="javascript:void(0)">1</a></td>
-                            <td class="hidden-xs hidden-sm">pon@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Hoài Phương</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">2</a></td>
-                            <td class="hidden-xs hidden-sm">top@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Hàn Anh</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">3</a></td>
-                            <td class="hidden-xs hidden-sm">lag@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Văn Tuấn</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">4</a></td>
-                            <td class="hidden-xs hidden-sm">dkhau@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Đỗ Kim Hậu</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">5</a></td>
-                            <td class="hidden-xs hidden-sm">dinh@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Dinh</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">6</a></td>
-                            <td class="hidden-xs hidden-sm">acb@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Văn B</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">7</a></td>
-                            <td class="hidden-xs hidden-sm">dkhau@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Đỗ Kim Hậu</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">8</a></td>
-                            <td class="hidden-xs hidden-sm">dinh@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Dinh</td>
-
-                        </tr>
-                        <tr>
-
-                            <td><a href="javascript:void(0)">12</a></td>
-                            <td class="hidden-xs hidden-sm">acb@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Văn B</td>
-
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- END List Staff -->
-
-                <!-- danh sách không hoạt động -->
-                <table class="table " id="inactive-list" style="display: none;">
-                    <thead>
-                        <tr class="list-teacherHeader" style="background-color: aqua">
-                            <th class="hidden-xs hidden-sm">ID tài khoản</th>
-                            <th class="hidden-xs hidden-sm">Email</th>
-                            <th class="hidden-xs hidden-sm">Họ và tên</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="javascript:void(0)">1</a></td>
-                            <td class="hidden-xs hidden-sm">pon@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Hoài Phương</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">2</a></td>
-                            <td class="hidden-xs hidden-sm">top@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Hàn Anh</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">3</a></td>
-                            <td class="hidden-xs hidden-sm">lag@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Văn Tuấn</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">4</a></td>
-                            <td class="hidden-xs hidden-sm">dkhau@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Đỗ Kim Hậu</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">5</a></td>
-                            <td class="hidden-xs hidden-sm">dinh@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Dinh</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">6</a></td>
-                            <td class="hidden-xs hidden-sm">acb@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Nguyễn Văn B</td>
-
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">7</a></td>
-                            <td class="hidden-xs hidden-sm">dkhau@gmail.com</td>
-                            <td class="hidden-xs hidden-sm">Đỗ Kim Hậu</td>
-
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- END List Staff -->
-
-                <!-- danh sách điểm danh  -->
-
-                <table class="table acttendence-list" id="attendence-list" style="display: none;">
-                    <thead>
-                        <tr>
-                            <th>Class A</th>
-                        </tr>
-                        <tr class="list-teacherHeader" style="background-color: blanchedalmond;">
-
-                            <th class="hidden-xs hidden-sm">Ngày</th>
-                            <th class="hidden-xs hidden-sm"><i></i>Sĩ số </th>
-                            <!-- nút xem  -->
-                            <th class="hidden-xs hidden-sm"></th>
-
-                        </tr>
-                    </thead>
-                    <tbody class="list-teacherBody">
-                        <tr>
-                            <td>
-                                <input type="date" name="" id="">
-                            </td>
-                            <td class="hidden-xs hidden-sm"><input type="text" value="9/15" readonly></td>
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút xem-->
-                                    <a href="page_Shown_attendence_List.html">xem</a>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <input type="date" name="" id="">
-                            </td>
-                            <td class="hidden-xs hidden-sm"><input type="text" value="11/15" readonly></td>
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút xem-->
-                                    <a href="page_Shown_attendence_List.html">xem</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="date" name="" id="">
-                            </td>
-                            <td class="hidden-xs hidden-sm"><input type="text" value="13/15" readonly></td>
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút xem-->
-                                    <a href="page_Shown_attendence_List.html">xem</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="date" name="" id="">
-                            </td>
-                            <td class="hidden-xs hidden-sm"><input type="text" value="8/15" readonly></td>
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút xem-->
-                                    <a href="page_Shown_attendence_List.html">xem</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="date" name="" id="">
-                            </td>
-                            <td class="hidden-xs hidden-sm"><input type="text" value="14/15" readonly></td>
-                            <td class="text-center">
-                                <div class="btn-group">
-                                    <!--nút xem-->
-                                    <a href="page_Shown_attendence_List.html">xem</a>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="luu">
-                    <button type="submit">Lưu</button>
-                </div>
+                </form>
+                <!-- END Advanced Form Wizard -->
             </div>
             <!-- END Page Content -->
 
+            <!-- Footer -->
+            <footer>
+                <span id="year-copy"></span> &copy; <strong><a href="https://1.envato.market/7jd">uAdmin
+                        2.1</a></strong> - Crafted with <i class="fa fa-heart text-danger"></i> by <strong><a
+                        href="https://1.envato.market/ydb" target="_blank">pixelcave</a></strong>
+            </footer>
+            <!-- END Footer -->
         </div>
         <!-- END Inner Container -->
     </div>
     <!-- END Page Container -->
-
-
-    <!-- form edit class -->
-    <div id="formContainer">
-        <button id="closeButton" onclick="hideFormCreateAndEdit()">X</button>
-        <form id="registrationForm">
-            <h2>Chỉnh sửa thông tin</h2>
-            <label for="name">Trạng thái</label>
-            <input type="text" id="status" name="name" required><br>
-
-            <label for="name">Họ và tên</label>
-            <input type="text" id="customer" name="name" required><br>
-
-            <label for="name">Số điện thoại</label>
-            <input type="text" id="phone" name="name" required><br>
-
-            <label for="name">Ảnh đại diện</label>
-            <input type="file" id="avatar" name="quantity" required><br>
-
-            <label for="name">Thời gian cập nhật</label>
-            <input type="date" id="time" name="quantity" required><br>
-
-            <input type="submit" value="Save" id="save">
-        </form>
-    </div>
-
-    <style>
-        #formContainer {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #f1f1f1;
-            padding: 20px;
-            box-shadow: rgb(152, 152, 152, 0.6);
-            border: rgba(0, 0, 0, 0.6) solid 1px;
-        }
-
-        #registrationForm {
-            width: 300px;
-            margin: 0 auto;
-        }
-
-        #registrationForm label,
-        #registrationForm input[type="text"],
-        #registrationForm input[type="file"],
-        #registrationForm input[type="date"] {
-            display: block;
-            margin-bottom: 10px;
-            width: 100%;
-        }
-
-        #status,
-        #customer,
-        #phone,
-        #avatar,
-        #time {
-            border: rgba(0, 0, 0, 0.6) solid 1px;
-        }
-
-        #save {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-
-            align-items: center;
-        }
-
-        #registrationForm input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
-
-        #closeButton {
-            margin-left: 280px;
-        }
-    </style>
-    <script>
-
-
-        function showForm() {
-            var formContainer = document.getElementById("formContainer");
-            formContainer.style.display = "block";
-        }
-
-        function hideFormCreateAndEdit() {
-            var formContainer = document.getElementById("formContainer");
-            formContainer.style.display = "none";
-        }
-        // function getdata
-        //xử lý nút bấm active và inactive
-        var activeBtn = document.getElementById('active-bnt');
-        var inactiveBtn = document.getElementById('inactive-btn');
-        var attendenceBtn = document.getElementById('acttendence-bnt');
-        var activeList = document.getElementById('active-list');
-        var inactiveList = document.getElementById('inactive-list');
-        var attendenceList = document.getElementById('attendence-list');
-
-        activeBtn.addEventListener('click', function () {
-            activeList.style.display = 'inline-table';
-            inactiveList.style.display = 'none';
-            attendenceList.style.display = 'none';
-        });
-
-
-        inactiveBtn.addEventListener('click', function () {
-            activeList.style.display = 'none';
-            inactiveList.style.display = 'inline-table';
-            attendenceList.style.display = 'none';
-        });
-
-        attendenceBtn.addEventListener('click', function () {
-            activeList.style.display = 'none';
-            inactiveList.style.display = 'none';
-            attendenceList.style.display = 'inline-table';
-        });
-
-    </script>
-    <!--END form edit class -->
-
-
 
     <!-- Scroll to top link, check main.js - scrollToTop() -->
     <a href="javascript:void(0)" id="to-top"><i class="fa fa-chevron-up"></i></a>
@@ -763,6 +447,98 @@
     <!-- Jquery plugins and custom javascript code -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- Javascript code only for this page -->
+    <script>
+        $(function () {
+            /* For advanced usage and examples please check out
+             *  Jquery Wizard       -> http://www.thecodemine.org
+             *  Jquery Form         -> http://malsup.com/jquery/form/
+             *  Jquery Validation   -> https://github.com/jzaefferer/jquery-validation
+             */
+
+            /* Initialize Basic Wizard */
+            $('#basic-wizard').formwizard({
+                focusFirstInput: true,
+                disableUIStyles: true
+            });
+
+            /* Initialize Advanced Wizard */
+            $('#advanced-wizard').formwizard({
+                disableUIStyles: true,
+                formPluginEnabled: true,
+                validationEnabled: true,
+                validationOptions: {
+                    errorClass: 'help-block',
+                    errorElement: 'span',
+                    errorPlacement: function (error, e) {
+                        e.parents('.form-group > div').append(error);
+                    },
+                    highlight: function (e) {
+                        $(e).closest('.form-group').removeClass('has-success has-error').addClass('has-error');
+                        $(e).closest('.help-block').remove();
+                    },
+                    success: function (e) {
+                        // You can use the following if you would like to highlight with green color the input after successful validation!
+                        e.closest('.form-group').removeClass('has-success has-error'); // e.closest('.form-group').removeClass('has-success has-error').addClass('has-success');
+                        e.closest('.help-block').remove();
+                        e.closest('.help-inline').remove();
+                    },
+                    rules: {
+                        val_username: {
+                            required: true,
+                            minlength: 2
+                        },
+                        val_password: {
+                            required: true,
+                            minlength: 5
+                        },
+                        val_confirm_password: {
+                            required: true,
+                            minlength: 5,
+                            equalTo: '#val_password'
+                        },
+                        val_email: {
+                            required: true,
+                            email: true
+                        },
+                        val_terms: {
+                            required: true
+                        }
+                    },
+                    messages: {
+                        val_username: {
+                            required: 'Please enter a username',
+                            minlength: 'Your username must consist of at least 2 characters'
+                        },
+                        val_password: {
+                            required: 'Please provide a password',
+                            minlength: 'Your password must be at least 5 characters long'
+                        },
+                        val_confirm_password: {
+                            required: 'Please provide a password',
+                            minlength: 'Your password must be at least 5 characters long',
+                            equalTo: 'Please enter the same password as above'
+                        },
+                        val_email: 'Please enter a valid email address',
+                        val_terms: 'Please accept the terms to continue'
+                    }
+                },
+                formOptions: {
+                    success: function (data) {
+                        // On success status returned
+                    },
+                    beforeSubmit: function (data) {
+                        alert('Form Submitted!');
+                    },
+                    dataType: 'json',
+                    resetForm: true
+                },
+                inAnimation: { height: 'show' },
+                outAnimation: { height: 'hide' }
+            });
+        });
+    </script>
 </body>
 
 </html>

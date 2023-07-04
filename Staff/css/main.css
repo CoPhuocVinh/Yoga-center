@@ -687,6 +687,7 @@ header
 .widget .media-body .media {
     margin-top: 5px;
 }
+
 /*
 =================================================================
 (#m04nvs) Staff price
@@ -947,10 +948,10 @@ header
 
 .payments-down {
     display: none;
-    
+
 }
 
-.box-pay{
+.box-pay {
     border: 1px solid grey;
     border-radius: 5px;
     margin: 10px;
@@ -963,7 +964,7 @@ header
     display: block;
 }
 
-.box-pay:hover{
+.box-pay:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -1038,10 +1039,12 @@ header
     text-align: center;
     font-size: 45px;
 }
+
 #primary-nav .staff-title {
     text-align: center;
     font-size: 30px;
 }
+
 #primary-nav ul {
     list-style: none;
     margin: 0;
@@ -3719,3 +3722,19 @@ only screen and (min-device-pixel-ratio: 1.5) {
     font-size: 16px;
 }
 
+.date-blog-disable {
+    border: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.txt-blog-list-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.blog-list-status {
+    color: #4CAF50;
+}

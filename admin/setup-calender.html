@@ -185,7 +185,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="page_form_wizard.html"><i class="fa fa-pencil"></i>Blog</a>
+                            <a href="page_list_blog.html"><i class="fa fa-pencil"></i>Blog</a>
                         </li>
                         <li>
                             <a href="page_list_confirm_register.html"><i class="fa fa-pencil"></i>Xác nhận đăng ký</a>
@@ -841,16 +841,16 @@
 
     <!-- Javascript code only for this page -->
     <script>
-        document.getElementById("myTable").addEventListener("click", function(event) {
-      var target = event.target;
-      if (target.tagName === "TD") {
-        redirectToPage("addClassOnSchedule.html");
-      }
-    });
+        document.getElementById("myTable").addEventListener("click", function (event) {
+            var target = event.target;
+            if (target.tagName === "TD") {
+                redirectToPage("addClassOnSchedule.html");
+            }
+        });
 
-    function redirectToPage(pageUrl) {
-      window.location.href = pageUrl;
-    }
+        function redirectToPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
     </script>
 </body>
 
