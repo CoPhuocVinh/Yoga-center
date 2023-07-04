@@ -212,7 +212,7 @@ header
     font-weight: 700;
 }
 
-.section-header-lich label{
+.section-header-lich label {
     font-size: 18px;
     margin-right: 10px;
     color: brown;
@@ -299,7 +299,7 @@ header
     border: 1px solid #FFFEC4;
 }
 
-.table .thead-primary .head-day th{
+.table .thead-primary .head-day th {
     background: #FFD6A5;
     color: #606060;
     font-size: 12px;
@@ -319,7 +319,7 @@ header
 .text-center .color-2,
 .text-center .color-3,
 .text-center .color-4,
-.text-center .color-5{
+.text-center .color-5 {
     border: 1px solid lightgrey;
     width: 135px;
 }
@@ -328,12 +328,12 @@ header
 .text-center .color-2:hover,
 .text-center .color-3:hover,
 .text-center .color-4:hover,
-.text-center .color-5:hover{
+.text-center .color-5:hover {
     background-color: rgb(234, 233, 233);
     cursor: pointer;
 }
 
-.table .text-center h6{
+.table .text-center h6 {
     color: #80b260;
 }
 
@@ -1374,14 +1374,14 @@ header
     margin-right: 18px;
 }
 
-.save-bnt-slot{
+.save-bnt-slot {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 26px;
 }
 
-.save-bnt-slot button{
+.save-bnt-slot button {
     padding: 12px 30px;
     font-weight: 600;
     background: lightblue;
@@ -1390,7 +1390,7 @@ header
     font-size: 16px;
 }
 
-.save-bnt-slot button:hover{
+.save-bnt-slot button:hover {
     background-color: rgb(151, 211, 231);
 }
 
@@ -2890,13 +2890,13 @@ table.table thead .sorting_desc_disabled {
     color: #db4a39;
 }
 
-.btn-check{
+.btn-check {
     color: #fff;
     background-color: #2e95db;
     border-color: #6993ae;
 }
 
-.btn-check:hover{
+.btn-check:hover {
     background-color: #1288d7;
     color: white;
 }
@@ -3472,101 +3472,109 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .list-teacherBody td {
     text-align: center;
 }
-.form-create-class{
+
+.form-create-class {
     font-size: 20px;
     background: #e3e2e2;
     height: 650px;
 }
-.form-create-customer{
+
+.form-create-customer {
     font-size: 20px;
     background: #e3e2e2;
     height: 650px;
 }
-.create-header{
+
+.create-header {
     text-align: center;
     padding-top: 50px;
 }
-.create-header-customer label{
-    margin-left: 90px;  
-} 
-.create-header-customer{
+
+.create-header-customer label {
+    margin-left: 90px;
+}
+
+.create-header-customer {
     text-align: center;
     padding-top: 50px;
 }
-.createClass-container{
+
+.createClass-container {
     text-align: justify;
     margin-top: 50px;
     margin-left: 20%;
 }
 
-.createClass-container label{
+.createClass-container label {
     width: 30%;
     margin-bottom: 30px;
     font-size: 20px;
 }
-.createCustomer-container{
+
+.createCustomer-container {
     text-align: justify;
     margin-top: 50px;
     margin-left: 20%;
 }
 
-.createCustomer-container label{
+.createCustomer-container label {
     width: 30%;
     margin-bottom: 30px;
     font-size: 22px;
 }
 
-.createClass-container select{
+.createClass-container select {
     width: 40%;
     margin-right: 30px;
     padding: 6px;
     text-align: center;
 }
 
-.createClass-container input{
+.createClass-container input {
     width: 40%;
     margin-right: 30px;
     padding: 6px;
     text-align: center;
 }
 
-.createClass-container button{
+.createClass-container button {
     padding: 6px 10px;
     border-radius: 5px;
     border: 1px solid grey;
     margin-right: 26px;
 }
 
-.createClass-container .btn-footer{
+.createClass-container .btn-footer {
     transform: translate(320px, 50px);
     padding: 10px 20px;
     background: lightgrey;
 }
 
-.createClass-container .btn-footer:hover{
+.createClass-container .btn-footer:hover {
     background-color: rgb(184, 181, 181);
 }
-.createCustomer-container input{
+
+.createCustomer-container input {
     width: 40%;
     margin-right: 30px;
     padding: 6px;
     text-align: center;
 }
 
-.createCustomer-container button{
+.createCustomer-container button {
     padding: 6px 10px;
     border-radius: 5px;
     border: 1px solid grey;
     margin-right: 26px;
 }
 
-.createCustomer-container .btn-footer{
+.createCustomer-container .btn-footer {
     transform: translate(320px, 50px);
     padding: 10px 20px;
     background: lightgrey;
 }
 
-.createCustomer-container .btn-footer:hover{
+.createCustomer-container .btn-footer:hover {
     background-color: rgb(184, 181, 181);
 }
 
@@ -3579,15 +3587,34 @@ only screen and (min-device-pixel-ratio: 1.5) {
     font-size: 32px;
     line-height: 70px;
 }
+
 .modal-footer-schedule {
     display: flex;
     justify-content: center;
 }
-.modal-footer-schedule button{
-    margin:20px;
+
+.modal-footer-schedule button {
+    margin: 20px;
 }
 
-.modal-body-schedule h3{
+.modal-body-schedule h3 {
     text-align: center;
     font-size: 21px;
+}
+
+.fa-circle {
+    color: #00ff00;
+}
+
+.date-blog-disable {
+    border: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.txt-blog-list-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
 }
