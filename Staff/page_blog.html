@@ -129,7 +129,7 @@
 
                 <!-- Primary Navigation -->
                 <nav id="primary-nav">
-                    <h3 class="admin-title">Admin</h3>
+                    <h3 class="staff-title">Nhân viên</h3>
                     <ul>
                         <li>
                             <a href="index.html" class="active"><i class="fa fa-fire"></i>Bảng điều khiển</a>
@@ -200,7 +200,7 @@
             <!-- END Sidebar -->
 
             <!-- Page Content -->
-            <div id="page-content">
+            <div id="page-content" class="container-blog">
                 <!-- Navigation info -->
                 <form method="POST" action="">
                     <div class="row" style="margin-top: 8%;">
@@ -215,8 +215,7 @@
                                         name="brief_infor" rows="2"></textarea></div>
                                 <div class="col-md-12">Nội dung
 
-                                    <textarea cols="20" rows="40" id="editor" name="content"
-                                        style="width:1066px; height: 200px;"></textarea>
+                                    <textarea cols="20" rows="40" id="editor" name="content"></textarea>
 
 
                                     <script>
@@ -229,13 +228,8 @@
                         <div class="col-md-4">
                             <div class="p-3 py-5">
                                 <div class="row mt-16">
-                                    <div class="col-md-12">Trạng thái
-                                        <br />
-                                        <input name="status" type="radio" value="1" checked />&nbsp;Hiện
-                                        <input name="status" type="radio" value="0" />&nbsp;Ẩn
-                                    </div>
-                                    <div class="col-md-12">Hình thu nhỏ<input type="file" name="thumbnail"
-                                            class="form-control" placeholder="Thumbnail"></div>
+                                    <div class="col-md-12">Hình<input type="file" name="thumbnail" class="form-control"
+                                            placeholder="Thumbnail"></div>
 
                                 </div>
 
@@ -245,6 +239,12 @@
                     </div>
                 </form>
                 <!-- END Advanced Form Wizard -->
+                <a href="page_list_blog.html">
+                    <button class="bnt-back-blog">Trở lại</button>
+                </a>
+                <a href="">
+                    <button class="bnt-save-blog">Lưu</button>
+                </a>
             </div>
             <!-- END Page Content -->
 

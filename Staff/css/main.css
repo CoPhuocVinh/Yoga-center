@@ -3722,9 +3722,10 @@ only screen and (min-device-pixel-ratio: 1.5) {
     font-size: 16px;
 }
 
-.date-blog-disable {
-    border: 0;
-    text-align: center;
+.container-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
@@ -3735,6 +3736,20 @@ only screen and (min-device-pixel-ratio: 1.5) {
     height: 100px;
 }
 
-.blog-list-status {
-    color: #4CAF50;
+.bnt-back-blog {
+    margin-top: 30px;
+    height: 50px;
+    width: 80px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    transform: translate(-90px, 50px);
+}
+
+.bnt-save-blog {
+    height: 50px;
+    width: 80px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
 }
