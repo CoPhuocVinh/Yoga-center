@@ -152,44 +152,7 @@ function checkoutPage(url) {
     window.location.href = url;
 }
 
-// chuyển form user-setting 
-function showFormSetting() {
-    var modalSetting = document.getElementById("modal-user-settings");
-    modalSetting.style.display = "flex";
-}
 
-function hideFormSetting() {
-    var modalSetting = document.getElementById("modal-user-settings");
-    modalSetting.style.display = "none";
-}
-
-
-
-// Mặc định hiển thị form tài khoản
-document.getElementById("account-form-tab").style.display = "block";
-
-// Xử lý sự kiện khi người dùng nhấp vào các nút điều hướng
-document.getElementById("example-user-tabs").addEventListener("click", function (event) {
-    event.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ <a>
-
-    // Lấy ID của tab được nhấp vào
-    var target = event.target.getAttribute("href");
-
-    // Ẩn tất cả các form
-    var forms = document.getElementsByClassName("tab-pane");
-    for (var i = 0; i < forms.length; i++) {
-        forms[i].style.display = "none";
-    }
-
-    // Hiển thị form được chọn
-    document.querySelector(target).style.display = "block";
-});
-
-// Xử lý sự kiện khi nhấn nút "Lưu"
-    document.getElementById("save-account-btn").addEventListener("click", function () {
-    // Hiển thị thông báo thành công
-    document.getElementById("account-success-alert").style.display = "block";
-});
 
 
 

@@ -100,12 +100,17 @@
             <img class="user-img" src="img/avatar-ga76e04ee0_1280.png" alt="">
 
             <div class="info">
-                <h2>Học viên: Lê Hàn Anh <button onclick="showFormSetting()" type="button"><i
-                            class="fas fa-user-edit"></i></button></h2>
+                <h2>Học viên: Lê Hàn Anh</h2>
                 <input type="text" placeholder="Họ và tên">
                 <input type="text" placeholder="Số điện thoại">
                 <input type="text" placeholder="Giới tính">
             </div>
+
+        </div>
+        <div class="user-btn">
+            <a type="button" class="history-btn" href="historyPay.html">Lịch sử đăng ký</a>
+            <a type="button" class="history-btn" href="user-editInfo.html">Chỉnh sửa thông tin</a>
+            <a type="button" class="history-btn" href="user-editPass.html">Đổi mật khẩu</a>
         </div>
 
     </div>
@@ -127,7 +132,6 @@
                             <div class="class-text class-history">
                                 <h2>Hatha Yoga</h2>
                                 <a href="schedule-detail.html">Xem lịch học</a>
-                                <a class="history-btn" href="historyPay.html">Lịch sử đăng ký</a>
                             </div>
                         </div>
                     </div>
@@ -139,7 +143,6 @@
                             <div class="class-text class-history">
                                 <h2>Yoga Trị liệu</h2>
                                 <a href="schedule-detail.html">Xem lịch học</a>
-                                <a class="history-btn" href="historyPay.html">Lịch sử đăng ký</a>
                             </div>
                         </div>
                     </div>
@@ -151,7 +154,6 @@
                             <div class="class-text class-history">
                                 <h2>Yoga Nghệ thuật</h2>
                                 <a href="schedule-detail.html">Xem lịch học</a>
-                                <a class="history-btn" href="historyPay.html">Lịch sử đăng ký</a>
                             </div>
                         </div>
                     </div>
@@ -160,97 +162,6 @@
         </div>
     </section>
     <!-- Class End -->
-
-
-    <!-- Form User setting  -->
-    <div id="modal-user-settings" class="modal">
-        <div class="modal-content">
-            <span class="close" id="myButton"><a>&times;</a></span>
-            <div class="modal-header">
-                <h4>Cài đặt thông tin</h4>
-            </div>
-            <div class="modal-body">
-                <ul id="example-user-tabs" class="nav nav-tabs" data-toggle="tabs">
-                    <li class="active"><a href="#account-form-tab"><i class="fa fa-cogs"></i> Tài khoản</a>
-                    </li>
-                    <li><a href="#profile-form-tab"><i class="fa fa-user"></i> Hồ sơ</a></li>
-                </ul>
-                <div class="tab-content">
-                    <!-- First Tab -->
-                    <div class="accountForm active tab-pane" id="account-form-tab" style="display: block;">
-                        <div class="alert alert-success" id="account-success-alert" style="display: none;">
-                            <button type="button" class="close" data-dismiss="alert">&times;</button>
-                            <strong>Thành công!</strong> Mật khẩu đã thay đổi!
-                        </div>
-                        <form class="form-horizontal">
-                            <div class="form-group">
-                                <label class="control-label">Email</label>
-                                <input class="form-control-static" type="text" value="ponn@123" readonly></input>
-                                <span class="help-block">Bạn không thể thay đổi email!</span>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="example-user-pass">Mật khẩu</label>
-                                <input type="password" id="example-user-pass" name="example-user-pass"
-                                    class="form-control">
-                                <span class="help-block">Vui lòng nhập mật khẩu cũ!</span>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="example-user-newpass">Mật khẩu mới</label>
-                                <input type="password" id="example-user-newpass" name="example-user-newpass"
-                                    class="form-control">
-                            </div>
-                        </form>
-                    </div>
-                    <!-- END First Tab -->
-
-                    <!-- Second Tab -->
-                    <div class="tab-pane profileForm" id="profile-form-tab" style="display: none;">
-                        <label class="control-label">Ảnh</label>
-                        <div class="form-horizontal">
-                            <div class="form-group">
-                                <div class="">
-                                    <form action="index.html" class="dropzone">
-                                        <div class="fallback">
-                                            <input name="file" type="file">
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <form class="form-horizontal">
-                            <div class="form-group">
-                                <label class="control-label" for="example-user-firstname">Tên</label>
-                                <input type="text" id="example-user-firstname" name="example-user-firstname"
-                                    class="form-control" value="John">
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="example-user-lastname">Số điện thoại</label>
-                                <input type="text" id="example-user-lastname" name="example-user-lastname"
-                                    class="form-control" value="0123456789">
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="example-user-gender">Giới tính</label>
-                                <select id="example-user-gender" name="example-user-gender" class="form-control">
-                                    <option>Nam</option>
-                                    <option>Nữ</option>
-                                </select>
-                            </div>
-                        </form>
-                    </div>
-                    <!-- END Second Tab -->
-                </div>
-                <!-- END Tab Content -->
-            </div>
-            <!-- END Modal Content -->
-
-            <!-- Modal footer -->
-            <div class="modal-footer remove-margin">
-                <button class="btn btn-danger" data-dismiss="modal" onclick="hideFormSetting()"> Đóng</button>
-                <button class="btn btn-success" id="save-account-btn" onclick="showMessage()">Lưu</button>
-            </div>
-            <!-- END Modal footer -->
-        </div>
-    </div>
 
 
     <!-- Footer Start -->

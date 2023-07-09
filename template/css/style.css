@@ -891,10 +891,6 @@ a:focus {
     margin-bottom: 10px;
 }
 
-.class .class-text .history-btn {
-    margin-left: 74px;
-}
-
 .class .class-teacher {
     position: relative;
     height: 40px;
@@ -2780,6 +2776,26 @@ p.time-sche {
     justify-content: center;
 }
 
+.user-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.user-btn .history-btn{
+    border: 1px solid #F7CAC9;
+    padding: 13px;
+    margin: 0 30px;
+    border-radius: 10px;
+    color: #343148;
+}
+
+.user-btn .history-btn:hover{
+    color: #F7CAC9;
+    background: #343148;
+}
+
 #modal-user-settings{
     position: fixed;
     top: 0;
@@ -3344,4 +3360,39 @@ input[type=text] {
 .payment-info .btn-cancle{
     margin: 10px;
     text-align: center;
+}
+
+/* Edit user  */
+.modal-edit {
+    position: fixed;
+    top: 35px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #F7CAC9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container-edit {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    width: 508px;
+    top: 50px;
+    height: fit-content;
+    margin-top: 50px;
+}
+
+.edit-content{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.modal-container-edit input[type="file"] {
+    margin: 5px 0;
 }
