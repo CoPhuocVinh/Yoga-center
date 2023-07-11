@@ -196,12 +196,13 @@
                 <!-- Navigation info -->
                 <ul id="nav-info" class="clearfix">
                     <li><a href="index.html"><i class="fa fa-home"></i></a></li>
-                    <li><a href="javascript:void(0)">Gói học</a></li>
+                    <li><a href="page_discount.html">Gói học</a></li>
+                    <li><a href="javascript:void(0)">Gói học chi tiết</a></li>
                 </ul>
                 <!-- END Navigation info -->
 
                 <!-- List Staff -->
-                <h3 class="page-header page-header-top">Gói học
+                <h3 class="page-header page-header-top">Gói học chi tiết
                     <button class="save-bnt">Lưu</button>
                     <button class="create-btn" onclick="showCreatePackage()">Tạo mới</button>
                 </h3>
@@ -211,129 +212,47 @@
                     <thead class="discount-head">
                         <tr style="background-color: #4CAF50;">
                             <!-- <th class="text-center">#</th> -->
-                            <!-- <th class="hidden-xs hidden-sm"><i class="fa "></i>Tên gói</th> -->
-                            <!-- <th class="hidden-xs hidden-sm"><i class="fa "></i>Số tháng</th> -->
-                            <th class="hidden-xs hidden-sm"><i class="fa "></i>Số buổi của tháng</th>
-                            <th class="hidden-xs hidden-sm"><i class="fa "></i>Khoá học</th>
-                            <th class="hidden-xs hidden-sm"><i class="fa "></i>Giá</th>
-                            <!-- <th class="hidden-xs hidden-sm">Tổng buổi</th>
-                            <th class="hidden-xs hidden-sm">Giá ban đầu</th>
+                            <th class="hidden-xs hidden-sm"><i class="fa "></i>Số tháng</th>
                             <th class="hidden-xs hidden-sm">% muốn giảm</th>
-                            <th class="hidden-xs hidden-sm">Tổng</th> -->
+                            <th class="hidden-xs hidden-sm">Giá ban đầu</th>
+                            <th class="hidden-xs hidden-sm">Tổng</th>
                         </tr>
 
                     </thead>
                     <tbody>
-                        <!--package-default12 Hatha-->
                         <tr class="table-content">
+                            
                             <td class="hidden-xs hidden-sm">
-                                <a href="page_discount_detail.html">12 buổi</a>
+                                <select class="select-field">
+                                    <option selected>3 tháng</option>
+                                </select>
+                            </td>
+                            <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%" value="10"
+                                    class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                            <td class="hidden-xs hidden-sm">
+                                <input class="gia-goc" oninput="calculateTotal(this)" value="1.050.000">vnđ</input>
                             </td>
                             <td class="hidden-xs hidden-sm">
-                                <p>Hatha Yoga</p>
+                                <input type="number" class="tong-giam" value="945.000" disabled>vnđ
                             </td>
-                            <td class="hidden-xs hidden-sm"><input type="text" class="gia-goc"
-                                    oninput="calculateTotal(this)" value="350.000">vnđ</td>
                         </tr>
-                        <!--End package-default12 Hatha-->
 
-                        <!--package-default20 Hatha-->
                         <tr class="table-content">
+                            
                             <td class="hidden-xs hidden-sm">
-                                <a>20 buổi</a>
+                                <select class="select-field">
+                                    <option selected>6 tháng</option>
+                                </select>
+                            </td>
+                            <td class=" hidden-xs hidden-sm"><input type="number" placeholder="0%" value="10"
+                                    class="phan-tram-giam" oninput="calculateTotal(this)"></td>
+                            <td class="hidden-xs hidden-sm">
+                                <input class="gia-goc" oninput="calculateTotal(this)" value="1.050.000">vnđ</input>
                             </td>
                             <td class="hidden-xs hidden-sm">
-                                <p>Hatha Yoga</p>
+                                <input type="number" class="tong-giam" value="945.000" disabled>vnđ
                             </td>
-                            <td class="hidden-xs hidden-sm"><input type="text" class="gia-goc"
-                                    oninput="calculateTotal(this)" value="500.000">vnđ</td>
                         </tr>
-                        <!--End package-default20 Hatha-->
-
-                        <!-- Asanas Yoga  -->
-                        <!--package-default12 Asanas-->
-                        <tr class="table-content">
-                            <td class="hidden-xs hidden-sm">
-                                <a>12 buổi</a>
-                            </td>
-                            <td class="hidden-xs hidden-sm">
-                                <p>Asanas Yoga</p>
-                            </td>
-                            <td class="hidden-xs hidden-sm"><input type="text" class="gia-goc"
-                                    oninput="calculateTotal(this)" value="450.000">vnđ</td>
-                        </tr>
-                        <!--End package-default12 Asanas-->
-
-
-                        <!--package-default20 Asanas-->
-                        <tr class="table-content">
-                            <td class="hidden-xs hidden-sm">
-                                <a>20 buổi</a>
-                            </td>
-                            <td class="hidden-xs hidden-sm">
-                                <p>Asanas Yoga</p>
-                            </td>
-                            <td class="hidden-xs hidden-sm"><input type="text" class="gia-goc"
-                                    oninput="calculateTotal(this)" value="350.000">vnđ</td>
-                        </tr>
-                        <!--End package-default20 Asanas-->
-
-
-                        <!-- TL Yoga  -->
-                        <!--package-default12 TL-->
-                        <tr class="table-content">
-                            <td class="hidden-xs hidden-sm">
-                                <a>12 buổi</a>
-                            </td>
-                            <td class="hidden-xs hidden-sm">
-                                <p>Yoga Trị Liệu</p>
-                            </td>
-                            <td class="hidden-xs hidden-sm"><input type="text" class="gia-goc"
-                                    oninput="calculateTotal(this)" value="350.000">vnđ</td>
-                        </tr>
-                        <!--End package-default12 TL-->
-
-                        <!--package-default20 TL-->
-                        <tr class="table-content">
-                            <td class="hidden-xs hidden-sm">
-                                <a>20 buổi</a>
-                            </td>
-                            <td class="hidden-xs hidden-sm">
-                                <p>Yoga Trị Liệu</p>
-                            </td>
-                            <td class="hidden-xs hidden-sm"><input type="text" class="gia-goc"
-                                    oninput="calculateTotal(this)" value="350.000">vnđ</td>
-                        </tr>
-                        <!--End package-default20 TL-->
-
-
-                        <!-- NT Yoga  -->
-
-                        <!--package-default12 NT-->
-                        <tr class="table-content">
-                            <td class="hidden-xs hidden-sm">
-                                <a>12 buổi</a>
-                            </td>
-                            <td class="hidden-xs hidden-sm">
-                                <p>Yoga Nghệ Thuật</p>
-                            </td>
-                            <td class="hidden-xs hidden-sm"><input type="text" class="gia-goc"
-                                    oninput="calculateTotal(this)" value="350.000">vnđ</td>
-                        </tr>
-                        <!--End package-default12 NT-->
-
-                        <!--package-default20 NT-->
-                        <tr class="table-content">
-                            <td class="hidden-xs hidden-sm">
-                                <a>20 buổi</a>
-                            </td>
-                            <td class="hidden-xs hidden-sm">
-                                <p>Yoga Nghệ Thuật</p>
-                            </td>
-                            <td class="hidden-xs hidden-sm"><input type="text" class="gia-goc"
-                                    oninput="calculateTotal(this)" value="350.000">vnđ</td>
-                        </tr>
-                        <!--End package-default20 NT-->
 
                     </tbody>
                 </table>
@@ -354,17 +273,15 @@
         <form id="createForm">
             <button id="closeButton" onclick="hideFormPrice()">X</button>
             <h2>Tạo mới Gói</h2>
+            <label for="name">Số tháng</label>
+            <input type="number" id="name" name="name" required><br>
+            
+            <label for="name">Tên gói mới</label>
+            <input type="text" id="name" name="name" required><br>
 
-            <label for="course">Khoá </label>
-            <select name="" id="course">
-                <option value="">-- Chọn một tùy chọn --</option>
-                <option value="">Hatha Yoga</option>
-                <option value="">Asanas Yoga</option>
-                <option value="">Yoga Trị Liệu</option>
-                <option value="">Yoga Nghệ Thuật</option>
-            </select>
             <label for="name">Số buổi</label>
             <input type="number" id="name" name="name" required><br>
+
 
             <label for="name">Giá gói</label>
             <input type="text" id="price" name="price" required><br>

@@ -638,41 +638,6 @@ $(function () {
   webApp.init();
 });
 
-//Open package list
-function show12Hatha() {
-  var div = document.getElementById("openPackageList12Hatha");
-  div.classList.toggle("pacList12Hatha");
-}
-function show20Hatha() {
-  var div = document.getElementById("openPackageList20Hatha");
-  div.classList.toggle("pacList20Hatha");
-}
-
-function show12Asanas() {
-  var div = document.getElementById("openPackageList12Asanas");
-  div.classList.toggle("pacList12Asanas");
-}
-function show20Asanas() {
-  var div = document.getElementById("openPackageList20Asanas");
-  div.classList.toggle("pacList20Asanas");
-}
-
-function show12TL() {
-  var div = document.getElementById("openPackageList12TL");
-  div.classList.toggle("pacList12TL");
-}
-function show20TL() {
-  var div = document.getElementById("openPackageList20TL");
-  div.classList.toggle("pacList20TL");
-}
-function show12NT() {
-  var div = document.getElementById("openPackageList12NT");
-  div.classList.toggle("pacList12NT");
-}
-function show20NT() {
-  var div = document.getElementById("openPackageList20NT");
-  div.classList.toggle("pacList20NT");
-}
 
 //Open form create package
 function showCreatePackage() {
@@ -683,25 +648,6 @@ function showCreatePackage() {
 function hideFormPrice() {
   var formCreatePac = document.getElementById("formCreatePac");
   formCreatePac.style.display = "none";
-}
-function showSelectedDiv() {
-  var comboBox = document.getElementById("package");
-  var selectedValue = comboBox.value;
-  var divList12 = document.getElementById("list12");
-  var divList20 = document.getElementById("list20");
-  var divOrder = document.getElementById("order");
-
-  divList12.style.display = "none";
-  divList20.style.display = "none";
-  divOrder.style.display = "none";
-
-  if (selectedValue === "list12") {
-    divList12.style.display = "block";
-  } else if (selectedValue === "list20") {
-    divList20.style.display = "block";
-  } else if (selectedValue === "order") {
-    divOrder.style.display = "block";
-  }
 }
 
 //Open form create calendar
