@@ -156,7 +156,15 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="setup-calender.html"><i class="fa fa-th-list"></i>Lịch học</a>
+                            <a href="#"><i class="fa fa-th-list"></i>Lịch</a>
+                            <ul>
+                                <li>
+                                    <a href="page_calendar.html"><i class="fa fa-clipboard"></i>Lịch học</a>
+                                </li>
+                                <li>
+                                    <a href="setup-calender.html"><i class="fa fa-file-o"></i>Lịch đang xếp</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="page_slots.html"><i class="gi gi-unchecked"></i>Slot</a>
@@ -196,42 +204,34 @@
                 <!-- Navigation info -->
                 <ul id="nav-info" class="clearfix">
                     <li><a href="index.html"><i class="fa fa-home"></i></a></li>
-                    <li><a href="page_list_class.html">Danh sách khách hàng</a></li>
-                    <li><a href="javascript:void(0)">Chỉnh sửa khách hàng</a></li>
+                    <li><a href="page_discount.html">Gói học</a></li>
+                    <li><a href="javascript:void(0)">Thêm mới gói học</a></li>
                 </ul>
                 <!-- END Navigation info -->
 
                 <!-- List Staff -->
-                <div class="form-create-customer">
-                    <h2 class="create-header-customer">Chỉnh sửa khách hàng</h2>
+                <div class="form-create-class">
+                    <h2 class="create-header">Thêm mới gói học</h2>
 
-                    <div class="createCustomer-container">
-                        <label for="name">Trạng thái</label>
-                        <input type="text" id="name" name="name" required><br>
+                    <div class="createClass-container">
+                        <label for="course">Khoá </label>
+                        <select name="" id="course">
+                            <option value="">-- Chọn một tùy chọn --</option>
+                            <option value="">Hatha Yoga</option>
+                            <option value="">Asanas Yoga</option>
+                            <option value="">Yoga Trị Liệu</option>
+                            <option value="">Yoga Nghệ Thuật</option>
+                        </select> <br>
+                        <label for="name">Số buổi</label>
+                        <input type="number" id="name" name="name" required><br>
 
-                        <label for="name">roleID</label>
-                        <input type="text" id="roleID" name="name" required><br>
+                        <label for="name">Giá gói</label>
+                        <input type="text" id="price" name="price" required><br>
 
-                        <label for="name">Họ và tên</label>
-                        <input type="text" id="fullName" name="name" required><br>
-
-                        <label for="name">Số điện thoai</label>
-                        <input type="text" id="Sdt" name="quantity" required><br>
-
-                        <label for="name">Ảnh đại diện</label>
-                        <input type="file" id="avatar" name="val_website"><br>
-
-
-                        <!-- <label for="start-time">Thời gian bắt đầu</label>
-                        <input type="date" id="time" name="quantity" required><br>
-                        <label for="end-time">Thời gian kết thúc</label>
-                        <input type="date" id="time" name="quantity" required><br> -->
                         <button class="btn-footer" type="reset">Đặt lại</button>
-                        <button class="btn-footer" type="submit">Lưu</button>
-
+                        <button class="btn-footer" type="submit">Tạo</button>
                     </div>
                 </div>
-
 
                 <!-- Include Jquery library from Google's CDN but if something goes wrong get Jquery from local file (Remove 'http:' if you have SSL) -->
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

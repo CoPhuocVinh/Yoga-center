@@ -639,17 +639,6 @@ $(function () {
 });
 
 
-//Open form create package
-function showCreatePackage() {
-  var formCreatePac = document.getElementById("formCreatePac");
-  formCreatePac.style.display = "block";
-}
-
-function hideFormPrice() {
-  var formCreatePac = document.getElementById("formCreatePac");
-  formCreatePac.style.display = "none";
-}
-
 //Open form create calendar
 function showCreateCalendar() {
   var selectedOption = document.getElementById("option").value;
