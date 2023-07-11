@@ -223,8 +223,13 @@
 
                         <label for="Number">Số điện thoại</label>
                         <input type="tel" name="Number" required><br>
+
+
                         <label for="image"></label>
-                        <input type="file" name="image"><br>
+                        <div id="preview" class="circle-frame">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <input type="file" name="image" id="fileInput">
 
                         <label for="gender">Giới tính:</label>
                         <input type="radio" value="Nam" name="gender">Nam</input>
