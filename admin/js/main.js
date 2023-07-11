@@ -910,3 +910,19 @@ $(function () {
     }
   });
 });
+
+const fileInput = document.getElementById("fileInput");
+const preview = document.getElementById("preview");
+fileInput.addEventListener("change", function () {
+  const file = this.files[0];
+  const reader = new FileReader();
+
+  reader.onload = function (e) {
+    const img = document.createElement("img");
+    img.src = e.target.result;
+    preview.innerHTML = "";
+    preview.appendChild(img);
+  };
+
+  reader.readAsDataURL(file);
+});
