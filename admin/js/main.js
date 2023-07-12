@@ -965,8 +965,9 @@ $(function () {
   });
 });
 
-const fileInput = document.getElementById("fileInput");
-const preview = document.getElementById("preview");
+//thay đổi avt khi mà load được hình từ máy .
+var fileInput = document.getElementById("fileInputAvatar");
+var preview = document.getElementById("preview");
 fileInput.addEventListener("change", function () {
   const file = this.files[0];
   const reader = new FileReader();
