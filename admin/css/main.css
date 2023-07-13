@@ -217,6 +217,7 @@ header
     font-size: 18px;
     margin-right: 10px;
     color: brown;
+    width: 42px;
 }
 
 @media (max-width: 767.98px) {
@@ -1314,12 +1315,6 @@ header
     margin-bottom: 5px;
     cursor: move;
     border: 1px dashed #333;
-}
-
-.calendar-day {
-    text-align: center;
-    font-size: 17px;
-    padding: 5px;
 }
 
 /* Wizard */
@@ -3501,6 +3496,18 @@ only screen and (min-device-pixel-ratio: 1.5) {
     padding-top: 50px;
 }
 
+.head-option{
+    text-align: justify;
+    margin-left: 150px;
+}
+
+.head-option select{
+    text-align: center;
+    font-size: 17px;
+    padding: 5px;
+    margin-right: 16px;
+    width: 230px;
+}
 
 .createClass-container {
     text-align: justify;
