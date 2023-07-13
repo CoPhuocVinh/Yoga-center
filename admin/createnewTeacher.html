@@ -14,17 +14,6 @@
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <!-- Icons -->
-    <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="apple-touch-icon" href="img/icon57.png" sizes="57x57">
-    <link rel="apple-touch-icon" href="img/icon72.png" sizes="72x72">
-    <link rel="apple-touch-icon" href="img/icon76.png" sizes="76x76">
-    <link rel="apple-touch-icon" href="img/icon114.png" sizes="114x114">
-    <link rel="apple-touch-icon" href="img/icon120.png" sizes="120x120">
-    <link rel="apple-touch-icon" href="img/icon144.png" sizes="144x144">
-    <link rel="apple-touch-icon" href="img/icon152.png" sizes="152x152">
-    <!-- END Icons -->
 
     <!-- Stylesheets -->
     <!-- Bootstrap is included in its original form, unaltered -->
@@ -217,6 +206,9 @@
                         <input type="tel" name="Number" required><br>
 
                         <label for="image"></label>
+                        <div id="preview" class="circle-frame">
+                            <i class="fa fa-user input-user-file"></i>
+                        </div>
                         <input type="file" name="image" required><br>
 
                         <label for="gender">Giới tính:</label>
@@ -235,20 +227,6 @@
                         margin: 0;
                         width: 40px;
                     }
-
-
-
-                    #save {
-                        display: flex;
-                        justify-content: center;
-
-                        align-items: center;
-                    }
-
-
-                    #closeButton {
-                        margin-left: 280px;
-                    }
                 </style>
                 <!-- Include Jquery library from Google's CDN but if something goes wrong get Jquery from local file (Remove 'http:' if you have SSL) -->
                 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -262,6 +240,9 @@
                 <script src="js/main.js"></script>
 
                 <!-- Javascript code only for this page -->
+            </div>
+        </div>
+    </div>
 
 </body>
 

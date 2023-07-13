@@ -14,18 +14,6 @@
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <!-- Icons -->
-    <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="apple-touch-icon" href="img/icon57.png" sizes="57x57">
-    <link rel="apple-touch-icon" href="img/icon72.png" sizes="72x72">
-    <link rel="apple-touch-icon" href="img/icon76.png" sizes="76x76">
-    <link rel="apple-touch-icon" href="img/icon114.png" sizes="114x114">
-    <link rel="apple-touch-icon" href="img/icon120.png" sizes="120x120">
-    <link rel="apple-touch-icon" href="img/icon144.png" sizes="144x144">
-    <link rel="apple-touch-icon" href="img/icon152.png" sizes="152x152">
-    <!-- END Icons -->
-
     <!-- Stylesheets -->
     <!-- Bootstrap is included in its original form, unaltered -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -78,18 +66,6 @@
             <!-- Header Widgets -->
             <!-- You can create the widgets you want by replicating the following. Each one exists in a <li> element -->
             <ul id="widgets" class="navbar-nav-custom pull-right">
-                <!-- Just a divider -->
-                <li class="divider-vertical"></li>
-
-
-
-                <li class="divider-vertical"></li>
-
-
-                <li class="divider-vertical"></li>
-
-                <!-- Notifications Widget -->
-                <li class="divider-vertical"></li>
 
                 <!-- User Menu -->
                 <li class="dropdown pull-right dropdown-user">
@@ -196,7 +172,7 @@
                 <!-- Navigation info -->
                 <ul id="nav-info" class="clearfix">
                     <li><a href="index.html"><i class="fa fa-home"></i></a></li>
-                    <li><a href="page_list_class.html">Danh sách nhân viên</a></li>
+                    <li><a href="page_list_staff.html">Danh sách nhân viên</a></li>
                     <li><a href="javascript:void(0)">Chỉnh sửa nhân viên</a></li>
                 </ul>
                 <!-- END Navigation info -->
@@ -219,7 +195,10 @@
                         <input type="text" id="Sdt" name="quantity" required><br>
 
                         <label for="name">Ảnh đại diện</label>
-                        <input type="file" id="avatar" name="val_website"><br>
+                        <div id="preview" class="circle-frame">
+                            <i class="fa fa-user input-user-file"></i>
+                        </div>
+                        <input type="file" id="fileInputAvatar" name="val_website"><br>
 
 
                         <!-- <label for="start-time">Thời gian bắt đầu</label>
@@ -243,109 +222,10 @@
                 <!-- Jquery plugins and custom javascript code -->
                 <script src="js/plugins.js"></script>
                 <script src="js/main.js"></script>
+            </div>
+        </div>
+    </div>
 
-                <!-- Javascript code only for this page -->
-                <script>
-
-                    $(function () {
-
-                        /* For advanced usage and examples please check out
-                         *  Jquery Validation   -> https://github.com/jzaefferer/jquery-validation
-                         */
-
-                        /* Initialize Form Validation */
-                        $('#form-validation').validate({
-                            errorClass: 'help-block',
-                            errorElement: 'span',
-                            errorPlacement: function (error, e) {
-                                e.parents('.form-group > div').append(error);
-                            },
-                            highlight: function (e) {
-                                $(e).closest('.form-group').removeClass('has-success has-error').addClass('has-error');
-                                $(e).closest('.help-block').remove();
-                            },
-                            success: function (e) {
-                                // You can use the following if you would like to highlight with green color the input after successful validation!
-                                e.closest('.form-group').removeClass('has-success has-error'); // e.closest('.form-group').removeClass('has-success has-error').addClass('has-success');
-                                e.closest('.help-block').remove();
-                                e.closest('.help-inline').remove();
-                            },
-                            rules: {
-                                val_username: {
-                                    required: true,
-                                    minlength: 2
-                                },
-                                val_password: {
-                                    required: true,
-                                    minlength: 5
-                                },
-                                val_confirm_password: {
-                                    required: true,
-                                    minlength: 5,
-                                    equalTo: '#val_password'
-                                },
-                                val_email: {
-                                    required: true,
-                                    email: true
-                                },
-                                val_website: {
-                                    required: true,
-                                    url: true
-                                },
-                                val_date: {
-                                    required: true,
-                                    date: true
-                                },
-                                val_range: {
-                                    required: true,
-                                    range: [1, 100]
-                                },
-                                val_number: {
-                                    required: true,
-                                    number: true
-                                },
-                                val_digits: {
-                                    required: true,
-                                    digits: true
-                                },
-                                val_skill: {
-                                    required: true
-                                },
-                                val_credit_card: {
-                                    required: true,
-                                    creditcard: true
-                                },
-                                val_terms: {
-                                    required: true
-                                }
-                            },
-                            messages: {
-                                val_username: {
-                                    required: 'Please enter a username',
-                                    minlength: 'Your username must consist of at least 2 characters'
-                                },
-                                val_password: {
-                                    required: 'Please provide a password',
-                                    minlength: 'Your password must be at least 5 characters long'
-                                },
-                                val_confirm_password: {
-                                    required: 'Please provide a password',
-                                    minlength: 'Your password must be at least 5 characters long',
-                                    equalTo: 'Please enter the same password as above'
-                                },
-                                val_email: 'Please enter a valid email address',
-                                val_website: 'Please enter your website!',
-                                val_date: 'Please select a date!',
-                                val_range: 'Please enter a number between 1 and 100!',
-                                val_number: 'Please enter a number!',
-                                val_digits: 'Please enter digits!',
-                                val_credit_card: 'Please enter a valid credit card!',
-                                val_skill: 'Please select a skill!',
-                                val_terms: 'You must agree to the terms!'
-                            }
-                        });
-                    });
-                </script>
 </body>
 
 </html>

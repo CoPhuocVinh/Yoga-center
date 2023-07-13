@@ -3644,7 +3644,11 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 .fa-user {
-    font-size: 50px;
+    font-size: 20px;
+}
+
+.input-user-file {
+    font-size: 50px !important;
 }
 
 .circle-frame {
