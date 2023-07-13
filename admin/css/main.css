@@ -183,6 +183,7 @@ header
     margin-bottom: 45px;
 }
 
+
 .section-header-lich p {
     display: inline-block;
     margin: 0 30px;
@@ -3499,6 +3500,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     text-align: center;
     padding-top: 50px;
 }
+
 
 .createClass-container {
     text-align: justify;
