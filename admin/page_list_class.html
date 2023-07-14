@@ -566,10 +566,7 @@
 
 
     <script>
-        function showCreateClass() {
-            var formCreateContainer = document.getElementById("formCreateContainer");
-            formCreateContainer.style.display = "block";
-        }
+
         //xử lý nút bấm active và inactive
         var activeBtn = document.getElementById('active-bnt');
         var inactiveBtn = document.getElementById('inactive-btn');
@@ -585,42 +582,7 @@
             inactiveList.style.display = 'inline-table';
         });
 
-        // xử lý fill tên giáo viên và nút sửa
-        var tableRows = document.querySelectorAll(".list-teacherBody tr");
 
-        // Lặp qua từng hàng và gán sự kiện click cho nút "sửa"
-        tableRows.forEach(function (row) {
-            var editButton = row.querySelector(".btn-success");
-            editButton.addEventListener("click", function () {
-                // Lấy thông tin từ trường giáo viên của hàng
-                var teacherName = row.querySelector(".hidden-xs.hidden-sm:nth-child(4)").textContent;
-
-                // Điền thông tin vào trường nhập liệu trong form
-                var teacherField = document.getElementById("teacher");
-                teacherField.value = teacherName;
-
-                // Hiển thị form
-                var formContainer = document.getElementById("formContainer");
-                formContainer.style.display = "block";
-            });
-        });
-
-        // Gán sự kiện submit cho form
-        var registrationForm = document.getElementById("registrationForm");
-        registrationForm.addEventListener("submit", function (event) {
-            event.preventDefault(); // Ngăn chặn hành vi mặc định của nút submit
-
-            // Lấy giá trị từ trường nhập liệu trong form
-            var teacherField = document.getElementById("teacher");
-            var teacherValue = teacherField.value;
-
-            // Cập nhật nội dung trong trường giáo viên của hàng đang được chỉnh sửa
-            var currentRow = document.querySelector(".list-teacherBody tr.editing");
-            currentRow.querySelector(".hidden-xs.hidden-sm:nth-child(4)").textContent = teacherValue;
-
-            // Ẩn form
-            hideFormCreateAndEdit();
-        });
 
     </script>
     <!--END form chỉnh sửa class -->
